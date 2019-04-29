@@ -278,6 +278,7 @@
     <Compile Include="Assets\Oculus\Spatializer\Scripts\ONSPPropagationInterface.cs" />
     <Compile Include="Assets\Oculus\Spatializer\Scripts\ONSPPropagationMaterial.cs" />
     <Compile Include="Assets\Oculus\Spatializer\Scripts\ONSPVersion.cs" />
+    <Compile Include="Assets\Scripts\ExperimentSetup.cs" />
     <Compile Include="Assets\Scripts\HandCursorController.cs" />
     <Compile Include="Assets\UXF\Examples\Advanced\Scripts\CursorFollower.cs" />
     <Compile Include="Assets\UXF\Examples\Advanced\Scripts\ExperimentGenerator.cs" />
