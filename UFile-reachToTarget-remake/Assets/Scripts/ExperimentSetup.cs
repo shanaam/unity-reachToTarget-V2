@@ -36,5 +36,24 @@ public class ExperimentSetup : MonoBehaviour
         //int age = Convert.ToInt32(session.participantDetails["age"]);
         //session.settings.SetValue("sensitive_content", age >= 18);
     }
+    public Block[] generateBlocks(Session session)
+    {
+        List<int> blocks_n = session.settings.GetIntList("blocks_n");
+        List<object> blocks_type = session.settings.GetObjectList("blocks_type");
+        List<int> blocks_targetList = session.settings.GetIntList("blocks_targetList");
+        Dictionary<String, object> targetList = session.settings.GetDict("targetList");
+
+        Block[] blockList = new Block[blocks_n.Count];
+
+        for(int i=0; i <blockList.Length; i++)
+        {
+            blockList[i] = session.CreateBlock(blocks_n[i]);
+            blockList[i].settings.SetValue("type", blocks_type[i]);
+            blockList[i].settings.SetValue("targetList", blocks_targetList[i]);
+            blockList[i].settings.SetValue("targetList", targetList[blocks_targetList[i].ToString()]);
+        }
+
+        return blockList;
+    }
 
 }
