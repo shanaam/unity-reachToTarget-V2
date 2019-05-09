@@ -1,0 +1,19 @@
+timestamp,log_type,message
+0,Log,>> Collision Detected 
+0,Log,>> Collision Detected 
+0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+0.02,Log,>> Collision Detected 
+0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
+0.14,Log,>> Collision Detected 
+2.724342,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+3.730292,Warning,Warning: Session already exists! Continuing will overwrite
+3.730292,Log,ending reach trial...
+3.730292,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use nextTrial to get the first trial
+9.185767,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+10.21825,Warning,Warning: Session already exists! Continuing will overwrite
+10.21825,Log,ending reach trial...
+10.21825,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use nextTrial to get the first trial
+11.73411,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+12.26993,Warning,Warning: Session already exists! Continuing will overwrite
+12.26993,Log,ending reach trial...
+12.26993,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use nextTrial to get the first trial

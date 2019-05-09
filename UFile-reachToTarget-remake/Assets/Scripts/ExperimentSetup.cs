@@ -14,16 +14,19 @@ public class ExperimentSetup : MonoBehaviour
 
     public void GenerateExperiment(Session session)
     {
+        List<int> blocks_n = session.settings.GetIntList("blocks_n");
+
         // retrieve the n_practice_trials setting from the session settings
-        int numPracticeTrials = session.settings.GetInt("n_practice_trials");
+        int numPracticeTrials = blocks_n[0];
         // create block 1
         Block practiceBlock = session.CreateBlock(numPracticeTrials);
-        practiceBlock.settings.SetValue("practice", true);
+        practiceBlock.settings.SetValue("type", "practice");
 
         // retrieve the n_main_trials setting from the session settings
-        int numMainTrials = session.settings.GetInt("n_main_trials");
+        int numMainTrials = blocks_n[1];
         // create block 2
         Block aligned_block1 = session.CreateBlock(numMainTrials); // block 2
+        aligned_block1.settings.SetValue("type", "aligned");
 
         //// here we set a setting for the 2nd trial of the main block as an example.
         //aligned_block1.GetRelativeTrial(2).settings.SetValue("size", 10);
@@ -36,16 +39,17 @@ public class ExperimentSetup : MonoBehaviour
         //int age = Convert.ToInt32(session.participantDetails["age"]);
         //session.settings.SetValue("sensitive_content", age >= 18);
     }
-    public Block[] generateBlocks(Session session)
+
+    public void GenerateBlocks(Session session)
     {
         List<int> blocks_n = session.settings.GetIntList("blocks_n");
         List<object> blocks_type = session.settings.GetObjectList("blocks_type");
         List<int> blocks_targetList = session.settings.GetIntList("blocks_targetList");
         Dictionary<String, object> targetList = session.settings.GetDict("targetList");
 
-        Block[] blockList = new Block[blocks_n.Count];
+        List<Block> blockList = new List<Block>();
 
-        for(int i=0; i <blockList.Length; i++)
+        for(int i=0; i < blocks_n.Count; i++)
         {
             blockList[i] = session.CreateBlock(blocks_n[i]);
             blockList[i].settings.SetValue("type", blocks_type[i]);
@@ -53,7 +57,15 @@ public class ExperimentSetup : MonoBehaviour
             blockList[i].settings.SetValue("targetList", targetList[blocks_targetList[i].ToString()]);
         }
 
-        return blockList;
+        session.blocks = blockList;
+        //return blockList;
+        
+    }
+    
+
+    public void TestExperiment(Trial trial)
+    {
+        Debug.LogFormat("targetYOffset in Controller set to {0}", trial.settings.GetObject("type"));
     }
 
 }
