@@ -19,24 +19,41 @@ public class HandCursorController : MonoBehaviour
     bool isInHome = false;
     public bool collisionHeld = false;
     private float collision_start_time;
+    public MovementType movementType;
+    private Vector3 oldPos;
     // Use this for initialization
     void Start()
     {
         // disable the whole task initially to give time for the experimenter to use the UI
         // gameObject.SetActive(false);
+        movementType = new MappedMovement();
     }
 
+    void Update()
+    {
+        oldPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+    }
     // ALL tracking should be done in LateUpdate
     // This ensures that the real object has finished moving (in Update) before the tracking object is moved
     void LateUpdate()
     {
+        
+        
+        //Update position based on mvmt type
+        Vector3 newPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         //transform.localPosition = realHand.transform.position - transform.parent.transform.position;
+        Vector3 translation = (newPos - oldPos);
 
+        transform.localPosition = movementType.transformMotion(translation, oldPos);
+        
+        /*
         Vector3 realHandPosition = realHand.transform.position;
         Vector3 rotatorObjectPosition = transform.parent.transform.position;
 
         // if trial.setting == aligned
         transform.localPosition = realHandPosition - rotatorObjectPosition;
+        */
+
 
         // if trial.setting == rotated
 
@@ -48,6 +65,10 @@ public class HandCursorController : MonoBehaviour
         // the target on the other hand can be spawned via something attached to the rotator obj
         // homeposition should always be there, just turn off rendering when not needed (prevents the issue of it respawning at trial beginning)
     }
+
+    //modifiers
+    //updates position of handCursor
+    
 
     private void OnTriggerEnter(Collider other)
     {
