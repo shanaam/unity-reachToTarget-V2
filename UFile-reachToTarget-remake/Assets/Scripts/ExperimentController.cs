@@ -28,10 +28,32 @@ public class ExperimentController : MonoBehaviour
 
     public void StartTrial()
     {
-        homeCursorController.Appear();
+        homeCursorController.Remove();
         session.BeginNextTrial();
     }
 
+    // end session or begin next trial (This should ideally be called via event system)
+    // destroys the the current target and starts next trial
+    public void EndAndPrepare()
+    {
+        //Debug.Log("ending reach trial...");
+        // destroy the target, spawn home?
+        targetContainer.DestroyTargets();
+        homeCursorController.Appear();
+
+        session.CurrentTrial.End();
+
+        if (session.CurrentTrial == session.LastTrial)
+        {
+            session.End();
+        }
+        /*
+        else
+        {
+            session.BeginNextTrial();
+        }
+        */
+    }
 
     //-----------------------------------------------------
     // Modifiers
@@ -46,28 +68,6 @@ public class ExperimentController : MonoBehaviour
     private void ShowInstruction()
     {
         Instruction.gameObject.SetActive(true);
-    }
-
-    // end session or begin next trial (This should ideally be called via event system)
-    // destroys the the current target and starts next trial
-    public void EndAndPrepare()
-    {
-        //Debug.Log("ending reach trial...");
-        // kill the target, spawn home?
-        targetContainer.Destroy();
-
-        session.CurrentTrial.End();
-
-        if (session.CurrentTrial == session.LastTrial)
-        {
-            session.End();
-        }
-        /*
-        else
-        {
-            session.BeginNextTrial();
-        }
-        */
     }
 
     ////Unused for now but useful

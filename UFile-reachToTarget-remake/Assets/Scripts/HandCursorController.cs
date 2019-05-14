@@ -21,6 +21,8 @@ public class HandCursorController : MonoBehaviour
     bool isInTarget = false;
     bool isInHome = false;
     bool isPaused = false;
+    bool isInHomeArea = false;
+    bool targetReached = true;
 
     public bool collisionHeld = false;
     private float collision_start_time;
@@ -62,7 +64,7 @@ public class HandCursorController : MonoBehaviour
 
         //Do things when this thing is in the target (and paused)
         //if cursor is paused AND in target
-        if (isInTarget)
+        if (isInTarget && isPaused)
         {
             /*
             //disable the tracker script (for the return to home position)
@@ -84,7 +86,7 @@ public class HandCursorController : MonoBehaviour
         }
 
         //Do things when this this is in home (and pause)
-        else if (isInHome)
+        else if (isInHome && isPaused)
         {
             experimentController.StartTrial();
         }
@@ -97,27 +99,59 @@ public class HandCursorController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // vibrate the controller
-        ShortVibrateController();
-
         //collision_start_time = Time.time; 
         if (other.CompareTag("Target"))
         {
             isInTarget = true;
 
+            // vibrate the controller
+            ShortVibrateController();
         }
         else if (other.CompareTag("Home"))
         {
             isInHome = true;
+
+            // vibrate the controller
+            ShortVibrateController();
         }
+
+        else if (other.CompareTag("HomeArea"))
+        {
+            isInHomeArea = true;
+
+            if (targetReached)
+            {
+                InvokeRepeating("CheckForPause", 0, checkForPauseRate);
+            }
+
+        }
+
     }
 
     
     private void OnTriggerExit(Collider other)
     {
-        isInTarget = false;
-        isInHome = false;
-        InvokeRepeating("CheckForPause", 0, checkForPauseRate);
+        // do things depending on which collider is being exited
+        if (other.CompareTag("Target"))
+        {
+            isInTarget = false;
+
+        }
+        else if (other.CompareTag("Home"))
+        {
+            isInHome = false;
+        }
+        else if (other.CompareTag("HomeArea"))
+        {
+            isInHomeArea = false;
+
+            if (!targetReached)
+            {
+                InvokeRepeating("CheckForPause", 0, checkForPauseRate);
+            }
+
+        }
+        
     }
 
 

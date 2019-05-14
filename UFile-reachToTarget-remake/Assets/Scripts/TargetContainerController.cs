@@ -32,7 +32,12 @@ public class TargetContainerController : MonoBehaviour
 
     }
 
-    public void Destroy()
+    public void SpawnTarget()
+    {
+
+    }
+
+    public void DestroyTargets()
     {
         GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
         gameObject.SetActive(false);

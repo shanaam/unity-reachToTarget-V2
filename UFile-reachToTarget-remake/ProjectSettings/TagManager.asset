@@ -8,6 +8,7 @@ TagManager:
   - Target
   - TargetContainer
   - Home
+  - HomeArea
   layers:
   - Default
   - TransparentFX
