@@ -20,13 +20,20 @@ public class HandCursorController : MonoBehaviour
 
     bool isInTarget = false;
     bool isInHome = false;
+    bool isPaused = false;
+
     public bool collisionHeld = false;
     private float collision_start_time;
 
     public CursorMovementType movementType;
 
+    //variables used for checking pause
+    List<float> distanceFromLastList = new List<float>();
+    Vector3 lastPosition;
+    float checkForPauseRate = 0.05f;
+
     //private Vector3 oldPos; //replace this with local position-based transformations
-   
+
     // Use this for initialization
     void Start()
     {
@@ -79,7 +86,7 @@ public class HandCursorController : MonoBehaviour
         //Do things when this this is in home (and pause)
         else if (isInHome)
         {
-            
+            experimentController.StartTrial();
         }
 
     }
@@ -93,8 +100,7 @@ public class HandCursorController : MonoBehaviour
         // vibrate the controller
         ShortVibrateController();
 
-        Debug.Log(">> Collision Detected ");
-        collision_start_time = Time.time; 
+        //collision_start_time = Time.time; 
         if (other.CompareTag("Target"))
         {
             isInTarget = true;
@@ -111,6 +117,7 @@ public class HandCursorController : MonoBehaviour
     {
         isInTarget = false;
         isInHome = false;
+        InvokeRepeating("CheckForPause", 0, checkForPauseRate);
     }
 
 
@@ -135,9 +142,10 @@ public class HandCursorController : MonoBehaviour
     }
     */
 
-    /*
+
     public void CheckForPause()
     {
+
         //calculate the distance from last position
         float distance = Vector3.Distance(lastPosition, transform.position);
 
@@ -175,7 +183,7 @@ public class HandCursorController : MonoBehaviour
             isPaused = false;
         }
     }
-    */
+
 
     // vibrate controller for 0.2 seconds
     void ShortVibrateController()

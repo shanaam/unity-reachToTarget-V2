@@ -1,122 +1,122 @@
 timestamp,log_type,message
 0,Warning,You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively your script can inherit from ScriptableObject or no base class at all
-0,Log,>> Collision Detected 
-0,Log,>> Collision Detected 
 0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-0.02,Log,>> Collision Detected 
 0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
-0.14,Log,>> Collision Detected 
-4.314906,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-5.625408,Warning,Warning: Session already exists! Continuing will overwrite
-28.04,Log,>> Collision Detected 
-41.92,Log,>> Collision Detected 
-49.94,Log,>> Collision Detected 
-50.62,Log,>> Collision Detected 
-51.24,Log,>> Collision Detected 
-51.58,Log,>> Collision Detected 
-52.2,Log,>> Collision Detected 
-52.82,Log,>> Collision Detected 
-54.6,Log,>> Collision Detected 
-56.2,Log,>> Collision Detected 
-56.86,Log,>> Collision Detected 
-57.44,Log,>> Collision Detected 
-58.04,Log,>> Collision Detected 
-58.62,Log,>> Collision Detected 
-59.16,Log,>> Collision Detected 
-59.72,Log,>> Collision Detected 
-60.28,Log,>> Collision Detected 
-60.9,Log,>> Collision Detected 
-61.16,Log,>> Collision Detected 
-61.48,Log,>> Collision Detected 
-63.08,Log,>> Collision Detected 
-63.4,Log,>> Collision Detected 
-63.7,Log,>> Collision Detected 
-65.64,Log,>> Collision Detected 
-66,Log,>> Collision Detected 
-66.78,Log,>> Collision Detected 
-67.06,Log,>> Collision Detected 
-67.34,Log,>> Collision Detected 
-68.1,Log,>> Collision Detected 
-68.46,Log,>> Collision Detected 
-68.64,Log,>> Collision Detected 
-68.93999,Log,>> Collision Detected 
-69.7,Log,>> Collision Detected 
-70.14,Log,>> Collision Detected 
-70.6,Log,>> Collision Detected 
-71.16,Log,>> Collision Detected 
-72.24,Log,>> Collision Detected 
-72.64,Log,>> Collision Detected 
-73.2,Log,>> Collision Detected 
-78.34,Log,>> Collision Detected 
-79.64,Log,>> Collision Detected 
-80.86,Log,>> Collision Detected 
-82.14,Log,>> Collision Detected 
-83.56,Log,>> Collision Detected 
-84.75999,Log,>> Collision Detected 
-85.86,Log,>> Collision Detected 
-86.52,Log,>> Collision Detected 
-87.08,Log,>> Collision Detected 
-87.62,Log,>> Collision Detected 
-87.88,Log,>> Collision Detected 
-88.18,Log,>> Collision Detected 
-88.4,Log,>> Collision Detected 
-88.8,Log,>> Collision Detected 
-89.06,Log,>> Collision Detected 
-89.4,Log,>> Collision Detected 
-89.68,Log,>> Collision Detected 
-90.02,Log,>> Collision Detected 
-90.86,Log,>> Collision Detected 
-91.2,Log,>> Collision Detected 
-91.43999,Log,>> Collision Detected 
-91.75999,Log,>> Collision Detected 
-91.93999,Log,>> Collision Detected 
-92.28,Log,>> Collision Detected 
-92.52,Log,>> Collision Detected 
-92.86,Log,>> Collision Detected 
-93.12,Log,>> Collision Detected 
-93.43999,Log,>> Collision Detected 
-93.7,Log,>> Collision Detected 
-94,Log,>> Collision Detected 
-94.25999,Log,>> Collision Detected 
-94.56,Log,>> Collision Detected 
-94.8,Log,>> Collision Detected 
-95.07999,Log,>> Collision Detected 
-95.25999,Log,>> Collision Detected 
-95.42,Log,>> Collision Detected 
-95.5,Log,>> Collision Detected 
-95.75999,Log,>> Collision Detected 
-95.92,Log,>> Collision Detected 
-95.96,Log,>> Collision Detected 
-96.14,Log,>> Collision Detected 
-96.2,Log,>> Collision Detected 
-96.43999,Log,>> Collision Detected 
-96.6,Log,>> Collision Detected 
-96.7,Log,>> Collision Detected 
-96.93999,Log,>> Collision Detected 
-97.1,Log,>> Collision Detected 
-97.2,Log,>> Collision Detected 
-97.36,Log,>> Collision Detected 
-97.48,Log,>> Collision Detected 
-97.6,Log,>> Collision Detected 
-97.75999,Log,>> Collision Detected 
-97.9,Log,>> Collision Detected 
-98.02,Log,>> Collision Detected 
-98.16,Log,>> Collision Detected 
-98.3,Log,>> Collision Detected 
-98.42,Log,>> Collision Detected 
-98.54,Log,>> Collision Detected 
-98.66,Log,>> Collision Detected 
-98.8,Log,>> Collision Detected 
-98.93999,Log,>> Collision Detected 
-99.06,Log,>> Collision Detected 
-99.22,Log,>> Collision Detected 
-99.32,Log,>> Collision Detected 
-99.46,Log,>> Collision Detected 
-99.56,Log,>> Collision Detected 
-99.72,Log,>> Collision Detected 
-99.84,Log,>> Collision Detected 
-100,Log,>> Collision Detected 
-100.1,Log,>> Collision Detected 
-100.26,Log,>> Collision Detected 
-100.64,Log,>> Collision Detected 
-100.92,Log,>> Collision Detected 
+3.94265,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+5.108695,Warning,Warning: Session already exists! Continuing will overwrite
+8.719321,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.729036,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.740209,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.75147,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.762671,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.774031,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.785402,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.796367,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.807431,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.818769,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.829913,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.841188,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.852541,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.86333,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.874466,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.885541,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.896697,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.908084,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.918908,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.930178,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.942763,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.952607,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.963453,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.974873,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.985731,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+8.996803,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.007852,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.019107,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.030123,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.041306,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.052563,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.063679,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.074768,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.086103,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.096953,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.108061,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.119226,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.130623,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.14296,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.152604,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.163779,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.175154,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.185714,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.196959,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.207867,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.219206,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.230268,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.241352,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.252717,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.263735,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.274776,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.286008,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.296983,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.308111,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.319179,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.330355,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.341392,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.353768,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.36376,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.374786,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.385993,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.396986,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.408223,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.41933,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.430315,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.441741,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.452515,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.463813,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.474941,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.486116,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.497055,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.508208,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.519326,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.53052,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.541573,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.553661,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.563774,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.574946,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.586031,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.597413,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.608183,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.619447,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.63036,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.641674,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.65262,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.66379,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.674886,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.686111,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.697402,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.70825,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.71938,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.730466,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.741517,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.753677,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.764977,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.7752,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.785952,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.797036,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.808098,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.819123,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.830413,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.841473,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.852653,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.863774,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.87479,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.885986,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.897126,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.908455,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.919698,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.930505,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.941544,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.953165,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.963956,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.976039,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.986089,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.
+9.997087,Exception,NoSuchTrialException: There is no next trial. Reached the end of trial list.

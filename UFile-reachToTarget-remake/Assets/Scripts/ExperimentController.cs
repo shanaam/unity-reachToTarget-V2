@@ -26,10 +26,10 @@ public class ExperimentController : MonoBehaviour
 
     }
 
-    public void StartTrial(Trial trial)
+    public void StartTrial()
     {
         homeCursorController.Appear();
-
+        session.BeginNextTrial();
     }
 
 
@@ -62,10 +62,12 @@ public class ExperimentController : MonoBehaviour
         {
             session.End();
         }
+        /*
         else
         {
             session.BeginNextTrial();
         }
+        */
     }
 
     ////Unused for now but useful
