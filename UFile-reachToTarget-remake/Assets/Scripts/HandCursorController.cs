@@ -15,55 +15,73 @@ public class HandCursorController : MonoBehaviour
     public GameObject realHand;
     public TargetContainerController targetContainerController;
 
+    //link to experiment controller (make a static instance of this?)
+    public ExperimentController experimentController;
+
     bool isInTarget = false;
     bool isInHome = false;
     public bool collisionHeld = false;
     private float collision_start_time;
-    public MovementType movementType;
-    private Vector3 oldPos;
+
+    public CursorMovementType movementType;
+
+    //private Vector3 oldPos; //replace this with local position-based transformations
+   
     // Use this for initialization
     void Start()
     {
         // disable the whole task initially to give time for the experimenter to use the UI
         // gameObject.SetActive(false);
-        movementType = new MappedMovement();
+        movementType = new AlignedHandCurosor();
     }
+
 
     void Update()
     {
-        oldPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        //movementType should be set based on session settings
     }
+
+
     // ALL tracking should be done in LateUpdate
     // This ensures that the real object has finished moving (in Update) before the tracking object is moved
     void LateUpdate()
     {
-        
-        
-        //Update position based on mvmt type
-        Vector3 newPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-        //transform.localPosition = realHand.transform.position - transform.parent.transform.position;
-        Vector3 translation = (newPos - oldPos);
-
-        transform.localPosition = movementType.transformMotion(translation, oldPos);
-        
-        /*
+        // get the inputs we need for displaying the cursor
         Vector3 realHandPosition = realHand.transform.position;
-        Vector3 rotatorObjectPosition = transform.parent.transform.position;
+        Vector3 centreExpPosition = transform.parent.transform.position;
 
-        // if trial.setting == aligned
-        transform.localPosition = realHandPosition - rotatorObjectPosition;
-        */
+        //Update position of the cursor based on mvmt type
+        transform.localPosition = movementType.NewCursorPosition(realHandPosition, centreExpPosition);
 
+        //Do things when this thing is in the target (and paused)
+        //if cursor is paused AND in target
+        if (isInTarget)
+        {
+            /*
+            //disable the tracker script (for the return to home position)
+            trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = false;
 
-        // if trial.setting == rotated
+            isPaused = false;
+            isInTarget = false;
 
-        // if trial.setting == clamped
+            CancelInvoke("CheckForPause");
 
-        // if trial.setting == nocursor
+            targetReached = true;
+            */
 
-        // OR can this be a system? It only happens within the handCursor, we won't ever spawn multiple so it doesn't have to be I think
-        // the target on the other hand can be spawned via something attached to the rotator obj
-        // homeposition should always be there, just turn off rendering when not needed (prevents the issue of it respawning at trial beginning)
+            //End and prepare
+            experimentController.EndAndPrepare();
+
+            //Create homeposition
+            //homePosition.SetActive(true);
+        }
+
+        //Do things when this this is in home (and pause)
+        else if (isInHome)
+        {
+            
+        }
+
     }
 
     //modifiers
@@ -72,6 +90,9 @@ public class HandCursorController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // vibrate the controller
+        ShortVibrateController();
+
         Debug.Log(">> Collision Detected ");
         collision_start_time = Time.time; 
         if (other.CompareTag("Target"))
@@ -84,12 +105,16 @@ public class HandCursorController : MonoBehaviour
             isInHome = true;
         }
     }
+
+    
     private void OnTriggerExit(Collider other)
     {
         isInTarget = false;
-        
+        isInHome = false;
     }
 
+
+    /*
     private void OnTriggerStay(Collider other)
     {
         float delta = Time.time - collision_start_time;
@@ -99,24 +124,73 @@ public class HandCursorController : MonoBehaviour
             {
                 Debug.Log("Collision Held for " + delta + " seconds");
                 collisionHeld = true; //Then the collision was deliberate by the user and held on the location
-                string msg = targetCollision();
-                Debug.Log(msg);
             }
-            else if (isInHome) ;
+            else if (isInHome)
+            {
+
+            }
                 
         }
         
     }
+    */
 
-    private string homeCollision(Collider other)
+    /*
+    public void CheckForPause()
     {
-        return "Colided with home.";
+        //calculate the distance from last position
+        float distance = Vector3.Distance(lastPosition, transform.position);
+
+        float distanceMean = 1000;
+
+        //add the distance to our List
+        distanceFromLastList.Add(distance);
+
+        //if List is over a certain length, check some stuff
+        if (distanceFromLastList.Count > 8)
+        {
+            //check and print the average distance
+            //float[] distanceArray = distanceFromLastList.ToArray();
+            float distanceSum = 0f;
+
+            for (int i = 0; i < distanceFromLastList.Count; i++)
+            {
+                distanceSum += distanceFromLastList[i];
+            }
+
+            distanceMean = distanceSum / distanceFromLastList.Count;
+
+            distanceFromLastList.RemoveAt(0);
+        }
+
+        //replace lastPosition withh the current position
+        lastPosition = transform.position;
+
+        if (distanceMean < 0.001)
+        {
+            isPaused = true;
+        }
+        else
+        {
+            isPaused = false;
+        }
+    }
+    */
+
+    // vibrate controller for 0.2 seconds
+    void ShortVibrateController()
+    {
+        // make the controller vibrate
+        OVRInput.SetControllerVibration(1, 0.6f);
+
+        // stop the vibration after x seconds
+        Invoke("StopVibrating", 0.2f);
     }
 
-    private string targetCollision()
+
+    void StopVibrating()
     {
-        targetContainerController.Destroy();
-        return "Colided with target. Destroying all targets";
+        OVRInput.SetControllerVibration(0, 0);
     }
 
 }

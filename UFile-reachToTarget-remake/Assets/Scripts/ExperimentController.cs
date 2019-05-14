@@ -12,39 +12,66 @@ using UXF;
  */
 public class ExperimentController : MonoBehaviour
 {
+    public Session session;
+
     public TextMeshPro Instruction; //Text
     public GameObject handCursor;
     public GameObject homeCursor;
-    
+    public TargetContainerController targetContainer;
+    public HomeCursorController homeCursorController;
+
     // Start is called before the first frame update
     void Start()
     {
-     
+
     }
 
-    public void startTrial(Trial trial)
+    public void StartTrial(Trial trial)
     {
+        homeCursorController.Appear();
 
     }
+
+
     //-----------------------------------------------------
     // Modifiers
-    private void updateInstruction(string instruction)
+    private void UpdateInstruction(string instruction)
     {
         Instruction.text = instruction;
     }
-    private void hideInstruction()
+    private void HideInstruction()
     {
         Instruction.gameObject.SetActive(false);
     }
-    private void showInstruction()
+    private void ShowInstruction()
     {
         Instruction.gameObject.SetActive(true);
     }
-    // Update is called once per frame
-    void Update()
+
+    // end session or begin next trial (This should ideally be called via event system)
+    // destroys the the current target and starts next trial
+    public void EndAndPrepare()
     {
-     
+        //Debug.Log("ending reach trial...");
+        // kill the target, spawn home?
+        targetContainer.Destroy();
+
+        session.CurrentTrial.End();
+
+        if (session.CurrentTrial == session.LastTrial)
+        {
+            session.End();
+        }
+        else
+        {
+            session.BeginNextTrial();
+        }
     }
 
-
+    ////Unused for now but useful
+    //IEnumerator WaitAFrame()
+    //{
+    //    //returning 0 will make it wait 1 frame
+    //    yield return 0;
+    //}
 }
