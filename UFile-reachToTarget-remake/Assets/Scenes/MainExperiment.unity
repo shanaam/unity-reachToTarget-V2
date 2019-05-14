@@ -1066,7 +1066,7 @@ PrefabInstance:
     - target: {fileID: 114916036141644208, guid: 0a3b6392f04558844bd340e68ced1ff9,
         type: 3}
       propertyPath: onTrialBegin.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114916036141644208, guid: 0a3b6392f04558844bd340e68ced1ff9,
         type: 3}
@@ -2062,6 +2062,8 @@ MonoBehaviour:
   targetPrefab: {fileID: 5242952755755571644, guid: 2017dfcc7f5635a49b87901fa1ba2ca3,
     type: 3}
   targetRadius: 0.3
+  session: {fileID: 1056512983}
+  experimentController: {fileID: 1991832942}
 --- !u!135 &1995753349
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UXF;
 
 /*
  * File:    TargetController.cs
@@ -14,8 +15,11 @@ using UnityEngine;
 public class TargetContainerController : MonoBehaviour
 {
     public GameObject targetPrefab;
-    public float targetRadius;
-    
+    public float targetRadius = 10;
+
+    public Session session;
+    public ExperimentController experimentController;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +38,8 @@ public class TargetContainerController : MonoBehaviour
 
     public void SpawnTarget()
     {
-
+        //rotate the target according to trial settings.
+        float trialRotationSize; 
     }
 
     public void DestroyTargets()
