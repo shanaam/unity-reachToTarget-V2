@@ -20,16 +20,14 @@ public class ExperimentController : MonoBehaviour
     public TargetContainerController targetContainer;
     public HomeCursorController homeCursorController;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     public void StartTrial()
     {
+        //Debug.LogFormat("starting trial {0}.", session.NextTrial.number);
         homeCursorController.Remove();
         session.BeginNextTrial();
+
+        //Debug.LogFormat("started trial {0}.", session.CurrentTrial.number);
     }
 
     // end session or begin next trial (This should ideally be called via event system)
