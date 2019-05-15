@@ -23,18 +23,16 @@ public class ExperimentSetup : MonoBehaviour
 
     public void GenerateBlocks(Session session)
     {
-        List<int> blocks_n = session.settings.GetIntList("blocks_n");
-        List<string> blocks_type = session.settings.GetStringList("blocks_type");
-        List<int> blocks_targetList = session.settings.GetIntList("blocks_targetList");
-        Dictionary<string, object> targetList = session.settings.GetDict("targetList");
-
+        List<int> per_block_n = session.settings.GetIntList("per_block_n");
+        List<string> per_block_type = session.settings.GetStringList("per_block_type");
+        List<string> per_block_targetListToUse = session.settings.GetStringList("per_block_targetListToUse");
         
 
-        for(int i=0; i < blocks_n.Count; i++)
+        for(int i=0; i < per_block_n.Count; i++)
         {
-            session.CreateBlock(blocks_n[i]);
-            session.blocks[i].settings.SetValue("type", blocks_type[i]);
-            session.blocks[i].settings.SetValue("targetList", blocks_targetList[i]);
+            session.CreateBlock(per_block_n[i]);
+            session.blocks[i].settings.SetValue("type", per_block_type[i]);
+            session.blocks[i].settings.SetValue("targetListToUse", per_block_targetListToUse[i]);
             
         }
         

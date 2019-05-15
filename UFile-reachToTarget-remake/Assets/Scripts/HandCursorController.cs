@@ -18,11 +18,12 @@ public class HandCursorController : MonoBehaviour
     //link to experiment controller (make a static instance of this?)
     public ExperimentController experimentController;
 
-    bool isInTarget = false;
-    bool isInHome = false;
-    bool isPaused = false;
-    bool isInHomeArea = false;
-    bool targetReached = true;
+    //these are public for TESTING. Make private
+    public bool isInTarget = false;
+    public bool isInHome = false;
+    public bool isPaused = false;
+    public bool isInHomeArea = false;
+    public bool targetReached = true;
 
     public bool collisionHeld = false;
     private float collision_start_time;
@@ -32,7 +33,7 @@ public class HandCursorController : MonoBehaviour
     //variables used for checking pause
     List<float> distanceFromLastList = new List<float>();
     Vector3 lastPosition;
-    float checkForPauseRate = 0.05f;
+    readonly float checkForPauseRate = 0.05f;
 
     //private Vector3 oldPos; //replace this with local position-based transformations
 
@@ -63,7 +64,6 @@ public class HandCursorController : MonoBehaviour
         transform.localPosition = movementType.NewCursorPosition(realHandPosition, centreExpPosition);
 
         //Do things when this thing is in the target (and paused)
-        //if cursor is paused AND in target
         if (isInTarget && isPaused)
         {
             /*
@@ -71,23 +71,21 @@ public class HandCursorController : MonoBehaviour
             trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = false;
 
             isPaused = false;
-            isInTarget = false;
-
             CancelInvoke("CheckForPause");
-
-            targetReached = true;
             */
 
+            targetReached = true;
+            
             //End and prepare
             experimentController.EndAndPrepare();
 
-            //Create homeposition
-            //homePosition.SetActive(true);
+            isInTarget = false;
         }
 
         //Do things when this this is in home (and pause)
-        else if (isInHome && isPaused)
+        else if (isInHome && isPaused && targetReached)
         {
+            targetReached = false;
             experimentController.StartTrial();
         }
 
