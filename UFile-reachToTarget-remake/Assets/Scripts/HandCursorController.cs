@@ -30,6 +30,9 @@ public class HandCursorController : MonoBehaviour
 
     public CursorMovementType movementType;
 
+    public float timerStart;
+    public float timerEnd;
+
     //variables used for checking pause
     List<float> distanceFromLastList = new List<float>();
     Vector3 lastPosition;
@@ -42,7 +45,7 @@ public class HandCursorController : MonoBehaviour
     {
         // disable the whole task initially to give time for the experimenter to use the UI
         // gameObject.SetActive(false);
-        movementType = new AlignedHandCurosor();
+        movementType = new AlignedHandCursor();
     }
 
 
@@ -104,6 +107,7 @@ public class HandCursorController : MonoBehaviour
 
             // vibrate the controller
             ShortVibrateController();
+            pauseTimer();
         }
         else if (other.CompareTag("Home"))
         {
@@ -111,6 +115,7 @@ public class HandCursorController : MonoBehaviour
 
             // vibrate the controller
             ShortVibrateController();
+            startTimer();
         }
 
         else if (other.CompareTag("HomeArea"))
@@ -232,5 +237,26 @@ public class HandCursorController : MonoBehaviour
     {
         OVRInput.SetControllerVibration(0, 0);
     }
+
+    //Start timer when home Disapears, End when target disapears
+    private void startTimer()
+    {
+        timerStart = Time.fixedTime;
+        Debug.Log("Timer started : " + timerStart);
+    }
+
+    private void pauseTimer()
+    {
+        timerEnd = Time.fixedTime;
+        Debug.Log("Timer end : " + timerEnd);
+    }
+
+    private void clearTime()
+    {
+        timerStart = 0;
+        timerEnd = 0;
+    }
+
+
 
 }

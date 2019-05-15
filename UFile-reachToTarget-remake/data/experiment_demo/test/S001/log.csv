@@ -1,11 +1,74 @@
 timestamp,log_type,message
 0,Warning,You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively your script can inherit from ScriptableObject or no base class at all
+0,Log,Timer started : 0
 0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
 0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
-2.457298,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-6.598875,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-7.777616,Warning,Warning: Session already exists! Continuing will overwrite
-14.71334,Log,Home Position Transformed: (0.2201573 0.9249185 0.418699)
-14.72355,Log,Target has been spawned at: (0.0 0.0 0.3)
-30.26476,Log,Audio Clip Played
-32.82016,Log,Target has been spawned at: (0.0 0.0 0.3)
+3.518878,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+6.431012,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+10.86213,Warning,Warning: Session already exists! Continuing will overwrite
+17.14,Log,Timer started : 17.14
+17.7058,Log,Target has been spawned at: (0.0 0.0 0.3)
+18.94,Log,Timer end : 18.94
+19.09371,Log,Audio Clip Played Pitch: 1.158704
+33.18,Log,Timer started : 33.18
+33.18272,Log,Target has been spawned at: (0.0 0.0 0.3)
+33.62,Log,Timer started : 33.62
+35.62,Log,Timer end : 35.62
+35.62727,Log,Audio Clip Played Pitch: 0.5616437
+40.2,Log,Timer started : 40.2
+40.2051,Log,Target has been spawned at: (0.0 0.0 0.3)
+42.1,Log,Timer end : 42.1
+42.10499,Log,Audio Clip Played Pitch: 0.7801927
+45.14,Log,Timer started : 45.14
+45.14962,Log,Target has been spawned at: (0.0 0.0 0.3)
+47.44,Log,Timer end : 47.44
+47.44962,Log,Audio Clip Played Pitch: 1.242584
+48.38,Log,Timer started : 48.38
+48.38298,Log,Target has been spawned at: (0.0 0.0 0.3)
+49.3,Log,Timer end : 49.3
+49.30495,Log,Audio Clip Played Pitch: 0.7488095
+50,Log,Timer started : 50
+50.0051,Log,Target has been spawned at: (0.0 0.0 0.3)
+50.7,Log,Timer end : 50.7
+50.71619,Log,Audio Clip Played Pitch: 1.25961
+51.5,Log,Timer started : 51.5
+51.50492,Log,Target has been spawned at: (0.0 0.0 0.3)
+52.18,Log,Timer end : 52.18
+52.18265,Log,Audio Clip Played Pitch: 1.362915
+69,Log,Timer started : 69
+69.00574,Log,Target has been spawned at: (0.0 0.0 0.3)
+70.48,Log,Timer end : 70.48
+70.48331,Log,Audio Clip Played Pitch: 1.414376
+71.64,Log,Timer started : 71.64
+71.65009,Log,Target has been spawned at: (0.0 0.0 0.3)
+72.54,Log,Timer end : 72.54
+72.55005,Log,Audio Clip Played Pitch: 0.7496161
+74.14,Log,Timer started : 74.14
+74.15022,Log,Target has been spawned at: (0.0 0.0 0.3)
+74.93999,Log,Timer end : 74.93999
+74.9504,Log,Audio Clip Played Pitch: 0.5810558
+76.12,Log,Timer started : 76.12
+76.12841,Log,Target has been spawned at: (0.0 0.0 0.3)
+76.82,Log,Timer end : 76.82
+76.82781,Log,Audio Clip Played Pitch: 1.281547
+77.82,Log,Timer started : 77.82
+77.82797,Log,Target has been spawned at: (0.0 0.0 0.3)
+77.92,Log,Timer started : 77.92
+78.52,Log,Timer end : 78.52
+78.52802,Log,Audio Clip Played Pitch: 0.7843192
+79.42,Log,Timer started : 79.42
+79.42831,Log,Target has been spawned at: (0.0 0.0 0.3)
+80.2,Log,Timer end : 80.2
+80.20615,Log,Audio Clip Played Pitch: 0.7690352
+81.4,Log,Timer started : 81.4
+81.40629,Log,Target has been spawned at: (0.0 0.0 0.3)
+82.4,Log,Timer end : 82.4
+82.40636,Log,Audio Clip Played Pitch: 0.7915378
+83.14,Log,Timer started : 83.14
+83.1507,Log,Target has been spawned at: (0.0 0.0 0.3)
+84.08,Log,Timer end : 84.08
+84.084,Log,Audio Clip Played Pitch: 1.357066
+84.8,Log,Timer started : 84.8
+84.80641,Log,Target has been spawned at: (0.0 0.0 0.3)
+85.58,Log,Timer end : 85.58
+85.58446,Log,Audio Clip Played Pitch: 1.318395

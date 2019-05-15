@@ -16,9 +16,10 @@ public class TargetContainerController : MonoBehaviour
 {
     public GameObject targetPrefab;
     public float targetRadius = 0.10f;
-
+    public AudioSource audioSource;
     public Session session;
     public ExperimentController experimentController;
+    public bool soundActive;
 
     List<float> shuffledTargetList = new List<float>();
 
@@ -40,15 +41,22 @@ public class TargetContainerController : MonoBehaviour
 
         Debug.Log("Target has been spawned at: " + target.transform.localPosition.ToString());
     }
-
+    public void playDestroyNoise()
+    {
+        audioSource.Play();
+        float pitch = Random.Range(0.5f, 1.5f);
+        audioSource.pitch = pitch;
+        Debug.Log("Audio Clip Played, Pitch: " + pitch);
+    }
 
     public void DestroyTargets()
     {
         GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
-        AudioSource audioSource = GameObject.FindGameObjectWithTag("Target").GetComponent<AudioSource>();
-        audioSource.Play(0);
-        Debug.Log("Audio Clip Played");
-        gameObject.SetActive(false);
+        if (soundActive)
+        {
+            playDestroyNoise();
+        }
+        //gameObject.SetActive(false);
         for (var i = 0; i < targets.Length; i++)
         {
             Destroy(targets[i]);
