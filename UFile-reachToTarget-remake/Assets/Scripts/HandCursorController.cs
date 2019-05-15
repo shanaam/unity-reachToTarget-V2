@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UXF;
 
 /*
  * File:    HandCursorController.cs
@@ -14,6 +15,7 @@ public class HandCursorController : MonoBehaviour
     //link to the actual hand position object
     public GameObject realHand;
     public TargetContainerController targetContainerController;
+    public Session session;
     
     //link to experiment controller (make a static instance of this?)
     public ExperimentController experimentController;
@@ -45,16 +47,34 @@ public class HandCursorController : MonoBehaviour
     {
         // disable the whole task initially to give time for the experimenter to use the UI
         // gameObject.SetActive(false);
+
         movementType = new AlignedHandCursor();
+        
     }
 
 
     void Update()
     {
         //movementType should be set based on session settings
+        
+        
     }
 
-
+    public void SetMovementType(Trial trial)
+    {
+        string type = trial.settings.GetString("type");
+        
+        if(type.Equals("clamped"))
+        {
+            movementType = new ClampedHandCursor();
+            Debug.Log("MovementType set to : Clamped");
+        }
+        else
+        {
+            movementType = new AlignedHandCursor();
+            Debug.Log("MovementType set to : Aligned");
+        }
+    }
     // ALL tracking should be done in LateUpdate
     // This ensures that the real object has finished moving (in Update) before the tracking object is moved
     void LateUpdate()

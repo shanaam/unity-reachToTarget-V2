@@ -14,7 +14,7 @@ using UnityEngine;
  *          |
  *          --- class AlignedHandCurosor
  */
-abstract public class CursorMovementType : MonoBehaviour
+abstract public class CursorMovementType
 {
     /*
      * Returns new vector according to the transformType  based on the real transformation
@@ -43,19 +43,6 @@ public class AlignedHandCursor : CursorMovementType
 
     public override string Type => "aligned";
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
 
 public class ClampedHandCursor : CursorMovementType
@@ -78,11 +65,11 @@ public class ClampedHandCursor : CursorMovementType
         if (target != null)
         {
             Vector3 targetPosition = target.transform.position;
-            Vector3 localTargetPosition = targetPosition - transform.parent.transform.position;
+            Vector3 localTargetPosition = targetPosition - centreExpPosition;
 
             //transform.localPosition = realHand.transform.position - transform.parent.transform.position;
             Vector3 realHandPosition = realPosition;
-            Vector3 rotatorObjectPosition = transform.parent.transform.position;
+            Vector3 rotatorObjectPosition = centreExpPosition;
 
             //project onto a vector pointing toward target
             //transform.localPosition = Vector3.Project(realHandPosition - rotatorObjectPosition, localTargetPosition);
@@ -97,7 +84,7 @@ public class ClampedHandCursor : CursorMovementType
         }
         else
         {
-            return new Vector3(0,0,0);
+            return realPosition - centreExpPosition;
         }
     }
 
@@ -105,19 +92,26 @@ public class ClampedHandCursor : CursorMovementType
     public override string Type => "clamped";
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-   
 }
+
+/*public class RotatedHandCursor : CursorMovementType
+{
+    // When creating a new Rotated Cursor, a rotator object must be passed to the constructor. It is used to calculate translation
+    private GameObject rotator;
+
+    public RotatedHandCursor(GameObject rotatorObject)
+    {
+        rotator = rotatorObject;
+    }
+
+    public override string Type => "rotated";
+
+    public override Vector3 NewCursorPosition(Vector3 realPosition, Vector3 centreExpPosition)
+    {
+        //todo implement rotated translation
+
+
+        return new Vector3(0, 0, 0);
+    }
+}*/
 

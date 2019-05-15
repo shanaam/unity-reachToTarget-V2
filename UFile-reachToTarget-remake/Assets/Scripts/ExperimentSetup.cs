@@ -26,6 +26,7 @@ public class ExperimentSetup : MonoBehaviour
         List<int> per_block_n = session.settings.GetIntList("per_block_n");
         List<string> per_block_type = session.settings.GetStringList("per_block_type");
         List<string> per_block_targetListToUse = session.settings.GetStringList("per_block_targetListToUse");
+        List<float> per_block_rotation = session.settings.GetFloatList("per_block_rotation");
         
 
         for(int i=0; i < per_block_n.Count; i++)
