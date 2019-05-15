@@ -13,7 +13,6 @@ using UXF;
 public class ExperimentController : MonoBehaviour
 {
     public Session session;
-
     public TextMeshPro Instruction; //Text
     public GameObject handCursor;
     public GameObject homeCursor;

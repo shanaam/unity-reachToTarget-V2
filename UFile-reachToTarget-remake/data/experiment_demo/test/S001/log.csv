@@ -2,7 +2,10 @@ timestamp,log_type,message
 0,Warning,You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively your script can inherit from ScriptableObject or no base class at all
 0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
 0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
-5.770815,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-6.291152,Warning,Warning: Session already exists! Continuing will overwrite
-11.35758,Log,Target has been spawned
-14.03643,Log,Target has been spawned
+2.457298,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+6.598875,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+7.777616,Warning,Warning: Session already exists! Continuing will overwrite
+14.71334,Log,Home Position Transformed: (0.2201573 0.9249185 0.418699)
+14.72355,Log,Target has been spawned at: (0.0 0.0 0.3)
+30.26476,Log,Audio Clip Played
+32.82016,Log,Target has been spawned at: (0.0 0.0 0.3)

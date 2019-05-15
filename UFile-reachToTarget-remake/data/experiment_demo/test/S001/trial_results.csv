@@ -1,6 +1,6 @@
 directory,experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time
-experiment_demo/test/S001,experiment_demo,test,1,1,1,1,11.35758,12.78054
-experiment_demo/test/S001,experiment_demo,test,1,2,1,2,14.03643,52.67047
+experiment_demo/test/S001,experiment_demo,test,1,1,1,1,14.72355,30.26476
+experiment_demo/test/S001,experiment_demo,test,1,2,1,2,32.82016,58.07232
 
 
 

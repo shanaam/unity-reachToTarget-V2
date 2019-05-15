@@ -38,13 +38,16 @@ public class TargetContainerController : MonoBehaviour
         var target = Instantiate(targetPrefab, transform);
         target.transform.localPosition = new Vector3(0, 0, targetRadius);
 
-        Debug.Log("Target has been spawned");
+        Debug.Log("Target has been spawned at: " + target.transform.localPosition.ToString());
     }
 
 
     public void DestroyTargets()
     {
         GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
+        AudioSource audioSource = GameObject.FindGameObjectWithTag("Target").GetComponent<AudioSource>();
+        audioSource.Play(0);
+        Debug.Log("Audio Clip Played");
         gameObject.SetActive(false);
         for (var i = 0; i < targets.Length; i++)
         {
