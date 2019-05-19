@@ -20,11 +20,18 @@ public class ExperimentController : MonoBehaviour
     public HomeCursorController homeCursorController;
 
 
-    public void StartTrial()
+    public void StartTrial() //run when cursor is in home and some booleans are right
     {
         //Debug.LogFormat("starting trial {0}.", session.NextTrial.number);
         homeCursorController.Remove();
+
         session.BeginNextTrial();
+
+        if (session.CurrentBlock.settings.GetString("type") == "instruction")
+        {
+            // just wait
+            // think this through
+        }
 
         //Debug.LogFormat("started trial {0}.", session.CurrentTrial.number);
     }
@@ -38,12 +45,16 @@ public class ExperimentController : MonoBehaviour
         targetContainer.DestroyTargets();
         homeCursorController.Appear();
 
-        session.CurrentTrial.End();
-
-        if (session.CurrentTrial == session.LastTrial)
+        if (session.CurrentTrial.number == session.LastTrial.number)
         {
             session.End();
         }
+
+        else
+        {
+        session.CurrentTrial.End();
+        }
+
         /*
         else
         {

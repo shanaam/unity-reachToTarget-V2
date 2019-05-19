@@ -1,21 +1,38 @@
 {
         "gradual_step": 1,
-        "per_block_n": [
-            2,
-            4,
-            6,
-            4
-        ],
         "per_block_type": [
             "instruction",
             "aligned",
             "rotated",
-            "clamped"
+            "clamped",
+            "nocursor"
+        ],
+        "per_block_n": [
+            1,
+            2,
+            6,
+            2,
+            2
+        ],
+        "per_block_rotation": [
+            0,
+            0,
+            45,
+            0,
+            0
+        ],
+        "per_block_target_vertPos": [
+            0,
+            0,
+            45,
+            0,
+            0
         ],
         "per_block_targetListToUse": [
-            "tl1",
+            "t_null",
             "tl1",
             "tl2",
+            "tl1",
             "tl1"
         ],
         "tl1": [
@@ -29,6 +46,9 @@
             100,
             120,
             140
+        ],
+        "t_null": [
+            90
         ],
         "exp_version": "A"
     }

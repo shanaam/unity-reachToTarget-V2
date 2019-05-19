@@ -26,6 +26,7 @@ public class HandCursorController : MonoBehaviour
     public bool isPaused = false;
     public bool isInHomeArea = false;
     public bool targetReached = true;
+    public bool visible = true;
 
     public bool collisionHeld = false;
     private float collision_start_time;
@@ -63,18 +64,40 @@ public class HandCursorController : MonoBehaviour
     public void SetMovementType(Trial trial)
     {
         string type = trial.settings.GetString("type");
-        
-        if(type.Equals("clamped"))
+        float rotation = trial.settings.GetFloat("cursor_rotation");
+
+        // set the rotation for the trial
+        transform.parent.transform.rotation = Quaternion.Euler(0, rotation, 0);
+
+        if (type.Equals("clamped"))
         {
             movementType = new ClampedHandCursor();
             Debug.Log("MovementType set to : Clamped");
         }
+
         else
         {
             movementType = new AlignedHandCursor();
             Debug.Log("MovementType set to : Aligned");
         }
     }
+
+    public void SetCursorVisibility(Trial trial)
+    {
+        Renderer rend = GetComponent<Renderer>();
+
+        if (trial.settings.GetString("type") == "nocursor")
+        {
+            rend.enabled = false;
+            visible = false;
+        }
+        else
+        {
+            rend.enabled = true;
+            visible = true;
+        }
+    }
+
     // ALL tracking should be done in LateUpdate
     // This ensures that the real object has finished moving (in Update) before the tracking object is moved
     void LateUpdate()
@@ -86,8 +109,8 @@ public class HandCursorController : MonoBehaviour
         //Update position of the cursor based on mvmt type
         transform.localPosition = movementType.NewCursorPosition(realHandPosition, centreExpPosition);
 
-        //Do things when this thing is in the target (and paused)
-        if (isInTarget && isPaused)
+        //Do things when this thing is in the target (and paused), or far enough away during nocusor
+        if ((isPaused && !isInHomeArea && !visible) || (isPaused && isInTarget && visible))
         {
             /*
             //disable the tracker script (for the return to home position)
@@ -127,7 +150,7 @@ public class HandCursorController : MonoBehaviour
 
             // vibrate the controller
             ShortVibrateController();
-            pauseTimer();
+            PauseTimer();
         }
         else if (other.CompareTag("Home"))
         {
@@ -135,7 +158,7 @@ public class HandCursorController : MonoBehaviour
 
             // vibrate the controller
             ShortVibrateController();
-            startTimer();
+            StartTimer();
         }
 
         else if (other.CompareTag("HomeArea"))
@@ -145,6 +168,10 @@ public class HandCursorController : MonoBehaviour
             if (targetReached)
             {
                 InvokeRepeating("CheckForPause", 0, checkForPauseRate);
+            }
+            else
+            {
+                CancelInvoke("CheckForPause");
             }
 
         }
@@ -172,6 +199,10 @@ public class HandCursorController : MonoBehaviour
             {
                 InvokeRepeating("CheckForPause", 0, checkForPauseRate);
             }
+            else
+            {
+                CancelInvoke("CheckForPause");
+            }
 
         }
         
@@ -198,7 +229,6 @@ public class HandCursorController : MonoBehaviour
         
     }
     */
-
 
     public void CheckForPause()
     {
@@ -259,19 +289,21 @@ public class HandCursorController : MonoBehaviour
     }
 
     //Start timer when home Disapears, End when target disapears
-    private void startTimer()
+    private void StartTimer()
     {
+        ClearTime();
         timerStart = Time.fixedTime;
-        Debug.Log("Timer started : " + timerStart);
+        //Debug.Log("Timer started : " + timerStart);
     }
 
-    private void pauseTimer()
+    private void PauseTimer()
     {
         timerEnd = Time.fixedTime;
-        Debug.Log("Timer end : " + timerEnd);
+        //Debug.Log("Timer end : " + timerEnd);
+        Debug.LogFormat("Reach Time: {0}", timerEnd - timerStart);
     }
 
-    private void clearTime()
+    private void ClearTime()
     {
         timerStart = 0;
         timerEnd = 0;

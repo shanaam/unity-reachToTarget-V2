@@ -1,11 +1,367 @@
 timestamp,log_type,message
-0,Log,Timer started : 0
 0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
 0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
-1.966122,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-5.411007,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-6.100567,Warning,Warning: Session already exists! Continuing will overwrite
-8.484481,Log,Home Position Transformed: (0.2296608 0.9225734 0.4233253)
-8.5,Log,Timer started : 8.5
-8.702565,Log,Target has been spawned at: (0.0 0.0 0.3)
-8.702565,Log,MovementType set to : Aligned
+3.782751,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+4.546418,Warning,Warning: Session already exists! Continuing will overwrite
+15.42483,Log,Home Position Transformed: (0.3626953 0.9425852 0.4299349)
+17.85102,Log,Target has been spawned at: (0.0 0.0 0.3)
+17.85102,Log,MovementType set to : Aligned
+18.84,Log,Reach Time: 1.6
+19.32,Log,Reach Time: 2.08
+19.64029,Log,Audio Clip Played Pitch: 0.9688884
+20.74014,Log,Target has been spawned at: (0.0 0.0 0.3)
+20.74014,Log,MovementType set to : Aligned
+21.62,Log,Reach Time: 1.099998
+21.74044,Log,Audio Clip Played Pitch: 0.845481
+22.64852,Log,Target has been spawned at: (0.0 0.0 0.3)
+22.64852,Log,MovementType set to : Aligned
+23.38,Log,Reach Time: 0.8199997
+23.49513,Log,Audio Clip Played Pitch: 0.6139232
+24.62899,Log,Target has been spawned at: (0.0 0.0 0.3)
+24.62899,Log,MovementType set to : Aligned
+26.36,Log,Reach Time: 1.74
+26.36094,Log,Audio Clip Played Pitch: 1.288771
+27.53061,Log,Target has been spawned at: (0.0 0.0 0.3)
+27.53061,Log,MovementType set to : Aligned
+28.78,Log,Reach Time: 1.279999
+28.78467,Log,Audio Clip Played Pitch: 0.8996462
+29.60669,Log,Target has been spawned at: (0.0 0.0 0.3)
+29.60669,Log,MovementType set to : Aligned
+30.78,Log,Reach Time: 1.18
+30.78495,Log,Audio Clip Played Pitch: 0.5830711
+31.78509,Log,Target has been spawned at: (0.0 0.0 0.3)
+31.78509,Log,MovementType set to : Aligned
+32.82,Log,Reach Time: 1.040001
+32.83058,Log,Audio Clip Played Pitch: 0.8695985
+33.58487,Log,Target has been spawned at: (0.0 0.0 0.3)
+33.58487,Log,MovementType set to : Aligned
+35.02,Log,Reach Time: 1.440002
+35.02995,Log,Audio Clip Played Pitch: 0.928239
+36.60772,Log,Target has been spawned at: (0.0 0.0 0.3)
+36.60772,Log,MovementType set to : Aligned
+38.5,Log,Reach Time: 1.900002
+38.5081,Log,Audio Clip Played Pitch: 0.5483261
+42.36333,Log,Target has been spawned at: (0.0 0.0 0.3)
+42.36333,Log,MovementType set to : Clamped
+45.48,Log,Reach Time: 3.119999
+45.48553,Log,Audio Clip Played Pitch: 0.9928955
+46.83009,Log,Target has been spawned at: (0.0 0.0 0.3)
+46.83009,Log,MovementType set to : Clamped
+48.7,Log,Reach Time: 1.880001
+48.70751,Log,Audio Clip Played Pitch: 1.305527
+53.43005,Log,Target has been spawned at: (0.0 0.0 0.3)
+53.43005,Log,MovementType set to : Aligned
+53.82973,Log,Audio Clip Played Pitch: 1.188615
+53.84245,Log,Audio Clip Played Pitch: 0.683773
+53.85226,Log,Audio Clip Played Pitch: 1.110055
+53.86315,Log,Audio Clip Played Pitch: 1.290011
+53.87407,Log,Audio Clip Played Pitch: 1.480115
+53.88531,Log,Audio Clip Played Pitch: 1.322951
+53.89638,Log,Audio Clip Played Pitch: 0.8358947
+53.90745,Log,Audio Clip Played Pitch: 1.007112
+53.91866,Log,Audio Clip Played Pitch: 1.113302
+53.93031,Log,Audio Clip Played Pitch: 1.072198
+53.94102,Log,Audio Clip Played Pitch: 1.315405
+53.95202,Log,Audio Clip Played Pitch: 0.9400345
+53.96309,Log,Audio Clip Played Pitch: 0.5700352
+53.97445,Log,Audio Clip Played Pitch: 0.9113039
+53.98523,Log,Audio Clip Played Pitch: 1.081597
+53.99654,Log,Audio Clip Played Pitch: 1.230398
+54.00861,Log,Audio Clip Played Pitch: 0.8429354
+54.01896,Log,Audio Clip Played Pitch: 0.527593
+54.02983,Log,Audio Clip Played Pitch: 1.363621
+54.04064,Log,Audio Clip Played Pitch: 1.439122
+54.05203,Log,Audio Clip Played Pitch: 0.7707072
+54.0631,Log,Audio Clip Played Pitch: 1.06349
+54.07395,Log,Audio Clip Played Pitch: 0.6762036
+54.08632,Log,Audio Clip Played Pitch: 0.9835802
+54.09639,Log,Audio Clip Played Pitch: 1.234588
+54.10753,Log,Audio Clip Played Pitch: 0.7221955
+54.11869,Log,Audio Clip Played Pitch: 1.384335
+54.12988,Log,Audio Clip Played Pitch: 1.183106
+54.14133,Log,Audio Clip Played Pitch: 1.256345
+54.15181,Log,Audio Clip Played Pitch: 0.9926564
+54.16352,Log,Audio Clip Played Pitch: 1.455659
+54.17426,Log,Audio Clip Played Pitch: 0.632585
+54.18532,Log,Audio Clip Played Pitch: 1.139761
+54.19688,Log,Audio Clip Played Pitch: 1.377243
+54.20768,Log,Audio Clip Played Pitch: 1.306793
+54.21883,Log,Audio Clip Played Pitch: 0.8601762
+54.22976,Log,Audio Clip Played Pitch: 0.8228891
+54.24137,Log,Audio Clip Played Pitch: 0.9314505
+54.25238,Log,Audio Clip Played Pitch: 0.6934125
+54.26313,Log,Audio Clip Played Pitch: 1.224067
+54.27436,Log,Audio Clip Played Pitch: 0.7423915
+54.28569,Log,Audio Clip Played Pitch: 1.487354
+54.2965,Log,Audio Clip Played Pitch: 1.279601
+54.3078,Log,Audio Clip Played Pitch: 1.227031
+54.31878,Log,Audio Clip Played Pitch: 0.8775636
+54.32991,Log,Audio Clip Played Pitch: 0.6775024
+54.34113,Log,Audio Clip Played Pitch: 0.5864394
+54.35227,Log,Audio Clip Played Pitch: 1.443452
+54.36341,Log,Audio Clip Played Pitch: 0.6337302
+54.37436,Log,Audio Clip Played Pitch: 1.23723
+54.38567,Log,Audio Clip Played Pitch: 0.6272076
+54.39777,Log,Audio Clip Played Pitch: 1.474804
+54.40783,Log,Audio Clip Played Pitch: 0.7982686
+54.41912,Log,Audio Clip Played Pitch: 1.121861
+54.43001,Log,Audio Clip Played Pitch: 1.380493
+54.44109,Log,Audio Clip Played Pitch: 0.9677216
+54.45226,Log,Audio Clip Played Pitch: 0.6991551
+54.46332,Log,Audio Clip Played Pitch: 1.256416
+54.47504,Log,Audio Clip Played Pitch: 1.288366
+54.48563,Log,Audio Clip Played Pitch: 0.6878698
+54.49676,Log,Audio Clip Played Pitch: 0.8113915
+54.50809,Log,Audio Clip Played Pitch: 0.857354
+54.51883,Log,Audio Clip Played Pitch: 0.8829139
+54.53012,Log,Audio Clip Played Pitch: 0.8284817
+54.54124,Log,Audio Clip Played Pitch: 0.5371966
+54.55251,Log,Audio Clip Played Pitch: 0.9650384
+54.56373,Log,Audio Clip Played Pitch: 0.938594
+54.57462,Log,Audio Clip Played Pitch: 1.221179
+54.58574,Log,Audio Clip Played Pitch: 1.499922
+54.59673,Log,Audio Clip Played Pitch: 1.00707
+54.60774,Log,Audio Clip Played Pitch: 1.286142
+54.61911,Log,Audio Clip Played Pitch: 1.427905
+54.63014,Log,Audio Clip Played Pitch: 1.474132
+54.64158,Log,Audio Clip Played Pitch: 1.131514
+54.65224,Log,Audio Clip Played Pitch: 1.061249
+54.6638,Log,Audio Clip Played Pitch: 1.109192
+54.6749,Log,Audio Clip Played Pitch: 0.8668593
+54.68567,Log,Audio Clip Played Pitch: 1.459767
+54.6971,Log,Audio Clip Played Pitch: 1.344489
+54.70823,Log,Audio Clip Played Pitch: 0.6788425
+54.71897,Log,Audio Clip Played Pitch: 1.40555
+54.73087,Log,Audio Clip Played Pitch: 0.817026
+54.74109,Log,Audio Clip Played Pitch: 0.9484583
+54.75256,Log,Audio Clip Played Pitch: 0.5097066
+54.7634,Log,Audio Clip Played Pitch: 1.469366
+54.77486,Log,Audio Clip Played Pitch: 0.5618557
+54.78611,Log,Audio Clip Played Pitch: 1.036453
+54.79692,Log,Audio Clip Played Pitch: 0.9486016
+54.80809,Log,Audio Clip Played Pitch: 1.060483
+54.81974,Log,Audio Clip Played Pitch: 0.7039801
+54.83032,Log,Audio Clip Played Pitch: 1.193463
+54.84178,Log,Audio Clip Played Pitch: 0.5700402
+54.85253,Log,Audio Clip Played Pitch: 1.016725
+54.86391,Log,Audio Clip Played Pitch: 0.9602188
+54.87446,Log,Audio Clip Played Pitch: 0.9400326
+54.88595,Log,Audio Clip Played Pitch: 1.493641
+54.89711,Log,Audio Clip Played Pitch: 1.235264
+54.90788,Log,Audio Clip Played Pitch: 0.7505085
+54.9191,Log,Audio Clip Played Pitch: 1.219289
+54.93036,Log,Audio Clip Played Pitch: 1.005974
+54.94123,Log,Audio Clip Played Pitch: 0.7736174
+54.95279,Log,Audio Clip Played Pitch: 0.7883119
+54.96358,Log,Audio Clip Played Pitch: 1.28213
+54.97497,Log,Audio Clip Played Pitch: 1.141382
+54.98566,Log,Audio Clip Played Pitch: 1.481844
+54.99686,Log,Audio Clip Played Pitch: 1.222589
+55.00883,Log,Audio Clip Played Pitch: 1.429572
+55.01945,Log,Audio Clip Played Pitch: 0.6419092
+55.03032,Log,Audio Clip Played Pitch: 0.8241693
+55.04148,Log,Audio Clip Played Pitch: 0.5412829
+55.05267,Log,Audio Clip Played Pitch: 1.375031
+55.06393,Log,Audio Clip Played Pitch: 0.5495427
+55.07449,Log,Audio Clip Played Pitch: 0.7220185
+55.08631,Log,Audio Clip Played Pitch: 1.253201
+55.09682,Log,Audio Clip Played Pitch: 1.372997
+55.10812,Log,Audio Clip Played Pitch: 0.7740876
+55.11982,Log,Audio Clip Played Pitch: 0.5621852
+55.13025,Log,Audio Clip Played Pitch: 0.7429605
+55.14154,Log,Audio Clip Played Pitch: 0.9101206
+55.15232,Log,Audio Clip Played Pitch: 0.7468439
+55.16404,Log,Audio Clip Played Pitch: 1.126269
+55.175,Log,Audio Clip Played Pitch: 0.6938442
+55.18575,Log,Audio Clip Played Pitch: 0.8304078
+55.1969,Log,Audio Clip Played Pitch: 1.473827
+55.20802,Log,Audio Clip Played Pitch: 1.418881
+55.21924,Log,Audio Clip Played Pitch: 1.228332
+55.23055,Log,Audio Clip Played Pitch: 0.5852907
+55.24128,Log,Audio Clip Played Pitch: 1.166331
+55.25253,Log,Audio Clip Played Pitch: 0.5178132
+55.26361,Log,Audio Clip Played Pitch: 1.184317
+55.27483,Log,Audio Clip Played Pitch: 1.201482
+55.28606,Log,Audio Clip Played Pitch: 1.255557
+55.29688,Log,Audio Clip Played Pitch: 0.6638217
+55.30828,Log,Audio Clip Played Pitch: 1.221755
+55.3193,Log,Audio Clip Played Pitch: 1.176631
+55.3308,Log,Audio Clip Played Pitch: 1.388884
+55.34185,Log,Audio Clip Played Pitch: 0.9618906
+55.35292,Log,Audio Clip Played Pitch: 0.5975618
+55.36398,Log,Audio Clip Played Pitch: 0.8256364
+55.37492,Log,Audio Clip Played Pitch: 0.6211631
+55.38585,Log,Audio Clip Played Pitch: 1.293186
+55.39801,Log,Audio Clip Played Pitch: 1.295577
+55.40805,Log,Audio Clip Played Pitch: 1.180474
+55.41925,Log,Audio Clip Played Pitch: 1.40344
+55.43049,Log,Audio Clip Played Pitch: 1.368026
+55.44147,Log,Audio Clip Played Pitch: 0.5742966
+55.4529,Log,Audio Clip Played Pitch: 1.051195
+55.4634,Log,Audio Clip Played Pitch: 1.250963
+55.4756,Log,Audio Clip Played Pitch: 0.9566783
+55.48604,Log,Audio Clip Played Pitch: 1.164142
+55.49689,Log,Audio Clip Played Pitch: 0.7747433
+55.50839,Log,Audio Clip Played Pitch: 0.7325881
+55.5192,Log,Audio Clip Played Pitch: 0.7175307
+55.5306,Log,Audio Clip Played Pitch: 1.096212
+55.54142,Log,Audio Clip Played Pitch: 1.021675
+55.55266,Log,Audio Clip Played Pitch: 1.204448
+55.56375,Log,Audio Clip Played Pitch: 0.5059659
+55.5747,Log,Audio Clip Played Pitch: 1.269819
+55.58614,Log,Audio Clip Played Pitch: 0.9204913
+55.59721,Log,Audio Clip Played Pitch: 1.443457
+55.60855,Log,Audio Clip Played Pitch: 1.440691
+55.61967,Log,Audio Clip Played Pitch: 1.402608
+55.63047,Log,Audio Clip Played Pitch: 1.368357
+55.64208,Log,Audio Clip Played Pitch: 0.6816183
+55.65258,Log,Audio Clip Played Pitch: 0.8514205
+55.66386,Log,Audio Clip Played Pitch: 1.250906
+55.67509,Log,Audio Clip Played Pitch: 0.7417456
+55.68615,Log,Audio Clip Played Pitch: 0.5708145
+55.69747,Log,Audio Clip Played Pitch: 1.221496
+55.70816,Log,Audio Clip Played Pitch: 1.369669
+55.7192,Log,Audio Clip Played Pitch: 0.6800947
+55.73065,Log,Audio Clip Played Pitch: 0.8907975
+55.74156,Log,Audio Clip Played Pitch: 0.5615339
+55.75278,Log,Audio Clip Played Pitch: 1.26706
+55.76386,Log,Audio Clip Played Pitch: 0.9342269
+55.77481,Log,Audio Clip Played Pitch: 0.56006
+55.78618,Log,Audio Clip Played Pitch: 0.7816967
+55.7972,Log,Audio Clip Played Pitch: 0.9234809
+55.80816,Log,Audio Clip Played Pitch: 0.8270345
+55.81969,Log,Audio Clip Played Pitch: 0.6021779
+55.83055,Log,Audio Clip Played Pitch: 1.037362
+55.84185,Log,Audio Clip Played Pitch: 1.184533
+55.8528,Log,Audio Clip Played Pitch: 1.368698
+55.86391,Log,Audio Clip Played Pitch: 0.9164873
+55.87496,Log,Audio Clip Played Pitch: 0.6509376
+55.88609,Log,Audio Clip Played Pitch: 0.5765011
+55.89789,Log,Audio Clip Played Pitch: 1.308697
+55.90825,Log,Audio Clip Played Pitch: 0.5134369
+55.91935,Log,Audio Clip Played Pitch: 0.793765
+55.93053,Log,Audio Clip Played Pitch: 0.854241
+55.9415,Log,Audio Clip Played Pitch: 1.439562
+55.95293,Log,Audio Clip Played Pitch: 0.5807921
+55.96368,Log,Audio Clip Played Pitch: 1.184115
+55.97523,Log,Audio Clip Played Pitch: 1.480039
+55.98608,Log,Audio Clip Played Pitch: 0.7560372
+55.99725,Log,Audio Clip Played Pitch: 0.571275
+56.00849,Log,Audio Clip Played Pitch: 0.5700353
+56.01941,Log,Audio Clip Played Pitch: 1.079398
+56.03052,Log,Audio Clip Played Pitch: 0.7534395
+56.04166,Log,Audio Clip Played Pitch: 1.307021
+56.05268,Log,Audio Clip Played Pitch: 0.9637905
+56.06374,Log,Audio Clip Played Pitch: 1.452132
+56.0748,Log,Audio Clip Played Pitch: 0.8730046
+56.086,Log,Audio Clip Played Pitch: 1.151758
+56.09716,Log,Audio Clip Played Pitch: 1.442045
+56.10846,Log,Audio Clip Played Pitch: 1.127787
+56.1195,Log,Audio Clip Played Pitch: 1.264443
+56.13048,Log,Audio Clip Played Pitch: 0.7547278
+56.14162,Log,Audio Clip Played Pitch: 0.8688327
+56.15327,Log,Audio Clip Played Pitch: 0.7024683
+56.16547,Log,Audio Clip Played Pitch: 1.313516
+56.17788,Log,Audio Clip Played Pitch: 0.9652911
+56.18983,Log,Audio Clip Played Pitch: 0.8944527
+56.20069,Log,Audio Clip Played Pitch: 1.461251
+56.21172,Log,Audio Clip Played Pitch: 1.109815
+56.22364,Log,Audio Clip Played Pitch: 1.360228
+56.2362,Log,Audio Clip Played Pitch: 0.7482811
+56.27151,Log,Audio Clip Played Pitch: 1.174621
+56.28035,Log,Audio Clip Played Pitch: 1.411006
+56.30103,Log,Audio Clip Played Pitch: 0.9102572
+56.31209,Log,Audio Clip Played Pitch: 1.011802
+56.32375,Log,Audio Clip Played Pitch: 0.7767549
+56.33549,Log,Audio Clip Played Pitch: 1.465464
+56.34717,Log,Audio Clip Played Pitch: 1.178673
+56.37051,Log,Audio Clip Played Pitch: 1.488015
+56.38184,Log,Audio Clip Played Pitch: 0.815612
+56.42688,Log,Audio Clip Played Pitch: 1.160228
+56.43841,Log,Audio Clip Played Pitch: 0.9407388
+56.44944,Log,Audio Clip Played Pitch: 0.5744237
+56.46096,Log,Audio Clip Played Pitch: 1.215993
+56.47184,Log,Audio Clip Played Pitch: 0.5794156
+56.48301,Log,Audio Clip Played Pitch: 1.243166
+56.52778,Log,Audio Clip Played Pitch: 0.7906526
+56.53885,Log,Audio Clip Played Pitch: 1.13481
+56.55022,Log,Audio Clip Played Pitch: 0.6283374
+56.56105,Log,Audio Clip Played Pitch: 1.023168
+56.57274,Log,Audio Clip Played Pitch: 1.223461
+56.58352,Log,Audio Clip Played Pitch: 0.9733289
+56.59463,Log,Audio Clip Played Pitch: 1.347455
+56.60571,Log,Audio Clip Played Pitch: 0.7814991
+56.61703,Log,Audio Clip Played Pitch: 1.390613
+56.62814,Log,Audio Clip Played Pitch: 0.7206339
+56.63936,Log,Audio Clip Played Pitch: 1.435034
+56.65041,Log,Audio Clip Played Pitch: 0.8637425
+56.66146,Log,Audio Clip Played Pitch: 1.338108
+56.6735,Log,Audio Clip Played Pitch: 1.233171
+56.68359,Log,Audio Clip Played Pitch: 0.5354716
+56.69482,Log,Audio Clip Played Pitch: 1.376309
+56.7057,Log,Audio Clip Played Pitch: 1.310662
+56.71685,Log,Audio Clip Played Pitch: 1.072505
+56.72806,Log,Audio Clip Played Pitch: 0.9155351
+56.73909,Log,Audio Clip Played Pitch: 0.9937481
+56.75008,Log,Audio Clip Played Pitch: 0.6250659
+56.76146,Log,Audio Clip Played Pitch: 1.398304
+56.77297,Log,Audio Clip Played Pitch: 0.6987213
+56.78353,Log,Audio Clip Played Pitch: 0.7417697
+56.79484,Log,Audio Clip Played Pitch: 0.6342134
+56.80659,Log,Audio Clip Played Pitch: 0.8941876
+56.81717,Log,Audio Clip Played Pitch: 1.206159
+56.82821,Log,Audio Clip Played Pitch: 1.058127
+56.83936,Log,Audio Clip Played Pitch: 1.194459
+56.85073,Log,Audio Clip Played Pitch: 0.9410466
+56.86201,Log,Audio Clip Played Pitch: 1.01964
+56.87272,Log,Audio Clip Played Pitch: 1.017436
+56.88423,Log,Audio Clip Played Pitch: 1.292149
+56.89496,Log,Audio Clip Played Pitch: 1.130676
+56.90614,Log,Audio Clip Played Pitch: 1.114018
+56.91745,Log,Audio Clip Played Pitch: 1.140111
+56.92877,Log,Audio Clip Played Pitch: 1.498603
+56.93955,Log,Audio Clip Played Pitch: 0.5055159
+56.9504,Log,Audio Clip Played Pitch: 1.235566
+56.96157,Log,Audio Clip Played Pitch: 1.217248
+56.97312,Log,Audio Clip Played Pitch: 0.5918311
+56.98373,Log,Audio Clip Played Pitch: 0.5873005
+56.99498,Log,Audio Clip Played Pitch: 1.357091
+57.00601,Log,Audio Clip Played Pitch: 1.023404
+57.01725,Log,Audio Clip Played Pitch: 1.483045
+57.02868,Log,Audio Clip Played Pitch: 0.6074681
+57.03985,Log,Audio Clip Played Pitch: 1.280418
+57.05087,Log,Audio Clip Played Pitch: 0.5363163
+57.06189,Log,Audio Clip Played Pitch: 1.104707
+57.07275,Log,Audio Clip Played Pitch: 1.03999
+57.08469,Log,Audio Clip Played Pitch: 1.139557
+57.09533,Log,Audio Clip Played Pitch: 1.244759
+57.10637,Log,Audio Clip Played Pitch: 1.0709
+57.1175,Log,Audio Clip Played Pitch: 1.177554
+57.12871,Log,Audio Clip Played Pitch: 0.9820768
+57.14012,Log,Audio Clip Played Pitch: 1.128477
+57.15088,Log,Audio Clip Played Pitch: 1.022204
+57.16234,Log,Audio Clip Played Pitch: 1.147412
+57.1731,Log,Audio Clip Played Pitch: 1.202327
+57.18412,Log,Audio Clip Played Pitch: 1.315141
+57.19588,Log,Audio Clip Played Pitch: 0.8749934
+57.20641,Log,Audio Clip Played Pitch: 0.759996
+57.21765,Log,Audio Clip Played Pitch: 0.8986572
+57.22858,Log,Audio Clip Played Pitch: 1.321632
+57.23995,Log,Audio Clip Played Pitch: 0.9598206
+57.25116,Log,Audio Clip Played Pitch: 1.499504
+57.26214,Log,Audio Clip Played Pitch: 1.206768
+57.27332,Log,Audio Clip Played Pitch: 0.6458793
+57.2844,Log,Audio Clip Played Pitch: 0.6733757
+57.32893,Log,Audio Clip Played Pitch: 0.5053629
+57.33969,Log,Audio Clip Played Pitch: 1.422854
+57.3516,Log,Audio Clip Played Pitch: 0.8485311
+57.36209,Log,Audio Clip Played Pitch: 1.213279
+57.37337,Log,Audio Clip Played Pitch: 1.365635
+57.38453,Log,Audio Clip Played Pitch: 1.402642
+57.3955,Log,Audio Clip Played Pitch: 0.8558239
+57.40657,Log,Audio Clip Played Pitch: 1.141488
+57.4181,Log,Audio Clip Played Pitch: 1.38851
+57.42955,Log,Audio Clip Played Pitch: 1.3142
+57.62897,Log,Target has been spawned at: (0.0 0.0 0.3)
+57.62897,Log,MovementType set to : Aligned
+58.17345,Log,Audio Clip Played Pitch: 1.212936

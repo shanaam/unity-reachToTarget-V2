@@ -27,22 +27,20 @@ public class ExperimentSetup : MonoBehaviour
         List<string> per_block_type = session.settings.GetStringList("per_block_type");
         List<string> per_block_targetListToUse = session.settings.GetStringList("per_block_targetListToUse");
         List<float> per_block_rotation = session.settings.GetFloatList("per_block_rotation");
+        List<float> per_block_target_vertPos = session.settings.GetFloatList("per_block_target_vertPos");
+
         
 
-        for(int i=0; i < per_block_n.Count; i++)
+        for (int i=0; i < per_block_n.Count; i++)
         {
             session.CreateBlock(per_block_n[i]);
             session.blocks[i].settings.SetValue("type", per_block_type[i]);
             session.blocks[i].settings.SetValue("targetListToUse", per_block_targetListToUse[i]);
-            
-        }
-        
-    }
-    
+            session.blocks[i].settings.SetValue("cursor_rotation", per_block_rotation[i]);
+            session.blocks[i].settings.SetValue("target_vertPos", per_block_target_vertPos[i]);
 
-    public void TestExperiment(Trial trial)
-    {
-        Debug.LogFormat("targetYOffset in Controller set to {0}", trial.settings.GetObject("type"));
+        }
+
     }
 
 }

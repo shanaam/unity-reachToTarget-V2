@@ -41,7 +41,9 @@ public class TargetContainerController : MonoBehaviour
 
         Debug.Log("Target has been spawned at: " + target.transform.localPosition.ToString());
     }
-    public void playDestroyNoise()
+
+
+    public void PlayDestroyNoise()
     {
         audioSource.Play();
         float pitch = Random.Range(0.5f, 1.5f);
@@ -49,12 +51,13 @@ public class TargetContainerController : MonoBehaviour
         Debug.Log("Audio Clip Played, Pitch: " + pitch);
     }
 
+
     public void DestroyTargets()
     {
         GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
         if (soundActive)
         {
-            playDestroyNoise();
+            PlayDestroyNoise();
         }
         //gameObject.SetActive(false);
         for (var i = 0; i < targets.Length; i++)
@@ -63,15 +66,18 @@ public class TargetContainerController : MonoBehaviour
         }
     }
 
+
     void SetTargetAngle(Trial trial)
     {
         float targetLocation = trial.settings.GetFloat("targetAngle"); // set this at trial start
+        float targetVPos = trial.settings.GetFloat("target_vertPos");
         //rotate this thing 
-        transform.rotation = Quaternion.Euler(0, targetLocation - 90, 0);
+        transform.rotation = Quaternion.Euler(targetVPos * -1, targetLocation - 90, 0); //the Y here is WRONG! 
     }
 
+
     // run at start of every trial
-    public void DetermineTrialAngle(Trial trial)
+    public void DetermineTrialTargetAngle(Trial trial)
     {
 
         //Pseudorandom target location
