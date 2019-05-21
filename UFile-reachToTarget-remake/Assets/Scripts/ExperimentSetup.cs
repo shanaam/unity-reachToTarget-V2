@@ -28,8 +28,9 @@ public class ExperimentSetup : MonoBehaviour
         List<string> per_block_targetListToUse = session.settings.GetStringList("per_block_targetListToUse");
         List<float> per_block_rotation = session.settings.GetFloatList("per_block_rotation");
         List<float> per_block_target_vertPos = session.settings.GetFloatList("per_block_target_vertPos");
+        List<string> per_block_plane = session.settings.GetStringList("per_block_plane");
 
-        
+
 
         for (int i=0; i < per_block_n.Count; i++)
         {
@@ -38,7 +39,7 @@ public class ExperimentSetup : MonoBehaviour
             session.blocks[i].settings.SetValue("targetListToUse", per_block_targetListToUse[i]);
             session.blocks[i].settings.SetValue("cursor_rotation", per_block_rotation[i]);
             session.blocks[i].settings.SetValue("target_vertPos", per_block_target_vertPos[i]);
-
+            session.blocks[i].settings.SetValue("plane_setting", per_block_plane[i]);
         }
 
     }

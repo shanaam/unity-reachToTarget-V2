@@ -14,6 +14,7 @@ public class HandCursorController : MonoBehaviour
 {
     //link to the actual hand position object
     public GameObject realHand;
+    public GameObject trackerHolderObject;
     public TargetContainerController targetContainerController;
     public Session session;
     
@@ -28,13 +29,15 @@ public class HandCursorController : MonoBehaviour
     public bool targetReached = true;
     public bool visible = true;
 
-    public bool collisionHeld = false;
-    private float collision_start_time;
+    //public bool collisionHeld = false;
+    //private float collision_start_time;
 
     public CursorMovementType movementType;
 
-    public float timerStart;
-    public float timerEnd;
+    // for the timer
+    private float timerStart;
+    private float timerEnd;
+    private float reachTime;
 
     //variables used for checking pause
     List<float> distanceFromLastList = new List<float>();
@@ -72,13 +75,13 @@ public class HandCursorController : MonoBehaviour
         if (type.Equals("clamped"))
         {
             movementType = new ClampedHandCursor();
-            Debug.Log("MovementType set to : Clamped");
+            //Debug.Log("MovementType set to : Clamped");
         }
 
         else
         {
             movementType = new AlignedHandCursor();
-            Debug.Log("MovementType set to : Aligned");
+            //Debug.Log("MovementType set to : Aligned");
         }
     }
 
@@ -110,21 +113,34 @@ public class HandCursorController : MonoBehaviour
         transform.localPosition = movementType.NewCursorPosition(realHandPosition, centreExpPosition);
 
         //Do things when this thing is in the target (and paused), or far enough away during nocusor
-        if ((isPaused && !isInHomeArea && !visible) || (isPaused && isInTarget && visible))
+        if ((!visible && isPaused && !isInHomeArea && !targetReached) ^ (visible && isPaused && isInTarget)) //^ is exclusive OR
         {
-            /*
-            //disable the tracker script (for the return to home position)
-            trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = false;
 
+            ////disable the tracker script (for the return to home position)
+            //trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = false;
+
+            /*
             isPaused = false;
             CancelInvoke("CheckForPause");
             */
 
-            targetReached = true;
-            
             //End and prepare
+            PauseTimer();
+
+            reachTime = timerEnd - timerStart; // set the public variable
+            if (reachTime < 1.5f)
+            {
+                targetContainerController.soundActive = true;
+            }
+            else
+            {
+                targetContainerController.soundActive = false;
+
+            }
+
             experimentController.EndAndPrepare();
 
+            targetReached = true;
             isInTarget = false;
         }
 
@@ -132,6 +148,7 @@ public class HandCursorController : MonoBehaviour
         else if (isInHome && isPaused && targetReached)
         {
             targetReached = false;
+            StartTimer();
             experimentController.StartTrial();
         }
 
@@ -143,14 +160,13 @@ public class HandCursorController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //collision_start_time = Time.time; 
+
         if (other.CompareTag("Target"))
         {
             isInTarget = true;
 
             // vibrate the controller
             ShortVibrateController();
-            PauseTimer();
         }
         else if (other.CompareTag("Home"))
         {
@@ -158,7 +174,6 @@ public class HandCursorController : MonoBehaviour
 
             // vibrate the controller
             ShortVibrateController();
-            StartTimer();
         }
 
         else if (other.CompareTag("HomeArea"))
@@ -208,27 +223,6 @@ public class HandCursorController : MonoBehaviour
         
     }
 
-
-    /*
-    private void OnTriggerStay(Collider other)
-    {
-        float delta = Time.time - collision_start_time;
-        if(delta >= 0.2f)// if the collision is held for longer than 0.2 seconds
-        {
-            if (isInTarget)
-            {
-                Debug.Log("Collision Held for " + delta + " seconds");
-                collisionHeld = true; //Then the collision was deliberate by the user and held on the location
-            }
-            else if (isInHome)
-            {
-
-            }
-                
-        }
-        
-    }
-    */
 
     public void CheckForPause()
     {
@@ -310,5 +304,26 @@ public class HandCursorController : MonoBehaviour
     }
 
 
+
+    /*
+    private void OnTriggerStay(Collider other)
+    {
+        float delta = Time.time - collision_start_time;
+        if(delta >= 0.2f)// if the collision is held for longer than 0.2 seconds
+        {
+            if (isInTarget)
+            {
+                Debug.Log("Collision Held for " + delta + " seconds");
+                collisionHeld = true; //Then the collision was deliberate by the user and held on the location
+            }
+            else if (isInHome)
+            {
+
+            }
+                
+        }
+        
+    }
+    */
 
 }

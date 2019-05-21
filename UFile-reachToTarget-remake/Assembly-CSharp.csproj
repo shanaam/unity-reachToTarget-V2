@@ -155,6 +155,7 @@
     <Compile Include="Assets\Scripts\ExperimentSetup.cs" />
     <Compile Include="Assets\Scripts\HandCursorController.cs" />
     <Compile Include="Assets\Scripts\HomeCursorController.cs" />
+    <Compile Include="Assets\Scripts\PlaneController.cs" />
     <Compile Include="Assets\Scripts\rotatorObjectController.cs" />
     <Compile Include="Assets\Scripts\TargetContainerController.cs" />
     <Compile Include="Assets\UXF\Examples\Advanced\Scripts\CursorFollower.cs" />

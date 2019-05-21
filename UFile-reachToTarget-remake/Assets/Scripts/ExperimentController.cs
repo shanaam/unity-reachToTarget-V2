@@ -16,8 +16,10 @@ public class ExperimentController : MonoBehaviour
     public TextMeshPro Instruction; //Text
     public GameObject handCursor;
     public GameObject homeCursor;
-    public TargetContainerController targetContainer;
+    public TargetContainerController targetContainerController;
     public HomeCursorController homeCursorController;
+    public GameObject trackerHolderObject;
+    public PlaneController planeController;
 
 
     public void StartTrial() //run when cursor is in home and some booleans are right
@@ -25,24 +27,43 @@ public class ExperimentController : MonoBehaviour
         //Debug.LogFormat("starting trial {0}.", session.NextTrial.number);
         homeCursorController.Remove();
 
-        session.BeginNextTrial();
+        ////enable the tracker script (to track the reach)
+        //trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = true;
 
-        if (session.CurrentBlock.settings.GetString("type") == "instruction")
-        {
-            // just wait
-            // think this through
-        }
+        session.BeginNextTrial();
 
         //Debug.LogFormat("started trial {0}.", session.CurrentTrial.number);
     }
 
+    public void BeginTrialSteps(Trial trial)
+    {
+        if (trial.settings.GetString("type") == "instruction")
+        {
+            // jsut wait? for a keypress?
+            planeController.SetTilt(trial); // this spawns a target.. bad
+        }
+        
+        else
+        {
+            // do the plane thing at the start of each block 
+            if (trial.numberInBlock == 1)
+            {
+                planeController.SetTilt(trial);
+            }
+            else
+            {
+                targetContainerController.SpawnTarget(trial);
+            }
+        }
+
+    }
     // end session or begin next trial (This should ideally be called via event system)
     // destroys the the current target and starts next trial
     public void EndAndPrepare()
     {
         //Debug.Log("ending reach trial...");
         // destroy the target, spawn home?
-        targetContainer.DestroyTargets();
+        targetContainerController.DestroyTargets();
         homeCursorController.Appear();
 
         if (session.CurrentTrial.number == session.LastTrial.number)

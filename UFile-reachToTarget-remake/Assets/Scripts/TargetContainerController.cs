@@ -19,7 +19,7 @@ public class TargetContainerController : MonoBehaviour
     public AudioSource audioSource;
     public Session session;
     public ExperimentController experimentController;
-    public bool soundActive;
+    public bool soundActive = true;
 
     List<float> shuffledTargetList = new List<float>();
 
