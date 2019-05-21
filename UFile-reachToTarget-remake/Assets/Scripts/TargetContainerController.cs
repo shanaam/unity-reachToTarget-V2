@@ -15,7 +15,7 @@ using UXF;
 public class TargetContainerController : MonoBehaviour
 {
     public GameObject targetPrefab;
-    public float targetRadius = 0.10f;
+    readonly float targetRadius = 0.12f;
     public AudioSource audioSource;
     public Session session;
     public ExperimentController experimentController;

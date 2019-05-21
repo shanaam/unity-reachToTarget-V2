@@ -1,0 +1,33 @@
+timestamp,log_type,message
+0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
+13.99845,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+27.82236,Log,Home Position Transformed: (0.2220843 0.9306871 0.4224068)
+31.1703,Log,running end and prepare
+31.1703,Log,Audio Clip Played Pitch: 1.155031
+31.1703,Log,Target has been spawned at: (0.0 0.0 0.1)
+40.90387,Log,Reach Time: 9.739998
+41.89281,Log,Target has been spawned at: (0.0 0.0 0.1)
+43.32602,Log,Reach Time: 1.440002
+43.32602,Log,Audio Clip Played Pitch: 1.311294
+44.37039,Log,Target has been spawned at: (0.0 0.0 0.1)
+45.98178,Log,Reach Time: 1.860001
+46.70382,Log,Target has been spawned at: (0.0 0.0 0.1)
+48.00391,Log,Reach Time: 1.299999
+48.00391,Log,Audio Clip Played Pitch: 0.8617431
+49.02642,Log,Target has been spawned at: (0.0 0.0 0.1)
+53.50405,Log,Reach Time: 4.48
+54.40375,Log,Target has been spawned at: (0.0 0.0 0.1)
+55.92619,Log,Reach Time: 1.52
+56.87048,Log,Target has been spawned at: (0.0 0.0 0.1)
+59.20383,Log,Reach Time: 2.339996
+60.42621,Log,Target has been spawned at: (0.0 0.0 0.1)
+62.00425,Log,Reach Time: 1.580002
+80.57619,Log,Home Position Transformed: (0.223961 0.9293344 0.4239376)
+81.51034,Log,running end and prepare
+81.51034,Log,setting to flat. current r_x: 340
+81.76351,Log,Target has been spawned at: (0.0 0.0 0.1)
+88.34847,Log,Reach Time: 6.839996
+89.34852,Log,Target has been spawned at: (0.0 0.0 0.1)
+90.47086,Log,Reach Time: 1.120003
+90.47086,Log,Audio Clip Played Pitch: 0.555025

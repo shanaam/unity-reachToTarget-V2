@@ -1,15 +1,37 @@
 timestamp,log_type,message
 0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
 0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
-5.180821,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-6.093381,Warning,Warning: Session already exists! Continuing will overwrite
-12.24229,Log,Target has been spawned at: (0.0 0.0 0.3)
-13.4212,Log,Reach Time: 1.18
-13.4212,Log,Audio Clip Played Pitch: 1.251805
-14.41032,Log,Target has been spawned at: (0.0 0.0 0.3)
-15.41699,Log,Reach Time: 1
-15.41699,Log,Audio Clip Played Pitch: 1.255095
-16.36301,Log,Target has been spawned at: (0.0 0.0 0.3)
-17.164,Log,Reach Time: 0.8000011
-17.164,Log,Audio Clip Played Pitch: 0.7666509
-18.1968,Log,Target has been spawned at: (0.0 0.0 0.3)
+4.872911,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+5.71691,Warning,Warning: Session already exists! Continuing will overwrite
+26.65014,Log,Home Position Transformed: (0.2592036 0.9401479 0.4322386)
+27.46445,Log,running end and prepare
+27.46445,Log,Audio Clip Played Pitch: 0.7699865
+27.46445,Log,Target has been spawned at: (0.0 0.0 0.1)
+32.3745,Log,Home Position Transformed: (0.2593463 0.9397261 0.4321879)
+42.14621,Log,Reach Time: 14.68
+43.6014,Log,Target has been spawned at: (0.0 0.0 0.1)
+44.56793,Log,Reach Time: 0.9599991
+44.56793,Log,Audio Clip Played Pitch: 1.226435
+46.29026,Log,Target has been spawned at: (0.0 0.0 0.1)
+47.66798,Log,Reach Time: 1.620003
+49.56809,Log,Target has been spawned at: (0.0 0.0 0.1)
+50.99043,Log,Reach Time: 1.420002
+50.99043,Log,Audio Clip Played Pitch: 1.103938
+53.49047,Log,Target has been spawned at: (0.0 0.0 0.1)
+55.44588,Log,Reach Time: 1.959999
+57.49057,Log,Target has been spawned at: (0.0 0.0 0.1)
+58.86818,Log,Reach Time: 1.379997
+58.86818,Log,Audio Clip Played Pitch: 0.6750692
+60.09039,Log,Target has been spawned at: (0.0 0.0 0.1)
+62.1016,Log,Reach Time: 2.02
+62.96816,Log,Target has been spawned at: (0.0 0.0 0.1)
+64.24609,Log,Reach Time: 1.279999
+64.24609,Log,Audio Clip Played Pitch: 0.5544655
+73.48215,Log,Home Position Transformed: (0.2599216 0.9449019 0.4328957)
+74.02631,Log,running end and prepare
+74.02631,Log,Audio Clip Played Pitch: 1.231036
+74.02631,Log,setting to flat. current r_x: 340
+74.2794,Log,Target has been spawned at: (0.0 0.0 0.1)
+80.79074,Log,Reach Time: 6.760002
+87.34648,Log,Target has been spawned at: (0.0 0.0 0.1)
+92.39098,Log,Reach Time: 5.040001

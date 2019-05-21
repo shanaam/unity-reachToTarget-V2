@@ -26,8 +26,9 @@ public class HandCursorController : MonoBehaviour
     public bool isInHome = false;
     public bool isPaused = false;
     public bool isInHomeArea = false;
-    public bool targetReached = true;
     public bool visible = true;
+
+    public bool taskCompleted = true; //this one is also set by instructionAcceptor
 
     //public bool collisionHeld = false;
     //private float collision_start_time;
@@ -113,16 +114,8 @@ public class HandCursorController : MonoBehaviour
         transform.localPosition = movementType.NewCursorPosition(realHandPosition, centreExpPosition);
 
         //Do things when this thing is in the target (and paused), or far enough away during nocusor
-        if ((!visible && isPaused && !isInHomeArea && !targetReached) ^ (visible && isPaused && isInTarget)) //^ is exclusive OR
+        if ((!visible && isPaused && !isInHomeArea && !taskCompleted) ^ (visible && isPaused && isInTarget)) //^ is exclusive OR
         {
-
-            ////disable the tracker script (for the return to home position)
-            //trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = false;
-
-            /*
-            isPaused = false;
-            CancelInvoke("CheckForPause");
-            */
 
             //End and prepare
             PauseTimer();
@@ -140,18 +133,17 @@ public class HandCursorController : MonoBehaviour
 
             experimentController.EndAndPrepare();
 
-            targetReached = true;
+            taskCompleted = true;
             isInTarget = false;
         }
 
         //Do things when this this is in home (and pause)
-        else if (isInHome && isPaused && targetReached)
+        else if (isInHome && isPaused && taskCompleted)
         {
-            targetReached = false;
+            taskCompleted = false;
             StartTimer();
             experimentController.StartTrial();
         }
-
     }
 
     //modifiers
@@ -180,7 +172,7 @@ public class HandCursorController : MonoBehaviour
         {
             isInHomeArea = true;
 
-            if (targetReached)
+            if (taskCompleted)
             {
                 InvokeRepeating("CheckForPause", 0, checkForPauseRate);
             }
@@ -210,7 +202,7 @@ public class HandCursorController : MonoBehaviour
         {
             isInHomeArea = false;
 
-            if (!targetReached)
+            if (!taskCompleted)
             {
                 InvokeRepeating("CheckForPause", 0, checkForPauseRate);
             }

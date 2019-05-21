@@ -20,6 +20,8 @@ public class ExperimentController : MonoBehaviour
     public HomeCursorController homeCursorController;
     public GameObject trackerHolderObject;
     public PlaneController planeController;
+    public GameObject instructionAcceptor;
+    public InstructionAcceptor instructionAcceptorScript;
 
 
     public void StartTrial() //run when cursor is in home and some booleans are right
@@ -40,11 +42,16 @@ public class ExperimentController : MonoBehaviour
         if (trial.settings.GetString("type") == "instruction")
         {
             // jsut wait? for a keypress?
-            planeController.SetTilt(trial); // this spawns a target.. bad
+            trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = false;
+            instructionAcceptor.SetActive(true);
+            instructionAcceptorScript.doneInstruction = false;
+
         }
-        
+
         else
         {
+            trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = true;
+
             // do the plane thing at the start of each block 
             if (trial.numberInBlock == 1)
             {
@@ -61,6 +68,11 @@ public class ExperimentController : MonoBehaviour
     // destroys the the current target and starts next trial
     public void EndAndPrepare()
     {
+
+        session.CurrentTrial.result["home_x"] = homeCursor.transform.position.x;
+        session.CurrentTrial.result["home_y"] = homeCursor.transform.position.y;
+        session.CurrentTrial.result["home_z"] = homeCursor.transform.position.z;
+
         //Debug.Log("ending reach trial...");
         // destroy the target, spawn home?
         targetContainerController.DestroyTargets();
