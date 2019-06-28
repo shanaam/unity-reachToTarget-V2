@@ -1,0 +1,11 @@
+timestamp,log_type,message
+0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
+2.848998,Log,Paused Timer Started at: 2.84
+3.194297,Log,Paused Timer Started at: 3.18
+5.817223,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+7.723125,Log,Home Position Transformed: (0.00357089 0.9985073 0.2986259)
+8.594185,Log,Paused Timer Started at: 8.58
+9.653089,Log,Home Position Transformed: (0.01075489 1.001969 0.2951486)
+10.15046,Log,Paused Timer Started at: 10.14
+11.30906,Log,Home Position Transformed: (0.007588694 1.005245 0.2945277)

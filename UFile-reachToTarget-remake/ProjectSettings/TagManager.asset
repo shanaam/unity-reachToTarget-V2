@@ -9,6 +9,9 @@ TagManager:
   - TargetContainer
   - Home
   - HomeArea
+  - ExperimentObject
+  - ExpCont
+  - Box
   layers:
   - Default
   - TransparentFX

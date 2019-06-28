@@ -1,0 +1,5021 @@
+timestamp,log_type,message
+0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
+5.099636,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+8.388328,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+9.184304,Warning,Warning: Session already exists! Continuing will overwrite
+9.711281,Log,Home Position Transformed: (0.2712831 0.9254799 0.4166201)
+10.17402,Log,Paused Timer Started at: 10.16
+10.17402,Log,Delta time: 0
+10.22364,Log,Delta time: 0.05999947
+10.27392,Log,Delta time: 0.1000004
+10.32378,Log,Delta time: 0.1599998
+10.37404,Log,Delta time: 0.1999998
+10.42338,Log,Delta time: 0.2600002
+10.47402,Log,Delta time: 0.3000002
+10.52353,Log,Delta time: 0.3599997
+10.57293,Log,Delta time: 0.3999996
+10.62235,Log,Delta time: 0.46
+10.6732,Log,Delta time: 0.5
+10.6732,Log,Delta time greater than 0.5
+10.6732,Log,Target has been spawned at: (0.0 0.0 0.1)
+10.72295,Log,Delta time: 0.5599995
+10.72295,Log,Delta time greater than 0.5
+10.77222,Log,Delta time: 0.6000004
+10.77222,Log,Delta time greater than 0.5
+10.82197,Log,Delta time: 0.6599998
+10.82197,Log,Delta time greater than 0.5
+10.87323,Log,Delta time: 0.6999998
+10.87323,Log,Delta time greater than 0.5
+10.92216,Log,Delta time: 0.7600002
+10.92216,Log,Delta time greater than 0.5
+10.9723,Log,Delta time: 0.8000002
+10.9723,Log,Delta time greater than 0.5
+11.02158,Log,Delta time: 0.8599997
+11.02158,Log,Delta time greater than 0.5
+11.07251,Log,Delta time: 0.8999996
+11.07251,Log,Delta time greater than 0.5
+11.12219,Log,Delta time: 0.96
+11.12219,Log,Delta time greater than 0.5
+11.17134,Log,Delta time: 1
+11.17134,Log,Delta time greater than 0.5
+11.22001,Log,Delta time: 1.059999
+11.22001,Log,Delta time greater than 0.5
+11.27438,Log,Delta time: 1.099999
+11.27438,Log,Delta time greater than 0.5
+11.32046,Log,Delta time: 1.16
+11.32046,Log,Delta time greater than 0.5
+11.37066,Log,Delta time: 1.2
+11.37066,Log,Delta time greater than 0.5
+11.42095,Log,Delta time: 1.26
+11.42095,Log,Delta time greater than 0.5
+11.4723,Log,Delta time: 1.3
+11.4723,Log,Delta time greater than 0.5
+11.5227,Log,Delta time: 1.36
+11.5227,Log,Delta time greater than 0.5
+11.57268,Log,Delta time: 1.4
+11.57268,Log,Delta time greater than 0.5
+11.62314,Log,Delta time: 1.46
+11.62314,Log,Delta time greater than 0.5
+11.67288,Log,Delta time: 1.5
+11.67288,Log,Delta time greater than 0.5
+11.72637,Log,Delta time: 1.559999
+11.72637,Log,Delta time greater than 0.5
+11.77639,Log,Delta time: 1.599999
+11.77639,Log,Delta time greater than 0.5
+11.82274,Log,Delta time: 1.66
+11.82274,Log,Delta time greater than 0.5
+11.87234,Log,Delta time: 1.7
+11.87234,Log,Delta time greater than 0.5
+11.92285,Log,Delta time: 1.76
+11.92285,Log,Delta time greater than 0.5
+11.97227,Log,Delta time: 1.8
+11.97227,Log,Delta time greater than 0.5
+12.02207,Log,Delta time: 1.86
+12.02207,Log,Delta time greater than 0.5
+12.07144,Log,Delta time: 1.9
+12.07144,Log,Delta time greater than 0.5
+12.1217,Log,Delta time: 1.96
+12.1217,Log,Delta time greater than 0.5
+12.17071,Log,Delta time: 2
+12.17071,Log,Delta time greater than 0.5
+12.22055,Log,Delta time: 2.059999
+12.22055,Log,Delta time greater than 0.5
+12.27413,Log,Delta time: 2.099999
+12.27413,Log,Delta time greater than 0.5
+12.3238,Log,Delta time: 2.16
+12.3238,Log,Delta time greater than 0.5
+12.37325,Log,Delta time: 2.2
+12.37325,Log,Delta time greater than 0.5
+12.42216,Log,Delta time: 2.26
+12.42216,Log,Delta time greater than 0.5
+12.47151,Log,Delta time: 2.3
+12.47151,Log,Delta time greater than 0.5
+12.52258,Log,Delta time: 2.36
+12.52258,Log,Delta time greater than 0.5
+12.57283,Log,Delta time: 2.4
+12.57283,Log,Delta time greater than 0.5
+12.62251,Log,Delta time: 2.46
+12.62251,Log,Delta time greater than 0.5
+12.67284,Log,Delta time: 2.5
+12.67284,Log,Delta time greater than 0.5
+12.72019,Log,Delta time: 2.559999
+12.72019,Log,Delta time greater than 0.5
+12.77037,Log,Delta time: 2.599999
+12.77037,Log,Delta time greater than 0.5
+12.82071,Log,Delta time: 2.66
+12.82071,Log,Delta time greater than 0.5
+12.87059,Log,Delta time: 2.7
+12.87059,Log,Delta time greater than 0.5
+12.92151,Log,Delta time: 2.76
+12.92151,Log,Delta time greater than 0.5
+12.97101,Log,Delta time: 2.8
+12.97101,Log,Delta time greater than 0.5
+13.02663,Log,Delta time: 2.86
+13.02663,Log,Delta time greater than 0.5
+13.07238,Log,Delta time: 2.9
+13.07238,Log,Delta time greater than 0.5
+13.12333,Log,Delta time: 2.96
+13.12333,Log,Delta time greater than 0.5
+13.17437,Log,Delta time: 3
+13.17437,Log,Delta time greater than 0.5
+13.22032,Log,Delta time: 3.059999
+13.22032,Log,Delta time greater than 0.5
+13.27023,Log,Delta time: 3.099999
+13.27023,Log,Delta time greater than 0.5
+13.32162,Log,Delta time: 3.16
+13.32162,Log,Delta time greater than 0.5
+13.37253,Log,Delta time: 3.2
+13.37253,Log,Delta time greater than 0.5
+13.42353,Log,Delta time: 3.26
+13.42353,Log,Delta time greater than 0.5
+13.47044,Log,Delta time: 3.3
+13.47044,Log,Delta time greater than 0.5
+13.52235,Log,Delta time: 3.36
+13.52235,Log,Delta time greater than 0.5
+13.57235,Log,Delta time: 3.4
+13.57235,Log,Delta time greater than 0.5
+13.62367,Log,Delta time: 3.46
+13.62367,Log,Delta time greater than 0.5
+13.6739,Log,Delta time: 3.5
+13.6739,Log,Delta time greater than 0.5
+13.72051,Log,Delta time: 3.559999
+13.72051,Log,Delta time greater than 0.5
+13.7711,Log,Delta time: 3.599999
+13.7711,Log,Delta time greater than 0.5
+13.82186,Log,Delta time: 3.66
+13.82186,Log,Delta time greater than 0.5
+13.8724,Log,Delta time: 3.7
+13.8724,Log,Delta time greater than 0.5
+13.92452,Log,Delta time: 3.76
+13.92452,Log,Delta time greater than 0.5
+13.97034,Log,Delta time: 3.8
+13.97034,Log,Delta time greater than 0.5
+14.02053,Log,Delta time: 3.86
+14.02053,Log,Delta time greater than 0.5
+14.07079,Log,Delta time: 3.9
+14.07079,Log,Delta time greater than 0.5
+14.1209,Log,Delta time: 3.96
+14.1209,Log,Delta time greater than 0.5
+14.17576,Log,Delta time: 4
+14.17576,Log,Delta time greater than 0.5
+14.22148,Log,Delta time: 4.059999
+14.22148,Log,Delta time greater than 0.5
+14.27223,Log,Delta time: 4.099999
+14.27223,Log,Delta time greater than 0.5
+14.32308,Log,Delta time: 4.16
+14.32308,Log,Delta time greater than 0.5
+14.37344,Log,Delta time: 4.2
+14.37344,Log,Delta time greater than 0.5
+14.42392,Log,Delta time: 4.26
+14.42392,Log,Delta time greater than 0.5
+14.4704,Log,Delta time: 4.3
+14.4704,Log,Delta time greater than 0.5
+14.52041,Log,Delta time: 4.36
+14.52041,Log,Delta time greater than 0.5
+14.5704,Log,Delta time: 4.4
+14.5704,Log,Delta time greater than 0.5
+14.62043,Log,Delta time: 4.46
+14.62043,Log,Delta time greater than 0.5
+14.6701,Log,Delta time: 4.5
+14.6701,Log,Delta time greater than 0.5
+14.72074,Log,Delta time: 4.559999
+14.72074,Log,Delta time greater than 0.5
+14.77085,Log,Delta time: 4.599999
+14.77085,Log,Delta time greater than 0.5
+14.82102,Log,Delta time: 4.66
+14.82102,Log,Delta time greater than 0.5
+14.87017,Log,Delta time: 4.7
+14.87017,Log,Delta time greater than 0.5
+14.92431,Log,Delta time: 4.76
+14.92431,Log,Delta time greater than 0.5
+14.97411,Log,Delta time: 4.8
+14.97411,Log,Delta time greater than 0.5
+15.02056,Log,Delta time: 4.86
+15.02056,Log,Delta time greater than 0.5
+15.07191,Log,Delta time: 4.9
+15.07191,Log,Delta time greater than 0.5
+15.12234,Log,Delta time: 4.96
+15.12234,Log,Delta time greater than 0.5
+15.17336,Log,Delta time: 5
+15.17336,Log,Delta time greater than 0.5
+15.22363,Log,Delta time: 5.059999
+15.22363,Log,Delta time greater than 0.5
+15.27439,Log,Delta time: 5.099999
+15.27439,Log,Delta time greater than 0.5
+15.32087,Log,Delta time: 5.16
+15.32087,Log,Delta time greater than 0.5
+15.37084,Log,Delta time: 5.2
+15.37084,Log,Delta time greater than 0.5
+15.42143,Log,Delta time: 5.26
+15.42143,Log,Delta time greater than 0.5
+15.47108,Log,Delta time: 5.3
+15.47108,Log,Delta time greater than 0.5
+15.52108,Log,Delta time: 5.36
+15.52108,Log,Delta time greater than 0.5
+15.57046,Log,Delta time: 5.4
+15.57046,Log,Delta time greater than 0.5
+15.62409,Log,Delta time: 5.46
+15.62409,Log,Delta time greater than 0.5
+15.67401,Log,Delta time: 5.5
+15.67401,Log,Delta time greater than 0.5
+15.72358,Log,Delta time: 5.559999
+15.72358,Log,Delta time greater than 0.5
+15.77108,Log,Delta time: 5.599999
+15.77108,Log,Delta time greater than 0.5
+15.82051,Log,Delta time: 5.66
+15.82051,Log,Delta time greater than 0.5
+15.87095,Log,Delta time: 5.7
+15.87095,Log,Delta time greater than 0.5
+15.9208,Log,Delta time: 5.76
+15.9208,Log,Delta time greater than 0.5
+15.97239,Log,Delta time: 5.8
+15.97239,Log,Delta time greater than 0.5
+16.02272,Log,Delta time: 5.860001
+16.02272,Log,Delta time greater than 0.5
+16.07252,Log,Delta time: 5.9
+16.07252,Log,Delta time greater than 0.5
+16.12311,Log,Delta time: 5.959999
+16.12311,Log,Delta time greater than 0.5
+16.17458,Log,Delta time: 6
+16.17458,Log,Delta time greater than 0.5
+16.22041,Log,Delta time: 6.059999
+16.22041,Log,Delta time greater than 0.5
+16.27389,Log,Delta time: 6.1
+16.27389,Log,Delta time greater than 0.5
+16.32338,Log,Delta time: 6.16
+16.32338,Log,Delta time greater than 0.5
+16.37063,Log,Delta time: 6.199999
+16.37063,Log,Delta time greater than 0.5
+16.42036,Log,Delta time: 6.26
+16.42036,Log,Delta time greater than 0.5
+16.47413,Log,Delta time: 6.299999
+16.47413,Log,Delta time greater than 0.5
+16.52357,Log,Delta time: 6.360001
+16.52357,Log,Delta time greater than 0.5
+16.5701,Log,Delta time: 6.4
+16.5701,Log,Delta time greater than 0.5
+16.62123,Log,Delta time: 6.459999
+16.62123,Log,Delta time greater than 0.5
+16.67266,Log,Delta time: 6.5
+16.67266,Log,Delta time greater than 0.5
+16.72257,Log,Delta time: 6.559999
+16.72257,Log,Delta time greater than 0.5
+16.77386,Log,Delta time: 6.6
+16.77386,Log,Delta time greater than 0.5
+16.82389,Log,Delta time: 6.66
+16.82389,Log,Delta time greater than 0.5
+16.87485,Log,Delta time: 6.699999
+16.87485,Log,Delta time greater than 0.5
+16.92042,Log,Delta time: 6.76
+16.92042,Log,Delta time greater than 0.5
+16.97096,Log,Delta time: 6.799999
+16.97096,Log,Delta time greater than 0.5
+17.02211,Log,Delta time: 6.860001
+17.02211,Log,Delta time greater than 0.5
+17.07234,Log,Delta time: 6.9
+17.07234,Log,Delta time greater than 0.5
+17.12313,Log,Delta time: 6.959999
+17.12313,Log,Delta time greater than 0.5
+17.17031,Log,Delta time: 7
+17.17031,Log,Delta time greater than 0.5
+17.221,Log,Delta time: 7.059999
+17.221,Log,Delta time greater than 0.5
+17.27184,Log,Delta time: 7.1
+17.27184,Log,Delta time greater than 0.5
+17.32228,Log,Delta time: 7.16
+17.32228,Log,Delta time greater than 0.5
+17.37319,Log,Delta time: 7.199999
+17.37319,Log,Delta time greater than 0.5
+17.42358,Log,Delta time: 7.26
+17.42358,Log,Delta time greater than 0.5
+17.47394,Log,Delta time: 7.299999
+17.47394,Log,Delta time greater than 0.5
+17.52373,Log,Delta time: 7.360001
+17.52373,Log,Delta time greater than 0.5
+17.5709,Log,Delta time: 7.4
+17.5709,Log,Delta time greater than 0.5
+17.62091,Log,Delta time: 7.459999
+17.62091,Log,Delta time greater than 0.5
+17.67176,Log,Delta time: 7.5
+17.67176,Log,Delta time greater than 0.5
+17.72103,Log,Delta time: 7.559999
+17.72103,Log,Delta time greater than 0.5
+17.77293,Log,Delta time: 7.6
+17.77293,Log,Delta time greater than 0.5
+17.82329,Log,Delta time: 7.66
+17.82329,Log,Delta time greater than 0.5
+17.87371,Log,Delta time: 7.699999
+17.87371,Log,Delta time greater than 0.5
+17.92015,Log,Delta time: 7.76
+17.92015,Log,Delta time greater than 0.5
+17.97122,Log,Delta time: 7.799999
+17.97122,Log,Delta time greater than 0.5
+18.02181,Log,Delta time: 7.860001
+18.02181,Log,Delta time greater than 0.5
+18.07264,Log,Delta time: 7.9
+18.07264,Log,Delta time greater than 0.5
+18.12255,Log,Delta time: 7.959999
+18.12255,Log,Delta time greater than 0.5
+18.17052,Log,Delta time: 8
+18.17052,Log,Delta time greater than 0.5
+18.22123,Log,Delta time: 8.059999
+18.22123,Log,Delta time greater than 0.5
+18.27141,Log,Delta time: 8.1
+18.27141,Log,Delta time greater than 0.5
+18.32093,Log,Delta time: 8.16
+18.32093,Log,Delta time greater than 0.5
+18.37148,Log,Delta time: 8.199999
+18.37148,Log,Delta time greater than 0.5
+18.42295,Log,Delta time: 8.26
+18.42295,Log,Delta time greater than 0.5
+20.77386,Log,Paused Timer Started at: 20.76
+20.77386,Log,Delta time: 0
+20.82389,Log,Paused Timer Started at: 20.82
+20.82389,Log,Delta time: 0
+24.42101,Log,Paused Timer Started at: 24.42
+24.42101,Log,Delta time: 0
+24.46036,Log,Delta time: 0.03999901
+24.47042,Log,Delta time: 0.03999901
+24.51002,Log,Delta time: 0.07999992
+24.52433,Log,Delta time: 0.09999847
+24.56276,Log,Delta time: 0.1399994
+24.57253,Log,Delta time: 0.1399994
+24.61093,Log,Delta time: 0.1800003
+24.62058,Log,Delta time: 0.1999989
+24.66006,Log,Delta time: 0.2399998
+24.67494,Log,Delta time: 0.2399998
+24.71354,Log,Delta time: 0.2799988
+24.72325,Log,Delta time: 0.2999992
+24.76283,Log,Delta time: 0.3400002
+24.77262,Log,Delta time: 0.3400002
+24.8113,Log,Delta time: 0.3799992
+24.82087,Log,Delta time: 0.3999996
+24.8608,Log,Delta time: 0.4399986
+24.87093,Log,Delta time: 0.4399986
+24.9101,Log,Delta time: 0.4799995
+24.9247,Log,Delta time: 0.5
+24.9247,Log,Delta time greater than 0.5
+24.9247,Log,Reach Time: 14.26
+24.96102,Log,Delta time: 0.539999
+24.96102,Log,Delta time greater than 0.5
+24.97211,Log,Delta time: 0.539999
+24.97211,Log,Delta time greater than 0.5
+25.01096,Log,Delta time: 0.5799999
+25.01096,Log,Delta time greater than 0.5
+25.02147,Log,Delta time: 0.5999985
+25.02147,Log,Delta time greater than 0.5
+25.06194,Log,Delta time: 0.6399994
+25.06194,Log,Delta time greater than 0.5
+25.07264,Log,Delta time: 0.6399994
+25.07264,Log,Delta time greater than 0.5
+25.1126,Log,Delta time: 0.6800003
+25.1126,Log,Delta time greater than 0.5
+25.12397,Log,Delta time: 0.6999989
+25.12397,Log,Delta time greater than 0.5
+25.16064,Log,Delta time: 0.7399998
+25.16064,Log,Delta time greater than 0.5
+25.17109,Log,Delta time: 0.7399998
+25.17109,Log,Delta time greater than 0.5
+25.21103,Log,Delta time: 0.7799988
+25.21103,Log,Delta time greater than 0.5
+25.22096,Log,Delta time: 0.7999992
+25.22096,Log,Delta time greater than 0.5
+25.26521,Log,Delta time: 0.8400002
+25.26521,Log,Delta time greater than 0.5
+25.27049,Log,Delta time: 0.8400002
+25.27049,Log,Delta time greater than 0.5
+25.31459,Log,Delta time: 0.8799992
+25.31459,Log,Delta time greater than 0.5
+25.32434,Log,Delta time: 0.8999996
+25.32434,Log,Delta time greater than 0.5
+25.36338,Log,Delta time: 0.9399986
+25.36338,Log,Delta time greater than 0.5
+25.37363,Log,Delta time: 0.9399986
+25.37363,Log,Delta time greater than 0.5
+25.41244,Log,Delta time: 0.9799995
+25.41244,Log,Delta time greater than 0.5
+25.42219,Log,Delta time: 1
+25.42219,Log,Delta time greater than 0.5
+25.46288,Log,Delta time: 1.039999
+25.46288,Log,Delta time greater than 0.5
+25.4731,Log,Delta time: 1.039999
+25.4731,Log,Delta time greater than 0.5
+25.5118,Log,Delta time: 1.08
+25.5118,Log,Delta time greater than 0.5
+25.52169,Log,Delta time: 1.099998
+25.52169,Log,Delta time greater than 0.5
+25.56024,Log,Delta time: 1.139999
+25.56024,Log,Delta time greater than 0.5
+25.57025,Log,Delta time: 1.139999
+25.57025,Log,Delta time greater than 0.5
+25.61405,Log,Delta time: 1.179998
+25.61405,Log,Delta time greater than 0.5
+25.62378,Log,Delta time: 1.199999
+25.62378,Log,Delta time greater than 0.5
+25.66272,Log,Delta time: 1.24
+25.66272,Log,Delta time greater than 0.5
+25.67353,Log,Delta time: 1.24
+25.67353,Log,Delta time greater than 0.5
+25.71267,Log,Delta time: 1.279999
+25.71267,Log,Delta time greater than 0.5
+28.47217,Log,Paused Timer Started at: 28.46
+28.47217,Log,Delta time: 0
+28.51175,Log,Delta time: 0.04000092
+28.52109,Log,Delta time: 0.05999947
+28.57343,Log,Paused Timer Started at: 28.56
+28.57343,Log,Delta time: 0
+28.7744,Log,Paused Timer Started at: 28.76
+28.7744,Log,Delta time: 0
+28.81297,Log,Delta time: 0.03999901
+28.8224,Log,Delta time: 0.05999947
+29.12247,Log,Paused Timer Started at: 29.12
+29.12247,Log,Delta time: 0
+29.16236,Log,Delta time: 0.04000092
+29.17235,Log,Delta time: 0.04000092
+29.21145,Log,Delta time: 0.07999992
+29.22083,Log,Delta time: 0.1000004
+29.26393,Log,Delta time: 0.1400013
+29.27349,Log,Delta time: 0.1400013
+29.31281,Log,Delta time: 0.1800003
+29.3224,Log,Delta time: 0.2000008
+29.36134,Log,Delta time: 0.2399998
+29.37127,Log,Delta time: 0.2399998
+29.41016,Log,Delta time: 0.2800007
+29.42423,Log,Delta time: 0.3000011
+29.46233,Log,Delta time: 0.3400002
+29.47233,Log,Delta time: 0.3400002
+29.51175,Log,Delta time: 0.3800011
+29.52114,Log,Delta time: 0.3999996
+29.56039,Log,Delta time: 0.4400005
+29.57042,Log,Delta time: 0.4400005
+29.61035,Log,Delta time: 0.4799995
+29.62467,Log,Delta time: 0.5
+29.62467,Log,Delta time greater than 0.5
+29.66336,Log,Delta time: 0.5400009
+29.66336,Log,Delta time greater than 0.5
+29.67378,Log,Delta time: 0.5400009
+29.67378,Log,Delta time greater than 0.5
+29.71385,Log,Delta time: 0.5799999
+29.71385,Log,Delta time greater than 0.5
+29.72394,Log,Delta time: 0.6000004
+29.72394,Log,Delta time greater than 0.5
+29.76287,Log,Delta time: 0.6400013
+29.76287,Log,Delta time greater than 0.5
+29.77295,Log,Delta time: 0.6400013
+29.77295,Log,Delta time greater than 0.5
+29.81177,Log,Delta time: 0.6800003
+29.81177,Log,Delta time greater than 0.5
+29.82338,Log,Delta time: 0.7000008
+29.82338,Log,Delta time greater than 0.5
+29.86311,Log,Delta time: 0.7399998
+29.86311,Log,Delta time greater than 0.5
+29.87348,Log,Delta time: 0.7399998
+29.87348,Log,Delta time greater than 0.5
+29.91343,Log,Delta time: 0.7800007
+29.91343,Log,Delta time greater than 0.5
+29.92335,Log,Delta time: 0.8000011
+29.92335,Log,Delta time greater than 0.5
+29.96201,Log,Delta time: 0.8400002
+29.96201,Log,Delta time greater than 0.5
+29.97243,Log,Delta time: 0.8400002
+29.97243,Log,Delta time greater than 0.5
+30.01118,Log,Delta time: 0.8800011
+30.01118,Log,Delta time greater than 0.5
+30.02087,Log,Delta time: 0.8999996
+30.02087,Log,Delta time greater than 0.5
+30.06109,Log,Delta time: 0.9400005
+30.06109,Log,Delta time greater than 0.5
+30.07178,Log,Delta time: 0.9400005
+30.07178,Log,Delta time greater than 0.5
+30.11213,Log,Delta time: 0.9799995
+30.11213,Log,Delta time greater than 0.5
+30.12182,Log,Delta time: 1
+30.12182,Log,Delta time greater than 0.5
+30.16142,Log,Delta time: 1.040001
+30.16142,Log,Delta time greater than 0.5
+30.17165,Log,Delta time: 1.040001
+30.17165,Log,Delta time greater than 0.5
+31.67262,Log,Paused Timer Started at: 31.66
+31.67262,Log,Delta time: 0
+31.71163,Log,Delta time: 0.03999901
+31.7214,Log,Delta time: 0.05999947
+31.76096,Log,Delta time: 0.1000004
+31.77059,Log,Delta time: 0.1000004
+31.81004,Log,Delta time: 0.1399994
+31.82006,Log,Delta time: 0.1599998
+31.86398,Log,Delta time: 0.1999989
+31.87524,Log,Delta time: 0.1999989
+31.91465,Log,Delta time: 0.2399998
+31.92423,Log,Delta time: 0.2600002
+31.96388,Log,Delta time: 0.2999992
+31.97398,Log,Delta time: 0.2999992
+32.01226,Log,Delta time: 0.3400002
+32.02193,Log,Delta time: 0.3600006
+32.06092,Log,Delta time: 0.3999977
+32.07053,Log,Delta time: 0.3999977
+32.11506,Log,Delta time: 0.4399986
+32.12034,Log,Delta time: 0.4599991
+32.16135,Log,Delta time: 0.5
+32.16135,Log,Delta time greater than 0.5
+32.17116,Log,Delta time: 0.5
+32.17116,Log,Delta time greater than 0.5
+32.2146,Log,Delta time: 0.5400009
+32.2146,Log,Delta time greater than 0.5
+32.22449,Log,Delta time: 0.5599976
+32.22449,Log,Delta time greater than 0.5
+32.26344,Log,Delta time: 0.5999985
+32.26344,Log,Delta time greater than 0.5
+32.27347,Log,Delta time: 0.5999985
+32.27347,Log,Delta time greater than 0.5
+32.31779,Log,Delta time: 0.6399994
+32.31779,Log,Delta time greater than 0.5
+32.3228,Log,Delta time: 0.6599998
+32.3228,Log,Delta time greater than 0.5
+32.36246,Log,Delta time: 0.7000008
+32.36246,Log,Delta time greater than 0.5
+32.3727,Log,Delta time: 0.7000008
+32.3727,Log,Delta time greater than 0.5
+32.41212,Log,Delta time: 0.7399979
+32.41212,Log,Delta time greater than 0.5
+32.4222,Log,Delta time: 0.7599983
+32.4222,Log,Delta time greater than 0.5
+32.97392,Log,Paused Timer Started at: 32.96
+32.97392,Log,Delta time: 0
+33.01185,Log,Delta time: 0.04000092
+33.02199,Log,Delta time: 0.06000137
+33.06448,Log,Delta time: 0.09999847
+33.074,Log,Delta time: 0.09999847
+33.11218,Log,Delta time: 0.1399994
+33.12161,Log,Delta time: 0.1599998
+33.16084,Log,Delta time: 0.2000008
+33.17105,Log,Delta time: 0.2000008
+33.2147,Log,Delta time: 0.2400017
+33.22444,Log,Delta time: 0.2599983
+33.26291,Log,Delta time: 0.2999992
+33.27266,Log,Delta time: 0.2999992
+33.91023,Log,Paused Timer Started at: 33.9
+33.91023,Log,Delta time: 0
+33.92042,Log,Delta time: 0.02000046
+33.96429,Log,Delta time: 0.06000137
+33.97437,Log,Delta time: 0.06000137
+34.01245,Log,Delta time: 0.1000023
+34.02204,Log,Delta time: 0.1200027
+34.06224,Log,Delta time: 0.1599998
+34.07243,Log,Delta time: 0.1599998
+34.11237,Log,Delta time: 0.2000008
+34.12217,Log,Delta time: 0.2200012
+34.16249,Log,Delta time: 0.2600021
+34.17246,Log,Delta time: 0.2600021
+34.21088,Log,Delta time: 0.3000031
+34.22025,Log,Delta time: 0.3199997
+34.26359,Log,Delta time: 0.3600006
+34.27367,Log,Delta time: 0.3600006
+34.31405,Log,Delta time: 0.4000015
+34.32352,Log,Delta time: 0.420002
+34.36332,Log,Delta time: 0.4600029
+34.37318,Log,Delta time: 0.4600029
+34.4118,Log,Delta time: 0.5
+34.4118,Log,Delta time greater than 0.5
+34.42167,Log,Delta time: 0.5200005
+34.42167,Log,Delta time greater than 0.5
+34.46057,Log,Delta time: 0.5600014
+34.46057,Log,Delta time greater than 0.5
+34.4705,Log,Delta time: 0.5600014
+34.4705,Log,Delta time greater than 0.5
+34.51899,Log,Delta time: 0.6000023
+34.51899,Log,Delta time greater than 0.5
+34.52426,Log,Delta time: 0.6200027
+34.52426,Log,Delta time greater than 0.5
+34.56457,Log,Delta time: 0.6599998
+34.56457,Log,Delta time greater than 0.5
+34.57468,Log,Delta time: 0.6599998
+34.57468,Log,Delta time greater than 0.5
+34.6143,Log,Delta time: 0.7000008
+34.6143,Log,Delta time greater than 0.5
+34.62429,Log,Delta time: 0.7200012
+34.62429,Log,Delta time greater than 0.5
+34.6633,Log,Delta time: 0.7600021
+34.6633,Log,Delta time greater than 0.5
+34.67324,Log,Delta time: 0.7600021
+34.67324,Log,Delta time greater than 0.5
+34.7126,Log,Delta time: 0.8000031
+34.7126,Log,Delta time greater than 0.5
+34.72858,Log,Delta time: 0.8199997
+34.72858,Log,Delta time greater than 0.5
+34.76308,Log,Delta time: 0.8600006
+34.76308,Log,Delta time greater than 0.5
+34.77449,Log,Delta time: 0.8600006
+34.77449,Log,Delta time greater than 0.5
+34.81337,Log,Delta time: 0.9000015
+34.81337,Log,Delta time greater than 0.5
+34.82305,Log,Delta time: 0.920002
+34.82305,Log,Delta time greater than 0.5
+34.86151,Log,Delta time: 0.9600029
+34.86151,Log,Delta time greater than 0.5
+34.87173,Log,Delta time: 0.9600029
+34.87173,Log,Delta time greater than 0.5
+34.91062,Log,Delta time: 1
+34.91062,Log,Delta time greater than 0.5
+34.92027,Log,Delta time: 1.02
+34.92027,Log,Delta time greater than 0.5
+34.96001,Log,Delta time: 1.060001
+34.96001,Log,Delta time greater than 0.5
+34.97112,Log,Delta time: 1.060001
+34.97112,Log,Delta time greater than 0.5
+35.01025,Log,Delta time: 1.100002
+35.01025,Log,Delta time greater than 0.5
+35.02018,Log,Delta time: 1.120003
+35.02018,Log,Delta time greater than 0.5
+35.06397,Log,Delta time: 1.16
+35.06397,Log,Delta time greater than 0.5
+35.07471,Log,Delta time: 1.16
+35.07471,Log,Delta time greater than 0.5
+35.11398,Log,Delta time: 1.200001
+35.11398,Log,Delta time greater than 0.5
+35.12378,Log,Delta time: 1.220001
+35.12378,Log,Delta time greater than 0.5
+35.16363,Log,Delta time: 1.260002
+35.16363,Log,Delta time greater than 0.5
+35.17461,Log,Delta time: 1.260002
+35.17461,Log,Delta time greater than 0.5
+35.21301,Log,Delta time: 1.300003
+35.21301,Log,Delta time greater than 0.5
+35.22276,Log,Delta time: 1.32
+35.22276,Log,Delta time greater than 0.5
+35.26069,Log,Delta time: 1.360001
+35.26069,Log,Delta time greater than 0.5
+35.27047,Log,Delta time: 1.360001
+35.27047,Log,Delta time greater than 0.5
+35.31325,Log,Delta time: 1.400002
+35.31325,Log,Delta time greater than 0.5
+35.32276,Log,Delta time: 1.420002
+35.32276,Log,Delta time greater than 0.5
+35.3626,Log,Delta time: 1.460003
+35.3626,Log,Delta time greater than 0.5
+35.373,Log,Delta time: 1.460003
+35.373,Log,Delta time greater than 0.5
+35.4131,Log,Delta time: 1.5
+35.4131,Log,Delta time greater than 0.5
+35.42273,Log,Delta time: 1.52
+35.42273,Log,Delta time greater than 0.5
+35.46117,Log,Delta time: 1.560001
+35.46117,Log,Delta time greater than 0.5
+35.47113,Log,Delta time: 1.560001
+35.47113,Log,Delta time greater than 0.5
+35.5101,Log,Delta time: 1.600002
+35.5101,Log,Delta time greater than 0.5
+35.52464,Log,Delta time: 1.620003
+35.52464,Log,Delta time greater than 0.5
+35.56369,Log,Delta time: 1.66
+35.56369,Log,Delta time greater than 0.5
+35.5737,Log,Delta time: 1.66
+35.5737,Log,Delta time greater than 0.5
+35.61405,Log,Delta time: 1.700001
+35.61405,Log,Delta time greater than 0.5
+35.62374,Log,Delta time: 1.720001
+35.62374,Log,Delta time greater than 0.5
+35.66293,Log,Delta time: 1.760002
+35.66293,Log,Delta time greater than 0.5
+35.67321,Log,Delta time: 1.760002
+35.67321,Log,Delta time greater than 0.5
+35.71274,Log,Delta time: 1.800003
+35.71274,Log,Delta time greater than 0.5
+35.7229,Log,Delta time: 1.82
+35.7229,Log,Delta time greater than 0.5
+35.76182,Log,Delta time: 1.860001
+35.76182,Log,Delta time greater than 0.5
+35.77315,Log,Delta time: 1.860001
+35.77315,Log,Delta time greater than 0.5
+35.81247,Log,Delta time: 1.900002
+35.81247,Log,Delta time greater than 0.5
+35.82234,Log,Delta time: 1.920002
+35.82234,Log,Delta time greater than 0.5
+35.86127,Log,Delta time: 1.960003
+35.86127,Log,Delta time greater than 0.5
+35.87165,Log,Delta time: 1.960003
+35.87165,Log,Delta time greater than 0.5
+35.91073,Log,Delta time: 2
+35.91073,Log,Delta time greater than 0.5
+35.92062,Log,Delta time: 2.02
+35.92062,Log,Delta time greater than 0.5
+35.96438,Log,Delta time: 2.060001
+35.96438,Log,Delta time greater than 0.5
+35.98,Log,Delta time: 2.080002
+35.98,Log,Delta time greater than 0.5
+36.01092,Log,Delta time: 2.100002
+36.01092,Log,Delta time greater than 0.5
+36.02063,Log,Delta time: 2.120003
+36.02063,Log,Delta time greater than 0.5
+36.06429,Log,Delta time: 2.16
+36.06429,Log,Delta time greater than 0.5
+36.07439,Log,Delta time: 2.16
+36.07439,Log,Delta time greater than 0.5
+36.11329,Log,Delta time: 2.200001
+36.11329,Log,Delta time greater than 0.5
+36.12312,Log,Delta time: 2.220001
+36.12312,Log,Delta time greater than 0.5
+36.16234,Log,Delta time: 2.260002
+36.16234,Log,Delta time greater than 0.5
+36.17242,Log,Delta time: 2.260002
+36.17242,Log,Delta time greater than 0.5
+36.21285,Log,Delta time: 2.300003
+36.21285,Log,Delta time greater than 0.5
+36.22331,Log,Delta time: 2.32
+36.22331,Log,Delta time greater than 0.5
+36.2626,Log,Delta time: 2.360001
+36.2626,Log,Delta time greater than 0.5
+36.27289,Log,Delta time: 2.360001
+36.27289,Log,Delta time greater than 0.5
+36.31168,Log,Delta time: 2.400002
+36.31168,Log,Delta time greater than 0.5
+36.32162,Log,Delta time: 2.420002
+36.32162,Log,Delta time greater than 0.5
+36.36008,Log,Delta time: 2.460003
+36.36008,Log,Delta time greater than 0.5
+36.37022,Log,Delta time: 2.460003
+36.37022,Log,Delta time greater than 0.5
+36.41169,Log,Delta time: 2.5
+36.41169,Log,Delta time greater than 0.5
+36.42143,Log,Delta time: 2.52
+36.42143,Log,Delta time greater than 0.5
+36.46187,Log,Delta time: 2.560001
+36.46187,Log,Delta time greater than 0.5
+36.47215,Log,Delta time: 2.560001
+36.47215,Log,Delta time greater than 0.5
+36.51104,Log,Delta time: 2.600002
+36.51104,Log,Delta time greater than 0.5
+36.52091,Log,Delta time: 2.620003
+36.52091,Log,Delta time greater than 0.5
+36.56433,Log,Delta time: 2.66
+36.56433,Log,Delta time greater than 0.5
+36.57441,Log,Delta time: 2.66
+36.57441,Log,Delta time greater than 0.5
+36.6101,Log,Delta time: 2.700001
+36.6101,Log,Delta time greater than 0.5
+36.62016,Log,Delta time: 2.720001
+36.62016,Log,Delta time greater than 0.5
+36.66399,Log,Delta time: 2.760002
+36.66399,Log,Delta time greater than 0.5
+36.67447,Log,Delta time: 2.760002
+36.67447,Log,Delta time greater than 0.5
+36.71253,Log,Delta time: 2.800003
+36.71253,Log,Delta time greater than 0.5
+36.72183,Log,Delta time: 2.82
+36.72183,Log,Delta time greater than 0.5
+36.76077,Log,Delta time: 2.860001
+36.76077,Log,Delta time greater than 0.5
+36.77082,Log,Delta time: 2.860001
+36.77082,Log,Delta time greater than 0.5
+36.81029,Log,Delta time: 2.900002
+36.81029,Log,Delta time greater than 0.5
+36.82486,Log,Delta time: 2.920002
+36.82486,Log,Delta time greater than 0.5
+36.86331,Log,Delta time: 2.960003
+36.86331,Log,Delta time greater than 0.5
+36.87342,Log,Delta time: 2.960003
+36.87342,Log,Delta time greater than 0.5
+36.91166,Log,Delta time: 3
+36.91166,Log,Delta time greater than 0.5
+36.92104,Log,Delta time: 3.02
+36.92104,Log,Delta time greater than 0.5
+36.96407,Log,Delta time: 3.060001
+36.96407,Log,Delta time greater than 0.5
+36.9738,Log,Delta time: 3.060001
+36.9738,Log,Delta time greater than 0.5
+37.01279,Log,Delta time: 3.100002
+37.01279,Log,Delta time greater than 0.5
+37.0225,Log,Delta time: 3.120003
+37.0225,Log,Delta time greater than 0.5
+37.06057,Log,Delta time: 3.16
+37.06057,Log,Delta time greater than 0.5
+37.07051,Log,Delta time: 3.16
+37.07051,Log,Delta time greater than 0.5
+37.11346,Log,Delta time: 3.200001
+37.11346,Log,Delta time greater than 0.5
+37.12305,Log,Delta time: 3.220001
+37.12305,Log,Delta time greater than 0.5
+37.16111,Log,Delta time: 3.260002
+37.16111,Log,Delta time greater than 0.5
+37.17126,Log,Delta time: 3.260002
+37.17126,Log,Delta time greater than 0.5
+37.2104,Log,Delta time: 3.300003
+37.2104,Log,Delta time greater than 0.5
+37.22184,Log,Delta time: 3.32
+37.22184,Log,Delta time greater than 0.5
+37.26455,Log,Delta time: 3.360001
+37.26455,Log,Delta time greater than 0.5
+37.27433,Log,Delta time: 3.360001
+37.27433,Log,Delta time greater than 0.5
+37.31426,Log,Delta time: 3.400002
+37.31426,Log,Delta time greater than 0.5
+37.32372,Log,Delta time: 3.420002
+37.32372,Log,Delta time greater than 0.5
+37.36214,Log,Delta time: 3.460003
+37.36214,Log,Delta time greater than 0.5
+37.37227,Log,Delta time: 3.460003
+37.37227,Log,Delta time greater than 0.5
+37.4109,Log,Delta time: 3.5
+37.4109,Log,Delta time greater than 0.5
+37.42184,Log,Delta time: 3.52
+37.42184,Log,Delta time greater than 0.5
+37.46028,Log,Delta time: 3.560001
+37.46028,Log,Delta time greater than 0.5
+37.47045,Log,Delta time: 3.560001
+37.47045,Log,Delta time greater than 0.5
+37.51389,Log,Delta time: 3.600002
+37.51389,Log,Delta time greater than 0.5
+37.5243,Log,Delta time: 3.620003
+37.5243,Log,Delta time greater than 0.5
+37.56345,Log,Delta time: 3.66
+37.56345,Log,Delta time greater than 0.5
+37.57348,Log,Delta time: 3.66
+37.57348,Log,Delta time greater than 0.5
+37.6134,Log,Delta time: 3.700001
+37.6134,Log,Delta time greater than 0.5
+37.62446,Log,Delta time: 3.720001
+37.62446,Log,Delta time greater than 0.5
+37.66296,Log,Delta time: 3.760002
+37.66296,Log,Delta time greater than 0.5
+37.67341,Log,Delta time: 3.760002
+37.67341,Log,Delta time greater than 0.5
+37.71193,Log,Delta time: 3.800003
+37.71193,Log,Delta time greater than 0.5
+37.722,Log,Delta time: 3.82
+37.722,Log,Delta time greater than 0.5
+37.76085,Log,Delta time: 3.860001
+37.76085,Log,Delta time greater than 0.5
+37.77111,Log,Delta time: 3.860001
+37.77111,Log,Delta time greater than 0.5
+37.8143,Log,Delta time: 3.900002
+37.8143,Log,Delta time greater than 0.5
+37.82045,Log,Delta time: 3.920002
+37.82045,Log,Delta time greater than 0.5
+37.86412,Log,Delta time: 3.960003
+37.86412,Log,Delta time greater than 0.5
+37.87394,Log,Delta time: 3.960003
+37.87394,Log,Delta time greater than 0.5
+37.91237,Log,Delta time: 4
+37.91237,Log,Delta time greater than 0.5
+37.92253,Log,Delta time: 4.02
+37.92253,Log,Delta time greater than 0.5
+37.96102,Log,Delta time: 4.060001
+37.96102,Log,Delta time greater than 0.5
+37.97083,Log,Delta time: 4.060001
+37.97083,Log,Delta time greater than 0.5
+38.0105,Log,Delta time: 4.100002
+38.0105,Log,Delta time greater than 0.5
+38.0211,Log,Delta time: 4.120003
+38.0211,Log,Delta time greater than 0.5
+38.06049,Log,Delta time: 4.16
+38.06049,Log,Delta time greater than 0.5
+38.0708,Log,Delta time: 4.16
+38.0708,Log,Delta time greater than 0.5
+38.11392,Log,Delta time: 4.200001
+38.11392,Log,Delta time greater than 0.5
+38.12407,Log,Delta time: 4.220001
+38.12407,Log,Delta time greater than 0.5
+38.16347,Log,Delta time: 4.260002
+38.16347,Log,Delta time greater than 0.5
+38.17329,Log,Delta time: 4.260002
+38.17329,Log,Delta time greater than 0.5
+38.21172,Log,Delta time: 4.300003
+38.21172,Log,Delta time greater than 0.5
+38.22168,Log,Delta time: 4.32
+38.22168,Log,Delta time greater than 0.5
+38.26042,Log,Delta time: 4.360001
+38.26042,Log,Delta time greater than 0.5
+38.27027,Log,Delta time: 4.360001
+38.27027,Log,Delta time greater than 0.5
+38.31351,Log,Delta time: 4.400002
+38.31351,Log,Delta time greater than 0.5
+38.32293,Log,Delta time: 4.420002
+38.32293,Log,Delta time greater than 0.5
+38.3618,Log,Delta time: 4.460003
+38.3618,Log,Delta time greater than 0.5
+38.37179,Log,Delta time: 4.460003
+38.37179,Log,Delta time greater than 0.5
+38.41022,Log,Delta time: 4.5
+38.41022,Log,Delta time greater than 0.5
+38.42502,Log,Delta time: 4.52
+38.42502,Log,Delta time greater than 0.5
+38.4641,Log,Delta time: 4.560001
+38.4641,Log,Delta time greater than 0.5
+38.47449,Log,Delta time: 4.560001
+38.47449,Log,Delta time greater than 0.5
+38.51303,Log,Delta time: 4.600002
+38.51303,Log,Delta time greater than 0.5
+38.52255,Log,Delta time: 4.620003
+38.52255,Log,Delta time greater than 0.5
+38.5617,Log,Delta time: 4.66
+38.5617,Log,Delta time greater than 0.5
+38.57176,Log,Delta time: 4.66
+38.57176,Log,Delta time greater than 0.5
+38.61155,Log,Delta time: 4.700001
+38.61155,Log,Delta time greater than 0.5
+38.62147,Log,Delta time: 4.720001
+38.62147,Log,Delta time greater than 0.5
+38.66108,Log,Delta time: 4.760002
+38.66108,Log,Delta time greater than 0.5
+38.6714,Log,Delta time: 4.760002
+38.6714,Log,Delta time greater than 0.5
+38.71003,Log,Delta time: 4.800003
+38.71003,Log,Delta time greater than 0.5
+38.72448,Log,Delta time: 4.82
+38.72448,Log,Delta time greater than 0.5
+38.76316,Log,Delta time: 4.860001
+38.76316,Log,Delta time greater than 0.5
+38.7737,Log,Delta time: 4.860001
+38.7737,Log,Delta time greater than 0.5
+38.81257,Log,Delta time: 4.900002
+38.81257,Log,Delta time greater than 0.5
+38.82223,Log,Delta time: 4.920002
+38.82223,Log,Delta time greater than 0.5
+38.86227,Log,Delta time: 4.960003
+38.86227,Log,Delta time greater than 0.5
+38.87215,Log,Delta time: 4.960003
+38.87215,Log,Delta time greater than 0.5
+39.52094,Log,Paused Timer Started at: 39.52
+39.52094,Log,Delta time: 0
+39.564,Log,Delta time: 0.0399971
+39.57409,Log,Delta time: 0.0399971
+39.61267,Log,Delta time: 0.07999802
+39.62216,Log,Delta time: 0.09999847
+39.66114,Log,Delta time: 0.1399994
+39.67137,Log,Delta time: 0.1399994
+39.71423,Log,Delta time: 0.1800003
+40.22197,Log,Paused Timer Started at: 40.22
+40.22197,Log,Delta time: 0
+40.26305,Log,Delta time: 0.04000092
+40.2728,Log,Delta time: 0.04000092
+40.31137,Log,Delta time: 0.08000183
+40.32146,Log,Delta time: 0.1000023
+40.36043,Log,Delta time: 0.1400032
+40.37033,Log,Delta time: 0.1400032
+40.41137,Log,Delta time: 0.1800003
+40.42103,Log,Delta time: 0.2000008
+40.46458,Log,Delta time: 0.2400017
+40.47451,Log,Delta time: 0.2400017
+40.51312,Log,Delta time: 0.2800026
+40.5228,Log,Delta time: 0.3000031
+40.56058,Log,Delta time: 0.3400002
+40.57042,Log,Delta time: 0.3400002
+40.61045,Log,Delta time: 0.3800011
+40.62001,Log,Delta time: 0.4000015
+40.66389,Log,Delta time: 0.4400024
+40.67374,Log,Delta time: 0.4400024
+40.71248,Log,Delta time: 0.4800034
+40.72302,Log,Delta time: 0.5
+40.72302,Log,Delta time greater than 0.5
+40.76114,Log,Delta time: 0.5400009
+40.76114,Log,Delta time greater than 0.5
+40.77106,Log,Delta time: 0.5400009
+40.77106,Log,Delta time greater than 0.5
+40.81023,Log,Delta time: 0.5800018
+40.81023,Log,Delta time greater than 0.5
+40.82001,Log,Delta time: 0.6000023
+40.82001,Log,Delta time greater than 0.5
+40.86002,Log,Delta time: 0.6400032
+40.86002,Log,Delta time greater than 0.5
+40.87006,Log,Delta time: 0.6400032
+40.87006,Log,Delta time greater than 0.5
+40.91364,Log,Delta time: 0.6800003
+40.91364,Log,Delta time greater than 0.5
+40.92344,Log,Delta time: 0.7000008
+40.92344,Log,Delta time greater than 0.5
+40.96169,Log,Delta time: 0.7400017
+40.96169,Log,Delta time greater than 0.5
+40.97174,Log,Delta time: 0.7400017
+40.97174,Log,Delta time greater than 0.5
+41.01391,Log,Delta time: 0.7800026
+41.01391,Log,Delta time greater than 0.5
+41.0233,Log,Delta time: 0.8000031
+41.0233,Log,Delta time greater than 0.5
+41.06167,Log,Delta time: 0.8400002
+41.06167,Log,Delta time greater than 0.5
+41.07152,Log,Delta time: 0.8400002
+41.07152,Log,Delta time greater than 0.5
+41.11456,Log,Delta time: 0.8800011
+41.11456,Log,Delta time greater than 0.5
+42.27414,Log,Paused Timer Started at: 42.26
+42.27414,Log,Delta time: 0
+42.31279,Log,Delta time: 0.04000092
+42.32241,Log,Delta time: 0.06000137
+42.3606,Log,Delta time: 0.1000023
+42.37033,Log,Delta time: 0.1000023
+42.41417,Log,Delta time: 0.1399994
+42.42005,Log,Delta time: 0.1599998
+42.46547,Log,Delta time: 0.2000008
+42.4725,Log,Delta time: 0.2000008
+42.51282,Log,Delta time: 0.2400017
+42.52349,Log,Delta time: 0.2600021
+42.56282,Log,Delta time: 0.2999992
+42.57286,Log,Delta time: 0.2999992
+42.6124,Log,Delta time: 0.3400002
+42.62301,Log,Delta time: 0.3600006
+42.66292,Log,Delta time: 0.4000015
+42.6746,Log,Delta time: 0.4000015
+42.71547,Log,Delta time: 0.4400024
+42.72052,Log,Delta time: 0.4599991
+42.76385,Log,Delta time: 0.5
+42.76385,Log,Delta time greater than 0.5
+42.77447,Log,Delta time: 0.5
+42.77447,Log,Delta time greater than 0.5
+42.81079,Log,Delta time: 0.5400009
+42.81079,Log,Delta time greater than 0.5
+42.82094,Log,Delta time: 0.5600014
+42.82094,Log,Delta time greater than 0.5
+42.86436,Log,Delta time: 0.6000023
+42.86436,Log,Delta time greater than 0.5
+42.87589,Log,Delta time: 0.6000023
+42.87589,Log,Delta time greater than 0.5
+42.91502,Log,Delta time: 0.6399994
+42.91502,Log,Delta time greater than 0.5
+42.92021,Log,Delta time: 0.6599998
+42.92021,Log,Delta time greater than 0.5
+42.9631,Log,Delta time: 0.7000008
+42.9631,Log,Delta time greater than 0.5
+42.97827,Log,Delta time: 0.7000008
+42.97827,Log,Delta time greater than 0.5
+43.01206,Log,Delta time: 0.7400017
+43.01206,Log,Delta time greater than 0.5
+43.0218,Log,Delta time: 0.7600021
+43.0218,Log,Delta time greater than 0.5
+44.32087,Log,Paused Timer Started at: 44.32
+44.32087,Log,Delta time: 0
+44.36324,Log,Delta time: 0.04000092
+44.37277,Log,Delta time: 0.04000092
+44.41025,Log,Delta time: 0.07999802
+44.42442,Log,Delta time: 0.09999847
+44.46312,Log,Delta time: 0.1399994
+44.47292,Log,Delta time: 0.1399994
+44.51273,Log,Delta time: 0.1800003
+44.52215,Log,Delta time: 0.2000008
+44.56457,Log,Delta time: 0.2399979
+44.57406,Log,Delta time: 0.2399979
+44.61138,Log,Delta time: 0.2799988
+44.62053,Log,Delta time: 0.2999992
+47.97081,Log,Paused Timer Started at: 47.96
+47.97081,Log,Delta time: 0
+48.01335,Log,Delta time: 0.04000092
+48.02277,Log,Delta time: 0.06000137
+48.06043,Log,Delta time: 0.09999847
+48.07429,Log,Delta time: 0.09999847
+48.1176,Log,Delta time: 0.1399994
+48.1225,Log,Delta time: 0.1599998
+48.16124,Log,Delta time: 0.2000008
+48.17057,Log,Delta time: 0.2000008
+48.21272,Log,Delta time: 0.2400017
+48.22252,Log,Delta time: 0.2599983
+48.2603,Log,Delta time: 0.2999992
+48.2744,Log,Delta time: 0.2999992
+48.31369,Log,Delta time: 0.3400002
+48.32326,Log,Delta time: 0.3600006
+48.36174,Log,Delta time: 0.4000015
+48.37229,Log,Delta time: 0.4000015
+48.41052,Log,Delta time: 0.4399986
+48.42482,Log,Delta time: 0.4599991
+48.46908,Log,Delta time: 0.5
+48.46908,Log,Delta time greater than 0.5
+48.47504,Log,Delta time: 0.5
+48.47504,Log,Delta time greater than 0.5
+48.51397,Log,Delta time: 0.5400009
+48.51397,Log,Delta time greater than 0.5
+48.52442,Log,Delta time: 0.5600014
+48.52442,Log,Delta time greater than 0.5
+48.56409,Log,Delta time: 0.5999985
+48.56409,Log,Delta time greater than 0.5
+48.57399,Log,Delta time: 0.5999985
+48.57399,Log,Delta time greater than 0.5
+48.61271,Log,Delta time: 0.6399994
+48.61271,Log,Delta time greater than 0.5
+48.62222,Log,Delta time: 0.6599998
+48.62222,Log,Delta time greater than 0.5
+48.66161,Log,Delta time: 0.7000008
+48.66161,Log,Delta time greater than 0.5
+48.67154,Log,Delta time: 0.7000008
+48.67154,Log,Delta time greater than 0.5
+48.71045,Log,Delta time: 0.7400017
+48.71045,Log,Delta time greater than 0.5
+48.72523,Log,Delta time: 0.7599983
+48.72523,Log,Delta time greater than 0.5
+48.76388,Log,Delta time: 0.7999992
+48.76388,Log,Delta time greater than 0.5
+48.77385,Log,Delta time: 0.7999992
+48.77385,Log,Delta time greater than 0.5
+48.81789,Log,Delta time: 0.8400002
+48.81789,Log,Delta time greater than 0.5
+48.82277,Log,Delta time: 0.8600006
+48.82277,Log,Delta time greater than 0.5
+48.86073,Log,Delta time: 0.9000015
+48.86073,Log,Delta time greater than 0.5
+48.87087,Log,Delta time: 0.9000015
+48.87087,Log,Delta time greater than 0.5
+48.91452,Log,Delta time: 0.9399986
+48.91452,Log,Delta time greater than 0.5
+48.92435,Log,Delta time: 0.9599991
+48.92435,Log,Delta time greater than 0.5
+48.97479,Log,Delta time: 1
+48.97479,Log,Delta time greater than 0.5
+48.97479,Log,Delta time: 1
+48.97479,Log,Delta time greater than 0.5
+49.01123,Log,Delta time: 1.040001
+49.01123,Log,Delta time greater than 0.5
+49.02077,Log,Delta time: 1.060001
+49.02077,Log,Delta time greater than 0.5
+49.06382,Log,Delta time: 1.099998
+49.06382,Log,Delta time greater than 0.5
+49.07463,Log,Delta time: 1.099998
+49.07463,Log,Delta time greater than 0.5
+49.11309,Log,Delta time: 1.139999
+49.11309,Log,Delta time greater than 0.5
+49.12249,Log,Delta time: 1.16
+49.12249,Log,Delta time greater than 0.5
+49.16096,Log,Delta time: 1.200001
+49.16096,Log,Delta time greater than 0.5
+49.17099,Log,Delta time: 1.200001
+49.17099,Log,Delta time greater than 0.5
+49.21159,Log,Delta time: 1.240002
+49.21159,Log,Delta time greater than 0.5
+49.2212,Log,Delta time: 1.259998
+49.2212,Log,Delta time greater than 0.5
+49.26099,Log,Delta time: 1.299999
+49.26099,Log,Delta time greater than 0.5
+49.27179,Log,Delta time: 1.299999
+49.27179,Log,Delta time greater than 0.5
+49.31029,Log,Delta time: 1.34
+49.31029,Log,Delta time greater than 0.5
+49.32407,Log,Delta time: 1.360001
+49.32407,Log,Delta time greater than 0.5
+49.36438,Log,Delta time: 1.400002
+49.36438,Log,Delta time greater than 0.5
+49.37442,Log,Delta time: 1.400002
+49.37442,Log,Delta time greater than 0.5
+49.41297,Log,Delta time: 1.439999
+49.41297,Log,Delta time greater than 0.5
+49.42244,Log,Delta time: 1.459999
+49.42244,Log,Delta time greater than 0.5
+49.46098,Log,Delta time: 1.5
+49.46098,Log,Delta time greater than 0.5
+49.4712,Log,Delta time: 1.5
+49.4712,Log,Delta time greater than 0.5
+49.51349,Log,Delta time: 1.540001
+49.51349,Log,Delta time greater than 0.5
+49.52928,Log,Delta time: 1.560001
+49.52928,Log,Delta time greater than 0.5
+49.56403,Log,Delta time: 1.599998
+49.56403,Log,Delta time greater than 0.5
+49.57392,Log,Delta time: 1.599998
+49.57392,Log,Delta time greater than 0.5
+49.61259,Log,Delta time: 1.639999
+49.61259,Log,Delta time greater than 0.5
+49.62257,Log,Delta time: 1.66
+49.62257,Log,Delta time greater than 0.5
+51.32359,Log,Paused Timer Started at: 51.32
+51.32359,Log,Delta time: 0
+51.3716,Log,Paused Timer Started at: 51.36
+51.3716,Log,Delta time: 0
+51.4113,Log,Delta time: 0.0399971
+51.42111,Log,Delta time: 0.05999756
+51.4603,Log,Delta time: 0.09999847
+51.47024,Log,Delta time: 0.09999847
+51.51345,Log,Delta time: 0.1399994
+51.52299,Log,Delta time: 0.1599998
+51.56153,Log,Delta time: 0.1999969
+51.57198,Log,Delta time: 0.1999969
+51.6145,Log,Delta time: 0.2399979
+51.62405,Log,Delta time: 0.2599983
+51.66423,Log,Delta time: 0.2999992
+51.67441,Log,Delta time: 0.2999992
+51.71267,Log,Delta time: 0.3399963
+51.72219,Log,Delta time: 0.3599968
+51.76021,Log,Delta time: 0.3999977
+51.77522,Log,Delta time: 0.3999977
+51.8139,Log,Delta time: 0.4399986
+51.82314,Log,Delta time: 0.4599991
+51.86099,Log,Delta time: 0.5
+51.86099,Log,Delta time greater than 0.5
+51.87058,Log,Delta time: 0.5
+51.87058,Log,Delta time greater than 0.5
+51.91227,Log,Delta time: 0.5399971
+51.91227,Log,Delta time greater than 0.5
+51.9222,Log,Delta time: 0.5599976
+51.9222,Log,Delta time greater than 0.5
+51.96036,Log,Delta time: 0.5999985
+51.96036,Log,Delta time greater than 0.5
+51.97211,Log,Delta time: 0.5999985
+51.97211,Log,Delta time greater than 0.5
+52.01174,Log,Delta time: 0.6399994
+52.01174,Log,Delta time greater than 0.5
+52.02117,Log,Delta time: 0.6599998
+52.02117,Log,Delta time greater than 0.5
+52.06319,Log,Delta time: 0.6999969
+52.06319,Log,Delta time greater than 0.5
+52.07298,Log,Delta time: 0.6999969
+52.07298,Log,Delta time greater than 0.5
+52.11148,Log,Delta time: 0.7399979
+52.11148,Log,Delta time greater than 0.5
+52.1208,Log,Delta time: 0.7599983
+52.1208,Log,Delta time greater than 0.5
+52.16096,Log,Delta time: 0.7999992
+52.16096,Log,Delta time greater than 0.5
+52.17052,Log,Delta time: 0.7999992
+52.17052,Log,Delta time greater than 0.5
+52.21325,Log,Delta time: 0.8399963
+52.21325,Log,Delta time greater than 0.5
+52.22309,Log,Delta time: 0.8599968
+52.22309,Log,Delta time greater than 0.5
+52.26172,Log,Delta time: 0.8999977
+52.26172,Log,Delta time greater than 0.5
+52.27145,Log,Delta time: 0.8999977
+52.27145,Log,Delta time greater than 0.5
+52.31127,Log,Delta time: 0.9399986
+52.31127,Log,Delta time greater than 0.5
+52.32069,Log,Delta time: 0.9599991
+52.32069,Log,Delta time greater than 0.5
+52.36318,Log,Delta time: 1
+52.36318,Log,Delta time greater than 0.5
+52.37277,Log,Delta time: 1
+52.37277,Log,Delta time greater than 0.5
+52.41153,Log,Delta time: 1.039997
+52.41153,Log,Delta time greater than 0.5
+52.4208,Log,Delta time: 1.059998
+52.4208,Log,Delta time greater than 0.5
+52.46313,Log,Delta time: 1.099998
+52.46313,Log,Delta time greater than 0.5
+52.47441,Log,Delta time: 1.099998
+52.47441,Log,Delta time greater than 0.5
+52.51289,Log,Delta time: 1.139999
+52.51289,Log,Delta time greater than 0.5
+54.62241,Log,Paused Timer Started at: 54.62
+54.62241,Log,Delta time: 0
+54.67211,Log,Paused Timer Started at: 54.66
+54.67211,Log,Delta time: 0
+54.7724,Log,Paused Timer Started at: 54.76
+54.7724,Log,Delta time: 0
+55.12263,Log,Paused Timer Started at: 55.12
+55.12263,Log,Delta time: 0
+55.16347,Log,Delta time: 0.04000092
+55.17229,Log,Delta time: 0.04000092
+55.21247,Log,Delta time: 0.07999802
+55.22872,Log,Delta time: 0.09999847
+55.26096,Log,Delta time: 0.1399994
+55.27018,Log,Delta time: 0.1399994
+55.31072,Log,Delta time: 0.1800003
+55.3241,Log,Delta time: 0.2000008
+55.36023,Log,Delta time: 0.2400017
+55.3736,Log,Delta time: 0.2400017
+55.41387,Log,Delta time: 0.2799988
+55.42359,Log,Delta time: 0.2999992
+55.46438,Log,Delta time: 0.3400002
+55.47326,Log,Delta time: 0.3400002
+55.51385,Log,Delta time: 0.3800011
+55.52281,Log,Delta time: 0.4000015
+55.56072,Log,Delta time: 0.4399986
+55.57433,Log,Delta time: 0.4399986
+55.61031,Log,Delta time: 0.4799995
+55.62408,Log,Delta time: 0.5
+55.62408,Log,Delta time greater than 0.5
+55.66082,Log,Delta time: 0.5400009
+55.66082,Log,Delta time greater than 0.5
+55.67012,Log,Delta time: 0.5400009
+55.67012,Log,Delta time greater than 0.5
+55.71235,Log,Delta time: 0.579998
+55.71235,Log,Delta time greater than 0.5
+55.72173,Log,Delta time: 0.5999985
+55.72173,Log,Delta time greater than 0.5
+55.76254,Log,Delta time: 0.6399994
+55.76254,Log,Delta time greater than 0.5
+55.77185,Log,Delta time: 0.6399994
+55.77185,Log,Delta time greater than 0.5
+55.81361,Log,Delta time: 0.6800003
+55.81361,Log,Delta time greater than 0.5
+55.82371,Log,Delta time: 0.7000008
+55.82371,Log,Delta time greater than 0.5
+55.8624,Log,Delta time: 0.7400017
+55.8624,Log,Delta time greater than 0.5
+55.87235,Log,Delta time: 0.7400017
+55.87235,Log,Delta time greater than 0.5
+55.91045,Log,Delta time: 0.7799988
+55.91045,Log,Delta time greater than 0.5
+55.92462,Log,Delta time: 0.7999992
+55.92462,Log,Delta time greater than 0.5
+55.96182,Log,Delta time: 0.8400002
+55.96182,Log,Delta time greater than 0.5
+55.97121,Log,Delta time: 0.8400002
+55.97121,Log,Delta time greater than 0.5
+57.17232,Log,Paused Timer Started at: 57.16
+57.17232,Log,Delta time: 0
+57.2129,Log,Delta time: 0.0399971
+57.22169,Log,Delta time: 0.05999756
+57.26075,Log,Delta time: 0.09999847
+57.27067,Log,Delta time: 0.09999847
+57.31131,Log,Delta time: 0.1399994
+57.32114,Log,Delta time: 0.1599998
+57.3625,Log,Delta time: 0.2000008
+57.37152,Log,Delta time: 0.2000008
+57.41399,Log,Delta time: 0.2399979
+57.42349,Log,Delta time: 0.2599983
+57.4614,Log,Delta time: 0.2999992
+57.4706,Log,Delta time: 0.2999992
+57.51141,Log,Delta time: 0.3400002
+57.52053,Log,Delta time: 0.3600006
+57.5688,Log,Delta time: 0.3999977
+57.57387,Log,Delta time: 0.3999977
+57.61032,Log,Delta time: 0.4399986
+57.62452,Log,Delta time: 0.4599991
+57.66311,Log,Delta time: 0.5
+57.66311,Log,Delta time greater than 0.5
+57.67269,Log,Delta time: 0.5
+57.67269,Log,Delta time greater than 0.5
+57.7137,Log,Delta time: 0.5399971
+57.7137,Log,Delta time greater than 0.5
+57.72485,Log,Delta time: 0.5599976
+57.72485,Log,Delta time greater than 0.5
+57.7616,Log,Delta time: 0.5999985
+57.7616,Log,Delta time greater than 0.5
+57.7715,Log,Delta time: 0.5999985
+57.7715,Log,Delta time greater than 0.5
+57.81254,Log,Delta time: 0.6399994
+57.81254,Log,Delta time greater than 0.5
+57.82178,Log,Delta time: 0.6599998
+57.82178,Log,Delta time greater than 0.5
+57.86421,Log,Delta time: 0.7000008
+57.86421,Log,Delta time greater than 0.5
+57.88,Log,Delta time: 0.7199974
+57.88,Log,Delta time greater than 0.5
+57.91259,Log,Delta time: 0.7399979
+57.91259,Log,Delta time greater than 0.5
+57.92199,Log,Delta time: 0.7599983
+57.92199,Log,Delta time greater than 0.5
+57.96288,Log,Delta time: 0.7999992
+57.96288,Log,Delta time greater than 0.5
+57.97241,Log,Delta time: 0.7999992
+57.97241,Log,Delta time greater than 0.5
+58.01404,Log,Delta time: 0.8400002
+58.01404,Log,Delta time greater than 0.5
+58.0295,Log,Delta time: 0.8600006
+58.0295,Log,Delta time greater than 0.5
+58.0628,Log,Delta time: 0.8999977
+58.0628,Log,Delta time greater than 0.5
+58.07219,Log,Delta time: 0.8999977
+58.07219,Log,Delta time greater than 0.5
+58.11423,Log,Delta time: 0.9399986
+58.11423,Log,Delta time greater than 0.5
+58.1236,Log,Delta time: 0.9599991
+58.1236,Log,Delta time greater than 0.5
+58.16045,Log,Delta time: 1
+58.16045,Log,Delta time greater than 0.5
+58.17422,Log,Delta time: 1
+58.17422,Log,Delta time greater than 0.5
+58.21404,Log,Delta time: 1.039997
+58.21404,Log,Delta time greater than 0.5
+58.22388,Log,Delta time: 1.059998
+58.22388,Log,Delta time greater than 0.5
+58.26168,Log,Delta time: 1.099998
+58.26168,Log,Delta time greater than 0.5
+58.27126,Log,Delta time: 1.099998
+58.27126,Log,Delta time greater than 0.5
+58.31257,Log,Delta time: 1.139999
+58.31257,Log,Delta time greater than 0.5
+58.3219,Log,Delta time: 1.16
+58.3219,Log,Delta time greater than 0.5
+58.36111,Log,Delta time: 1.199997
+58.36111,Log,Delta time greater than 0.5
+58.37095,Log,Delta time: 1.199997
+58.37095,Log,Delta time greater than 0.5
+58.41251,Log,Delta time: 1.239998
+58.41251,Log,Delta time greater than 0.5
+58.422,Log,Delta time: 1.259998
+58.422,Log,Delta time greater than 0.5
+58.46387,Log,Delta time: 1.299999
+58.46387,Log,Delta time greater than 0.5
+58.47317,Log,Delta time: 1.299999
+58.47317,Log,Delta time greater than 0.5
+58.51241,Log,Delta time: 1.34
+58.51241,Log,Delta time greater than 0.5
+58.52216,Log,Delta time: 1.360001
+58.52216,Log,Delta time greater than 0.5
+58.56358,Log,Delta time: 1.399998
+58.56358,Log,Delta time greater than 0.5
+58.5731,Log,Delta time: 1.399998
+58.5731,Log,Delta time greater than 0.5
+58.61391,Log,Delta time: 1.439999
+58.61391,Log,Delta time greater than 0.5
+58.62311,Log,Delta time: 1.459999
+58.62311,Log,Delta time greater than 0.5
+58.66232,Log,Delta time: 1.5
+58.66232,Log,Delta time greater than 0.5
+58.67197,Log,Delta time: 1.5
+58.67197,Log,Delta time greater than 0.5
+60.12234,Log,Paused Timer Started at: 60.12
+60.12234,Log,Delta time: 0
+60.17086,Log,Delta time: 0.04000092
+60.17086,Log,Delta time: 0.04000092
+60.2128,Log,Delta time: 0.07999802
+60.2217,Log,Delta time: 0.09999847
+60.2632,Log,Delta time: 0.1399994
+60.27251,Log,Delta time: 0.1399994
+60.31019,Log,Delta time: 0.1800003
+60.3256,Log,Delta time: 0.2000008
+60.36245,Log,Delta time: 0.2399979
+60.3714,Log,Delta time: 0.2399979
+60.41217,Log,Delta time: 0.2799988
+60.42125,Log,Delta time: 0.2999992
+60.46236,Log,Delta time: 0.3400002
+60.47319,Log,Delta time: 0.3400002
+60.51411,Log,Delta time: 0.3800011
+60.52306,Log,Delta time: 0.4000015
+60.5637,Log,Delta time: 0.4399986
+60.57249,Log,Delta time: 0.4399986
+60.61321,Log,Delta time: 0.4799995
+60.6239,Log,Delta time: 0.5
+60.6239,Log,Delta time greater than 0.5
+60.66036,Log,Delta time: 0.5400009
+60.66036,Log,Delta time greater than 0.5
+60.67024,Log,Delta time: 0.5400009
+60.67024,Log,Delta time greater than 0.5
+60.7113,Log,Delta time: 0.579998
+60.7113,Log,Delta time greater than 0.5
+60.72054,Log,Delta time: 0.5999985
+60.72054,Log,Delta time greater than 0.5
+60.76743,Log,Delta time: 0.6399994
+60.76743,Log,Delta time greater than 0.5
+60.77234,Log,Delta time: 0.6399994
+60.77234,Log,Delta time greater than 0.5
+60.81377,Log,Delta time: 0.6800003
+60.81377,Log,Delta time greater than 0.5
+60.82304,Log,Delta time: 0.7000008
+60.82304,Log,Delta time greater than 0.5
+60.86002,Log,Delta time: 0.7399979
+60.86002,Log,Delta time greater than 0.5
+60.87407,Log,Delta time: 0.7399979
+60.87407,Log,Delta time greater than 0.5
+60.91051,Log,Delta time: 0.7799988
+60.91051,Log,Delta time greater than 0.5
+60.92144,Log,Delta time: 0.7999992
+60.92144,Log,Delta time greater than 0.5
+60.96247,Log,Delta time: 0.8400002
+60.96247,Log,Delta time greater than 0.5
+60.97174,Log,Delta time: 0.8400002
+60.97174,Log,Delta time greater than 0.5
+61.01225,Log,Delta time: 0.8800011
+61.01225,Log,Delta time greater than 0.5
+61.02136,Log,Delta time: 0.9000015
+61.02136,Log,Delta time greater than 0.5
+61.06406,Log,Delta time: 0.9399986
+61.06406,Log,Delta time greater than 0.5
+61.07365,Log,Delta time: 0.9399986
+61.07365,Log,Delta time greater than 0.5
+61.11039,Log,Delta time: 0.9799995
+61.11039,Log,Delta time greater than 0.5
+61.12421,Log,Delta time: 1
+61.12421,Log,Delta time greater than 0.5
+61.16045,Log,Delta time: 1.040001
+61.16045,Log,Delta time greater than 0.5
+61.17405,Log,Delta time: 1.040001
+61.17405,Log,Delta time greater than 0.5
+61.21217,Log,Delta time: 1.079998
+61.21217,Log,Delta time greater than 0.5
+61.22166,Log,Delta time: 1.099998
+61.22166,Log,Delta time greater than 0.5
+62.47218,Log,Paused Timer Started at: 62.46
+62.47218,Log,Delta time: 0
+62.51007,Log,Delta time: 0.04000092
+62.5238,Log,Delta time: 0.06000137
+62.56128,Log,Delta time: 0.09999847
+62.57281,Log,Delta time: 0.09999847
+62.61428,Log,Delta time: 0.1399994
+62.62312,Log,Delta time: 0.1599998
+62.66412,Log,Delta time: 0.2000008
+62.67353,Log,Delta time: 0.2000008
+62.71694,Log,Delta time: 0.2399979
+62.72176,Log,Delta time: 0.2599983
+62.76012,Log,Delta time: 0.2999992
+62.77403,Log,Delta time: 0.2999992
+62.81029,Log,Delta time: 0.3400002
+62.82381,Log,Delta time: 0.3600006
+62.86746,Log,Delta time: 0.3999977
+62.87238,Log,Delta time: 0.3999977
+62.9135,Log,Delta time: 0.4399986
+62.92229,Log,Delta time: 0.4599991
+62.96368,Log,Delta time: 0.5
+62.96368,Log,Delta time greater than 0.5
+62.97268,Log,Delta time: 0.5
+62.97268,Log,Delta time greater than 0.5
+63.01458,Log,Delta time: 0.5400009
+63.01458,Log,Delta time greater than 0.5
+63.02384,Log,Delta time: 0.5600014
+63.02384,Log,Delta time greater than 0.5
+63.06039,Log,Delta time: 0.5999985
+63.06039,Log,Delta time greater than 0.5
+63.07402,Log,Delta time: 0.5999985
+63.07402,Log,Delta time greater than 0.5
+63.11015,Log,Delta time: 0.6399994
+63.11015,Log,Delta time greater than 0.5
+63.12031,Log,Delta time: 0.6599998
+63.12031,Log,Delta time greater than 0.5
+63.16315,Log,Delta time: 0.7000008
+63.16315,Log,Delta time greater than 0.5
+63.17286,Log,Delta time: 0.7000008
+63.17286,Log,Delta time greater than 0.5
+63.21415,Log,Delta time: 0.7399979
+63.21415,Log,Delta time greater than 0.5
+63.22339,Log,Delta time: 0.7599983
+63.22339,Log,Delta time greater than 0.5
+63.26004,Log,Delta time: 0.7999992
+63.26004,Log,Delta time greater than 0.5
+63.27034,Log,Delta time: 0.7999992
+63.27034,Log,Delta time greater than 0.5
+63.31227,Log,Delta time: 0.8400002
+63.31227,Log,Delta time greater than 0.5
+63.32234,Log,Delta time: 0.8600006
+63.32234,Log,Delta time greater than 0.5
+63.36413,Log,Delta time: 0.8999977
+63.36413,Log,Delta time greater than 0.5
+63.37375,Log,Delta time: 0.8999977
+63.37375,Log,Delta time greater than 0.5
+63.41029,Log,Delta time: 0.9399986
+63.41029,Log,Delta time greater than 0.5
+63.42448,Log,Delta time: 0.9599991
+63.42448,Log,Delta time greater than 0.5
+63.46371,Log,Delta time: 1
+63.46371,Log,Delta time greater than 0.5
+63.47319,Log,Delta time: 1
+63.47319,Log,Delta time greater than 0.5
+64.86158,Log,Paused Timer Started at: 64.86
+64.86158,Log,Delta time: 0
+64.87125,Log,Delta time: 0
+64.91416,Log,Delta time: 0.04000092
+64.92319,Log,Delta time: 0.05999756
+64.96432,Log,Delta time: 0.09999847
+64.97393,Log,Delta time: 0.09999847
+65.01396,Log,Delta time: 0.1399994
+65.02257,Log,Delta time: 0.159996
+65.06036,Log,Delta time: 0.1999969
+65.0742,Log,Delta time: 0.1999969
+65.11433,Log,Delta time: 0.2399979
+65.12315,Log,Delta time: 0.2599945
+65.16048,Log,Delta time: 0.2999954
+65.17458,Log,Delta time: 0.2999954
+65.21354,Log,Delta time: 0.3399963
+65.22233,Log,Delta time: 0.3600006
+65.26344,Log,Delta time: 0.4000015
+65.27247,Log,Delta time: 0.4000015
+65.31343,Log,Delta time: 0.4399948
+65.32204,Log,Delta time: 0.4599991
+65.36073,Log,Delta time: 0.5
+65.36073,Log,Delta time greater than 0.5
+65.37029,Log,Delta time: 0.5
+65.37029,Log,Delta time greater than 0.5
+65.41136,Log,Delta time: 0.5400009
+65.41136,Log,Delta time greater than 0.5
+65.42054,Log,Delta time: 0.5599976
+65.42054,Log,Delta time greater than 0.5
+65.46271,Log,Delta time: 0.5999985
+65.46271,Log,Delta time greater than 0.5
+65.47787,Log,Delta time: 0.5999985
+65.47787,Log,Delta time greater than 0.5
+65.51424,Log,Delta time: 0.6399994
+65.51424,Log,Delta time greater than 0.5
+65.52351,Log,Delta time: 0.659996
+65.52351,Log,Delta time greater than 0.5
+65.56064,Log,Delta time: 0.6999969
+65.56064,Log,Delta time greater than 0.5
+65.57003,Log,Delta time: 0.6999969
+65.57003,Log,Delta time greater than 0.5
+65.61079,Log,Delta time: 0.7399979
+65.61079,Log,Delta time greater than 0.5
+65.62188,Log,Delta time: 0.7599945
+65.62188,Log,Delta time greater than 0.5
+65.66402,Log,Delta time: 0.7999954
+65.66402,Log,Delta time greater than 0.5
+65.67371,Log,Delta time: 0.7999954
+65.67371,Log,Delta time greater than 0.5
+65.71075,Log,Delta time: 0.8399963
+65.71075,Log,Delta time greater than 0.5
+65.72002,Log,Delta time: 0.8600006
+65.72002,Log,Delta time greater than 0.5
+65.76212,Log,Delta time: 0.9000015
+65.76212,Log,Delta time greater than 0.5
+65.77167,Log,Delta time: 0.9000015
+65.77167,Log,Delta time greater than 0.5
+65.81245,Log,Delta time: 0.9399948
+65.81245,Log,Delta time greater than 0.5
+65.82164,Log,Delta time: 0.9599991
+65.82164,Log,Delta time greater than 0.5
+66.81116,Log,Paused Timer Started at: 66.8
+66.81116,Log,Delta time: 0
+66.82011,Log,Delta time: 0.02000427
+66.86028,Log,Delta time: 0.06000519
+66.87057,Log,Delta time: 0.06000519
+66.91285,Log,Delta time: 0.1000061
+66.92176,Log,Delta time: 0.1200027
+66.96285,Log,Delta time: 0.1600037
+66.97216,Log,Delta time: 0.1600037
+67.01307,Log,Delta time: 0.2000046
+67.02169,Log,Delta time: 0.2200012
+67.06351,Log,Delta time: 0.2600021
+67.07305,Log,Delta time: 0.2600021
+67.11009,Log,Delta time: 0.3000031
+67.12315,Log,Delta time: 0.3199997
+67.16436,Log,Delta time: 0.3600006
+67.18,Log,Delta time: 0.3800049
+67.21427,Log,Delta time: 0.4000015
+67.22317,Log,Delta time: 0.4200058
+67.62206,Log,Paused Timer Started at: 67.62
+67.62206,Log,Delta time: 0
+68.52039,Log,Paused Timer Started at: 68.52
+68.52039,Log,Delta time: 0
+68.56069,Log,Delta time: 0.04000092
+68.57497,Log,Delta time: 0.04000092
+68.61176,Log,Delta time: 0.08000183
+68.62263,Log,Delta time: 0.09999847
+68.66342,Log,Delta time: 0.1399994
+68.67282,Log,Delta time: 0.1399994
+68.71347,Log,Delta time: 0.1800003
+68.72215,Log,Delta time: 0.2000046
+68.7648,Log,Delta time: 0.2400055
+68.77412,Log,Delta time: 0.2400055
+70.32152,Log,Paused Timer Started at: 70.32
+70.32152,Log,Delta time: 0
+70.37199,Log,Paused Timer Started at: 70.36
+70.37199,Log,Delta time: 0
+70.42137,Log,Paused Timer Started at: 70.42
+70.42137,Log,Delta time: 0
+70.48,Log,Paused Timer Started at: 70.48
+70.48,Log,Delta time: 0
+70.52345,Log,Paused Timer Started at: 70.52
+70.52345,Log,Delta time: 0
+70.72379,Log,Paused Timer Started at: 70.72
+70.72379,Log,Delta time: 0
+70.77174,Log,Paused Timer Started at: 70.76
+70.77174,Log,Delta time: 0
+70.82219,Log,Paused Timer Started at: 70.82
+70.82219,Log,Delta time: 0
+70.97143,Log,Paused Timer Started at: 70.96
+70.97143,Log,Delta time: 0
+71.02048,Log,Paused Timer Started at: 71.02
+71.02048,Log,Delta time: 0
+71.07018,Log,Paused Timer Started at: 71.06
+71.07018,Log,Delta time: 0
+71.42222,Log,Paused Timer Started at: 71.42
+71.42222,Log,Delta time: 0
+71.47935,Log,Paused Timer Started at: 71.46
+71.47935,Log,Delta time: 0
+71.52317,Log,Paused Timer Started at: 71.52
+71.52317,Log,Delta time: 0
+71.57377,Log,Paused Timer Started at: 71.56
+71.57377,Log,Delta time: 0
+71.6225,Log,Paused Timer Started at: 71.62
+71.6225,Log,Delta time: 0
+71.67041,Log,Paused Timer Started at: 71.66
+71.67041,Log,Delta time: 0
+71.72083,Log,Paused Timer Started at: 71.72
+71.72083,Log,Delta time: 0
+71.76372,Log,Delta time: 0.04000092
+71.77318,Log,Delta time: 0.04000092
+71.81488,Log,Delta time: 0.0799942
+71.82397,Log,Delta time: 0.09999847
+71.87022,Log,Paused Timer Started at: 71.86
+71.87022,Log,Delta time: 0
+71.91329,Log,Delta time: 0.04000092
+71.92261,Log,Delta time: 0.05999756
+71.96129,Log,Delta time: 0.09999847
+71.97051,Log,Delta time: 0.09999847
+72.01113,Log,Delta time: 0.1399994
+72.02042,Log,Delta time: 0.159996
+72.07118,Log,Paused Timer Started at: 72.06
+72.07118,Log,Delta time: 0
+72.11395,Log,Delta time: 0.04000092
+72.12286,Log,Delta time: 0.05999756
+72.16359,Log,Delta time: 0.09999847
+72.17302,Log,Delta time: 0.09999847
+72.22,Log,Delta time: 0.1600037
+72.22092,Log,Delta time: 0.1600037
+72.27358,Log,Paused Timer Started at: 72.26
+72.27358,Log,Delta time: 0
+72.67365,Log,Paused Timer Started at: 72.66
+72.67365,Log,Delta time: 0
+72.72359,Log,Paused Timer Started at: 72.72
+72.72359,Log,Delta time: 0
+72.97432,Log,Paused Timer Started at: 72.96
+72.97432,Log,Delta time: 0
+73.02465,Log,Paused Timer Started at: 73.02
+73.02465,Log,Delta time: 0
+73.06406,Log,Delta time: 0.04000092
+73.07332,Log,Delta time: 0.04000092
+73.11454,Log,Delta time: 0.08000183
+73.12312,Log,Delta time: 0.09999847
+73.16381,Log,Delta time: 0.1399994
+73.17304,Log,Delta time: 0.1399994
+73.21181,Log,Delta time: 0.1800003
+73.22078,Log,Delta time: 0.2000046
+73.26219,Log,Delta time: 0.2400055
+73.27148,Log,Delta time: 0.2400055
+73.31252,Log,Delta time: 0.2799988
+73.32355,Log,Delta time: 0.3000031
+73.3602,Log,Delta time: 0.340004
+73.37354,Log,Delta time: 0.340004
+73.41405,Log,Delta time: 0.3800049
+73.42274,Log,Delta time: 0.4000015
+73.46097,Log,Delta time: 0.4400024
+73.47034,Log,Delta time: 0.4400024
+73.51466,Log,Delta time: 0.4800034
+73.52349,Log,Delta time: 0.5
+73.52349,Log,Delta time greater than 0.5
+73.5603,Log,Delta time: 0.5400009
+73.5603,Log,Delta time greater than 0.5
+73.57435,Log,Delta time: 0.5400009
+73.57435,Log,Delta time greater than 0.5
+73.61159,Log,Delta time: 0.5800018
+73.61159,Log,Delta time greater than 0.5
+73.62122,Log,Delta time: 0.5999985
+73.62122,Log,Delta time greater than 0.5
+73.66248,Log,Delta time: 0.6399994
+73.66248,Log,Delta time greater than 0.5
+73.67191,Log,Delta time: 0.6399994
+73.67191,Log,Delta time greater than 0.5
+73.71176,Log,Delta time: 0.6800003
+73.71176,Log,Delta time greater than 0.5
+73.72102,Log,Delta time: 0.7000046
+73.72102,Log,Delta time greater than 0.5
+73.76005,Log,Delta time: 0.7400055
+73.76005,Log,Delta time greater than 0.5
+73.77486,Log,Delta time: 0.7400055
+73.77486,Log,Delta time greater than 0.5
+73.81081,Log,Delta time: 0.7799988
+73.81081,Log,Delta time greater than 0.5
+73.82011,Log,Delta time: 0.8000031
+73.82011,Log,Delta time greater than 0.5
+73.86784,Log,Delta time: 0.840004
+73.86784,Log,Delta time greater than 0.5
+73.87289,Log,Delta time: 0.840004
+73.87289,Log,Delta time greater than 0.5
+73.91435,Log,Delta time: 0.8800049
+73.91435,Log,Delta time greater than 0.5
+73.92373,Log,Delta time: 0.9000015
+73.92373,Log,Delta time greater than 0.5
+73.96017,Log,Delta time: 0.9400024
+73.96017,Log,Delta time greater than 0.5
+73.97028,Log,Delta time: 0.9400024
+73.97028,Log,Delta time greater than 0.5
+74.0154,Log,Delta time: 0.9800034
+74.0154,Log,Delta time greater than 0.5
+74.02008,Log,Delta time: 1
+74.02008,Log,Delta time greater than 0.5
+74.06169,Log,Delta time: 1.040001
+74.06169,Log,Delta time greater than 0.5
+74.07116,Log,Delta time: 1.040001
+74.07116,Log,Delta time greater than 0.5
+74.11174,Log,Delta time: 1.080002
+74.11174,Log,Delta time greater than 0.5
+74.12094,Log,Delta time: 1.099998
+74.12094,Log,Delta time greater than 0.5
+74.16347,Log,Delta time: 1.139999
+74.16347,Log,Delta time greater than 0.5
+74.17285,Log,Delta time: 1.139999
+74.17285,Log,Delta time greater than 0.5
+74.21304,Log,Delta time: 1.18
+74.21304,Log,Delta time greater than 0.5
+74.2222,Log,Delta time: 1.200005
+74.2222,Log,Delta time greater than 0.5
+74.26321,Log,Delta time: 1.240005
+74.26321,Log,Delta time greater than 0.5
+74.27736,Log,Delta time: 1.240005
+74.27736,Log,Delta time greater than 0.5
+74.31025,Log,Delta time: 1.279999
+74.31025,Log,Delta time greater than 0.5
+74.32416,Log,Delta time: 1.300003
+74.32416,Log,Delta time greater than 0.5
+74.36168,Log,Delta time: 1.340004
+74.36168,Log,Delta time greater than 0.5
+74.37118,Log,Delta time: 1.340004
+74.37118,Log,Delta time greater than 0.5
+74.41396,Log,Delta time: 1.380005
+74.41396,Log,Delta time greater than 0.5
+74.42394,Log,Delta time: 1.400002
+74.42394,Log,Delta time greater than 0.5
+74.46304,Log,Delta time: 1.440002
+74.46304,Log,Delta time greater than 0.5
+74.47263,Log,Delta time: 1.440002
+74.47263,Log,Delta time greater than 0.5
+74.51118,Log,Delta time: 1.480003
+74.51118,Log,Delta time greater than 0.5
+74.52143,Log,Delta time: 1.5
+74.52143,Log,Delta time greater than 0.5
+74.56049,Log,Delta time: 1.540001
+74.56049,Log,Delta time greater than 0.5
+74.57022,Log,Delta time: 1.540001
+74.57022,Log,Delta time greater than 0.5
+74.6107,Log,Delta time: 1.580002
+74.6107,Log,Delta time greater than 0.5
+74.6201,Log,Delta time: 1.599998
+74.6201,Log,Delta time greater than 0.5
+74.66139,Log,Delta time: 1.639999
+74.66139,Log,Delta time greater than 0.5
+74.67065,Log,Delta time: 1.639999
+74.67065,Log,Delta time greater than 0.5
+74.71278,Log,Delta time: 1.68
+74.71278,Log,Delta time greater than 0.5
+74.72227,Log,Delta time: 1.700005
+74.72227,Log,Delta time greater than 0.5
+74.76308,Log,Delta time: 1.740005
+74.76308,Log,Delta time greater than 0.5
+74.77254,Log,Delta time: 1.740005
+74.77254,Log,Delta time greater than 0.5
+74.81303,Log,Delta time: 1.779999
+74.81303,Log,Delta time greater than 0.5
+74.82439,Log,Delta time: 1.800003
+74.82439,Log,Delta time greater than 0.5
+74.86369,Log,Delta time: 1.840004
+74.86369,Log,Delta time greater than 0.5
+74.87296,Log,Delta time: 1.840004
+74.87296,Log,Delta time greater than 0.5
+74.91357,Log,Delta time: 1.880005
+74.91357,Log,Delta time greater than 0.5
+74.92294,Log,Delta time: 1.900002
+74.92294,Log,Delta time greater than 0.5
+74.96123,Log,Delta time: 1.940002
+74.96123,Log,Delta time greater than 0.5
+74.97093,Log,Delta time: 1.940002
+74.97093,Log,Delta time greater than 0.5
+75.01188,Log,Delta time: 1.980003
+75.01188,Log,Delta time greater than 0.5
+75.02087,Log,Delta time: 2
+75.02087,Log,Delta time greater than 0.5
+75.06407,Log,Delta time: 2.040001
+75.06407,Log,Delta time greater than 0.5
+75.07089,Log,Delta time: 2.040001
+75.07089,Log,Delta time greater than 0.5
+75.11395,Log,Delta time: 2.080002
+75.11395,Log,Delta time greater than 0.5
+75.12341,Log,Delta time: 2.099998
+75.12341,Log,Delta time greater than 0.5
+75.16026,Log,Delta time: 2.139999
+75.16026,Log,Delta time greater than 0.5
+75.17036,Log,Delta time: 2.139999
+75.17036,Log,Delta time greater than 0.5
+75.21131,Log,Delta time: 2.18
+75.21131,Log,Delta time greater than 0.5
+75.22036,Log,Delta time: 2.200005
+75.22036,Log,Delta time greater than 0.5
+75.26372,Log,Delta time: 2.239998
+75.26372,Log,Delta time greater than 0.5
+75.27315,Log,Delta time: 2.239998
+75.27315,Log,Delta time greater than 0.5
+75.3136,Log,Delta time: 2.279999
+75.3136,Log,Delta time greater than 0.5
+75.32283,Log,Delta time: 2.300003
+75.32283,Log,Delta time greater than 0.5
+75.36514,Log,Delta time: 2.340004
+75.36514,Log,Delta time greater than 0.5
+75.37091,Log,Delta time: 2.340004
+75.37091,Log,Delta time greater than 0.5
+75.41183,Log,Delta time: 2.380005
+75.41183,Log,Delta time greater than 0.5
+75.42084,Log,Delta time: 2.400002
+75.42084,Log,Delta time greater than 0.5
+75.46162,Log,Delta time: 2.440002
+75.46162,Log,Delta time greater than 0.5
+75.47096,Log,Delta time: 2.440002
+75.47096,Log,Delta time greater than 0.5
+75.51336,Log,Delta time: 2.480003
+75.51336,Log,Delta time greater than 0.5
+75.52244,Log,Delta time: 2.5
+75.52244,Log,Delta time greater than 0.5
+75.56355,Log,Delta time: 2.540001
+75.56355,Log,Delta time greater than 0.5
+75.57284,Log,Delta time: 2.540001
+75.57284,Log,Delta time greater than 0.5
+75.61324,Log,Delta time: 2.580002
+75.61324,Log,Delta time greater than 0.5
+75.62227,Log,Delta time: 2.599998
+75.62227,Log,Delta time greater than 0.5
+75.6605,Log,Delta time: 2.639999
+75.6605,Log,Delta time greater than 0.5
+75.67184,Log,Delta time: 2.639999
+75.67184,Log,Delta time greater than 0.5
+75.71243,Log,Delta time: 2.68
+75.71243,Log,Delta time greater than 0.5
+75.72144,Log,Delta time: 2.700005
+75.72144,Log,Delta time greater than 0.5
+75.76409,Log,Delta time: 2.739998
+75.76409,Log,Delta time greater than 0.5
+75.77372,Log,Delta time: 2.739998
+75.77372,Log,Delta time greater than 0.5
+75.81425,Log,Delta time: 2.779999
+75.81425,Log,Delta time greater than 0.5
+75.8234,Log,Delta time: 2.800003
+75.8234,Log,Delta time greater than 0.5
+75.8643,Log,Delta time: 2.840004
+75.8643,Log,Delta time greater than 0.5
+75.87035,Log,Delta time: 2.840004
+75.87035,Log,Delta time greater than 0.5
+75.91269,Log,Delta time: 2.880005
+75.91269,Log,Delta time greater than 0.5
+75.92162,Log,Delta time: 2.900002
+75.92162,Log,Delta time greater than 0.5
+75.96248,Log,Delta time: 2.940002
+75.96248,Log,Delta time greater than 0.5
+75.97245,Log,Delta time: 2.940002
+75.97245,Log,Delta time greater than 0.5
+76.01283,Log,Delta time: 2.980003
+76.01283,Log,Delta time greater than 0.5
+76.02805,Log,Delta time: 3
+76.02805,Log,Delta time greater than 0.5
+76.06015,Log,Delta time: 3.040001
+76.06015,Log,Delta time greater than 0.5
+76.07414,Log,Delta time: 3.040001
+76.07414,Log,Delta time greater than 0.5
+76.11062,Log,Delta time: 3.080002
+76.11062,Log,Delta time greater than 0.5
+76.12431,Log,Delta time: 3.099998
+76.12431,Log,Delta time greater than 0.5
+76.18,Log,Delta time: 3.160004
+76.18,Log,Delta time greater than 0.5
+76.18,Log,Delta time: 3.160004
+76.18,Log,Delta time greater than 0.5
+76.21046,Log,Delta time: 3.18
+76.21046,Log,Delta time greater than 0.5
+76.22437,Log,Delta time: 3.200005
+76.22437,Log,Delta time greater than 0.5
+76.26171,Log,Delta time: 3.239998
+76.26171,Log,Delta time greater than 0.5
+76.27182,Log,Delta time: 3.239998
+76.27182,Log,Delta time greater than 0.5
+76.3137,Log,Delta time: 3.279999
+76.3137,Log,Delta time greater than 0.5
+76.32312,Log,Delta time: 3.300003
+76.32312,Log,Delta time greater than 0.5
+76.36204,Log,Delta time: 3.340004
+76.36204,Log,Delta time greater than 0.5
+76.37138,Log,Delta time: 3.340004
+76.37138,Log,Delta time greater than 0.5
+76.4125,Log,Delta time: 3.380005
+76.4125,Log,Delta time greater than 0.5
+76.4215,Log,Delta time: 3.400002
+76.4215,Log,Delta time greater than 0.5
+76.46913,Log,Delta time: 3.440002
+76.46913,Log,Delta time greater than 0.5
+76.47554,Log,Delta time: 3.440002
+76.47554,Log,Delta time greater than 0.5
+76.51234,Log,Delta time: 3.480003
+76.51234,Log,Delta time greater than 0.5
+76.52143,Log,Delta time: 3.5
+76.52143,Log,Delta time greater than 0.5
+76.5631,Log,Delta time: 3.540001
+76.5631,Log,Delta time greater than 0.5
+76.57268,Log,Delta time: 3.540001
+76.57268,Log,Delta time greater than 0.5
+76.61058,Log,Delta time: 3.580002
+76.61058,Log,Delta time greater than 0.5
+76.62438,Log,Delta time: 3.599998
+76.62438,Log,Delta time greater than 0.5
+76.66055,Log,Delta time: 3.639999
+76.66055,Log,Delta time greater than 0.5
+76.67473,Log,Delta time: 3.639999
+76.67473,Log,Delta time greater than 0.5
+76.71047,Log,Delta time: 3.68
+76.71047,Log,Delta time greater than 0.5
+76.72402,Log,Delta time: 3.700005
+76.72402,Log,Delta time greater than 0.5
+76.76283,Log,Delta time: 3.739998
+76.76283,Log,Delta time greater than 0.5
+76.77203,Log,Delta time: 3.739998
+76.77203,Log,Delta time greater than 0.5
+76.81205,Log,Delta time: 3.779999
+76.81205,Log,Delta time greater than 0.5
+76.82106,Log,Delta time: 3.800003
+76.82106,Log,Delta time greater than 0.5
+76.86387,Log,Delta time: 3.840004
+76.86387,Log,Delta time greater than 0.5
+76.87437,Log,Delta time: 3.840004
+76.87437,Log,Delta time greater than 0.5
+76.91228,Log,Delta time: 3.880005
+76.91228,Log,Delta time greater than 0.5
+76.92137,Log,Delta time: 3.900002
+76.92137,Log,Delta time greater than 0.5
+76.96172,Log,Delta time: 3.940002
+76.96172,Log,Delta time greater than 0.5
+76.97128,Log,Delta time: 3.940002
+76.97128,Log,Delta time greater than 0.5
+77.01276,Log,Delta time: 3.980003
+77.01276,Log,Delta time greater than 0.5
+77.02195,Log,Delta time: 4
+77.02195,Log,Delta time greater than 0.5
+77.06223,Log,Delta time: 4.040001
+77.06223,Log,Delta time greater than 0.5
+77.07138,Log,Delta time: 4.040001
+77.07138,Log,Delta time greater than 0.5
+77.11202,Log,Delta time: 4.080002
+77.11202,Log,Delta time greater than 0.5
+77.12773,Log,Delta time: 4.099998
+77.12773,Log,Delta time greater than 0.5
+77.1604,Log,Delta time: 4.139999
+77.1604,Log,Delta time greater than 0.5
+77.17414,Log,Delta time: 4.139999
+77.17414,Log,Delta time greater than 0.5
+77.21053,Log,Delta time: 4.18
+77.21053,Log,Delta time greater than 0.5
+77.22379,Log,Delta time: 4.200005
+77.22379,Log,Delta time greater than 0.5
+77.2627,Log,Delta time: 4.239998
+77.2627,Log,Delta time greater than 0.5
+77.27277,Log,Delta time: 4.239998
+77.27277,Log,Delta time greater than 0.5
+77.31367,Log,Delta time: 4.279999
+77.31367,Log,Delta time greater than 0.5
+77.32282,Log,Delta time: 4.300003
+77.32282,Log,Delta time greater than 0.5
+77.36,Log,Delta time: 4.340004
+77.36,Log,Delta time greater than 0.5
+77.37353,Log,Delta time: 4.340004
+77.37353,Log,Delta time greater than 0.5
+77.41187,Log,Delta time: 4.380005
+77.41187,Log,Delta time greater than 0.5
+77.42117,Log,Delta time: 4.400002
+77.42117,Log,Delta time greater than 0.5
+77.46185,Log,Delta time: 4.440002
+77.46185,Log,Delta time greater than 0.5
+77.47122,Log,Delta time: 4.440002
+77.47122,Log,Delta time greater than 0.5
+77.51234,Log,Delta time: 4.480003
+77.51234,Log,Delta time greater than 0.5
+77.52791,Log,Delta time: 4.5
+77.52791,Log,Delta time greater than 0.5
+77.56421,Log,Delta time: 4.540001
+77.56421,Log,Delta time greater than 0.5
+77.57354,Log,Delta time: 4.540001
+77.57354,Log,Delta time greater than 0.5
+77.61406,Log,Delta time: 4.580002
+77.61406,Log,Delta time greater than 0.5
+77.6235,Log,Delta time: 4.599998
+77.6235,Log,Delta time greater than 0.5
+77.66126,Log,Delta time: 4.639999
+77.66126,Log,Delta time greater than 0.5
+77.67086,Log,Delta time: 4.639999
+77.67086,Log,Delta time greater than 0.5
+77.71223,Log,Delta time: 4.68
+77.71223,Log,Delta time greater than 0.5
+77.72131,Log,Delta time: 4.700005
+77.72131,Log,Delta time greater than 0.5
+77.76281,Log,Delta time: 4.739998
+77.76281,Log,Delta time greater than 0.5
+77.77238,Log,Delta time: 4.739998
+77.77238,Log,Delta time greater than 0.5
+77.81207,Log,Delta time: 4.779999
+77.81207,Log,Delta time greater than 0.5
+77.82136,Log,Delta time: 4.800003
+77.82136,Log,Delta time greater than 0.5
+77.86302,Log,Delta time: 4.840004
+77.86302,Log,Delta time greater than 0.5
+77.87257,Log,Delta time: 4.840004
+77.87257,Log,Delta time greater than 0.5
+77.91028,Log,Delta time: 4.880005
+77.91028,Log,Delta time greater than 0.5
+77.92639,Log,Delta time: 4.900002
+77.92639,Log,Delta time greater than 0.5
+77.97288,Log,Paused Timer Started at: 77.96
+77.97288,Log,Delta time: 0
+78.01419,Log,Delta time: 0.04000092
+78.02353,Log,Delta time: 0.05999756
+78.06235,Log,Delta time: 0.09999847
+78.07153,Log,Delta time: 0.09999847
+78.11355,Log,Delta time: 0.1399994
+78.12311,Log,Delta time: 0.159996
+78.16386,Log,Delta time: 0.1999969
+78.17265,Log,Delta time: 0.1999969
+78.21257,Log,Delta time: 0.2399979
+78.22187,Log,Delta time: 0.2600021
+78.26289,Log,Delta time: 0.2999954
+78.2726,Log,Delta time: 0.2999954
+78.31435,Log,Delta time: 0.3399963
+78.32616,Log,Delta time: 0.3600006
+78.364,Log,Delta time: 0.4000015
+78.37312,Log,Delta time: 0.4000015
+78.41404,Log,Delta time: 0.4400024
+78.42312,Log,Delta time: 0.4599991
+78.46186,Log,Delta time: 0.5
+78.46186,Log,Delta time greater than 0.5
+78.47166,Log,Delta time: 0.5
+78.47166,Log,Delta time greater than 0.5
+78.51167,Log,Delta time: 0.5400009
+78.51167,Log,Delta time greater than 0.5
+78.52074,Log,Delta time: 0.5599976
+78.52074,Log,Delta time greater than 0.5
+78.56217,Log,Delta time: 0.5999985
+78.56217,Log,Delta time greater than 0.5
+78.5715,Log,Delta time: 0.5999985
+78.5715,Log,Delta time greater than 0.5
+78.61072,Log,Delta time: 0.6399994
+78.61072,Log,Delta time greater than 0.5
+78.62022,Log,Delta time: 0.659996
+78.62022,Log,Delta time greater than 0.5
+78.66053,Log,Delta time: 0.6999969
+78.66053,Log,Delta time greater than 0.5
+78.67026,Log,Delta time: 0.6999969
+78.67026,Log,Delta time greater than 0.5
+78.71213,Log,Delta time: 0.7399979
+78.71213,Log,Delta time greater than 0.5
+78.72149,Log,Delta time: 0.7600021
+78.72149,Log,Delta time greater than 0.5
+78.76081,Log,Delta time: 0.7999954
+78.76081,Log,Delta time greater than 0.5
+78.77047,Log,Delta time: 0.7999954
+78.77047,Log,Delta time greater than 0.5
+78.81148,Log,Delta time: 0.8399963
+78.81148,Log,Delta time greater than 0.5
+78.82057,Log,Delta time: 0.8600006
+78.82057,Log,Delta time greater than 0.5
+78.8728,Log,Paused Timer Started at: 78.86
+78.8728,Log,Delta time: 0
+78.91418,Log,Delta time: 0.04000092
+78.92325,Log,Delta time: 0.05999756
+78.97299,Log,Paused Timer Started at: 78.96
+78.97299,Log,Delta time: 0
+79.02075,Log,Paused Timer Started at: 79.02
+79.02075,Log,Delta time: 0
+79.07047,Log,Paused Timer Started at: 79.06
+79.07047,Log,Delta time: 0
+79.11108,Log,Delta time: 0.04000092
+79.12001,Log,Delta time: 0.05999756
+79.17192,Log,Paused Timer Started at: 79.16
+79.17192,Log,Delta time: 0
+79.21265,Log,Delta time: 0.04000092
+79.22137,Log,Delta time: 0.06000519
+79.26349,Log,Delta time: 0.09999847
+79.27309,Log,Delta time: 0.09999847
+79.31012,Log,Delta time: 0.1399994
+79.32307,Log,Delta time: 0.1600037
+79.3636,Log,Delta time: 0.2000046
+79.37302,Log,Delta time: 0.2000046
+79.41135,Log,Delta time: 0.2400055
+79.42007,Log,Delta time: 0.2600021
+79.46185,Log,Delta time: 0.3000031
+79.47144,Log,Delta time: 0.3000031
+79.51212,Log,Delta time: 0.340004
+79.52351,Log,Delta time: 0.3600006
+79.56004,Log,Delta time: 0.4000015
+79.57386,Log,Delta time: 0.4000015
+79.61398,Log,Delta time: 0.4400024
+79.62305,Log,Delta time: 0.4599991
+79.66078,Log,Delta time: 0.5
+79.66078,Log,Delta time greater than 0.5
+79.67022,Log,Delta time: 0.5
+79.67022,Log,Delta time greater than 0.5
+79.71053,Log,Delta time: 0.5400009
+79.71053,Log,Delta time greater than 0.5
+79.7207,Log,Delta time: 0.5600052
+79.7207,Log,Delta time greater than 0.5
+79.76127,Log,Delta time: 0.5999985
+79.76127,Log,Delta time greater than 0.5
+79.77079,Log,Delta time: 0.5999985
+79.77079,Log,Delta time greater than 0.5
+79.81378,Log,Delta time: 0.6399994
+79.81378,Log,Delta time greater than 0.5
+79.82285,Log,Delta time: 0.6600037
+79.82285,Log,Delta time greater than 0.5
+79.8639,Log,Delta time: 0.7000046
+79.8639,Log,Delta time greater than 0.5
+79.87332,Log,Delta time: 0.7000046
+79.87332,Log,Delta time greater than 0.5
+79.92074,Log,Paused Timer Started at: 79.92
+79.92074,Log,Delta time: 0
+79.96289,Log,Delta time: 0.04000092
+79.97208,Log,Delta time: 0.04000092
+80.01303,Log,Delta time: 0.08000183
+80.02207,Log,Delta time: 0.09999847
+80.06018,Log,Delta time: 0.1399994
+80.07352,Log,Delta time: 0.1399994
+80.11429,Log,Delta time: 0.1800003
+80.12306,Log,Delta time: 0.1999969
+80.16039,Log,Delta time: 0.2399979
+80.17422,Log,Delta time: 0.2399979
+80.21351,Log,Delta time: 0.2799988
+80.22225,Log,Delta time: 0.3000031
+80.26287,Log,Delta time: 0.3399963
+80.27224,Log,Delta time: 0.3399963
+80.31503,Log,Delta time: 0.3799973
+80.32023,Log,Delta time: 0.4000015
+80.36169,Log,Delta time: 0.4400024
+80.37089,Log,Delta time: 0.4400024
+80.41129,Log,Delta time: 0.4800034
+80.42029,Log,Delta time: 0.5
+80.42029,Log,Delta time greater than 0.5
+80.46317,Log,Delta time: 0.5400009
+80.46317,Log,Delta time greater than 0.5
+80.47286,Log,Delta time: 0.5400009
+80.47286,Log,Delta time greater than 0.5
+80.51302,Log,Delta time: 0.5800018
+80.51302,Log,Delta time greater than 0.5
+80.52202,Log,Delta time: 0.5999985
+80.52202,Log,Delta time greater than 0.5
+80.56356,Log,Delta time: 0.6399994
+80.56356,Log,Delta time greater than 0.5
+80.5754,Log,Delta time: 0.6399994
+80.5754,Log,Delta time greater than 0.5
+80.61204,Log,Delta time: 0.6800003
+80.61204,Log,Delta time greater than 0.5
+80.62112,Log,Delta time: 0.6999969
+80.62112,Log,Delta time greater than 0.5
+80.66331,Log,Delta time: 0.7399979
+80.66331,Log,Delta time greater than 0.5
+80.67311,Log,Delta time: 0.7399979
+80.67311,Log,Delta time greater than 0.5
+80.71062,Log,Delta time: 0.7799988
+80.71062,Log,Delta time greater than 0.5
+80.72079,Log,Delta time: 0.8000031
+80.72079,Log,Delta time greater than 0.5
+80.76233,Log,Delta time: 0.8399963
+80.76233,Log,Delta time greater than 0.5
+80.7716,Log,Delta time: 0.8399963
+80.7716,Log,Delta time greater than 0.5
+80.81181,Log,Delta time: 0.8799973
+80.81181,Log,Delta time greater than 0.5
+80.8207,Log,Delta time: 0.9000015
+80.8207,Log,Delta time greater than 0.5
+80.86341,Log,Delta time: 0.9400024
+80.86341,Log,Delta time greater than 0.5
+80.87301,Log,Delta time: 0.9400024
+80.87301,Log,Delta time greater than 0.5
+80.91307,Log,Delta time: 0.9800034
+80.91307,Log,Delta time greater than 0.5
+80.92242,Log,Delta time: 1
+80.92242,Log,Delta time greater than 0.5
+80.96579,Log,Delta time: 1.040001
+80.96579,Log,Delta time greater than 0.5
+80.97071,Log,Delta time: 1.040001
+80.97071,Log,Delta time greater than 0.5
+81.01114,Log,Delta time: 1.080002
+81.01114,Log,Delta time greater than 0.5
+81.0202,Log,Delta time: 1.099998
+81.0202,Log,Delta time greater than 0.5
+81.0741,Log,Paused Timer Started at: 81.06
+81.0741,Log,Delta time: 0
+81.12131,Log,Paused Timer Started at: 81.12
+81.12131,Log,Delta time: 0
+81.16232,Log,Delta time: 0.04000092
+81.17138,Log,Delta time: 0.04000092
+81.21188,Log,Delta time: 0.08000183
+81.22302,Log,Delta time: 0.1000061
+81.26324,Log,Delta time: 0.1399994
+81.27235,Log,Delta time: 0.1399994
+81.31276,Log,Delta time: 0.1800003
+81.32201,Log,Delta time: 0.2000046
+81.36292,Log,Delta time: 0.2400055
+81.37236,Log,Delta time: 0.2400055
+81.41246,Log,Delta time: 0.2800064
+81.4217,Log,Delta time: 0.3000031
+81.46195,Log,Delta time: 0.340004
+81.47242,Log,Delta time: 0.340004
+81.51145,Log,Delta time: 0.3800049
+81.52078,Log,Delta time: 0.4000015
+81.56189,Log,Delta time: 0.4400024
+81.57082,Log,Delta time: 0.4400024
+81.61322,Log,Delta time: 0.4800034
+81.62308,Log,Delta time: 0.5
+81.62308,Log,Delta time greater than 0.5
+81.66064,Log,Delta time: 0.5400009
+81.66064,Log,Delta time greater than 0.5
+81.67013,Log,Delta time: 0.5400009
+81.67013,Log,Delta time greater than 0.5
+81.71102,Log,Delta time: 0.5800018
+81.71102,Log,Delta time greater than 0.5
+81.72045,Log,Delta time: 0.6000061
+81.72045,Log,Delta time greater than 0.5
+81.7644,Log,Delta time: 0.6399994
+81.7644,Log,Delta time greater than 0.5
+81.77374,Log,Delta time: 0.6399994
+81.77374,Log,Delta time greater than 0.5
+81.81416,Log,Delta time: 0.6800003
+81.81416,Log,Delta time greater than 0.5
+81.82336,Log,Delta time: 0.7000046
+81.82336,Log,Delta time greater than 0.5
+81.86382,Log,Delta time: 0.7400055
+81.86382,Log,Delta time greater than 0.5
+81.87616,Log,Delta time: 0.7400055
+81.87616,Log,Delta time greater than 0.5
+81.91312,Log,Delta time: 0.7800064
+81.91312,Log,Delta time greater than 0.5
+81.92225,Log,Delta time: 0.8000031
+81.92225,Log,Delta time greater than 0.5
+81.96322,Log,Delta time: 0.840004
+81.96322,Log,Delta time greater than 0.5
+81.97271,Log,Delta time: 0.840004
+81.97271,Log,Delta time greater than 0.5
+82.0102,Log,Delta time: 0.8800049
+82.0102,Log,Delta time greater than 0.5
+82.02422,Log,Delta time: 0.9000015
+82.02422,Log,Delta time greater than 0.5
+82.06053,Log,Delta time: 0.9400024
+82.06053,Log,Delta time greater than 0.5
+82.07415,Log,Delta time: 0.9400024
+82.07415,Log,Delta time greater than 0.5
+82.1101,Log,Delta time: 0.9800034
+82.1101,Log,Delta time greater than 0.5
+82.12985,Log,Delta time: 1
+82.12985,Log,Delta time greater than 0.5
+82.16301,Log,Delta time: 1.040001
+82.16301,Log,Delta time greater than 0.5
+82.17236,Log,Delta time: 1.040001
+82.17236,Log,Delta time greater than 0.5
+82.21276,Log,Delta time: 1.080002
+82.21276,Log,Delta time greater than 0.5
+82.22206,Log,Delta time: 1.100006
+82.22206,Log,Delta time greater than 0.5
+82.26026,Log,Delta time: 1.139999
+82.26026,Log,Delta time greater than 0.5
+82.27043,Log,Delta time: 1.139999
+82.27043,Log,Delta time greater than 0.5
+82.31357,Log,Delta time: 1.18
+82.31357,Log,Delta time greater than 0.5
+82.32281,Log,Delta time: 1.200005
+82.32281,Log,Delta time greater than 0.5
+82.3639,Log,Delta time: 1.240005
+82.3639,Log,Delta time greater than 0.5
+82.37315,Log,Delta time: 1.240005
+82.37315,Log,Delta time greater than 0.5
+82.41199,Log,Delta time: 1.280006
+82.41199,Log,Delta time greater than 0.5
+82.42142,Log,Delta time: 1.300003
+82.42142,Log,Delta time greater than 0.5
+82.46211,Log,Delta time: 1.340004
+82.46211,Log,Delta time greater than 0.5
+82.47144,Log,Delta time: 1.340004
+82.47144,Log,Delta time greater than 0.5
+82.51231,Log,Delta time: 1.380005
+82.51231,Log,Delta time greater than 0.5
+82.52373,Log,Delta time: 1.400002
+82.52373,Log,Delta time greater than 0.5
+82.5603,Log,Delta time: 1.440002
+82.5603,Log,Delta time greater than 0.5
+82.57438,Log,Delta time: 1.440002
+82.57438,Log,Delta time greater than 0.5
+82.61115,Log,Delta time: 1.480003
+82.61115,Log,Delta time greater than 0.5
+82.62029,Log,Delta time: 1.5
+82.62029,Log,Delta time greater than 0.5
+82.66267,Log,Delta time: 1.540001
+82.66267,Log,Delta time greater than 0.5
+82.6728,Log,Delta time: 1.540001
+82.6728,Log,Delta time greater than 0.5
+82.71328,Log,Delta time: 1.580002
+82.71328,Log,Delta time greater than 0.5
+82.72271,Log,Delta time: 1.600006
+82.72271,Log,Delta time greater than 0.5
+82.76378,Log,Delta time: 1.639999
+82.76378,Log,Delta time greater than 0.5
+82.77953,Log,Delta time: 1.639999
+82.77953,Log,Delta time greater than 0.5
+82.81147,Log,Delta time: 1.68
+82.81147,Log,Delta time greater than 0.5
+82.82049,Log,Delta time: 1.700005
+82.82049,Log,Delta time greater than 0.5
+82.86259,Log,Delta time: 1.740005
+82.86259,Log,Delta time greater than 0.5
+82.87176,Log,Delta time: 1.740005
+82.87176,Log,Delta time greater than 0.5
+82.91054,Log,Delta time: 1.780006
+82.91054,Log,Delta time greater than 0.5
+82.92448,Log,Delta time: 1.800003
+82.92448,Log,Delta time greater than 0.5
+82.96165,Log,Delta time: 1.840004
+82.96165,Log,Delta time greater than 0.5
+82.97199,Log,Delta time: 1.840004
+82.97199,Log,Delta time greater than 0.5
+83.01358,Log,Delta time: 1.880005
+83.01358,Log,Delta time greater than 0.5
+83.02254,Log,Delta time: 1.900002
+83.02254,Log,Delta time greater than 0.5
+83.06088,Log,Delta time: 1.940002
+83.06088,Log,Delta time greater than 0.5
+83.07018,Log,Delta time: 1.940002
+83.07018,Log,Delta time greater than 0.5
+83.11032,Log,Delta time: 1.980003
+83.11032,Log,Delta time greater than 0.5
+83.12029,Log,Delta time: 2
+83.12029,Log,Delta time greater than 0.5
+83.16755,Log,Delta time: 2.040001
+83.16755,Log,Delta time greater than 0.5
+83.17377,Log,Delta time: 2.040001
+83.17377,Log,Delta time greater than 0.5
+83.21027,Log,Delta time: 2.080002
+83.21027,Log,Delta time greater than 0.5
+83.22372,Log,Delta time: 2.100006
+83.22372,Log,Delta time greater than 0.5
+83.26382,Log,Delta time: 2.139999
+83.26382,Log,Delta time greater than 0.5
+83.27341,Log,Delta time: 2.139999
+83.27341,Log,Delta time greater than 0.5
+83.31178,Log,Delta time: 2.18
+83.31178,Log,Delta time greater than 0.5
+83.32102,Log,Delta time: 2.200005
+83.32102,Log,Delta time greater than 0.5
+83.36179,Log,Delta time: 2.240005
+83.36179,Log,Delta time greater than 0.5
+83.37367,Log,Delta time: 2.240005
+83.37367,Log,Delta time greater than 0.5
+83.41481,Log,Delta time: 2.280006
+83.41481,Log,Delta time greater than 0.5
+83.42726,Log,Delta time: 2.300003
+83.42726,Log,Delta time greater than 0.5
+83.464,Log,Delta time: 2.340004
+83.464,Log,Delta time greater than 0.5
+83.4736,Log,Delta time: 2.340004
+83.4736,Log,Delta time greater than 0.5
+83.51004,Log,Delta time: 2.380005
+83.51004,Log,Delta time greater than 0.5
+83.52338,Log,Delta time: 2.400002
+83.52338,Log,Delta time greater than 0.5
+83.56193,Log,Delta time: 2.440002
+83.56193,Log,Delta time greater than 0.5
+83.57161,Log,Delta time: 2.440002
+83.57161,Log,Delta time greater than 0.5
+83.61381,Log,Delta time: 2.480003
+83.61381,Log,Delta time greater than 0.5
+83.62299,Log,Delta time: 2.5
+83.62299,Log,Delta time greater than 0.5
+83.66328,Log,Delta time: 2.540001
+83.66328,Log,Delta time greater than 0.5
+83.673,Log,Delta time: 2.540001
+83.673,Log,Delta time greater than 0.5
+83.71233,Log,Delta time: 2.580002
+83.71233,Log,Delta time greater than 0.5
+83.72157,Log,Delta time: 2.600006
+83.72157,Log,Delta time greater than 0.5
+83.7618,Log,Delta time: 2.639999
+83.7618,Log,Delta time greater than 0.5
+83.77128,Log,Delta time: 2.639999
+83.77128,Log,Delta time greater than 0.5
+83.81414,Log,Delta time: 2.68
+83.81414,Log,Delta time greater than 0.5
+83.82336,Log,Delta time: 2.700005
+83.82336,Log,Delta time greater than 0.5
+83.86382,Log,Delta time: 2.740005
+83.86382,Log,Delta time greater than 0.5
+83.87327,Log,Delta time: 2.740005
+83.87327,Log,Delta time greater than 0.5
+83.9137,Log,Delta time: 2.780006
+83.9137,Log,Delta time greater than 0.5
+83.92269,Log,Delta time: 2.800003
+83.92269,Log,Delta time greater than 0.5
+83.96205,Log,Delta time: 2.840004
+83.96205,Log,Delta time greater than 0.5
+83.97165,Log,Delta time: 2.840004
+83.97165,Log,Delta time greater than 0.5
+84.0137,Log,Delta time: 2.880005
+84.0137,Log,Delta time greater than 0.5
+84.02283,Log,Delta time: 2.900002
+84.02283,Log,Delta time greater than 0.5
+84.06966,Log,Delta time: 2.940002
+84.06966,Log,Delta time greater than 0.5
+84.07475,Log,Delta time: 2.940002
+84.07475,Log,Delta time greater than 0.5
+84.1111,Log,Delta time: 2.980003
+84.1111,Log,Delta time greater than 0.5
+84.12019,Log,Delta time: 3
+84.12019,Log,Delta time greater than 0.5
+84.16049,Log,Delta time: 3.040001
+84.16049,Log,Delta time greater than 0.5
+84.17041,Log,Delta time: 3.040001
+84.17041,Log,Delta time greater than 0.5
+84.21346,Log,Delta time: 3.080002
+84.21346,Log,Delta time greater than 0.5
+84.22237,Log,Delta time: 3.100006
+84.22237,Log,Delta time greater than 0.5
+84.26319,Log,Delta time: 3.139999
+84.26319,Log,Delta time greater than 0.5
+84.27262,Log,Delta time: 3.139999
+84.27262,Log,Delta time greater than 0.5
+84.31358,Log,Delta time: 3.18
+84.31358,Log,Delta time greater than 0.5
+84.32497,Log,Delta time: 3.200005
+84.32497,Log,Delta time greater than 0.5
+84.36151,Log,Delta time: 3.240005
+84.36151,Log,Delta time greater than 0.5
+84.37106,Log,Delta time: 3.240005
+84.37106,Log,Delta time greater than 0.5
+84.4123,Log,Delta time: 3.280006
+84.4123,Log,Delta time greater than 0.5
+84.42154,Log,Delta time: 3.300003
+84.42154,Log,Delta time greater than 0.5
+84.46407,Log,Delta time: 3.340004
+84.46407,Log,Delta time greater than 0.5
+84.4736,Log,Delta time: 3.340004
+84.4736,Log,Delta time greater than 0.5
+84.51405,Log,Delta time: 3.380005
+84.51405,Log,Delta time greater than 0.5
+84.5232,Log,Delta time: 3.400002
+84.5232,Log,Delta time greater than 0.5
+84.56371,Log,Delta time: 3.440002
+84.56371,Log,Delta time greater than 0.5
+84.57933,Log,Delta time: 3.440002
+84.57933,Log,Delta time greater than 0.5
+84.61165,Log,Delta time: 3.480003
+84.61165,Log,Delta time greater than 0.5
+84.6206,Log,Delta time: 3.5
+84.6206,Log,Delta time greater than 0.5
+84.66069,Log,Delta time: 3.540001
+84.66069,Log,Delta time greater than 0.5
+84.67432,Log,Delta time: 3.540001
+84.67432,Log,Delta time greater than 0.5
+84.71284,Log,Delta time: 3.580002
+84.71284,Log,Delta time greater than 0.5
+84.72189,Log,Delta time: 3.600006
+84.72189,Log,Delta time greater than 0.5
+84.76308,Log,Delta time: 3.639999
+84.76308,Log,Delta time greater than 0.5
+84.77351,Log,Delta time: 3.639999
+84.77351,Log,Delta time greater than 0.5
+84.81022,Log,Delta time: 3.68
+84.81022,Log,Delta time greater than 0.5
+84.82376,Log,Delta time: 3.700005
+84.82376,Log,Delta time greater than 0.5
+84.86239,Log,Delta time: 3.740005
+84.86239,Log,Delta time greater than 0.5
+84.87208,Log,Delta time: 3.740005
+84.87208,Log,Delta time greater than 0.5
+84.91232,Log,Delta time: 3.780006
+84.91232,Log,Delta time greater than 0.5
+84.92124,Log,Delta time: 3.800003
+84.92124,Log,Delta time greater than 0.5
+84.96346,Log,Delta time: 3.840004
+84.96346,Log,Delta time greater than 0.5
+84.97328,Log,Delta time: 3.840004
+84.97328,Log,Delta time greater than 0.5
+85.01414,Log,Delta time: 3.880005
+85.01414,Log,Delta time greater than 0.5
+85.02322,Log,Delta time: 3.900002
+85.02322,Log,Delta time greater than 0.5
+85.06381,Log,Delta time: 3.940002
+85.06381,Log,Delta time greater than 0.5
+85.07328,Log,Delta time: 3.940002
+85.07328,Log,Delta time greater than 0.5
+85.11368,Log,Delta time: 3.980003
+85.11368,Log,Delta time greater than 0.5
+85.12278,Log,Delta time: 4
+85.12278,Log,Delta time greater than 0.5
+85.1639,Log,Delta time: 4.040001
+85.1639,Log,Delta time greater than 0.5
+85.17324,Log,Delta time: 4.040001
+85.17324,Log,Delta time greater than 0.5
+85.21637,Log,Delta time: 4.080002
+85.21637,Log,Delta time greater than 0.5
+85.22127,Log,Delta time: 4.100006
+85.22127,Log,Delta time greater than 0.5
+85.26199,Log,Delta time: 4.139999
+85.26199,Log,Delta time greater than 0.5
+85.27139,Log,Delta time: 4.139999
+85.27139,Log,Delta time greater than 0.5
+85.31224,Log,Delta time: 4.18
+85.31224,Log,Delta time greater than 0.5
+85.32162,Log,Delta time: 4.200005
+85.32162,Log,Delta time greater than 0.5
+85.36438,Log,Delta time: 4.240005
+85.36438,Log,Delta time greater than 0.5
+85.3736,Log,Delta time: 4.240005
+85.3736,Log,Delta time greater than 0.5
+85.4142,Log,Delta time: 4.280006
+85.4142,Log,Delta time greater than 0.5
+85.42311,Log,Delta time: 4.300003
+85.42311,Log,Delta time greater than 0.5
+85.47089,Log,Delta time: 4.340004
+85.47089,Log,Delta time greater than 0.5
+85.47089,Log,Delta time: 4.340004
+85.47089,Log,Delta time greater than 0.5
+85.51298,Log,Delta time: 4.380005
+85.51298,Log,Delta time greater than 0.5
+85.52233,Log,Delta time: 4.400002
+85.52233,Log,Delta time greater than 0.5
+85.56314,Log,Delta time: 4.440002
+85.56314,Log,Delta time greater than 0.5
+85.57238,Log,Delta time: 4.440002
+85.57238,Log,Delta time greater than 0.5
+85.6143,Log,Delta time: 4.480003
+85.6143,Log,Delta time greater than 0.5
+85.62377,Log,Delta time: 4.5
+85.62377,Log,Delta time greater than 0.5
+85.66007,Log,Delta time: 4.540001
+85.66007,Log,Delta time greater than 0.5
+85.67418,Log,Delta time: 4.540001
+85.67418,Log,Delta time greater than 0.5
+85.71426,Log,Delta time: 4.580002
+85.71426,Log,Delta time greater than 0.5
+85.73007,Log,Delta time: 4.600006
+85.73007,Log,Delta time greater than 0.5
+85.76228,Log,Delta time: 4.639999
+85.76228,Log,Delta time greater than 0.5
+85.77166,Log,Delta time: 4.639999
+85.77166,Log,Delta time greater than 0.5
+85.81211,Log,Delta time: 4.68
+85.81211,Log,Delta time greater than 0.5
+85.82148,Log,Delta time: 4.700005
+85.82148,Log,Delta time greater than 0.5
+85.86407,Log,Delta time: 4.740005
+85.86407,Log,Delta time greater than 0.5
+85.8733,Log,Delta time: 4.740005
+85.8733,Log,Delta time greater than 0.5
+85.91455,Log,Delta time: 4.780006
+85.91455,Log,Delta time greater than 0.5
+85.92347,Log,Delta time: 4.800003
+85.92347,Log,Delta time greater than 0.5
+85.96135,Log,Delta time: 4.840004
+85.96135,Log,Delta time greater than 0.5
+85.97066,Log,Delta time: 4.840004
+85.97066,Log,Delta time greater than 0.5
+86.01003,Log,Delta time: 4.880005
+86.01003,Log,Delta time greater than 0.5
+86.02381,Log,Delta time: 4.900002
+86.02381,Log,Delta time greater than 0.5
+86.06445,Log,Delta time: 4.940002
+86.06445,Log,Delta time greater than 0.5
+86.07317,Log,Delta time: 4.940002
+86.07317,Log,Delta time greater than 0.5
+86.11157,Log,Delta time: 4.980003
+86.11157,Log,Delta time greater than 0.5
+86.1215,Log,Delta time: 5
+86.1215,Log,Delta time greater than 0.5
+86.32259,Log,Paused Timer Started at: 86.32
+86.32259,Log,Delta time: 0
+86.3651,Log,Delta time: 0.04000092
+86.37071,Log,Delta time: 0.04000092
+86.41213,Log,Delta time: 0.08000183
+86.42234,Log,Delta time: 0.09999847
+86.46244,Log,Delta time: 0.1399994
+86.47163,Log,Delta time: 0.1399994
+86.51408,Log,Delta time: 0.1800003
+86.52336,Log,Delta time: 0.1999969
+86.56381,Log,Delta time: 0.2399979
+86.57265,Log,Delta time: 0.2399979
+86.61969,Log,Delta time: 0.2799988
+86.62439,Log,Delta time: 0.2999954
+86.66029,Log,Delta time: 0.3399963
+86.67378,Log,Delta time: 0.3399963
+86.71395,Log,Delta time: 0.3799973
+86.72321,Log,Delta time: 0.4000015
+86.76119,Log,Delta time: 0.4399948
+86.77032,Log,Delta time: 0.4399948
+86.81103,Log,Delta time: 0.4799957
+86.82456,Log,Delta time: 0.5
+86.82456,Log,Delta time greater than 0.5
+86.86063,Log,Delta time: 0.5400009
+86.86063,Log,Delta time greater than 0.5
+86.87396,Log,Delta time: 0.5400009
+86.87396,Log,Delta time greater than 0.5
+86.91056,Log,Delta time: 0.5800018
+86.91056,Log,Delta time greater than 0.5
+86.92433,Log,Delta time: 0.5999985
+86.92433,Log,Delta time greater than 0.5
+86.96015,Log,Delta time: 0.6399994
+86.96015,Log,Delta time greater than 0.5
+86.97395,Log,Delta time: 0.6399994
+86.97395,Log,Delta time greater than 0.5
+87.01351,Log,Delta time: 0.6800003
+87.01351,Log,Delta time greater than 0.5
+87.02337,Log,Delta time: 0.6999969
+87.02337,Log,Delta time greater than 0.5
+87.06427,Log,Delta time: 0.7399979
+87.06427,Log,Delta time greater than 0.5
+87.07345,Log,Delta time: 0.7399979
+87.07345,Log,Delta time greater than 0.5
+87.11393,Log,Delta time: 0.7799988
+87.11393,Log,Delta time greater than 0.5
+87.12553,Log,Delta time: 0.7999954
+87.12553,Log,Delta time greater than 0.5
+87.16181,Log,Delta time: 0.8399963
+87.16181,Log,Delta time greater than 0.5
+87.17116,Log,Delta time: 0.8399963
+87.17116,Log,Delta time greater than 0.5
+87.21284,Log,Delta time: 0.8799973
+87.21284,Log,Delta time greater than 0.5
+87.22196,Log,Delta time: 0.9000015
+87.22196,Log,Delta time greater than 0.5
+87.26662,Log,Delta time: 0.9399948
+87.26662,Log,Delta time greater than 0.5
+87.27159,Log,Delta time: 0.9399948
+87.27159,Log,Delta time greater than 0.5
+87.31215,Log,Delta time: 0.9799957
+87.31215,Log,Delta time greater than 0.5
+87.32343,Log,Delta time: 1
+87.32343,Log,Delta time greater than 0.5
+87.36299,Log,Delta time: 1.040001
+87.36299,Log,Delta time greater than 0.5
+87.37267,Log,Delta time: 1.040001
+87.37267,Log,Delta time greater than 0.5
+87.41107,Log,Delta time: 1.080002
+87.41107,Log,Delta time greater than 0.5
+87.42131,Log,Delta time: 1.099998
+87.42131,Log,Delta time greater than 0.5
+87.46213,Log,Delta time: 1.139999
+87.46213,Log,Delta time greater than 0.5
+87.47153,Log,Delta time: 1.139999
+87.47153,Log,Delta time greater than 0.5
+87.51917,Log,Delta time: 1.18
+87.51917,Log,Delta time greater than 0.5
+87.52409,Log,Delta time: 1.199997
+87.52409,Log,Delta time greater than 0.5
+87.56143,Log,Delta time: 1.239998
+87.56143,Log,Delta time greater than 0.5
+87.57292,Log,Delta time: 1.239998
+87.57292,Log,Delta time greater than 0.5
+87.61008,Log,Delta time: 1.279999
+87.61008,Log,Delta time greater than 0.5
+87.62142,Log,Delta time: 1.299995
+87.62142,Log,Delta time greater than 0.5
+87.66116,Log,Delta time: 1.339996
+87.66116,Log,Delta time greater than 0.5
+87.67122,Log,Delta time: 1.339996
+87.67122,Log,Delta time greater than 0.5
+87.71198,Log,Delta time: 1.379997
+87.71198,Log,Delta time greater than 0.5
+87.7209,Log,Delta time: 1.400002
+87.7209,Log,Delta time greater than 0.5
+87.76101,Log,Delta time: 1.439995
+87.76101,Log,Delta time greater than 0.5
+87.77692,Log,Delta time: 1.439995
+87.77692,Log,Delta time greater than 0.5
+87.81306,Log,Delta time: 1.479996
+87.81306,Log,Delta time greater than 0.5
+87.82264,Log,Delta time: 1.5
+87.82264,Log,Delta time greater than 0.5
+87.86021,Log,Delta time: 1.540001
+87.86021,Log,Delta time greater than 0.5
+87.87117,Log,Delta time: 1.540001
+87.87117,Log,Delta time greater than 0.5
+87.91406,Log,Delta time: 1.580002
+87.91406,Log,Delta time greater than 0.5
+87.92321,Log,Delta time: 1.599998
+87.92321,Log,Delta time greater than 0.5
+87.96297,Log,Delta time: 1.639999
+87.96297,Log,Delta time greater than 0.5
+87.97272,Log,Delta time: 1.639999
+87.97272,Log,Delta time greater than 0.5
+88.01405,Log,Delta time: 1.68
+88.01405,Log,Delta time greater than 0.5
+88.02359,Log,Delta time: 1.699997
+88.02359,Log,Delta time greater than 0.5
+88.06178,Log,Delta time: 1.739998
+88.06178,Log,Delta time greater than 0.5
+88.07153,Log,Delta time: 1.739998
+88.07153,Log,Delta time greater than 0.5
+88.11311,Log,Delta time: 1.779999
+88.11311,Log,Delta time greater than 0.5
+88.12209,Log,Delta time: 1.799995
+88.12209,Log,Delta time greater than 0.5
+88.16737,Log,Delta time: 1.839996
+88.16737,Log,Delta time greater than 0.5
+88.17304,Log,Delta time: 1.839996
+88.17304,Log,Delta time greater than 0.5
+88.21362,Log,Delta time: 1.879997
+88.21362,Log,Delta time greater than 0.5
+88.22272,Log,Delta time: 1.900002
+88.22272,Log,Delta time greater than 0.5
+88.26414,Log,Delta time: 1.939995
+88.26414,Log,Delta time greater than 0.5
+88.27345,Log,Delta time: 1.939995
+88.27345,Log,Delta time greater than 0.5
+88.312,Log,Delta time: 1.979996
+88.312,Log,Delta time greater than 0.5
+88.32129,Log,Delta time: 2
+88.32129,Log,Delta time greater than 0.5
+88.36131,Log,Delta time: 2.040001
+88.36131,Log,Delta time greater than 0.5
+88.37103,Log,Delta time: 2.040001
+88.37103,Log,Delta time greater than 0.5
+88.41846,Log,Delta time: 2.080002
+88.41846,Log,Delta time greater than 0.5
+88.42362,Log,Delta time: 2.099998
+88.42362,Log,Delta time greater than 0.5
+88.76109,Log,Paused Timer Started at: 88.75999
+88.76109,Log,Delta time: 0
+88.77074,Log,Delta time: 0
+88.81166,Log,Delta time: 0.04000092
+88.82064,Log,Delta time: 0.06000519
+88.86203,Log,Delta time: 0.1000061
+88.87185,Log,Delta time: 0.1000061
+89.88,Log,Paused Timer Started at: 89.88
+89.88,Log,Delta time: 0
+89.92209,Log,Paused Timer Started at: 89.92
+89.92209,Log,Delta time: 0
+89.96232,Log,Delta time: 0.04000092
+89.97141,Log,Delta time: 0.04000092
+90.01393,Log,Delta time: 0.08000183
+90.023,Log,Delta time: 0.09999847
+90.07365,Log,Paused Timer Started at: 90.06
+90.07365,Log,Delta time: 0
+90.12958,Log,Paused Timer Started at: 90.12
+90.12958,Log,Delta time: 0
+90.22397,Log,Paused Timer Started at: 90.22
+90.22397,Log,Delta time: 0
+90.27262,Log,Paused Timer Started at: 90.25999
+90.27262,Log,Delta time: 0
+90.32288,Log,Paused Timer Started at: 90.32
+90.32288,Log,Delta time: 0
+90.36343,Log,Delta time: 0.04000092
+90.37912,Log,Delta time: 0.04000092
+90.4106,Log,Delta time: 0.08000183
+90.42384,Log,Delta time: 0.09999847
+90.46066,Log,Delta time: 0.1399994
+90.47426,Log,Delta time: 0.1399994
+90.51303,Log,Delta time: 0.1800003
+90.52209,Log,Delta time: 0.1999969
+90.56234,Log,Delta time: 0.2399979
+90.57133,Log,Delta time: 0.2399979
+90.61185,Log,Delta time: 0.2799988
+90.62811,Log,Delta time: 0.2999954
+90.66155,Log,Delta time: 0.3399963
+90.67052,Log,Delta time: 0.3399963
+90.7112,Log,Delta time: 0.3799973
+90.72025,Log,Delta time: 0.4000015
+90.76262,Log,Delta time: 0.4399948
+90.77193,Log,Delta time: 0.4399948
+90.81268,Log,Delta time: 0.4799957
+90.8218,Log,Delta time: 0.5
+90.8218,Log,Delta time greater than 0.5
+90.86369,Log,Delta time: 0.5400009
+90.86369,Log,Delta time greater than 0.5
+90.87591,Log,Delta time: 0.5400009
+90.87591,Log,Delta time greater than 0.5
+90.91187,Log,Delta time: 0.5800018
+90.91187,Log,Delta time greater than 0.5
+90.92112,Log,Delta time: 0.5999985
+90.92112,Log,Delta time greater than 0.5
+90.96239,Log,Delta time: 0.6399994
+90.96239,Log,Delta time greater than 0.5
+90.97189,Log,Delta time: 0.6399994
+90.97189,Log,Delta time greater than 0.5
+91.01261,Log,Delta time: 0.6800003
+91.01261,Log,Delta time greater than 0.5
+91.02258,Log,Delta time: 0.6999969
+91.02258,Log,Delta time greater than 0.5
+91.06458,Log,Delta time: 0.7399979
+91.06458,Log,Delta time greater than 0.5
+91.07397,Log,Delta time: 0.7399979
+91.07397,Log,Delta time greater than 0.5
+92.02364,Log,Paused Timer Started at: 92.02
+92.02364,Log,Delta time: 0
+92.07493,Log,Paused Timer Started at: 92.06
+92.07493,Log,Delta time: 0
+92.11167,Log,Delta time: 0.04000092
+92.12028,Log,Delta time: 0.05999756
+92.16005,Log,Delta time: 0.09999847
+92.17386,Log,Delta time: 0.09999847
+92.21067,Log,Delta time: 0.1399994
+92.22455,Log,Delta time: 0.1600037
+92.26389,Log,Delta time: 0.1999969
+92.27351,Log,Delta time: 0.1999969
+92.31229,Log,Delta time: 0.2399979
+92.32126,Log,Delta time: 0.2600021
+92.3627,Log,Delta time: 0.3000031
+92.3719,Log,Delta time: 0.3000031
+92.41153,Log,Delta time: 0.340004
+92.42037,Log,Delta time: 0.3600006
+92.46145,Log,Delta time: 0.4000015
+92.47125,Log,Delta time: 0.4000015
+92.51515,Log,Delta time: 0.4400024
+92.52001,Log,Delta time: 0.4599991
+92.56119,Log,Delta time: 0.5
+92.56119,Log,Delta time greater than 0.5
+92.57101,Log,Delta time: 0.5
+92.57101,Log,Delta time greater than 0.5
+92.61283,Log,Delta time: 0.5400009
+92.61283,Log,Delta time greater than 0.5
+92.62207,Log,Delta time: 0.5599976
+92.62207,Log,Delta time greater than 0.5
+92.66147,Log,Delta time: 0.5999985
+92.66147,Log,Delta time greater than 0.5
+92.6711,Log,Delta time: 0.5999985
+92.6711,Log,Delta time greater than 0.5
+92.71355,Log,Delta time: 0.6399994
+92.71355,Log,Delta time greater than 0.5
+92.7228,Log,Delta time: 0.6600037
+92.7228,Log,Delta time greater than 0.5
+92.7719,Log,Paused Timer Started at: 92.75999
+92.7719,Log,Delta time: 0
+92.92053,Log,Paused Timer Started at: 92.92
+92.92053,Log,Delta time: 0
+92.97216,Log,Paused Timer Started at: 92.96
+92.97216,Log,Delta time: 0
+93.07421,Log,Paused Timer Started at: 93.06
+93.07421,Log,Delta time: 0
+94.67355,Log,Paused Timer Started at: 94.66
+94.67355,Log,Delta time: 0
+94.71063,Log,Delta time: 0.04000092
+94.7242,Log,Delta time: 0.06000519
+94.76225,Log,Delta time: 0.09999847
+94.77136,Log,Delta time: 0.09999847
+94.81328,Log,Delta time: 0.1399994
+94.82233,Log,Delta time: 0.1600037
+94.86257,Log,Delta time: 0.2000046
+94.87145,Log,Delta time: 0.2000046
+94.91103,Log,Delta time: 0.2400055
+94.92002,Log,Delta time: 0.2600021
+94.9744,Log,Paused Timer Started at: 94.96
+94.9744,Log,Delta time: 0
+95.07312,Log,Paused Timer Started at: 95.06
+95.07312,Log,Delta time: 0
+95.1301,Log,Paused Timer Started at: 95.12
+95.1301,Log,Delta time: 0
+95.17052,Log,Paused Timer Started at: 95.16
+95.17052,Log,Delta time: 0
+95.21113,Log,Delta time: 0.04000092
+95.22442,Log,Delta time: 0.06000519
+95.26291,Log,Delta time: 0.09999847
+95.27215,Log,Delta time: 0.09999847
+95.31271,Log,Delta time: 0.1399994
+95.32286,Log,Delta time: 0.1600037
+95.36412,Log,Delta time: 0.2000046
+95.37658,Log,Delta time: 0.2000046
+95.7222,Log,Paused Timer Started at: 95.72
+95.7222,Log,Delta time: 0
+95.7628,Log,Delta time: 0.03999329
+95.7723,Log,Delta time: 0.03999329
+95.81035,Log,Delta time: 0.0799942
+95.82393,Log,Delta time: 0.09999847
+95.8606,Log,Delta time: 0.1399994
+95.87437,Log,Delta time: 0.1399994
+95.91074,Log,Delta time: 0.1800003
+95.92474,Log,Delta time: 0.1999969
+95.96035,Log,Delta time: 0.2399979
+95.97416,Log,Delta time: 0.2399979
+96.02184,Log,Paused Timer Started at: 96.02
+96.02184,Log,Delta time: 0
+96.06316,Log,Delta time: 0.04000092
+96.07286,Log,Delta time: 0.04000092
+96.11593,Log,Delta time: 0.08000183
+96.12035,Log,Delta time: 0.09999847
+96.16283,Log,Delta time: 0.1399994
+96.17249,Log,Delta time: 0.1399994
+96.21355,Log,Delta time: 0.1800003
+96.22256,Log,Delta time: 0.2000046
+96.26246,Log,Delta time: 0.2399979
+96.27208,Log,Delta time: 0.2399979
+96.31253,Log,Delta time: 0.2799988
+96.32145,Log,Delta time: 0.3000031
+96.37142,Log,Delta time: 0.340004
+96.37142,Log,Delta time: 0.340004
+96.41328,Log,Delta time: 0.3800049
+96.42255,Log,Delta time: 0.4000015
+96.46419,Log,Delta time: 0.4400024
+96.47027,Log,Delta time: 0.4400024
+96.51359,Log,Delta time: 0.4800034
+96.52216,Log,Delta time: 0.5
+96.52216,Log,Delta time greater than 0.5
+96.56374,Log,Delta time: 0.5400009
+96.56374,Log,Delta time greater than 0.5
+96.57312,Log,Delta time: 0.5400009
+96.57312,Log,Delta time greater than 0.5
+97.5733,Log,Paused Timer Started at: 97.56
+97.5733,Log,Delta time: 0
+97.62582,Log,Paused Timer Started at: 97.62
+97.62582,Log,Delta time: 0
+97.67118,Log,Paused Timer Started at: 97.66
+97.67118,Log,Delta time: 0
+97.87395,Log,Paused Timer Started at: 97.86
+97.87395,Log,Delta time: 0
+97.91419,Log,Delta time: 0.04000092
+97.923,Log,Delta time: 0.05999756
+97.96593,Log,Delta time: 0.09999847
+97.97066,Log,Delta time: 0.09999847
+98.01088,Log,Delta time: 0.1399994
+98.02427,Log,Delta time: 0.159996
+98.0606,Log,Delta time: 0.1999969
+98.0744,Log,Delta time: 0.1999969
+98.11368,Log,Delta time: 0.2399979
+98.12239,Log,Delta time: 0.2599945
+98.22189,Log,Paused Timer Started at: 98.22
+98.22189,Log,Delta time: 0
+98.2629,Log,Delta time: 0.03999329
+98.27178,Log,Delta time: 0.03999329
+98.31228,Log,Delta time: 0.0799942
+98.32806,Log,Delta time: 0.09999847
+98.37354,Log,Paused Timer Started at: 98.36
+98.37354,Log,Delta time: 0
+98.41013,Log,Delta time: 0.04000092
+98.42329,Log,Delta time: 0.05999756
+98.46157,Log,Delta time: 0.09999847
+98.47092,Log,Delta time: 0.09999847
+98.52091,Log,Paused Timer Started at: 98.52
+98.52091,Log,Delta time: 0
+98.57029,Log,Paused Timer Started at: 98.56
+98.57029,Log,Delta time: 0
+98.61172,Log,Delta time: 0.04000092
+98.62054,Log,Delta time: 0.05999756
+98.66109,Log,Delta time: 0.09999847
+98.67452,Log,Delta time: 0.09999847
+98.71327,Log,Delta time: 0.1399994
+98.72229,Log,Delta time: 0.1600037
+100.0238,Log,Paused Timer Started at: 100.02
+100.0238,Log,Delta time: 0
+100.0609,Log,Delta time: 0.04000092
+100.0701,Log,Delta time: 0.04000092
+100.1114,Log,Delta time: 0.08000183
+100.1202,Log,Delta time: 0.09999847
+100.1604,Log,Delta time: 0.1399994
+100.1702,Log,Delta time: 0.1399994
+100.2113,Log,Delta time: 0.1800003
+100.2204,Log,Delta time: 0.2000046
+100.2644,Log,Delta time: 0.2399979
+100.2737,Log,Delta time: 0.2399979
+100.3111,Log,Delta time: 0.2799988
+100.3244,Log,Delta time: 0.3000031
+100.3618,Log,Delta time: 0.340004
+100.3711,Log,Delta time: 0.340004
+100.411,Log,Delta time: 0.3800049
+100.4245,Log,Delta time: 0.4000015
+100.4615,Log,Delta time: 0.4400024
+100.4706,Log,Delta time: 0.4400024
+100.5106,Log,Delta time: 0.4800034
+100.524,Log,Delta time: 0.5
+100.524,Log,Delta time greater than 0.5
+100.562,Log,Delta time: 0.5400009
+100.562,Log,Delta time greater than 0.5
+100.5715,Log,Delta time: 0.5400009
+100.5715,Log,Delta time greater than 0.5
+100.6126,Log,Delta time: 0.5800018
+100.6126,Log,Delta time greater than 0.5
+100.6259,Log,Delta time: 0.5999985
+100.6259,Log,Delta time greater than 0.5
+100.6626,Log,Delta time: 0.6399994
+100.6626,Log,Delta time greater than 0.5
+100.6723,Log,Delta time: 0.6399994
+100.6723,Log,Delta time greater than 0.5
+101.3204,Log,Paused Timer Started at: 101.32
+101.3204,Log,Delta time: 0
+105.9714,Log,Paused Timer Started at: 105.96
+105.9714,Log,Delta time: 0
+106.0226,Log,Paused Timer Started at: 106.02
+106.0226,Log,Delta time: 0
+106.0721,Log,Paused Timer Started at: 106.06
+106.0721,Log,Delta time: 0
+109.4714,Log,Paused Timer Started at: 109.46
+109.4714,Log,Delta time: 0
+109.5215,Log,Paused Timer Started at: 109.52
+109.5215,Log,Delta time: 0
+109.5702,Log,Paused Timer Started at: 109.56
+109.5702,Log,Delta time: 0
+109.7775,Log,Paused Timer Started at: 109.76
+109.7775,Log,Delta time: 0
+109.8109,Log,Delta time: 0.04000092
+109.8202,Log,Delta time: 0.06000519
+109.8614,Log,Delta time: 0.1000061
+109.8705,Log,Delta time: 0.1000061
+109.9225,Log,Paused Timer Started at: 109.92
+109.9225,Log,Delta time: 0
+110.0733,Log,Paused Timer Started at: 110.06
+110.0733,Log,Delta time: 0
+110.1134,Log,Delta time: 0.04000092
+110.1257,Log,Delta time: 0.05999756
+110.1627,Log,Delta time: 0.09999847
+110.1718,Log,Delta time: 0.09999847
+110.2119,Log,Delta time: 0.1399994
+110.2211,Log,Delta time: 0.1600037
+110.3737,Log,Paused Timer Started at: 110.36
+110.3737,Log,Delta time: 0
+110.4238,Log,Paused Timer Started at: 110.42
+110.4238,Log,Delta time: 0
+110.478,Log,Paused Timer Started at: 110.46
+110.478,Log,Delta time: 0
+110.9203,Log,Paused Timer Started at: 110.92
+110.9203,Log,Delta time: 0
+110.9601,Log,Delta time: 0.04000092
+110.9739,Log,Delta time: 0.04000092
+111.0144,Log,Delta time: 0.08000183
+111.023,Log,Delta time: 0.09999847
+111.0619,Log,Delta time: 0.1399994
+111.0723,Log,Delta time: 0.1399994
+111.1129,Log,Delta time: 0.1800003
+111.122,Log,Delta time: 0.1999969
+111.1713,Log,Delta time: 0.2399979
+111.1713,Log,Delta time: 0.2399979
+111.2133,Log,Delta time: 0.2799988
+111.2221,Log,Delta time: 0.3000031
+111.2632,Log,Delta time: 0.3399963
+111.2735,Log,Delta time: 0.3399963
+111.3135,Log,Delta time: 0.3799973
+111.3222,Log,Delta time: 0.4000015
+111.3642,Log,Delta time: 0.4400024
+111.3742,Log,Delta time: 0.4400024
+111.4141,Log,Delta time: 0.4799957
+111.4229,Log,Delta time: 0.5
+111.4229,Log,Delta time greater than 0.5
+111.4641,Log,Delta time: 0.5400009
+111.4641,Log,Delta time greater than 0.5
+111.4703,Log,Delta time: 0.5400009
+111.4703,Log,Delta time greater than 0.5
+111.52,Log,Delta time: 0.5999985
+111.52,Log,Delta time greater than 0.5
+111.5201,Log,Delta time: 0.5999985
+111.5201,Log,Delta time greater than 0.5
+111.5631,Log,Delta time: 0.6399994
+111.5631,Log,Delta time greater than 0.5
+111.5741,Log,Delta time: 0.6399994
+111.5741,Log,Delta time greater than 0.5
+111.6107,Log,Delta time: 0.6800003
+111.6107,Log,Delta time greater than 0.5
+111.6241,Log,Delta time: 0.6999969
+111.6241,Log,Delta time greater than 0.5
+111.6601,Log,Delta time: 0.7399979
+111.6601,Log,Delta time greater than 0.5
+111.6704,Log,Delta time: 0.7399979
+111.6704,Log,Delta time greater than 0.5
+111.7121,Log,Delta time: 0.7799988
+111.7121,Log,Delta time greater than 0.5
+111.7214,Log,Delta time: 0.8000031
+111.7214,Log,Delta time greater than 0.5
+111.7633,Log,Delta time: 0.8399963
+111.7633,Log,Delta time greater than 0.5
+111.7732,Log,Delta time: 0.8399963
+111.7732,Log,Delta time greater than 0.5
+111.8149,Log,Delta time: 0.8799973
+111.8149,Log,Delta time greater than 0.5
+111.8243,Log,Delta time: 0.9000015
+111.8243,Log,Delta time greater than 0.5
+111.8607,Log,Delta time: 0.9400024
+111.8607,Log,Delta time greater than 0.5
+111.8736,Log,Delta time: 0.9400024
+111.8736,Log,Delta time greater than 0.5
+111.9119,Log,Delta time: 0.9799957
+111.9119,Log,Delta time greater than 0.5
+111.9212,Log,Delta time: 1
+111.9212,Log,Delta time greater than 0.5
+111.9617,Log,Delta time: 1.040001
+111.9617,Log,Delta time greater than 0.5
+111.9712,Log,Delta time: 1.040001
+111.9712,Log,Delta time greater than 0.5
+112.0125,Log,Delta time: 1.080002
+112.0125,Log,Delta time greater than 0.5
+112.0216,Log,Delta time: 1.099998
+112.0216,Log,Delta time greater than 0.5
+112.0631,Log,Delta time: 1.139999
+112.0631,Log,Delta time greater than 0.5
+112.0731,Log,Delta time: 1.139999
+112.0731,Log,Delta time greater than 0.5
+112.1105,Log,Delta time: 1.18
+112.1105,Log,Delta time greater than 0.5
+112.1204,Log,Delta time: 1.199997
+112.1204,Log,Delta time greater than 0.5
+112.1637,Log,Delta time: 1.239998
+112.1637,Log,Delta time greater than 0.5
+112.1731,Log,Delta time: 1.239998
+112.1731,Log,Delta time greater than 0.5
+112.2109,Log,Delta time: 1.279999
+112.2109,Log,Delta time greater than 0.5
+112.2279,Log,Delta time: 1.300003
+112.2279,Log,Delta time greater than 0.5
+112.261,Log,Delta time: 1.339996
+112.261,Log,Delta time greater than 0.5
+112.2707,Log,Delta time: 1.339996
+112.2707,Log,Delta time greater than 0.5
+112.3138,Log,Delta time: 1.379997
+112.3138,Log,Delta time greater than 0.5
+112.3229,Log,Delta time: 1.400002
+112.3229,Log,Delta time greater than 0.5
+112.3644,Log,Delta time: 1.440002
+112.3644,Log,Delta time greater than 0.5
+112.3738,Log,Delta time: 1.440002
+112.3738,Log,Delta time greater than 0.5
+112.4105,Log,Delta time: 1.479996
+112.4105,Log,Delta time greater than 0.5
+112.4203,Log,Delta time: 1.5
+112.4203,Log,Delta time greater than 0.5
+112.4636,Log,Delta time: 1.540001
+112.4636,Log,Delta time greater than 0.5
+112.4734,Log,Delta time: 1.540001
+112.4734,Log,Delta time greater than 0.5
+112.5112,Log,Delta time: 1.580002
+112.5112,Log,Delta time greater than 0.5
+112.5209,Log,Delta time: 1.599998
+112.5209,Log,Delta time greater than 0.5
+112.926,Log,Paused Timer Started at: 112.92
+112.926,Log,Delta time: 0
+112.9632,Log,Delta time: 0.04000092
+112.9724,Log,Delta time: 0.04000092
+113.0117,Log,Delta time: 0.08000183
+113.0207,Log,Delta time: 0.09999847
+113.061,Log,Delta time: 0.1399994
+113.0707,Log,Delta time: 0.1399994
+113.1129,Log,Delta time: 0.1800003
+113.122,Log,Delta time: 0.1999969
+114.0228,Log,Paused Timer Started at: 114.02
+114.0228,Log,Delta time: 0
+114.061,Log,Delta time: 0.04000092
+114.0705,Log,Delta time: 0.04000092
+114.1632,Log,Paused Timer Started at: 114.16
+114.1632,Log,Delta time: 0
+114.1726,Log,Delta time: 0
+114.2201,Log,Paused Timer Started at: 114.22
+114.2201,Log,Delta time: 0
+114.2703,Log,Paused Timer Started at: 114.26
+114.2703,Log,Delta time: 0
+114.3125,Log,Delta time: 0.04000092
+114.3311,Log,Delta time: 0.06000519
+114.3601,Log,Delta time: 0.1000061
+114.3741,Log,Delta time: 0.1000061
+114.4116,Log,Delta time: 0.1399994
+114.4209,Log,Delta time: 0.1600037
+114.4614,Log,Delta time: 0.2000046
+114.4705,Log,Delta time: 0.2000046
+114.5143,Log,Delta time: 0.2400055
+114.5234,Log,Delta time: 0.2600021
+114.5644,Log,Delta time: 0.3000031
+114.5738,Log,Delta time: 0.3000031
+114.6109,Log,Delta time: 0.340004
+114.6245,Log,Delta time: 0.3600006
+114.6779,Log,Paused Timer Started at: 114.66
+114.6779,Log,Delta time: 0
+114.7214,Log,Paused Timer Started at: 114.72
+114.7214,Log,Delta time: 0
+114.7628,Log,Delta time: 0.03999329
+114.7719,Log,Delta time: 0.03999329
+114.8219,Log,Paused Timer Started at: 114.82
+114.8219,Log,Delta time: 0
+114.8622,Log,Delta time: 0.04000092
+114.8714,Log,Delta time: 0.04000092
+114.9105,Log,Delta time: 0.0799942
+114.9201,Log,Delta time: 0.09999847
+114.962,Log,Delta time: 0.1399994
+114.9715,Log,Delta time: 0.1399994
+115.0109,Log,Delta time: 0.1800003
+115.0237,Log,Delta time: 0.1999969
+115.0641,Log,Delta time: 0.2399979
+115.0743,Log,Delta time: 0.2399979
+115.314,Log,Paused Timer Started at: 115.3
+115.314,Log,Delta time: 0
+115.323,Log,Delta time: 0.02000427
+115.3601,Log,Delta time: 0.06000519
+115.3724,Log,Delta time: 0.06000519
+115.416,Log,Delta time: 0.09999847
+115.4204,Log,Delta time: 0.1200027
+115.4612,Log,Delta time: 0.1600037
+115.4701,Log,Delta time: 0.1600037
+115.517,Log,Delta time: 0.2000046
+115.5214,Log,Delta time: 0.2200012
+115.5627,Log,Delta time: 0.2600021
+115.5725,Log,Delta time: 0.2600021
+115.6114,Log,Delta time: 0.3000031
+115.6229,Log,Delta time: 0.3199997
+115.6635,Log,Delta time: 0.3600006
+115.6726,Log,Delta time: 0.3600006
+115.7161,Log,Delta time: 0.4000015
+115.7205,Log,Delta time: 0.4200058
+115.7616,Log,Delta time: 0.4599991
+115.7718,Log,Delta time: 0.4599991
+115.8122,Log,Delta time: 0.5
+115.8122,Log,Delta time greater than 0.5
+115.829,Log,Delta time: 0.5200043
+115.829,Log,Delta time greater than 0.5
+115.8615,Log,Delta time: 0.5600052
+115.8615,Log,Delta time greater than 0.5
+115.871,Log,Delta time: 0.5600052
+115.871,Log,Delta time greater than 0.5
+115.9117,Log,Delta time: 0.5999985
+115.9117,Log,Delta time greater than 0.5
+115.9223,Log,Delta time: 0.6200027
+115.9223,Log,Delta time greater than 0.5
+115.9621,Log,Delta time: 0.6600037
+115.9621,Log,Delta time greater than 0.5
+115.9714,Log,Delta time: 0.6600037
+115.9714,Log,Delta time greater than 0.5
+116.0123,Log,Delta time: 0.7000046
+116.0123,Log,Delta time greater than 0.5
+116.023,Log,Delta time: 0.7200012
+116.023,Log,Delta time greater than 0.5
+116.0625,Log,Delta time: 0.7600021
+116.0625,Log,Delta time greater than 0.5
+116.0721,Log,Delta time: 0.7600021
+116.0721,Log,Delta time greater than 0.5
+116.1143,Log,Delta time: 0.8000031
+116.1143,Log,Delta time greater than 0.5
+116.1243,Log,Delta time: 0.8199997
+116.1243,Log,Delta time greater than 0.5
+116.1619,Log,Delta time: 0.8600006
+116.1619,Log,Delta time greater than 0.5
+116.1751,Log,Delta time: 0.8600006
+116.1751,Log,Delta time greater than 0.5
+116.2119,Log,Delta time: 0.9000015
+116.2119,Log,Delta time greater than 0.5
+116.2209,Log,Delta time: 0.9199982
+116.2209,Log,Delta time greater than 0.5
+116.2622,Log,Delta time: 0.9599991
+116.2622,Log,Delta time greater than 0.5
+116.2716,Log,Delta time: 0.9599991
+116.2716,Log,Delta time greater than 0.5
+116.3114,Log,Delta time: 1
+116.3114,Log,Delta time greater than 0.5
+116.3206,Log,Delta time: 1.020004
+116.3206,Log,Delta time greater than 0.5
+116.363,Log,Delta time: 1.060005
+116.363,Log,Delta time greater than 0.5
+116.3722,Log,Delta time: 1.060005
+116.3722,Log,Delta time greater than 0.5
+116.4124,Log,Delta time: 1.099998
+116.4124,Log,Delta time greater than 0.5
+116.4216,Log,Delta time: 1.120003
+116.4216,Log,Delta time greater than 0.5
+116.4639,Log,Delta time: 1.160004
+116.4639,Log,Delta time greater than 0.5
+116.4734,Log,Delta time: 1.160004
+116.4734,Log,Delta time greater than 0.5
+116.5166,Log,Delta time: 1.200005
+116.5166,Log,Delta time greater than 0.5
+116.5216,Log,Delta time: 1.220001
+116.5216,Log,Delta time greater than 0.5
+116.5605,Log,Delta time: 1.260002
+116.5605,Log,Delta time greater than 0.5
+116.5703,Log,Delta time: 1.260002
+116.5703,Log,Delta time greater than 0.5
+116.6125,Log,Delta time: 1.300003
+116.6125,Log,Delta time greater than 0.5
+116.6217,Log,Delta time: 1.32
+116.6217,Log,Delta time greater than 0.5
+116.6622,Log,Delta time: 1.360001
+116.6622,Log,Delta time greater than 0.5
+116.6718,Log,Delta time: 1.360001
+116.6718,Log,Delta time greater than 0.5
+116.7125,Log,Delta time: 1.400002
+116.7125,Log,Delta time greater than 0.5
+116.722,Log,Delta time: 1.419998
+116.722,Log,Delta time greater than 0.5
+116.7634,Log,Delta time: 1.459999
+116.7634,Log,Delta time greater than 0.5
+116.7729,Log,Delta time: 1.459999
+116.7729,Log,Delta time greater than 0.5
+116.8142,Log,Delta time: 1.5
+116.8142,Log,Delta time greater than 0.5
+116.8232,Log,Delta time: 1.520004
+116.8232,Log,Delta time greater than 0.5
+116.8679,Log,Delta time: 1.560005
+116.8679,Log,Delta time greater than 0.5
+116.873,Log,Delta time: 1.560005
+116.873,Log,Delta time greater than 0.5
+116.9101,Log,Delta time: 1.599998
+116.9101,Log,Delta time greater than 0.5
+116.9241,Log,Delta time: 1.620003
+116.9241,Log,Delta time greater than 0.5
+116.9611,Log,Delta time: 1.660004
+116.9611,Log,Delta time greater than 0.5
+116.9792,Log,Delta time: 1.660004
+116.9792,Log,Delta time greater than 0.5
+117.0122,Log,Delta time: 1.700005
+117.0122,Log,Delta time greater than 0.5
+117.0215,Log,Delta time: 1.720001
+117.0215,Log,Delta time greater than 0.5
+117.064,Log,Delta time: 1.760002
+117.064,Log,Delta time greater than 0.5
+117.074,Log,Delta time: 1.760002
+117.074,Log,Delta time greater than 0.5
+117.1141,Log,Delta time: 1.800003
+117.1141,Log,Delta time greater than 0.5
+117.1233,Log,Delta time: 1.82
+117.1233,Log,Delta time greater than 0.5
+117.1624,Log,Delta time: 1.860001
+117.1624,Log,Delta time greater than 0.5
+117.1736,Log,Delta time: 1.860001
+117.1736,Log,Delta time greater than 0.5
+117.2158,Log,Delta time: 1.900002
+117.2158,Log,Delta time greater than 0.5
+117.2209,Log,Delta time: 1.919998
+117.2209,Log,Delta time greater than 0.5
+117.2628,Log,Delta time: 1.959999
+117.2628,Log,Delta time greater than 0.5
+117.2723,Log,Delta time: 1.959999
+117.2723,Log,Delta time greater than 0.5
+117.3137,Log,Delta time: 2
+117.3137,Log,Delta time greater than 0.5
+117.331,Log,Delta time: 2.020004
+117.331,Log,Delta time greater than 0.5
+117.3608,Log,Delta time: 2.060005
+117.3608,Log,Delta time greater than 0.5
+117.3707,Log,Delta time: 2.060005
+117.3707,Log,Delta time greater than 0.5
+117.411,Log,Delta time: 2.099998
+117.411,Log,Delta time greater than 0.5
+117.4204,Log,Delta time: 2.120003
+117.4204,Log,Delta time greater than 0.5
+117.4638,Log,Delta time: 2.160004
+117.4638,Log,Delta time greater than 0.5
+117.4734,Log,Delta time: 2.160004
+117.4734,Log,Delta time greater than 0.5
+117.5109,Log,Delta time: 2.200005
+117.5109,Log,Delta time greater than 0.5
+117.5202,Log,Delta time: 2.220001
+117.5202,Log,Delta time greater than 0.5
+117.5601,Log,Delta time: 2.260002
+117.5601,Log,Delta time greater than 0.5
+117.575,Log,Delta time: 2.260002
+117.575,Log,Delta time greater than 0.5
+117.6117,Log,Delta time: 2.300003
+117.6117,Log,Delta time greater than 0.5
+117.6208,Log,Delta time: 2.32
+117.6208,Log,Delta time greater than 0.5
+117.6612,Log,Delta time: 2.360001
+117.6612,Log,Delta time greater than 0.5
+117.6742,Log,Delta time: 2.360001
+117.6742,Log,Delta time greater than 0.5
+117.7108,Log,Delta time: 2.400002
+117.7108,Log,Delta time greater than 0.5
+117.7201,Log,Delta time: 2.419998
+117.7201,Log,Delta time greater than 0.5
+117.7614,Log,Delta time: 2.459999
+117.7614,Log,Delta time greater than 0.5
+117.7708,Log,Delta time: 2.459999
+117.7708,Log,Delta time greater than 0.5
+117.8119,Log,Delta time: 2.5
+117.8119,Log,Delta time greater than 0.5
+117.8211,Log,Delta time: 2.520004
+117.8211,Log,Delta time greater than 0.5
+117.8629,Log,Delta time: 2.560005
+117.8629,Log,Delta time greater than 0.5
+117.8725,Log,Delta time: 2.560005
+117.8725,Log,Delta time greater than 0.5
+117.9124,Log,Delta time: 2.599998
+117.9124,Log,Delta time greater than 0.5
+117.9219,Log,Delta time: 2.620003
+117.9219,Log,Delta time greater than 0.5
+117.9638,Log,Delta time: 2.660004
+117.9638,Log,Delta time greater than 0.5
+117.9732,Log,Delta time: 2.660004
+117.9732,Log,Delta time greater than 0.5
+118.0189,Log,Delta time: 2.700005
+118.0189,Log,Delta time greater than 0.5
+118.0238,Log,Delta time: 2.720001
+118.0238,Log,Delta time greater than 0.5
+118.06,Log,Delta time: 2.760002
+118.06,Log,Delta time greater than 0.5
+118.0738,Log,Delta time: 2.760002
+118.0738,Log,Delta time greater than 0.5
+118.1106,Log,Delta time: 2.800003
+118.1106,Log,Delta time greater than 0.5
+118.1319,Log,Delta time: 2.82
+118.1319,Log,Delta time greater than 0.5
+118.161,Log,Delta time: 2.860001
+118.161,Log,Delta time greater than 0.5
+118.1706,Log,Delta time: 2.860001
+118.1706,Log,Delta time greater than 0.5
+118.2107,Log,Delta time: 2.900002
+118.2107,Log,Delta time greater than 0.5
+118.2201,Log,Delta time: 2.919998
+118.2201,Log,Delta time greater than 0.5
+118.2602,Log,Delta time: 2.959999
+118.2602,Log,Delta time greater than 0.5
+118.27,Log,Delta time: 2.959999
+118.27,Log,Delta time greater than 0.5
+118.3108,Log,Delta time: 3
+118.3108,Log,Delta time greater than 0.5
+118.3203,Log,Delta time: 3.020004
+118.3203,Log,Delta time greater than 0.5
+118.3615,Log,Delta time: 3.060005
+118.3615,Log,Delta time greater than 0.5
+118.3721,Log,Delta time: 3.060005
+118.3721,Log,Delta time greater than 0.5
+118.4142,Log,Delta time: 3.099998
+118.4142,Log,Delta time greater than 0.5
+118.4236,Log,Delta time: 3.120003
+118.4236,Log,Delta time greater than 0.5
+118.4604,Log,Delta time: 3.160004
+118.4604,Log,Delta time greater than 0.5
+118.4733,Log,Delta time: 3.160004
+118.4733,Log,Delta time greater than 0.5
+118.5102,Log,Delta time: 3.200005
+118.5102,Log,Delta time greater than 0.5
+118.5243,Log,Delta time: 3.220001
+118.5243,Log,Delta time greater than 0.5
+118.5614,Log,Delta time: 3.260002
+118.5614,Log,Delta time greater than 0.5
+118.5709,Log,Delta time: 3.260002
+118.5709,Log,Delta time greater than 0.5
+118.6123,Log,Delta time: 3.300003
+118.6123,Log,Delta time greater than 0.5
+118.6215,Log,Delta time: 3.32
+118.6215,Log,Delta time greater than 0.5
+118.6628,Log,Delta time: 3.360001
+118.6628,Log,Delta time greater than 0.5
+118.6728,Log,Delta time: 3.360001
+118.6728,Log,Delta time greater than 0.5
+118.7116,Log,Delta time: 3.400002
+118.7116,Log,Delta time greater than 0.5
+118.7207,Log,Delta time: 3.419998
+118.7207,Log,Delta time greater than 0.5
+118.7615,Log,Delta time: 3.459999
+118.7615,Log,Delta time greater than 0.5
+118.7709,Log,Delta time: 3.459999
+118.7709,Log,Delta time greater than 0.5
+118.8151,Log,Delta time: 3.5
+118.8151,Log,Delta time greater than 0.5
+118.824,Log,Delta time: 3.520004
+118.824,Log,Delta time greater than 0.5
+118.864,Log,Delta time: 3.560005
+118.864,Log,Delta time greater than 0.5
+118.8732,Log,Delta time: 3.560005
+118.8732,Log,Delta time greater than 0.5
+118.914,Log,Delta time: 3.599998
+118.914,Log,Delta time greater than 0.5
+118.9266,Log,Delta time: 3.620003
+118.9266,Log,Delta time greater than 0.5
+118.9626,Log,Delta time: 3.660004
+118.9626,Log,Delta time greater than 0.5
+118.9718,Log,Delta time: 3.660004
+118.9718,Log,Delta time greater than 0.5
+119.013,Log,Delta time: 3.700005
+119.013,Log,Delta time greater than 0.5
+119.0223,Log,Delta time: 3.720001
+119.0223,Log,Delta time greater than 0.5
+119.0614,Log,Delta time: 3.760002
+119.0614,Log,Delta time greater than 0.5
+119.0709,Log,Delta time: 3.760002
+119.0709,Log,Delta time greater than 0.5
+119.1109,Log,Delta time: 3.800003
+119.1109,Log,Delta time greater than 0.5
+119.1201,Log,Delta time: 3.82
+119.1201,Log,Delta time greater than 0.5
+119.16,Log,Delta time: 3.860001
+119.16,Log,Delta time greater than 0.5
+119.1752,Log,Delta time: 3.860001
+119.1752,Log,Delta time greater than 0.5
+119.2131,Log,Delta time: 3.900002
+119.2131,Log,Delta time greater than 0.5
+119.2221,Log,Delta time: 3.919998
+119.2221,Log,Delta time greater than 0.5
+119.2619,Log,Delta time: 3.959999
+119.2619,Log,Delta time greater than 0.5
+119.2715,Log,Delta time: 3.959999
+119.2715,Log,Delta time greater than 0.5
+119.3124,Log,Delta time: 4
+119.3124,Log,Delta time greater than 0.5
+119.3213,Log,Delta time: 4.020004
+119.3213,Log,Delta time greater than 0.5
+119.3627,Log,Delta time: 4.060005
+119.3627,Log,Delta time greater than 0.5
+119.3757,Log,Delta time: 4.060005
+119.3757,Log,Delta time greater than 0.5
+119.4131,Log,Delta time: 4.099998
+119.4131,Log,Delta time greater than 0.5
+119.4222,Log,Delta time: 4.120003
+119.4222,Log,Delta time greater than 0.5
+119.4632,Log,Delta time: 4.160004
+119.4632,Log,Delta time greater than 0.5
+119.4726,Log,Delta time: 4.160004
+119.4726,Log,Delta time greater than 0.5
+119.5111,Log,Delta time: 4.200005
+119.5111,Log,Delta time greater than 0.5
+119.5201,Log,Delta time: 4.220001
+119.5201,Log,Delta time greater than 0.5
+119.5609,Log,Delta time: 4.260002
+119.5609,Log,Delta time greater than 0.5
+119.5704,Log,Delta time: 4.260002
+119.5704,Log,Delta time greater than 0.5
+119.6108,Log,Delta time: 4.300003
+119.6108,Log,Delta time greater than 0.5
+119.6201,Log,Delta time: 4.32
+119.6201,Log,Delta time greater than 0.5
+119.6626,Log,Delta time: 4.360001
+119.6626,Log,Delta time greater than 0.5
+119.6727,Log,Delta time: 4.360001
+119.6727,Log,Delta time greater than 0.5
+119.7111,Log,Delta time: 4.400002
+119.7111,Log,Delta time greater than 0.5
+119.721,Log,Delta time: 4.419998
+119.721,Log,Delta time greater than 0.5
+119.7616,Log,Delta time: 4.459999
+119.7616,Log,Delta time greater than 0.5
+119.7717,Log,Delta time: 4.459999
+119.7717,Log,Delta time greater than 0.5
+119.82,Log,Delta time: 4.520004
+119.82,Log,Delta time greater than 0.5
+119.8212,Log,Delta time: 4.520004
+119.8212,Log,Delta time greater than 0.5
+119.8635,Log,Delta time: 4.560005
+119.8635,Log,Delta time greater than 0.5
+119.873,Log,Delta time: 4.560005
+119.873,Log,Delta time greater than 0.5
+119.9137,Log,Delta time: 4.599998
+119.9137,Log,Delta time greater than 0.5
+119.9229,Log,Delta time: 4.620003
+119.9229,Log,Delta time greater than 0.5
+119.9621,Log,Delta time: 4.660004
+119.9621,Log,Delta time greater than 0.5
+119.9713,Log,Delta time: 4.660004
+119.9713,Log,Delta time greater than 0.5
+120.013,Log,Delta time: 4.700005
+120.013,Log,Delta time greater than 0.5
+120.0232,Log,Delta time: 4.720001
+120.0232,Log,Delta time greater than 0.5
+120.0633,Log,Delta time: 4.760002
+120.0633,Log,Delta time greater than 0.5
+120.0733,Log,Delta time: 4.760002
+120.0733,Log,Delta time greater than 0.5
+120.1101,Log,Delta time: 4.800003
+120.1101,Log,Delta time greater than 0.5
+120.1235,Log,Delta time: 4.82
+120.1235,Log,Delta time greater than 0.5
+120.1628,Log,Delta time: 4.860001
+120.1628,Log,Delta time greater than 0.5
+120.1724,Log,Delta time: 4.860001
+120.1724,Log,Delta time greater than 0.5
+120.2136,Log,Delta time: 4.900002
+120.2136,Log,Delta time greater than 0.5
+120.2228,Log,Delta time: 4.919998
+120.2228,Log,Delta time greater than 0.5
+120.2671,Log,Delta time: 4.959999
+120.2671,Log,Delta time greater than 0.5
+120.2719,Log,Delta time: 4.959999
+120.2719,Log,Delta time greater than 0.5
+120.3145,Log,Delta time: 5
+120.3145,Log,Delta time greater than 0.5
+120.3237,Log,Delta time: 5.020004
+120.3237,Log,Delta time greater than 0.5
+120.3601,Log,Delta time: 5.060005
+120.3601,Log,Delta time greater than 0.5
+120.38,Log,Delta time: 5.080002
+120.38,Log,Delta time greater than 0.5
+120.4103,Log,Delta time: 5.099998
+120.4103,Log,Delta time greater than 0.5
+120.4238,Log,Delta time: 5.120003
+120.4238,Log,Delta time greater than 0.5
+120.46,Log,Delta time: 5.160004
+120.46,Log,Delta time greater than 0.5
+120.4736,Log,Delta time: 5.160004
+120.4736,Log,Delta time greater than 0.5
+120.513,Log,Delta time: 5.200005
+120.513,Log,Delta time greater than 0.5
+120.522,Log,Delta time: 5.220001
+120.522,Log,Delta time greater than 0.5
+120.5626,Log,Delta time: 5.260002
+120.5626,Log,Delta time greater than 0.5
+120.5718,Log,Delta time: 5.260002
+120.5718,Log,Delta time greater than 0.5
+120.6119,Log,Delta time: 5.300003
+120.6119,Log,Delta time greater than 0.5
+120.6213,Log,Delta time: 5.32
+120.6213,Log,Delta time greater than 0.5
+120.6632,Log,Delta time: 5.360001
+120.6632,Log,Delta time greater than 0.5
+120.6732,Log,Delta time: 5.360001
+120.6732,Log,Delta time greater than 0.5
+120.7124,Log,Delta time: 5.400002
+120.7124,Log,Delta time greater than 0.5
+120.7217,Log,Delta time: 5.419998
+120.7217,Log,Delta time greater than 0.5
+120.7628,Log,Delta time: 5.459999
+120.7628,Log,Delta time greater than 0.5
+120.7723,Log,Delta time: 5.459999
+120.7723,Log,Delta time greater than 0.5
+120.8141,Log,Delta time: 5.5
+120.8141,Log,Delta time greater than 0.5
+120.8266,Log,Delta time: 5.520004
+120.8266,Log,Delta time greater than 0.5
+120.863,Log,Delta time: 5.560005
+120.863,Log,Delta time greater than 0.5
+120.873,Log,Delta time: 5.560005
+120.873,Log,Delta time greater than 0.5
+120.9131,Log,Delta time: 5.599998
+120.9131,Log,Delta time greater than 0.5
+120.9223,Log,Delta time: 5.620003
+120.9223,Log,Delta time greater than 0.5
+120.9624,Log,Delta time: 5.660004
+120.9624,Log,Delta time greater than 0.5
+120.972,Log,Delta time: 5.660004
+120.972,Log,Delta time greater than 0.5
+121.0126,Log,Delta time: 5.700005
+121.0126,Log,Delta time greater than 0.5
+121.0226,Log,Delta time: 5.720001
+121.0226,Log,Delta time greater than 0.5
+121.062,Log,Delta time: 5.760002
+121.062,Log,Delta time greater than 0.5
+121.071,Log,Delta time: 5.760002
+121.071,Log,Delta time greater than 0.5
+121.1117,Log,Delta time: 5.800003
+121.1117,Log,Delta time greater than 0.5
+121.1208,Log,Delta time: 5.82
+121.1208,Log,Delta time greater than 0.5
+121.1605,Log,Delta time: 5.860001
+121.1605,Log,Delta time greater than 0.5
+121.1708,Log,Delta time: 5.860001
+121.1708,Log,Delta time greater than 0.5
+121.2131,Log,Delta time: 5.900002
+121.2131,Log,Delta time greater than 0.5
+121.2243,Log,Delta time: 5.919998
+121.2243,Log,Delta time greater than 0.5
+121.2609,Log,Delta time: 5.959999
+121.2609,Log,Delta time greater than 0.5
+121.2747,Log,Delta time: 5.959999
+121.2747,Log,Delta time greater than 0.5
+121.3102,Log,Delta time: 6
+121.3102,Log,Delta time greater than 0.5
+121.3201,Log,Delta time: 6.020004
+121.3201,Log,Delta time greater than 0.5
+121.3624,Log,Delta time: 6.060005
+121.3624,Log,Delta time greater than 0.5
+121.3716,Log,Delta time: 6.060005
+121.3716,Log,Delta time greater than 0.5
+121.4115,Log,Delta time: 6.099998
+121.4115,Log,Delta time greater than 0.5
+121.421,Log,Delta time: 6.120003
+121.421,Log,Delta time greater than 0.5
+121.4642,Log,Delta time: 6.160004
+121.4642,Log,Delta time greater than 0.5
+121.4739,Log,Delta time: 6.160004
+121.4739,Log,Delta time greater than 0.5
+121.5108,Log,Delta time: 6.200005
+121.5108,Log,Delta time greater than 0.5
+121.5206,Log,Delta time: 6.220001
+121.5206,Log,Delta time greater than 0.5
+121.562,Log,Delta time: 6.260002
+121.562,Log,Delta time greater than 0.5
+121.5714,Log,Delta time: 6.260002
+121.5714,Log,Delta time greater than 0.5
+121.6149,Log,Delta time: 6.300003
+121.6149,Log,Delta time greater than 0.5
+121.6246,Log,Delta time: 6.32
+121.6246,Log,Delta time greater than 0.5
+121.661,Log,Delta time: 6.360001
+121.661,Log,Delta time greater than 0.5
+121.6702,Log,Delta time: 6.360001
+121.6702,Log,Delta time greater than 0.5
+121.7105,Log,Delta time: 6.400002
+121.7105,Log,Delta time greater than 0.5
+121.7279,Log,Delta time: 6.419998
+121.7279,Log,Delta time greater than 0.5
+121.76,Log,Delta time: 6.459999
+121.76,Log,Delta time greater than 0.5
+121.7735,Log,Delta time: 6.459999
+121.7735,Log,Delta time greater than 0.5
+121.8144,Log,Delta time: 6.5
+121.8144,Log,Delta time greater than 0.5
+121.8239,Log,Delta time: 6.520004
+121.8239,Log,Delta time greater than 0.5
+121.8611,Log,Delta time: 6.560005
+121.8611,Log,Delta time greater than 0.5
+121.8703,Log,Delta time: 6.560005
+121.8703,Log,Delta time greater than 0.5
+121.9117,Log,Delta time: 6.599998
+121.9117,Log,Delta time greater than 0.5
+121.9222,Log,Delta time: 6.620003
+121.9222,Log,Delta time greater than 0.5
+121.9602,Log,Delta time: 6.660004
+121.9602,Log,Delta time greater than 0.5
+121.972,Log,Delta time: 6.660004
+121.972,Log,Delta time greater than 0.5
+122.0109,Log,Delta time: 6.700005
+122.0109,Log,Delta time greater than 0.5
+122.0246,Log,Delta time: 6.720001
+122.0246,Log,Delta time greater than 0.5
+122.0698,Log,Delta time: 6.760002
+122.0698,Log,Delta time greater than 0.5
+122.075,Log,Delta time: 6.760002
+122.075,Log,Delta time greater than 0.5
+122.1118,Log,Delta time: 6.800003
+122.1118,Log,Delta time greater than 0.5
+122.1211,Log,Delta time: 6.82
+122.1211,Log,Delta time greater than 0.5
+122.162,Log,Delta time: 6.860001
+122.162,Log,Delta time greater than 0.5
+122.1722,Log,Delta time: 6.860001
+122.1722,Log,Delta time greater than 0.5
+122.2126,Log,Delta time: 6.900002
+122.2126,Log,Delta time greater than 0.5
+122.2219,Log,Delta time: 6.919998
+122.2219,Log,Delta time greater than 0.5
+122.2635,Log,Delta time: 6.959999
+122.2635,Log,Delta time greater than 0.5
+122.2729,Log,Delta time: 6.959999
+122.2729,Log,Delta time greater than 0.5
+122.3133,Log,Delta time: 7
+122.3133,Log,Delta time greater than 0.5
+122.3227,Log,Delta time: 7.020004
+122.3227,Log,Delta time greater than 0.5
+122.3628,Log,Delta time: 7.060005
+122.3628,Log,Delta time greater than 0.5
+122.3725,Log,Delta time: 7.060005
+122.3725,Log,Delta time greater than 0.5
+122.412,Log,Delta time: 7.099998
+122.412,Log,Delta time greater than 0.5
+122.4228,Log,Delta time: 7.120003
+122.4228,Log,Delta time greater than 0.5
+122.4612,Log,Delta time: 7.160004
+122.4612,Log,Delta time greater than 0.5
+122.4717,Log,Delta time: 7.160004
+122.4717,Log,Delta time greater than 0.5
+122.5126,Log,Delta time: 7.200005
+122.5126,Log,Delta time greater than 0.5
+122.5272,Log,Delta time: 7.220001
+122.5272,Log,Delta time greater than 0.5
+122.564,Log,Delta time: 7.260002
+122.564,Log,Delta time greater than 0.5
+122.5733,Log,Delta time: 7.260002
+122.5733,Log,Delta time greater than 0.5
+122.6105,Log,Delta time: 7.300003
+122.6105,Log,Delta time greater than 0.5
+122.6248,Log,Delta time: 7.32
+122.6248,Log,Delta time greater than 0.5
+122.6612,Log,Delta time: 7.360001
+122.6612,Log,Delta time greater than 0.5
+122.6703,Log,Delta time: 7.360001
+122.6703,Log,Delta time greater than 0.5
+122.7109,Log,Delta time: 7.400002
+122.7109,Log,Delta time greater than 0.5
+122.7246,Log,Delta time: 7.419998
+122.7246,Log,Delta time greater than 0.5
+122.7643,Log,Delta time: 7.459999
+122.7643,Log,Delta time greater than 0.5
+122.7738,Log,Delta time: 7.459999
+122.7738,Log,Delta time greater than 0.5
+122.8146,Log,Delta time: 7.5
+122.8146,Log,Delta time greater than 0.5
+122.8237,Log,Delta time: 7.520004
+122.8237,Log,Delta time greater than 0.5
+122.8711,Log,Delta time: 7.560005
+122.8711,Log,Delta time greater than 0.5
+122.8711,Log,Delta time: 7.560005
+122.8711,Log,Delta time greater than 0.5
+122.9103,Log,Delta time: 7.599998
+122.9103,Log,Delta time greater than 0.5
+122.9236,Log,Delta time: 7.620003
+122.9236,Log,Delta time greater than 0.5
+122.9642,Log,Delta time: 7.660004
+122.9642,Log,Delta time greater than 0.5
+122.98,Log,Delta time: 7.68
+122.98,Log,Delta time greater than 0.5
+123.0136,Log,Delta time: 7.700005
+123.0136,Log,Delta time greater than 0.5
+123.0224,Log,Delta time: 7.720001
+123.0224,Log,Delta time greater than 0.5
+123.0638,Log,Delta time: 7.760002
+123.0638,Log,Delta time greater than 0.5
+123.0731,Log,Delta time: 7.760002
+123.0731,Log,Delta time greater than 0.5
+123.1127,Log,Delta time: 7.800003
+123.1127,Log,Delta time greater than 0.5
+123.1225,Log,Delta time: 7.82
+123.1225,Log,Delta time greater than 0.5
+123.1617,Log,Delta time: 7.860001
+123.1617,Log,Delta time greater than 0.5
+123.1719,Log,Delta time: 7.860001
+123.1719,Log,Delta time greater than 0.5
+123.2158,Log,Delta time: 7.900002
+123.2158,Log,Delta time greater than 0.5
+123.2206,Log,Delta time: 7.919998
+123.2206,Log,Delta time greater than 0.5
+123.2618,Log,Delta time: 7.959999
+123.2618,Log,Delta time greater than 0.5
+123.2711,Log,Delta time: 7.959999
+123.2711,Log,Delta time greater than 0.5
+123.3114,Log,Delta time: 8
+123.3114,Log,Delta time greater than 0.5
+123.324,Log,Delta time: 8.020004
+123.324,Log,Delta time greater than 0.5
+123.3604,Log,Delta time: 8.060005
+123.3604,Log,Delta time greater than 0.5
+123.37,Log,Delta time: 8.060005
+123.37,Log,Delta time greater than 0.5
+123.4105,Log,Delta time: 8.099998
+123.4105,Log,Delta time greater than 0.5
+123.4313,Log,Delta time: 8.120003
+123.4313,Log,Delta time greater than 0.5
+123.463,Log,Delta time: 8.160004
+123.463,Log,Delta time greater than 0.5
+123.4734,Log,Delta time: 8.160004
+123.4734,Log,Delta time greater than 0.5
+123.5109,Log,Delta time: 8.200005
+123.5109,Log,Delta time greater than 0.5
+123.5218,Log,Delta time: 8.220001
+123.5218,Log,Delta time greater than 0.5
+123.5616,Log,Delta time: 8.260002
+123.5616,Log,Delta time greater than 0.5
+123.5717,Log,Delta time: 8.260002
+123.5717,Log,Delta time greater than 0.5
+123.6133,Log,Delta time: 8.300003
+123.6133,Log,Delta time greater than 0.5
+123.6226,Log,Delta time: 8.32
+123.6226,Log,Delta time greater than 0.5
+123.672,Log,Delta time: 8.360001
+123.672,Log,Delta time greater than 0.5
+123.672,Log,Delta time: 8.360001
+123.672,Log,Delta time greater than 0.5
+123.7141,Log,Delta time: 8.400002
+123.7141,Log,Delta time greater than 0.5
+123.7233,Log,Delta time: 8.419998
+123.7233,Log,Delta time greater than 0.5
+123.7612,Log,Delta time: 8.459999
+123.7612,Log,Delta time greater than 0.5
+123.7734,Log,Delta time: 8.459999
+123.7734,Log,Delta time greater than 0.5
+123.8151,Log,Delta time: 8.5
+123.8151,Log,Delta time greater than 0.5
+123.8214,Log,Delta time: 8.520004
+123.8214,Log,Delta time greater than 0.5
+123.8607,Log,Delta time: 8.560005
+123.8607,Log,Delta time greater than 0.5
+123.8707,Log,Delta time: 8.560005
+123.8707,Log,Delta time greater than 0.5
+123.9114,Log,Delta time: 8.599998
+123.9114,Log,Delta time greater than 0.5
+123.9207,Log,Delta time: 8.620003
+123.9207,Log,Delta time greater than 0.5
+123.9618,Log,Delta time: 8.660004
+123.9618,Log,Delta time greater than 0.5
+123.9716,Log,Delta time: 8.660004
+123.9716,Log,Delta time greater than 0.5
+124.02,Log,Delta time: 8.720001
+124.02,Log,Delta time greater than 0.5
+124.0201,Log,Delta time: 8.720001
+124.0201,Log,Delta time greater than 0.5
+124.0617,Log,Delta time: 8.760002
+124.0617,Log,Delta time greater than 0.5
+124.0715,Log,Delta time: 8.760002
+124.0715,Log,Delta time greater than 0.5
+124.1134,Log,Delta time: 8.800003
+124.1134,Log,Delta time greater than 0.5
+124.1317,Log,Delta time: 8.82
+124.1317,Log,Delta time greater than 0.5
+124.1605,Log,Delta time: 8.860001
+124.1605,Log,Delta time greater than 0.5
+124.1705,Log,Delta time: 8.860001
+124.1705,Log,Delta time greater than 0.5
+124.2132,Log,Delta time: 8.900002
+124.2132,Log,Delta time greater than 0.5
+124.2221,Log,Delta time: 8.919998
+124.2221,Log,Delta time greater than 0.5
+124.262,Log,Delta time: 8.959999
+124.262,Log,Delta time greater than 0.5
+124.2714,Log,Delta time: 8.959999
+124.2714,Log,Delta time greater than 0.5
+124.3121,Log,Delta time: 9
+124.3121,Log,Delta time greater than 0.5
+124.3211,Log,Delta time: 9.020004
+124.3211,Log,Delta time greater than 0.5
+124.3613,Log,Delta time: 9.060005
+124.3613,Log,Delta time greater than 0.5
+124.3706,Log,Delta time: 9.060005
+124.3706,Log,Delta time greater than 0.5
+124.4109,Log,Delta time: 9.099998
+124.4109,Log,Delta time greater than 0.5
+124.4245,Log,Delta time: 9.120003
+124.4245,Log,Delta time greater than 0.5
+124.4662,Log,Delta time: 9.160004
+124.4662,Log,Delta time greater than 0.5
+124.4746,Log,Delta time: 9.160004
+124.4746,Log,Delta time greater than 0.5
+124.512,Log,Delta time: 9.200005
+124.512,Log,Delta time greater than 0.5
+124.5237,Log,Delta time: 9.220001
+124.5237,Log,Delta time greater than 0.5
+124.5611,Log,Delta time: 9.260002
+124.5611,Log,Delta time greater than 0.5
+124.5705,Log,Delta time: 9.260002
+124.5705,Log,Delta time greater than 0.5
+124.6145,Log,Delta time: 9.300003
+124.6145,Log,Delta time greater than 0.5
+124.6236,Log,Delta time: 9.32
+124.6236,Log,Delta time greater than 0.5
+124.6603,Log,Delta time: 9.360001
+124.6603,Log,Delta time greater than 0.5
+124.6748,Log,Delta time: 9.360001
+124.6748,Log,Delta time greater than 0.5
+124.714,Log,Delta time: 9.400002
+124.714,Log,Delta time greater than 0.5
+124.7233,Log,Delta time: 9.419998
+124.7233,Log,Delta time greater than 0.5
+124.7638,Log,Delta time: 9.459999
+124.7638,Log,Delta time greater than 0.5
+124.773,Log,Delta time: 9.459999
+124.773,Log,Delta time greater than 0.5
+124.8118,Log,Delta time: 9.5
+124.8118,Log,Delta time greater than 0.5
+124.8208,Log,Delta time: 9.520004
+124.8208,Log,Delta time greater than 0.5
+124.8623,Log,Delta time: 9.560005
+124.8623,Log,Delta time greater than 0.5
+124.8724,Log,Delta time: 9.560005
+124.8724,Log,Delta time greater than 0.5
+124.92,Log,Delta time: 9.620003
+124.92,Log,Delta time greater than 0.5
+124.9204,Log,Delta time: 9.620003
+124.9204,Log,Delta time greater than 0.5
+124.9616,Log,Delta time: 9.660004
+124.9616,Log,Delta time greater than 0.5
+124.971,Log,Delta time: 9.660004
+124.971,Log,Delta time greater than 0.5
+125.012,Log,Delta time: 9.700005
+125.012,Log,Delta time greater than 0.5
+125.0285,Log,Delta time: 9.720001
+125.0285,Log,Delta time greater than 0.5
+125.0606,Log,Delta time: 9.760002
+125.0606,Log,Delta time greater than 0.5
+125.0712,Log,Delta time: 9.760002
+125.0712,Log,Delta time greater than 0.5
+125.1121,Log,Delta time: 9.800003
+125.1121,Log,Delta time greater than 0.5
+125.1213,Log,Delta time: 9.82
+125.1213,Log,Delta time greater than 0.5
+125.1613,Log,Delta time: 9.860001
+125.1613,Log,Delta time greater than 0.5
+125.1704,Log,Delta time: 9.860001
+125.1704,Log,Delta time greater than 0.5
+125.212,Log,Delta time: 9.900002
+125.212,Log,Delta time greater than 0.5
+125.2213,Log,Delta time: 9.919998
+125.2213,Log,Delta time greater than 0.5
+125.2609,Log,Delta time: 9.959999
+125.2609,Log,Delta time greater than 0.5
+125.2719,Log,Delta time: 9.959999
+125.2719,Log,Delta time greater than 0.5
+125.3125,Log,Delta time: 10
+125.3125,Log,Delta time greater than 0.5
+125.322,Log,Delta time: 10.02
+125.322,Log,Delta time greater than 0.5
+125.3657,Log,Delta time: 10.06001
+125.3657,Log,Delta time greater than 0.5
+125.3707,Log,Delta time: 10.06001
+125.3707,Log,Delta time greater than 0.5
+125.4116,Log,Delta time: 10.1
+125.4116,Log,Delta time greater than 0.5
+125.421,Log,Delta time: 10.12
+125.421,Log,Delta time greater than 0.5
+125.4612,Log,Delta time: 10.16
+125.4612,Log,Delta time greater than 0.5
+125.4753,Log,Delta time: 10.16
+125.4753,Log,Delta time greater than 0.5
+125.5118,Log,Delta time: 10.2
+125.5118,Log,Delta time greater than 0.5
+125.5208,Log,Delta time: 10.22
+125.5208,Log,Delta time greater than 0.5
+125.5619,Log,Delta time: 10.26
+125.5619,Log,Delta time greater than 0.5
+125.5715,Log,Delta time: 10.26
+125.5715,Log,Delta time greater than 0.5
+125.614,Log,Delta time: 10.3
+125.614,Log,Delta time greater than 0.5
+125.6234,Log,Delta time: 10.32
+125.6234,Log,Delta time greater than 0.5
+125.6626,Log,Delta time: 10.36
+125.6626,Log,Delta time greater than 0.5
+125.6738,Log,Delta time: 10.36
+125.6738,Log,Delta time greater than 0.5
+125.714,Log,Delta time: 10.4
+125.714,Log,Delta time greater than 0.5
+125.7235,Log,Delta time: 10.42
+125.7235,Log,Delta time greater than 0.5
+125.7638,Log,Delta time: 10.46
+125.7638,Log,Delta time greater than 0.5
+125.7731,Log,Delta time: 10.46
+125.7731,Log,Delta time greater than 0.5
+125.8127,Log,Delta time: 10.5
+125.8127,Log,Delta time greater than 0.5
+125.822,Log,Delta time: 10.52
+125.822,Log,Delta time greater than 0.5
+125.8625,Log,Delta time: 10.56001
+125.8625,Log,Delta time greater than 0.5
+125.8723,Log,Delta time: 10.56001
+125.8723,Log,Delta time greater than 0.5
+125.92,Log,Delta time: 10.62
+125.92,Log,Delta time greater than 0.5
+125.9205,Log,Delta time: 10.62
+125.9205,Log,Delta time greater than 0.5
+125.9636,Log,Delta time: 10.66
+125.9636,Log,Delta time greater than 0.5
+125.9728,Log,Delta time: 10.66
+125.9728,Log,Delta time greater than 0.5
+126.0114,Log,Delta time: 10.7
+126.0114,Log,Delta time greater than 0.5
+126.0207,Log,Delta time: 10.72
+126.0207,Log,Delta time greater than 0.5
+126.0615,Log,Delta time: 10.76
+126.0615,Log,Delta time greater than 0.5
+126.0707,Log,Delta time: 10.76
+126.0707,Log,Delta time greater than 0.5
+126.1127,Log,Delta time: 10.8
+126.1127,Log,Delta time greater than 0.5
+126.1217,Log,Delta time: 10.82
+126.1217,Log,Delta time greater than 0.5
+126.1612,Log,Delta time: 10.86
+126.1612,Log,Delta time greater than 0.5
+126.1708,Log,Delta time: 10.86
+126.1708,Log,Delta time greater than 0.5
+126.211,Log,Delta time: 10.9
+126.211,Log,Delta time greater than 0.5
+126.2202,Log,Delta time: 10.92
+126.2202,Log,Delta time greater than 0.5
+126.2619,Log,Delta time: 10.96
+126.2619,Log,Delta time greater than 0.5
+126.2713,Log,Delta time: 10.96
+126.2713,Log,Delta time greater than 0.5
+126.3117,Log,Delta time: 11
+126.3117,Log,Delta time greater than 0.5
+126.3221,Log,Delta time: 11.02
+126.3221,Log,Delta time greater than 0.5
+126.3636,Log,Delta time: 11.06001
+126.3636,Log,Delta time greater than 0.5
+126.3765,Log,Delta time: 11.06001
+126.3765,Log,Delta time greater than 0.5
+126.4127,Log,Delta time: 11.1
+126.4127,Log,Delta time greater than 0.5
+126.4222,Log,Delta time: 11.12
+126.4222,Log,Delta time greater than 0.5
+126.4628,Log,Delta time: 11.16
+126.4628,Log,Delta time greater than 0.5
+126.4721,Log,Delta time: 11.16
+126.4721,Log,Delta time greater than 0.5
+126.5145,Log,Delta time: 11.2
+126.5145,Log,Delta time greater than 0.5
+126.5202,Log,Delta time: 11.22
+126.5202,Log,Delta time greater than 0.5
+126.5634,Log,Delta time: 11.26
+126.5634,Log,Delta time greater than 0.5
+126.5738,Log,Delta time: 11.26
+126.5738,Log,Delta time greater than 0.5
+126.6131,Log,Delta time: 11.3
+126.6131,Log,Delta time greater than 0.5
+126.6228,Log,Delta time: 11.32
+126.6228,Log,Delta time greater than 0.5
+126.6638,Log,Delta time: 11.36
+126.6638,Log,Delta time greater than 0.5
+126.6734,Log,Delta time: 11.36
+126.6734,Log,Delta time greater than 0.5
+126.7143,Log,Delta time: 11.4
+126.7143,Log,Delta time greater than 0.5
+126.724,Log,Delta time: 11.42
+126.724,Log,Delta time greater than 0.5
+126.7603,Log,Delta time: 11.46
+126.7603,Log,Delta time greater than 0.5
+126.7702,Log,Delta time: 11.46
+126.7702,Log,Delta time greater than 0.5
+126.8102,Log,Delta time: 11.5
+126.8102,Log,Delta time greater than 0.5
+126.8204,Log,Delta time: 11.52
+126.8204,Log,Delta time greater than 0.5
+126.8637,Log,Delta time: 11.56001
+126.8637,Log,Delta time greater than 0.5
+126.8736,Log,Delta time: 11.56001
+126.8736,Log,Delta time greater than 0.5
+126.9118,Log,Delta time: 11.6
+126.9118,Log,Delta time greater than 0.5
+126.9207,Log,Delta time: 11.62
+126.9207,Log,Delta time greater than 0.5
+126.9644,Log,Delta time: 11.66
+126.9644,Log,Delta time greater than 0.5
+126.974,Log,Delta time: 11.66
+126.974,Log,Delta time greater than 0.5
+127.0104,Log,Delta time: 11.7
+127.0104,Log,Delta time greater than 0.5
+127.0241,Log,Delta time: 11.72
+127.0241,Log,Delta time greater than 0.5
+127.064,Log,Delta time: 11.76
+127.064,Log,Delta time greater than 0.5
+127.0702,Log,Delta time: 11.76
+127.0702,Log,Delta time greater than 0.5
+127.1104,Log,Delta time: 11.8
+127.1104,Log,Delta time greater than 0.5
+127.1242,Log,Delta time: 11.82
+127.1242,Log,Delta time greater than 0.5
+127.1604,Log,Delta time: 11.86
+127.1604,Log,Delta time greater than 0.5
+127.1739,Log,Delta time: 11.86
+127.1739,Log,Delta time greater than 0.5
+127.2104,Log,Delta time: 11.9
+127.2104,Log,Delta time greater than 0.5
+127.2238,Log,Delta time: 11.92
+127.2238,Log,Delta time greater than 0.5
+127.2641,Log,Delta time: 11.96
+127.2641,Log,Delta time greater than 0.5
+127.2734,Log,Delta time: 11.96
+127.2734,Log,Delta time greater than 0.5
+127.3101,Log,Delta time: 12
+127.3101,Log,Delta time greater than 0.5
+127.3247,Log,Delta time: 12.02
+127.3247,Log,Delta time greater than 0.5
+127.364,Log,Delta time: 12.06001
+127.364,Log,Delta time greater than 0.5
+127.3747,Log,Delta time: 12.06001
+127.3747,Log,Delta time greater than 0.5
+127.4118,Log,Delta time: 12.1
+127.4118,Log,Delta time greater than 0.5
+127.4216,Log,Delta time: 12.12
+127.4216,Log,Delta time greater than 0.5
+127.4625,Log,Delta time: 12.16
+127.4625,Log,Delta time greater than 0.5
+127.472,Log,Delta time: 12.16
+127.472,Log,Delta time greater than 0.5
+127.5153,Log,Delta time: 12.2
+127.5153,Log,Delta time greater than 0.5
+127.5202,Log,Delta time: 12.22
+127.5202,Log,Delta time greater than 0.5
+127.5618,Log,Delta time: 12.26
+127.5618,Log,Delta time greater than 0.5
+127.5711,Log,Delta time: 12.26
+127.5711,Log,Delta time greater than 0.5
+127.6133,Log,Delta time: 12.3
+127.6133,Log,Delta time greater than 0.5
+127.6326,Log,Delta time: 12.32
+127.6326,Log,Delta time greater than 0.5
+127.6627,Log,Delta time: 12.36
+127.6627,Log,Delta time greater than 0.5
+127.6726,Log,Delta time: 12.36
+127.6726,Log,Delta time greater than 0.5
+127.7143,Log,Delta time: 12.4
+127.7143,Log,Delta time greater than 0.5
+127.7234,Log,Delta time: 12.42
+127.7234,Log,Delta time greater than 0.5
+127.7633,Log,Delta time: 12.46
+127.7633,Log,Delta time greater than 0.5
+127.7727,Log,Delta time: 12.46
+127.7727,Log,Delta time greater than 0.5
+127.8141,Log,Delta time: 12.5
+127.8141,Log,Delta time greater than 0.5
+127.8231,Log,Delta time: 12.52
+127.8231,Log,Delta time greater than 0.5
+127.8615,Log,Delta time: 12.56001
+127.8615,Log,Delta time greater than 0.5
+127.8739,Log,Delta time: 12.56001
+127.8739,Log,Delta time greater than 0.5
+127.9143,Log,Delta time: 12.6
+127.9143,Log,Delta time greater than 0.5
+127.9245,Log,Delta time: 12.62
+127.9245,Log,Delta time greater than 0.5
+127.9606,Log,Delta time: 12.66
+127.9606,Log,Delta time greater than 0.5
+127.9776,Log,Delta time: 12.66
+127.9776,Log,Delta time greater than 0.5
+128.0141,Log,Delta time: 12.7
+128.0141,Log,Delta time greater than 0.5
+128.0236,Log,Delta time: 12.72001
+128.0236,Log,Delta time greater than 0.5
+128.0602,Log,Delta time: 12.76
+128.0602,Log,Delta time greater than 0.5
+128.0703,Log,Delta time: 12.76
+128.0703,Log,Delta time greater than 0.5
+128.1109,Log,Delta time: 12.8
+128.1109,Log,Delta time greater than 0.5
+128.1201,Log,Delta time: 12.82
+128.1201,Log,Delta time greater than 0.5
+128.1609,Log,Delta time: 12.86001
+128.1609,Log,Delta time greater than 0.5
+128.1715,Log,Delta time: 12.86001
+128.1715,Log,Delta time greater than 0.5
+128.21,Log,Delta time: 12.9
+128.21,Log,Delta time greater than 0.5
+128.2208,Log,Delta time: 12.92001
+128.2208,Log,Delta time greater than 0.5
+128.2614,Log,Delta time: 12.96
+128.2614,Log,Delta time greater than 0.5
+128.272,Log,Delta time: 12.96
+128.272,Log,Delta time greater than 0.5
+128.3197,Log,Delta time: 13.00001
+128.3197,Log,Delta time greater than 0.5
+128.3246,Log,Delta time: 13.02
+128.3246,Log,Delta time greater than 0.5
+128.3611,Log,Delta time: 13.06001
+128.3611,Log,Delta time greater than 0.5
+128.3706,Log,Delta time: 13.06001
+128.3706,Log,Delta time greater than 0.5
+128.4122,Log,Delta time: 13.1
+128.4122,Log,Delta time greater than 0.5
+128.4306,Log,Delta time: 13.12
+128.4306,Log,Delta time greater than 0.5
+128.4626,Log,Delta time: 13.16
+128.4626,Log,Delta time greater than 0.5
+128.472,Log,Delta time: 13.16
+128.472,Log,Delta time greater than 0.5
+128.5129,Log,Delta time: 13.2
+128.5129,Log,Delta time greater than 0.5
+128.522,Log,Delta time: 13.22001
+128.522,Log,Delta time greater than 0.5
+128.5621,Log,Delta time: 13.26
+128.5621,Log,Delta time greater than 0.5
+128.5713,Log,Delta time: 13.26
+128.5713,Log,Delta time greater than 0.5
+128.612,Log,Delta time: 13.3
+128.612,Log,Delta time greater than 0.5
+128.6209,Log,Delta time: 13.32
+128.6209,Log,Delta time greater than 0.5
+128.6609,Log,Delta time: 13.36001
+128.6609,Log,Delta time greater than 0.5
+128.6704,Log,Delta time: 13.36001
+128.6704,Log,Delta time greater than 0.5
+128.7119,Log,Delta time: 13.4
+128.7119,Log,Delta time greater than 0.5
+128.7213,Log,Delta time: 13.42001
+128.7213,Log,Delta time greater than 0.5
+128.7616,Log,Delta time: 13.46
+128.7616,Log,Delta time greater than 0.5
+128.7712,Log,Delta time: 13.46
+128.7712,Log,Delta time greater than 0.5
+128.812,Log,Delta time: 13.50001
+128.812,Log,Delta time greater than 0.5
+128.8226,Log,Delta time: 13.52
+128.8226,Log,Delta time greater than 0.5
+128.8739,Log,Delta time: 13.56001
+128.8739,Log,Delta time greater than 0.5
+128.8739,Log,Delta time: 13.56001
+128.8739,Log,Delta time greater than 0.5
+128.9102,Log,Delta time: 13.6
+128.9102,Log,Delta time greater than 0.5
+128.9206,Log,Delta time: 13.62
+128.9206,Log,Delta time greater than 0.5
+128.9619,Log,Delta time: 13.66
+128.9619,Log,Delta time greater than 0.5
+128.9712,Log,Delta time: 13.66
+128.9712,Log,Delta time greater than 0.5
+129.011,Log,Delta time: 13.7
+129.011,Log,Delta time greater than 0.5
+129.0244,Log,Delta time: 13.72001
+129.0244,Log,Delta time greater than 0.5
+129.0607,Log,Delta time: 13.76
+129.0607,Log,Delta time greater than 0.5
+129.0746,Log,Delta time: 13.76
+129.0746,Log,Delta time greater than 0.5
+129.1138,Log,Delta time: 13.8
+129.1138,Log,Delta time greater than 0.5
+129.1241,Log,Delta time: 13.82
+129.1241,Log,Delta time greater than 0.5
+129.1604,Log,Delta time: 13.86001
+129.1604,Log,Delta time greater than 0.5
+129.1741,Log,Delta time: 13.86001
+129.1741,Log,Delta time greater than 0.5
+129.2133,Log,Delta time: 13.9
+129.2133,Log,Delta time greater than 0.5
+129.2225,Log,Delta time: 13.92001
+129.2225,Log,Delta time greater than 0.5
+129.2637,Log,Delta time: 13.96
+129.2637,Log,Delta time greater than 0.5
+129.2728,Log,Delta time: 13.96
+129.2728,Log,Delta time greater than 0.5
+129.32,Log,Delta time: 14.02
+129.32,Log,Delta time greater than 0.5
+129.3211,Log,Delta time: 14.02
+129.3211,Log,Delta time greater than 0.5
+129.3613,Log,Delta time: 14.06001
+129.3613,Log,Delta time greater than 0.5
+129.3705,Log,Delta time: 14.06001
+129.3705,Log,Delta time greater than 0.5
+129.4109,Log,Delta time: 14.1
+129.4109,Log,Delta time greater than 0.5
+129.4201,Log,Delta time: 14.12
+129.4201,Log,Delta time greater than 0.5
+129.4604,Log,Delta time: 14.16
+129.4604,Log,Delta time greater than 0.5
+129.4741,Log,Delta time: 14.16
+129.4741,Log,Delta time greater than 0.5
+129.5122,Log,Delta time: 14.2
+129.5122,Log,Delta time greater than 0.5
+129.5213,Log,Delta time: 14.22001
+129.5213,Log,Delta time greater than 0.5
+129.5622,Log,Delta time: 14.26
+129.5622,Log,Delta time greater than 0.5
+129.5714,Log,Delta time: 14.26
+129.5714,Log,Delta time greater than 0.5
+129.612,Log,Delta time: 14.3
+129.612,Log,Delta time greater than 0.5
+129.6211,Log,Delta time: 14.32
+129.6211,Log,Delta time greater than 0.5
+129.661,Log,Delta time: 14.36001
+129.661,Log,Delta time greater than 0.5
+129.6705,Log,Delta time: 14.36001
+129.6705,Log,Delta time greater than 0.5
+129.7106,Log,Delta time: 14.4
+129.7106,Log,Delta time greater than 0.5
+129.72,Log,Delta time: 14.42001
+129.72,Log,Delta time greater than 0.5
+129.7646,Log,Delta time: 14.46
+129.7646,Log,Delta time greater than 0.5
+129.774,Log,Delta time: 14.46
+129.774,Log,Delta time greater than 0.5
+129.8118,Log,Delta time: 14.50001
+129.8118,Log,Delta time greater than 0.5
+129.8209,Log,Delta time: 14.52
+129.8209,Log,Delta time greater than 0.5
+129.8615,Log,Delta time: 14.56001
+129.8615,Log,Delta time greater than 0.5
+129.8744,Log,Delta time: 14.56001
+129.8744,Log,Delta time greater than 0.5
+129.9112,Log,Delta time: 14.6
+129.9112,Log,Delta time greater than 0.5
+129.9204,Log,Delta time: 14.62
+129.9204,Log,Delta time greater than 0.5
+129.9622,Log,Delta time: 14.66
+129.9622,Log,Delta time greater than 0.5
+129.9714,Log,Delta time: 14.66
+129.9714,Log,Delta time greater than 0.5
+130.0122,Log,Delta time: 14.7
+130.0122,Log,Delta time greater than 0.5
+130.0215,Log,Delta time: 14.72001
+130.0215,Log,Delta time greater than 0.5
+130.0619,Log,Delta time: 14.76
+130.0619,Log,Delta time greater than 0.5
+130.0712,Log,Delta time: 14.76
+130.0712,Log,Delta time greater than 0.5
+130.1109,Log,Delta time: 14.8
+130.1109,Log,Delta time greater than 0.5
+130.1202,Log,Delta time: 14.82
+130.1202,Log,Delta time greater than 0.5
+130.1615,Log,Delta time: 14.86001
+130.1615,Log,Delta time greater than 0.5
+130.1709,Log,Delta time: 14.86001
+130.1709,Log,Delta time greater than 0.5
+130.2104,Log,Delta time: 14.9
+130.2104,Log,Delta time greater than 0.5
+130.2242,Log,Delta time: 14.92001
+130.2242,Log,Delta time greater than 0.5
+130.26,Log,Delta time: 14.96
+130.26,Log,Delta time greater than 0.5
+130.2737,Log,Delta time: 14.96
+130.2737,Log,Delta time greater than 0.5
+130.3141,Log,Delta time: 15.00001
+130.3141,Log,Delta time greater than 0.5
+130.3235,Log,Delta time: 15.02
+130.3235,Log,Delta time greater than 0.5
+130.362,Log,Delta time: 15.06001
+130.362,Log,Delta time greater than 0.5
+130.3712,Log,Delta time: 15.06001
+130.3712,Log,Delta time greater than 0.5
+130.4116,Log,Delta time: 15.1
+130.4116,Log,Delta time greater than 0.5
+130.4242,Log,Delta time: 15.12
+130.4242,Log,Delta time greater than 0.5
+130.4645,Log,Delta time: 15.16
+130.4645,Log,Delta time greater than 0.5
+130.4737,Log,Delta time: 15.16
+130.4737,Log,Delta time greater than 0.5
+130.514,Log,Delta time: 15.2
+130.514,Log,Delta time greater than 0.5
+130.5313,Log,Delta time: 15.22001
+130.5313,Log,Delta time greater than 0.5
+130.5644,Log,Delta time: 15.26
+130.5644,Log,Delta time greater than 0.5
+130.5741,Log,Delta time: 15.26
+130.5741,Log,Delta time greater than 0.5
+130.6101,Log,Delta time: 15.3
+130.6101,Log,Delta time greater than 0.5
+130.6236,Log,Delta time: 15.32
+130.6236,Log,Delta time greater than 0.5
+130.663,Log,Delta time: 15.36001
+130.663,Log,Delta time greater than 0.5
+130.6725,Log,Delta time: 15.36001
+130.6725,Log,Delta time greater than 0.5
+130.7131,Log,Delta time: 15.4
+130.7131,Log,Delta time greater than 0.5
+130.7221,Log,Delta time: 15.42001
+130.7221,Log,Delta time greater than 0.5
+130.763,Log,Delta time: 15.46
+130.763,Log,Delta time greater than 0.5
+130.7723,Log,Delta time: 15.46
+130.7723,Log,Delta time greater than 0.5
+130.8129,Log,Delta time: 15.50001
+130.8129,Log,Delta time greater than 0.5
+130.8218,Log,Delta time: 15.52
+130.8218,Log,Delta time greater than 0.5
+130.8616,Log,Delta time: 15.56001
+130.8616,Log,Delta time greater than 0.5
+130.871,Log,Delta time: 15.56001
+130.871,Log,Delta time greater than 0.5
+130.9114,Log,Delta time: 15.6
+130.9114,Log,Delta time greater than 0.5
+130.9207,Log,Delta time: 15.62
+130.9207,Log,Delta time greater than 0.5
+130.9652,Log,Delta time: 15.66
+130.9652,Log,Delta time greater than 0.5
+130.9701,Log,Delta time: 15.66
+130.9701,Log,Delta time greater than 0.5
+131.011,Log,Delta time: 15.7
+131.011,Log,Delta time greater than 0.5
+131.025,Log,Delta time: 15.72001
+131.025,Log,Delta time greater than 0.5
+131.0609,Log,Delta time: 15.76
+131.0609,Log,Delta time greater than 0.5
+131.074,Log,Delta time: 15.76
+131.074,Log,Delta time greater than 0.5
+131.1104,Log,Delta time: 15.8
+131.1104,Log,Delta time greater than 0.5
+131.1239,Log,Delta time: 15.82
+131.1239,Log,Delta time greater than 0.5
+131.1603,Log,Delta time: 15.86001
+131.1603,Log,Delta time greater than 0.5
+131.18,Log,Delta time: 15.88
+131.18,Log,Delta time greater than 0.5
+131.211,Log,Delta time: 15.9
+131.211,Log,Delta time greater than 0.5
+131.22,Log,Delta time: 15.92001
+131.22,Log,Delta time greater than 0.5
+131.2606,Log,Delta time: 15.96
+131.2606,Log,Delta time greater than 0.5
+131.2703,Log,Delta time: 15.96
+131.2703,Log,Delta time greater than 0.5
+131.3144,Log,Delta time: 16.00001
+131.3144,Log,Delta time greater than 0.5
+131.3201,Log,Delta time: 16.02
+131.3201,Log,Delta time greater than 0.5
+131.3631,Log,Delta time: 16.06001
+131.3631,Log,Delta time greater than 0.5
+131.3727,Log,Delta time: 16.06001
+131.3727,Log,Delta time greater than 0.5
+131.4128,Log,Delta time: 16.1
+131.4128,Log,Delta time greater than 0.5
+131.422,Log,Delta time: 16.12
+131.422,Log,Delta time greater than 0.5
+131.4625,Log,Delta time: 16.16
+131.4625,Log,Delta time greater than 0.5
+131.4719,Log,Delta time: 16.16
+131.4719,Log,Delta time greater than 0.5
+131.511,Log,Delta time: 16.2
+131.511,Log,Delta time greater than 0.5
+131.5214,Log,Delta time: 16.22001
+131.5214,Log,Delta time greater than 0.5
+131.5617,Log,Delta time: 16.26
+131.5617,Log,Delta time greater than 0.5
+131.5723,Log,Delta time: 16.26
+131.5723,Log,Delta time greater than 0.5
+131.62,Log,Delta time: 16.32
+131.62,Log,Delta time greater than 0.5
+131.6214,Log,Delta time: 16.32
+131.6214,Log,Delta time greater than 0.5
+131.6625,Log,Delta time: 16.36001
+131.6625,Log,Delta time greater than 0.5
+131.6719,Log,Delta time: 16.36001
+131.6719,Log,Delta time greater than 0.5
+131.7126,Log,Delta time: 16.4
+131.7126,Log,Delta time greater than 0.5
+131.7293,Log,Delta time: 16.42001
+131.7293,Log,Delta time greater than 0.5
+131.7615,Log,Delta time: 16.46
+131.7615,Log,Delta time greater than 0.5
+131.7718,Log,Delta time: 16.46
+131.7718,Log,Delta time greater than 0.5
+131.8134,Log,Delta time: 16.50001
+131.8134,Log,Delta time greater than 0.5
+131.8228,Log,Delta time: 16.52
+131.8228,Log,Delta time greater than 0.5
+131.8634,Log,Delta time: 16.56001
+131.8634,Log,Delta time greater than 0.5
+131.8728,Log,Delta time: 16.56001
+131.8728,Log,Delta time greater than 0.5
+131.9138,Log,Delta time: 16.6
+131.9138,Log,Delta time greater than 0.5
+131.923,Log,Delta time: 16.62
+131.923,Log,Delta time greater than 0.5
+131.9632,Log,Delta time: 16.66
+131.9632,Log,Delta time greater than 0.5
+131.9735,Log,Delta time: 16.66
+131.9735,Log,Delta time greater than 0.5
+132.0142,Log,Delta time: 16.7
+132.0142,Log,Delta time greater than 0.5
+132.0235,Log,Delta time: 16.72001
+132.0235,Log,Delta time greater than 0.5
+132.0607,Log,Delta time: 16.76
+132.0607,Log,Delta time greater than 0.5
+132.0705,Log,Delta time: 16.76
+132.0705,Log,Delta time greater than 0.5
+132.1117,Log,Delta time: 16.8
+132.1117,Log,Delta time greater than 0.5
+132.121,Log,Delta time: 16.82
+132.121,Log,Delta time greater than 0.5
+132.1616,Log,Delta time: 16.86001
+132.1616,Log,Delta time greater than 0.5
+132.1746,Log,Delta time: 16.86001
+132.1746,Log,Delta time greater than 0.5
+132.2124,Log,Delta time: 16.9
+132.2124,Log,Delta time greater than 0.5
+132.2226,Log,Delta time: 16.92001
+132.2226,Log,Delta time greater than 0.5
+132.2634,Log,Delta time: 16.96
+132.2634,Log,Delta time greater than 0.5
+132.2732,Log,Delta time: 16.96
+132.2732,Log,Delta time greater than 0.5
+132.3111,Log,Delta time: 17.00001
+132.3111,Log,Delta time greater than 0.5
+132.3217,Log,Delta time: 17.02
+132.3217,Log,Delta time greater than 0.5
+132.362,Log,Delta time: 17.06001
+132.362,Log,Delta time greater than 0.5
+132.3717,Log,Delta time: 17.06001
+132.3717,Log,Delta time greater than 0.5
+132.4131,Log,Delta time: 17.1
+132.4131,Log,Delta time greater than 0.5
+132.4224,Log,Delta time: 17.12
+132.4224,Log,Delta time greater than 0.5
+132.9217,Log,Paused Timer Started at: 132.92
+132.9217,Log,Delta time: 0
+132.9601,Log,Delta time: 0.03999329
+132.9738,Log,Delta time: 0.03999329
+133.0103,Log,Delta time: 0.08000183
+133.0238,Log,Delta time: 0.1000061
+133.0639,Log,Delta time: 0.1399994
+133.0729,Log,Delta time: 0.1399994
+133.1119,Log,Delta time: 0.1799927
+133.1206,Log,Delta time: 0.1999969
+133.1612,Log,Delta time: 0.2400055
+133.1703,Log,Delta time: 0.2400055
+133.2153,Log,Delta time: 0.2799988
+133.2243,Log,Delta time: 0.3000031
+133.7725,Log,Paused Timer Started at: 133.76
+133.7725,Log,Delta time: 0
+133.8237,Log,Paused Timer Started at: 133.82
+133.8237,Log,Delta time: 0
+134.024,Log,Paused Timer Started at: 134.02
+134.024,Log,Delta time: 0
+134.0604,Log,Delta time: 0.03999329
+134.0738,Log,Delta time: 0.03999329
+134.1138,Log,Delta time: 0.07998657
+134.1231,Log,Delta time: 0.09999084
+134.1643,Log,Delta time: 0.1399994
+134.1733,Log,Delta time: 0.1399994
+134.214,Log,Delta time: 0.1799927
+134.2233,Log,Delta time: 0.1999969
+134.2602,Log,Delta time: 0.2399902
+134.2737,Log,Delta time: 0.2399902
+134.3147,Log,Delta time: 0.2799988
+134.3239,Log,Delta time: 0.2999878
+134.3604,Log,Delta time: 0.3399963
+134.3737,Log,Delta time: 0.3399963
+134.42,Log,Delta time: 0.3999939
+134.4204,Log,Delta time: 0.3999939
+134.5307,Log,Paused Timer Started at: 134.52
+134.5307,Log,Delta time: 0
+134.6202,Log,Paused Timer Started at: 134.62
+134.6202,Log,Delta time: 0
+134.6642,Log,Delta time: 0.04000854
+134.6732,Log,Delta time: 0.04000854
+134.7138,Log,Delta time: 0.08000183
+134.723,Log,Delta time: 0.1000061
+134.7627,Log,Delta time: 0.1399994
+134.7718,Log,Delta time: 0.1399994
+134.8127,Log,Delta time: 0.1800079
+134.8218,Log,Delta time: 0.1999969
+134.8611,Log,Delta time: 0.2400055
+134.8702,Log,Delta time: 0.2400055
+134.9107,Log,Delta time: 0.2799988
+134.9243,Log,Delta time: 0.3000031
+134.9649,Log,Delta time: 0.3399963
+134.9743,Log,Delta time: 0.3399963
+135.011,Log,Delta time: 0.3800049
+135.0212,Log,Delta time: 0.4000092
+135.0632,Log,Delta time: 0.4400024
+135.0762,Log,Delta time: 0.4400024
+135.1127,Log,Delta time: 0.4799957
+135.1219,Log,Delta time: 0.5
+135.1219,Log,Delta time greater than 0.5
+135.1621,Log,Delta time: 0.5400085
+135.1621,Log,Delta time greater than 0.5
+135.1713,Log,Delta time: 0.5400085
+135.1713,Log,Delta time greater than 0.5
+135.2112,Log,Delta time: 0.5800018
+135.2112,Log,Delta time greater than 0.5
+135.2215,Log,Delta time: 0.6000061
+135.2215,Log,Delta time greater than 0.5
+135.2623,Log,Delta time: 0.6399994
+135.2623,Log,Delta time greater than 0.5
+135.2715,Log,Delta time: 0.6399994
+135.2715,Log,Delta time greater than 0.5
+135.3119,Log,Delta time: 0.6800079
+135.3119,Log,Delta time greater than 0.5
+135.3209,Log,Delta time: 0.6999969
+135.3209,Log,Delta time greater than 0.5
+135.3618,Log,Delta time: 0.7400055
+135.3618,Log,Delta time greater than 0.5
+135.3712,Log,Delta time: 0.7400055
+135.3712,Log,Delta time greater than 0.5
+135.412,Log,Delta time: 0.7799988
+135.412,Log,Delta time greater than 0.5
+135.4224,Log,Delta time: 0.8000031
+135.4224,Log,Delta time greater than 0.5
+135.4627,Log,Delta time: 0.8399963
+135.4627,Log,Delta time greater than 0.5
+135.4734,Log,Delta time: 0.8399963
+135.4734,Log,Delta time greater than 0.5
+135.5132,Log,Delta time: 0.8800049
+135.5132,Log,Delta time greater than 0.5
+135.5224,Log,Delta time: 0.9000092
+135.5224,Log,Delta time greater than 0.5
+135.5628,Log,Delta time: 0.9400024
+135.5628,Log,Delta time greater than 0.5
+135.5722,Log,Delta time: 0.9400024
+135.5722,Log,Delta time greater than 0.5
+135.62,Log,Delta time: 1
+135.62,Log,Delta time greater than 0.5
+135.6207,Log,Delta time: 1
+135.6207,Log,Delta time greater than 0.5
+135.6635,Log,Delta time: 1.040009
+135.6635,Log,Delta time greater than 0.5
+135.673,Log,Delta time: 1.040009
+135.673,Log,Delta time greater than 0.5
+135.7137,Log,Delta time: 1.080002
+135.7137,Log,Delta time greater than 0.5
+135.7309,Log,Delta time: 1.100006
+135.7309,Log,Delta time greater than 0.5
+135.7626,Log,Delta time: 1.139999
+135.7626,Log,Delta time greater than 0.5
+135.7719,Log,Delta time: 1.139999
+135.7719,Log,Delta time greater than 0.5
+135.8121,Log,Delta time: 1.180008
+135.8121,Log,Delta time greater than 0.5
+135.8213,Log,Delta time: 1.199997
+135.8213,Log,Delta time greater than 0.5
+135.8629,Log,Delta time: 1.240005
+135.8629,Log,Delta time greater than 0.5
+135.8724,Log,Delta time: 1.240005
+135.8724,Log,Delta time greater than 0.5
+135.9136,Log,Delta time: 1.279999
+135.9136,Log,Delta time greater than 0.5
+135.9229,Log,Delta time: 1.300003
+135.9229,Log,Delta time greater than 0.5
+135.963,Log,Delta time: 1.339996
+135.963,Log,Delta time greater than 0.5
+135.9724,Log,Delta time: 1.339996
+135.9724,Log,Delta time greater than 0.5
+136.0133,Log,Delta time: 1.380005
+136.0133,Log,Delta time greater than 0.5
+136.0222,Log,Delta time: 1.400009
+136.0222,Log,Delta time greater than 0.5
+136.0632,Log,Delta time: 1.440002
+136.0632,Log,Delta time greater than 0.5
+136.0727,Log,Delta time: 1.440002
+136.0727,Log,Delta time greater than 0.5
+136.1133,Log,Delta time: 1.479996
+136.1133,Log,Delta time greater than 0.5
+136.1224,Log,Delta time: 1.5
+136.1224,Log,Delta time greater than 0.5
+136.1666,Log,Delta time: 1.540009
+136.1666,Log,Delta time greater than 0.5
+136.1719,Log,Delta time: 1.540009
+136.1719,Log,Delta time greater than 0.5
+136.2125,Log,Delta time: 1.580002
+136.2125,Log,Delta time greater than 0.5
+136.2217,Log,Delta time: 1.600006
+136.2217,Log,Delta time greater than 0.5
+136.2626,Log,Delta time: 1.639999
+136.2626,Log,Delta time greater than 0.5
+136.2763,Log,Delta time: 1.639999
+136.2763,Log,Delta time greater than 0.5
+136.3136,Log,Delta time: 1.680008
+136.3136,Log,Delta time greater than 0.5
+136.32,Log,Delta time: 1.699997
+136.32,Log,Delta time greater than 0.5
+136.3618,Log,Delta time: 1.740005
+136.3618,Log,Delta time greater than 0.5
+136.3714,Log,Delta time: 1.740005
+136.3714,Log,Delta time greater than 0.5
+136.4119,Log,Delta time: 1.779999
+136.4119,Log,Delta time greater than 0.5
+136.4212,Log,Delta time: 1.800003
+136.4212,Log,Delta time greater than 0.5
+136.464,Log,Delta time: 1.839996
+136.464,Log,Delta time greater than 0.5
+136.4734,Log,Delta time: 1.839996
+136.4734,Log,Delta time greater than 0.5
+136.5138,Log,Delta time: 1.880005
+136.5138,Log,Delta time greater than 0.5
+136.5231,Log,Delta time: 1.900009
+136.5231,Log,Delta time greater than 0.5
+136.5636,Log,Delta time: 1.940002
+136.5636,Log,Delta time greater than 0.5
+136.573,Log,Delta time: 1.940002
+136.573,Log,Delta time greater than 0.5
+136.6124,Log,Delta time: 1.979996
+136.6124,Log,Delta time greater than 0.5
+136.6215,Log,Delta time: 2
+136.6215,Log,Delta time greater than 0.5
+136.6632,Log,Delta time: 2.040009
+136.6632,Log,Delta time greater than 0.5
+136.6734,Log,Delta time: 2.040009
+136.6734,Log,Delta time greater than 0.5
+136.7176,Log,Delta time: 2.080002
+136.7176,Log,Delta time greater than 0.5
+136.7226,Log,Delta time: 2.100006
+136.7226,Log,Delta time greater than 0.5
+136.7643,Log,Delta time: 2.139999
+136.7643,Log,Delta time greater than 0.5
+136.7739,Log,Delta time: 2.139999
+136.7739,Log,Delta time greater than 0.5
+136.8103,Log,Delta time: 2.180008
+136.8103,Log,Delta time greater than 0.5
+136.8274,Log,Delta time: 2.199997
+136.8274,Log,Delta time greater than 0.5
+136.864,Log,Delta time: 2.240005
+136.864,Log,Delta time greater than 0.5
+136.8734,Log,Delta time: 2.240005
+136.8734,Log,Delta time greater than 0.5
+136.9133,Log,Delta time: 2.279999
+136.9133,Log,Delta time greater than 0.5
+136.9223,Log,Delta time: 2.300003
+136.9223,Log,Delta time greater than 0.5
+136.9629,Log,Delta time: 2.339996
+136.9629,Log,Delta time greater than 0.5
+136.9729,Log,Delta time: 2.339996
+136.9729,Log,Delta time greater than 0.5
+137.0136,Log,Delta time: 2.380005
+137.0136,Log,Delta time greater than 0.5
+137.0227,Log,Delta time: 2.400009
+137.0227,Log,Delta time greater than 0.5
+137.0637,Log,Delta time: 2.440002
+137.0637,Log,Delta time greater than 0.5
+137.0737,Log,Delta time: 2.440002
+137.0737,Log,Delta time greater than 0.5
+137.1142,Log,Delta time: 2.479996
+137.1142,Log,Delta time greater than 0.5
+137.1233,Log,Delta time: 2.5
+137.1233,Log,Delta time greater than 0.5
+137.1632,Log,Delta time: 2.540009
+137.1632,Log,Delta time greater than 0.5
+137.1743,Log,Delta time: 2.540009
+137.1743,Log,Delta time greater than 0.5
+137.2106,Log,Delta time: 2.580002
+137.2106,Log,Delta time greater than 0.5
+137.2242,Log,Delta time: 2.600006
+137.2242,Log,Delta time greater than 0.5
+137.265,Log,Delta time: 2.639999
+137.265,Log,Delta time greater than 0.5
+137.2701,Log,Delta time: 2.639999
+137.2701,Log,Delta time greater than 0.5
+137.31,Log,Delta time: 2.680008
+137.31,Log,Delta time greater than 0.5
+137.3237,Log,Delta time: 2.699997
+137.3237,Log,Delta time greater than 0.5
+137.3642,Log,Delta time: 2.740005
+137.3642,Log,Delta time greater than 0.5
+137.3775,Log,Delta time: 2.740005
+137.3775,Log,Delta time greater than 0.5
+137.4136,Log,Delta time: 2.779999
+137.4136,Log,Delta time greater than 0.5
+137.4229,Log,Delta time: 2.800003
+137.4229,Log,Delta time greater than 0.5
+137.4638,Log,Delta time: 2.839996
+137.4638,Log,Delta time greater than 0.5
+137.4732,Log,Delta time: 2.839996
+137.4732,Log,Delta time greater than 0.5
+137.5131,Log,Delta time: 2.880005
+137.5131,Log,Delta time greater than 0.5
+137.5221,Log,Delta time: 2.900009
+137.5221,Log,Delta time greater than 0.5
+137.5635,Log,Delta time: 2.940002
+137.5635,Log,Delta time greater than 0.5
+137.5727,Log,Delta time: 2.940002
+137.5727,Log,Delta time greater than 0.5
+137.6124,Log,Delta time: 2.979996
+137.6124,Log,Delta time greater than 0.5
+137.6215,Log,Delta time: 3
+137.6215,Log,Delta time greater than 0.5
+137.6623,Log,Delta time: 3.040009
+137.6623,Log,Delta time greater than 0.5
+137.6717,Log,Delta time: 3.040009
+137.6717,Log,Delta time greater than 0.5
+137.7114,Log,Delta time: 3.080002
+137.7114,Log,Delta time greater than 0.5
+137.7208,Log,Delta time: 3.100006
+137.7208,Log,Delta time greater than 0.5
+137.7622,Log,Delta time: 3.139999
+137.7622,Log,Delta time greater than 0.5
+137.7716,Log,Delta time: 3.139999
+137.7716,Log,Delta time greater than 0.5
+137.8116,Log,Delta time: 3.180008
+137.8116,Log,Delta time greater than 0.5
+137.8208,Log,Delta time: 3.199997
+137.8208,Log,Delta time greater than 0.5
+137.8628,Log,Delta time: 3.240005
+137.8628,Log,Delta time greater than 0.5
+137.8721,Log,Delta time: 3.240005
+137.8721,Log,Delta time greater than 0.5
+137.9162,Log,Delta time: 3.279999
+137.9162,Log,Delta time greater than 0.5
+137.9211,Log,Delta time: 3.300003
+137.9211,Log,Delta time greater than 0.5
+137.9617,Log,Delta time: 3.339996
+137.9617,Log,Delta time greater than 0.5
+137.9711,Log,Delta time: 3.339996
+137.9711,Log,Delta time greater than 0.5
+138.0132,Log,Delta time: 3.380005
+138.0132,Log,Delta time greater than 0.5
+138.0262,Log,Delta time: 3.400009
+138.0262,Log,Delta time greater than 0.5
+138.0623,Log,Delta time: 3.440002
+138.0623,Log,Delta time greater than 0.5
+138.0733,Log,Delta time: 3.440002
+138.0733,Log,Delta time greater than 0.5
+138.1101,Log,Delta time: 3.479996
+138.1101,Log,Delta time greater than 0.5
+138.1239,Log,Delta time: 3.5
+138.1239,Log,Delta time greater than 0.5
+138.1609,Log,Delta time: 3.540009
+138.1609,Log,Delta time greater than 0.5
+138.1705,Log,Delta time: 3.540009
+138.1705,Log,Delta time greater than 0.5
+138.2117,Log,Delta time: 3.580002
+138.2117,Log,Delta time greater than 0.5
+138.2212,Log,Delta time: 3.600006
+138.2212,Log,Delta time greater than 0.5
+138.2626,Log,Delta time: 3.639999
+138.2626,Log,Delta time greater than 0.5
+138.2735,Log,Delta time: 3.639999
+138.2735,Log,Delta time greater than 0.5
+138.311,Log,Delta time: 3.680008
+138.311,Log,Delta time greater than 0.5
+138.3206,Log,Delta time: 3.699997
+138.3206,Log,Delta time greater than 0.5
+138.3637,Log,Delta time: 3.740005
+138.3637,Log,Delta time greater than 0.5
+138.3735,Log,Delta time: 3.740005
+138.3735,Log,Delta time greater than 0.5
+138.4126,Log,Delta time: 3.779999
+138.4126,Log,Delta time greater than 0.5
+138.4225,Log,Delta time: 3.800003
+138.4225,Log,Delta time greater than 0.5
+138.4602,Log,Delta time: 3.839996
+138.4602,Log,Delta time greater than 0.5
+138.4738,Log,Delta time: 3.839996
+138.4738,Log,Delta time greater than 0.5
+138.5125,Log,Delta time: 3.880005
+138.5125,Log,Delta time greater than 0.5
+138.5222,Log,Delta time: 3.900009
+138.5222,Log,Delta time greater than 0.5
+138.5634,Log,Delta time: 3.940002
+138.5634,Log,Delta time greater than 0.5
+138.5729,Log,Delta time: 3.940002
+138.5729,Log,Delta time greater than 0.5
+138.6136,Log,Delta time: 3.979996
+138.6136,Log,Delta time greater than 0.5
+138.6231,Log,Delta time: 4
+138.6231,Log,Delta time greater than 0.5
+138.6601,Log,Delta time: 4.040009
+138.6601,Log,Delta time greater than 0.5
+138.6741,Log,Delta time: 4.040009
+138.6741,Log,Delta time greater than 0.5
+138.7121,Log,Delta time: 4.080002
+138.7121,Log,Delta time greater than 0.5
+138.7217,Log,Delta time: 4.100006
+138.7217,Log,Delta time greater than 0.5
+138.7637,Log,Delta time: 4.139999
+138.7637,Log,Delta time greater than 0.5
+138.773,Log,Delta time: 4.139999
+138.773,Log,Delta time greater than 0.5
+138.8128,Log,Delta time: 4.180008
+138.8128,Log,Delta time greater than 0.5
+138.8231,Log,Delta time: 4.199997
+138.8231,Log,Delta time greater than 0.5
+138.8649,Log,Delta time: 4.240005
+138.8649,Log,Delta time greater than 0.5
+138.8742,Log,Delta time: 4.240005
+138.8742,Log,Delta time greater than 0.5
+138.9131,Log,Delta time: 4.279999
+138.9131,Log,Delta time greater than 0.5
+138.9264,Log,Delta time: 4.300003
+138.9264,Log,Delta time greater than 0.5
+138.9635,Log,Delta time: 4.339996
+138.9635,Log,Delta time greater than 0.5
+138.9727,Log,Delta time: 4.339996
+138.9727,Log,Delta time greater than 0.5
+139.0132,Log,Delta time: 4.380005
+139.0132,Log,Delta time greater than 0.5
+139.0304,Log,Delta time: 4.400009
+139.0304,Log,Delta time greater than 0.5
+139.0648,Log,Delta time: 4.440002
+139.0648,Log,Delta time greater than 0.5
+139.0742,Log,Delta time: 4.440002
+139.0742,Log,Delta time greater than 0.5
+139.1135,Log,Delta time: 4.479996
+139.1135,Log,Delta time greater than 0.5
+139.1226,Log,Delta time: 4.5
+139.1226,Log,Delta time greater than 0.5
+139.1624,Log,Delta time: 4.540009
+139.1624,Log,Delta time greater than 0.5
+139.1721,Log,Delta time: 4.540009
+139.1721,Log,Delta time greater than 0.5
+139.2127,Log,Delta time: 4.580002
+139.2127,Log,Delta time greater than 0.5
+139.2218,Log,Delta time: 4.600006
+139.2218,Log,Delta time greater than 0.5
+139.2621,Log,Delta time: 4.639999
+139.2621,Log,Delta time greater than 0.5
+139.2713,Log,Delta time: 4.639999
+139.2713,Log,Delta time greater than 0.5
+139.3124,Log,Delta time: 4.680008
+139.3124,Log,Delta time greater than 0.5
+139.3213,Log,Delta time: 4.699997
+139.3213,Log,Delta time greater than 0.5
+139.3619,Log,Delta time: 4.740005
+139.3619,Log,Delta time greater than 0.5
+139.3712,Log,Delta time: 4.740005
+139.3712,Log,Delta time greater than 0.5
+139.4113,Log,Delta time: 4.779999
+139.4113,Log,Delta time greater than 0.5
+139.4203,Log,Delta time: 4.800003
+139.4203,Log,Delta time greater than 0.5
+139.4606,Log,Delta time: 4.839996
+139.4606,Log,Delta time greater than 0.5
+139.4741,Log,Delta time: 4.839996
+139.4741,Log,Delta time greater than 0.5
+139.5114,Log,Delta time: 4.880005
+139.5114,Log,Delta time greater than 0.5
+139.5203,Log,Delta time: 4.900009
+139.5203,Log,Delta time greater than 0.5
+139.5611,Log,Delta time: 4.940002
+139.5611,Log,Delta time greater than 0.5
+139.5703,Log,Delta time: 4.940002
+139.5703,Log,Delta time greater than 0.5
+139.6111,Log,Delta time: 4.979996
+139.6111,Log,Delta time greater than 0.5
+139.6223,Log,Delta time: 5
+139.6223,Log,Delta time greater than 0.5
+139.6624,Log,Delta time: 5.040009
+139.6624,Log,Delta time greater than 0.5
+139.6735,Log,Delta time: 5.040009
+139.6735,Log,Delta time greater than 0.5

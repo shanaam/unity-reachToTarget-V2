@@ -1,33 +1,99 @@
 timestamp,log_type,message
 0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
 0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
-13.99845,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-27.82236,Log,Home Position Transformed: (0.2220843 0.9306871 0.4224068)
-31.1703,Log,running end and prepare
-31.1703,Log,Audio Clip Played Pitch: 1.155031
-31.1703,Log,Target has been spawned at: (0.0 0.0 0.1)
-40.90387,Log,Reach Time: 9.739998
-41.89281,Log,Target has been spawned at: (0.0 0.0 0.1)
-43.32602,Log,Reach Time: 1.440002
-43.32602,Log,Audio Clip Played Pitch: 1.311294
-44.37039,Log,Target has been spawned at: (0.0 0.0 0.1)
-45.98178,Log,Reach Time: 1.860001
-46.70382,Log,Target has been spawned at: (0.0 0.0 0.1)
-48.00391,Log,Reach Time: 1.299999
-48.00391,Log,Audio Clip Played Pitch: 0.8617431
-49.02642,Log,Target has been spawned at: (0.0 0.0 0.1)
-53.50405,Log,Reach Time: 4.48
-54.40375,Log,Target has been spawned at: (0.0 0.0 0.1)
-55.92619,Log,Reach Time: 1.52
-56.87048,Log,Target has been spawned at: (0.0 0.0 0.1)
-59.20383,Log,Reach Time: 2.339996
-60.42621,Log,Target has been spawned at: (0.0 0.0 0.1)
-62.00425,Log,Reach Time: 1.580002
-80.57619,Log,Home Position Transformed: (0.223961 0.9293344 0.4239376)
-81.51034,Log,running end and prepare
-81.51034,Log,setting to flat. current r_x: 340
-81.76351,Log,Target has been spawned at: (0.0 0.0 0.1)
-88.34847,Log,Reach Time: 6.839996
-89.34852,Log,Target has been spawned at: (0.0 0.0 0.1)
-90.47086,Log,Reach Time: 1.120003
-90.47086,Log,Audio Clip Played Pitch: 0.555025
+3.378759,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+4.167814,Warning,Warning: Session already exists! Continuing will overwrite
+7.330135,Log,Home Position Transformed: (0.008413089 1.013081 0.1999378)
+7.8,Log,Paused Timer Started at: 7.8
+8.903858,Log,running end and prepare
+8.903858,Log,Audio Clip Played Pitch: 0.9119655
+8.903858,Log,Spawned physics cube []
+14,Log,Paused Timer Started at: 14
+14.46774,Log,Paused Timer Started at: 14.46
+14.76756,Log,Paused Timer Started at: 14.76
+15.01201,Log,Paused Timer Started at: 15
+15.31196,Log,Paused Timer Started at: 15.3
+15.51226,Log,Paused Timer Started at: 15.5
+15.56755,Log,Paused Timer Started at: 15.56
+15.8678,Log,Paused Timer Started at: 15.86
+16.11222,Log,Paused Timer Started at: 16.1
+17.56768,Log,Paused Timer Started at: 17.56
+18.3125,Log,Paused Timer Started at: 18.3
+19.80116,Log,>>  PhysicsCube(Clone)Trigger Is pressed
+20.09022,Log,Paused Timer Started at: 20.08
+22.75705,Log,>>  PhysicsCube(Clone) Trigger Released
+22.75705,Log,Object Thrown with (0.2 -0.1 0.2): 0.3210514
+24.56798,Log,Paused Timer Started at: 24.56
+25.11252,Log,>>  PhysicsCube(Clone)Trigger Is pressed
+25.78997,Log,>>  PhysicsCube(Clone) Trigger Released
+25.78997,Log,Object Thrown with (-0.1 -0.1 0.7): 0.7028767
+25.8,Log,Ding! You put the target in the box!
+25.8,Log,Audio Clip Played Pitch: 0.6508523
+28.89016,Log,Paused Timer Started at: 28.88
+29.40077,Log,Spawned physics cube []
+30.84519,Log,Paused Timer Started at: 30.84
+30.94535,Log,Paused Timer Started at: 30.94
+31,Log,Paused Timer Started at: 31
+31.04525,Log,Paused Timer Started at: 31.04
+31.1,Log,Paused Timer Started at: 31.1
+31.94532,Log,Paused Timer Started at: 31.94
+32.7,Log,Paused Timer Started at: 32.7
+33.66753,Log,Paused Timer Started at: 33.66
+33.7,Log,Paused Timer Started at: 33.7
+33.70099,Log,>>  PhysicsCube(Clone)Trigger Is pressed
+33.74599,Log,Paused Timer Started at: 33.74
+33.8,Log,Paused Timer Started at: 33.8
+33.9,Log,Paused Timer Started at: 33.9
+33.94577,Log,Paused Timer Started at: 33.94
+33.96767,Log,Paused Timer Started at: 33.96
+34.4,Log,Paused Timer Started at: 34.4
+35.21257,Log,Paused Timer Started at: 35.2
+35.34581,Log,Paused Timer Started at: 35.34
+35.36804,Log,Paused Timer Started at: 35.36
+35.39037,Log,Paused Timer Started at: 35.38
+35.51252,Log,Paused Timer Started at: 35.5
+35.54583,Log,Paused Timer Started at: 35.54
+36.2458,Log,Paused Timer Started at: 36.24
+38.3,Log,Paused Timer Started at: 38.3
+38.3455,Log,Paused Timer Started at: 38.34
+38.41202,Log,>>  PhysicsCube(Clone) Trigger Released
+38.41202,Log,Object Thrown with (0.1 0.0 -0.1): 0.156856
+38.44568,Log,Paused Timer Started at: 38.44
+38.4677,Log,Paused Timer Started at: 38.46
+38.49004,Log,Paused Timer Started at: 38.48
+38.51204,Log,Paused Timer Started at: 38.5
+38.54647,Log,Paused Timer Started at: 38.54
+38.56804,Log,Paused Timer Started at: 38.56
+38.66766,Log,Paused Timer Started at: 38.66
+38.69025,Log,Paused Timer Started at: 38.68
+40.04552,Log,Paused Timer Started at: 40.04
+40.06766,Log,Paused Timer Started at: 40.06
+40.09016,Log,Paused Timer Started at: 40.08
+40.11241,Log,Paused Timer Started at: 40.1
+40.14554,Log,Paused Timer Started at: 40.14
+40.21226,Log,Paused Timer Started at: 40.2
+40.2457,Log,Paused Timer Started at: 40.24
+40.26775,Log,Paused Timer Started at: 40.26
+40.36785,Log,Paused Timer Started at: 40.36
+40.39036,Log,Paused Timer Started at: 40.38
+40.41222,Log,Paused Timer Started at: 40.4
+40.51237,Log,Paused Timer Started at: 40.5
+40.54551,Log,>>  PhysicsCube(Clone)Trigger Is pressed
+41.46798,Log,Paused Timer Started at: 41.46
+41.64613,Log,Paused Timer Started at: 41.64
+42.66819,Log,Paused Timer Started at: 42.66
+42.69052,Log,Paused Timer Started at: 42.68
+43.11268,Log,Paused Timer Started at: 43.1
+43.1461,Log,Paused Timer Started at: 43.14
+43.16802,Log,Paused Timer Started at: 43.16
+43.66837,Log,Paused Timer Started at: 43.66
+44.6793,Log,>>  PhysicsCube(Clone) Trigger Released
+44.6793,Log,Object Thrown with (-6.0 10.6 24.8): 27.60877
+45.94585,Log,Paused Timer Started at: 45.94
+45.96813,Log,Paused Timer Started at: 45.96
+46.19024,Log,Paused Timer Started at: 46.18
+46.86815,Log,Paused Timer Started at: 46.86
+46.89036,Log,Paused Timer Started at: 46.88
+47.26804,Log,Paused Timer Started at: 47.26
+47.36817,Log,Paused Timer Started at: 47.36
+50.89021,Log,Paused Timer Started at: 50.88

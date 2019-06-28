@@ -1,37 +1,53 @@
 timestamp,log_type,message
 0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
 0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
-4.872911,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-5.71691,Warning,Warning: Session already exists! Continuing will overwrite
-26.65014,Log,Home Position Transformed: (0.2592036 0.9401479 0.4322386)
-27.46445,Log,running end and prepare
-27.46445,Log,Audio Clip Played Pitch: 0.7699865
-27.46445,Log,Target has been spawned at: (0.0 0.0 0.1)
-32.3745,Log,Home Position Transformed: (0.2593463 0.9397261 0.4321879)
-42.14621,Log,Reach Time: 14.68
-43.6014,Log,Target has been spawned at: (0.0 0.0 0.1)
-44.56793,Log,Reach Time: 0.9599991
-44.56793,Log,Audio Clip Played Pitch: 1.226435
-46.29026,Log,Target has been spawned at: (0.0 0.0 0.1)
-47.66798,Log,Reach Time: 1.620003
-49.56809,Log,Target has been spawned at: (0.0 0.0 0.1)
-50.99043,Log,Reach Time: 1.420002
-50.99043,Log,Audio Clip Played Pitch: 1.103938
-53.49047,Log,Target has been spawned at: (0.0 0.0 0.1)
-55.44588,Log,Reach Time: 1.959999
-57.49057,Log,Target has been spawned at: (0.0 0.0 0.1)
-58.86818,Log,Reach Time: 1.379997
-58.86818,Log,Audio Clip Played Pitch: 0.6750692
-60.09039,Log,Target has been spawned at: (0.0 0.0 0.1)
-62.1016,Log,Reach Time: 2.02
-62.96816,Log,Target has been spawned at: (0.0 0.0 0.1)
-64.24609,Log,Reach Time: 1.279999
-64.24609,Log,Audio Clip Played Pitch: 0.5544655
-73.48215,Log,Home Position Transformed: (0.2599216 0.9449019 0.4328957)
-74.02631,Log,running end and prepare
-74.02631,Log,Audio Clip Played Pitch: 1.231036
-74.02631,Log,setting to flat. current r_x: 340
-74.2794,Log,Target has been spawned at: (0.0 0.0 0.1)
-80.79074,Log,Reach Time: 6.760002
-87.34648,Log,Target has been spawned at: (0.0 0.0 0.1)
-92.39098,Log,Reach Time: 5.040001
+4.973665,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+6.095768,Warning,Warning: Session already exists! Continuing will overwrite
+10.38067,Log,Home Position Transformed: (-0.03279875 0.9401335 0.162985)
+12.65087,Log,Paused Timer Started at: 12.64
+13.55095,Log,Paused Timer Started at: 13.54
+13.57592,Log,Home Position Transformed: (-0.03501198 0.9407486 0.1617126)
+21.06542,Log,running end and prepare
+21.06542,Log,Audio Clip Played Pitch: 0.9709343
+21.06542,Log,Spawned physics sphere O
+23.30666,Log,Paused Timer Started at: 23.3
+25.08509,Log,Paused Timer Started at: 25.08
+26.00664,Log,Paused Timer Started at: 26
+28.24,Log,Paused Timer Started at: 28.24
+29.30677,Log,Paused Timer Started at: 29.3
+29.85127,Log,Paused Timer Started at: 29.84
+30.98459,Log,Paused Timer Started at: 30.98
+33.3514,Log,Paused Timer Started at: 33.34
+34.65161,Log,Paused Timer Started at: 34.64
+37.20709,Log,Paused Timer Started at: 37.2
+37.30741,Log,Paused Timer Started at: 37.3
+41.65142,Log,Paused Timer Started at: 41.64
+43.00689,Log,Paused Timer Started at: 43
+43.74,Log,Paused Timer Started at: 43.74
+47.15121,Log,Paused Timer Started at: 47.14
+48.10718,Log,Paused Timer Started at: 48.1
+48.65168,Log,Paused Timer Started at: 48.64
+50.60728,Log,Paused Timer Started at: 50.6
+53.10712,Log,Paused Timer Started at: 53.1
+53.65159,Log,Paused Timer Started at: 53.64
+54.7515,Log,>>  Physics Sphere(Clone)Trigger Is pressed
+54.8511,Log,Paused Timer Started at: 54.84
+54.90717,Log,Paused Timer Started at: 54.9
+56.70716,Log,Paused Timer Started at: 56.7
+58.78508,Log,>>  Physics Sphere(Clone) Trigger Released
+58.78508,Log,Object Thrown with (-0.2 -0.3 0.6): 0.731107
+58.82,Log,Ding! You put the target in the box!
+58.82,Log,Audio Clip Played Pitch: 1.422277
+58.82,Log,Ding! You put the target in the box!
+58.82,Log,Audio Clip Played Pitch: 0.8901926
+60.35143,Log,Paused Timer Started at: 60.34
+63.77392,Log,Paused Timer Started at: 63.76
+65.42948,Log,Paused Timer Started at: 65.42
+65.92951,Log,Spawned physics sphere O
+66.89613,Log,>>  Physics Sphere(Clone)Trigger Is pressed
+67.09613,Log,>>  Physics Sphere(Clone) Trigger Released
+67.09613,Log,Object Thrown with (-0.2 -0.5 0.8): 0.9049229
+68.59617,Log,>>  Physics Sphere(Clone)Trigger Is pressed
+69.92985,Log,Paused Timer Started at: 69.92
+72.38562,Log,>>  Physics Sphere(Clone) Trigger Released
+72.38562,Log,Object Thrown with (-1.1 3.6 14.3): 14.79007
