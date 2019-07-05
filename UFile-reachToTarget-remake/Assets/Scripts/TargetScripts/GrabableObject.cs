@@ -10,6 +10,7 @@ public class GrabableObject : MonoBehaviour
     public Rigidbody rigidbody;
     public bool isKinematic;
     public  bool objectGrabbed = false;
+    public bool holdUntilZone = true;
 
     private Vector3 prevPosition;
     private Vector3 currPosition;
@@ -23,6 +24,7 @@ public class GrabableObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //initialize variables and data structures
         handCursor = GameObject.FindGameObjectWithTag("Cursor");
         handCursorController = handCursor.GetComponent<HandCursorController>();
         
@@ -46,39 +48,68 @@ public class GrabableObject : MonoBehaviour
 
         if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger, m_controller) && !objectGrabbed & !handCursorController.holdingItem)
         {
-            
             if (collider.bounds.Contains(handCursor.transform.position))
             {
-                handCursorController.holdingItem = true; //semaphore lock for grabable objects
-                Debug.Log(">>  " + gameObject.name + "Trigger Is pressed");
-                GetComponent<Rigidbody>().useGravity = false;
-                GetComponent<Rigidbody>().velocity = Vector3.zero;
-                GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-                rigidbody.isKinematic = true;
-                transform.SetParent(handCursor.transform);
-                grabed();
+                pickUp();
             }
-
-
         }
         else if (!OVRInput.Get(OVRInput.RawButton.RIndexTrigger, m_controller) && objectGrabbed)
         {
-            handCursorController.holdingItem = false;
-            Debug.Log(">>  " + gameObject.name + " Trigger Released");
-            transform.parent = null;
-            GetComponent<Rigidbody>().useGravity = true;
-            rigidbody.isKinematic = false;
-            droped();
-            Vector3 avgVelocity = velocityAverage();
-            //Average velocity of previous 3 velocity frames for smoothness
-            throwObject(avgVelocity*3);
+            if (holdUntilZone)
+            {
+                if (isInsideDropZone())
+                {
+                    drop();
+                }
+            }
+            else
+            {
+                drop();
+            }
+        }
+    }
 
+    bool isInsideDropZone()
+    {
+        GameObject[] targetZones = GameObject.FindGameObjectsWithTag("Box");
+        
+        for(int i=0; i < targetZones.Length; i++)
+        {
+            Collider tempCol = targetZones[i].GetComponent<Collider>();
+            if (tempCol.bounds.Contains(handCursor.transform.position)) {
+                return true;
+            }
         }
 
-        //Calculate hand velocity
-        
-
+        return false;
     }
+
+    void pickUp()
+    {
+        handCursorController.holdingItem = true; //semaphore lock for grabable objects
+        Debug.Log(">>  " + gameObject.name + "Trigger Is pressed");
+        GetComponent<Rigidbody>().useGravity = false;
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+        rigidbody.isKinematic = true;
+        transform.SetParent(handCursor.transform);
+        grabed();
+    }
+
+    void drop()
+    {
+        handCursorController.holdingItem = false;
+        Debug.Log(">>  " + gameObject.name + " Trigger Released");
+        transform.parent = null;
+        GetComponent<Rigidbody>().useGravity = true;
+        rigidbody.isKinematic = false;
+        droped();
+        Vector3 avgVelocity = velocityAverage();
+        //Average velocity of previous 3 velocity frames for smoothness
+        throwObject(avgVelocity * 3);
+    }
+
+    //Calculate hand velocity
     void calculateVelocity()
     {
         currTime = Time.fixedTime;
@@ -107,8 +138,8 @@ public class GrabableObject : MonoBehaviour
     void grabed()
     {
         objectGrabbed = true;
-        handCursorController.rotateParent();
-        handCursorController.localizeParent();
+        //handCursorController.rotateParent();
+        //shandCursorController.localizeParent();
     }
     void droped()
     {

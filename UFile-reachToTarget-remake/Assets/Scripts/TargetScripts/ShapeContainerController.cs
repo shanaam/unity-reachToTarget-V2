@@ -72,6 +72,7 @@ public class ShapeContainerController : MonoBehaviour
             Debug.Log("Ding! You put the target in the box!");
             handCursorController.taskCompleted = true;
             experimentController.EndAndPrepare(); //disabled for testing, enable for actual experiment use
+            handCursorController.reAlignCursor();
         }
     }
 

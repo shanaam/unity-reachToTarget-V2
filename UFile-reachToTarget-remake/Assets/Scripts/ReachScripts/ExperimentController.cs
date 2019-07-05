@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using TMPro;
 using UnityEngine;
 using UXF;
@@ -26,6 +27,7 @@ public class ExperimentController : MonoBehaviour
     public GameObject deskAnchorB;
     public GameObject calibrationSphere1;
     public GameObject calibrationSphere2;
+    public GameObject desk;
 
     //-- Internal Variables
     private float timerStart;
@@ -36,47 +38,87 @@ public class ExperimentController : MonoBehaviour
     //variables for calibration
     private int press = 0;
     private bool buttonLock = true;
-    
+    private string m_path;
+    private bool calibrated;
+
     public void Start()
     {
-        
+        //Loads calibration of desk position/rotation. If file exists, calibrates. If not, calibration must be completed
+        m_path = Application.dataPath;
+        Debug.Log(m_path + " is Active dataPath");
+
+        string filename = m_path + "/Files/deskCalibration.txt";
+
+        if (File.Exists(filename))
+        {
+            Debug.Log(filename + " exists, calibrating desk");
+            string rawText = File.ReadAllText(filename);
+            //Format of '.vec' is vector x y z x y z
+            string[] vector = rawText.Split(',');
+
+            deskAnchorA.transform.position = new Vector3(float.Parse(vector[0]), float.Parse(vector[1]), float.Parse(vector[2]));
+            deskAnchorA.transform.localRotation = Quaternion.Euler(float.Parse(vector[3]), float.Parse(vector[4]), float.Parse(vector[5]));
+
+            UnrenderObject(deskAnchorA);
+            UnrenderObject(deskAnchorB);
+            UnrenderObject(calibrationSphere1);
+            UnrenderObject(calibrationSphere2);
+
+            calibrated = true;
+        }
+        else
+        {
+            calibrated = false;
+            UpdateInstruction("Run Calibration:  Press A when holding cursor on each corner of real desk. ");
+        }
     }
 
     public void Update()
     {
         //Calibration of the desk with the real environment
 
+        string filename = m_path + "/Files/deskCalibration.txt";
 
-        if (buttonLock && OVRInput.Get(OVRInput.RawButton.A, m_controller)) //button is pressed once, button lock must be reset (by releasing button). This is to prevent unity from instantly going through all of the cases
+        
+        
+        if(!calibrated)
         {
-            Vector3 handlocation = handCursor.transform.position;
-            if (press == 0)
+            Debug.Log(filename + " does not exist, creating new calibration. Please continue with desk calibration");
+            if (buttonLock && OVRInput.Get(OVRInput.RawButton.A, m_controller)) //button is pressed once, button lock must be reset (by releasing button). This is to prevent unity from instantly going through all of the cases
             {
-                Debug.Log("Calibration1: " + handlocation.ToString());
-                press++;
-                calibrationSphere1.transform.position = handlocation;
+                Vector3 handlocation = handCursor.transform.position;
+                if (press == 0)
+                {
+                    Debug.Log("Calibration1: " + handlocation.ToString());
+                    press++;
+                    calibrationSphere1.transform.position = handlocation;
+                }
+                else if (press == 1)
+                {
+                    Debug.Log("Calibration2: " + handlocation.ToString());
+                    press++;
+                    calibrationSphere2.transform.position = handlocation;
+                }
+                else if (press == 2)
+                {
+                    press++;
+                    calibrateDesk(filename);
+                    Debug.Log("Desk Calibration Saved");
+                    calibrated = true;
+                }
             }
-            else if (press == 1)
+
+            if (OVRInput.Get(OVRInput.RawButton.A, m_controller))
             {
-                Debug.Log("Calibration2: " + handlocation.ToString());
-                press++;
-                calibrationSphere2.transform.position = handlocation;
+                buttonLock = false;
             }
-            else if (press == 2)
+            else
             {
-                press++;
-                calibrateDesk();
+                buttonLock = true;
             }
+            
         }
 
-        if (OVRInput.Get(OVRInput.RawButton.A, m_controller))
-        {
-            buttonLock = false;
-        }
-        else
-        {
-            buttonLock = true;
-        }
     }
 
     
@@ -273,7 +315,7 @@ public class ExperimentController : MonoBehaviour
      *   
      *   
      */
-    private void calibrateDesk()
+    private void calibrateDesk(string filename)
     {
         Vector3 v = calculateVector(calibrationSphere1.transform.position, calibrationSphere2.transform.position);
         Vector3 AB = calculateVector(deskAnchorA.transform.position, deskAnchorB.transform.position);
@@ -290,7 +332,14 @@ public class ExperimentController : MonoBehaviour
         UnrenderObject(calibrationSphere1);
         UnrenderObject(calibrationSphere2);
 
+        System.IO.StreamWriter file = new System.IO.StreamWriter(filename, true);
+        
+        string line = deskAnchorA.transform.position.x.ToString() + ',' + deskAnchorA.transform.position.y.ToString() + ',' + deskAnchorA.transform.position.z.ToString() + ',' + deskAnchorA.transform.localRotation.x.ToString() + ',' + deskAnchorA.transform.localRotation.y.ToString() + ',' + deskAnchorA.transform.localRotation.z.ToString();
+        
+        Debug.Log("Data: " + line);
+        file.WriteLine(line);
 
+        file.Close();
     }
 
     public void UnrenderObject(GameObject obj)

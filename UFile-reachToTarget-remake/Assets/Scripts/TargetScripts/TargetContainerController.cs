@@ -46,14 +46,16 @@ public class TargetContainerController : MonoBehaviour
 
         if (IsGrabTrial)
         {
+            
             targetRadius = 0.3f;
             string objectType = trial.settings.GetString("object_type");
             if (objectType == "cube")
             {
                 var target = Instantiate(PhysicsCubePrefab, transform);
                 var box = Instantiate(boxPrefab, transform);
-                box.transform.localPosition = new Vector3(0, 0, targetRadius);
                 target.transform.localPosition = new Vector3(0, 0, 0.1f);
+                box.transform.localPosition = new Vector3(0, 0, targetRadius);
+                
                 Debug.Log("Spawned physics cube []");
             }
             else if (objectType == "sphere")
@@ -67,6 +69,7 @@ public class TargetContainerController : MonoBehaviour
         }
         else
         {
+            transform.localPosition = new Vector3(0, 0, 0); //sets target container to parent 0
             var target = Instantiate(targetPrefab, transform);
             target.transform.localPosition = new Vector3(0, 0, targetRadius);
             particleSystem.transform.localPosition = new Vector3(0, 0, targetRadius);

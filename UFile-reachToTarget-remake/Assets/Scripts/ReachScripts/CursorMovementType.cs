@@ -66,11 +66,11 @@ public class ClampedHandCursor : CursorMovementType
         {
             Vector3 targetPosition = target.transform.position;
             Vector3 localTargetPosition = targetPosition - centreExpPosition;
-
+            
             //transform.localPosition = realHand.transform.position - transform.parent.transform.position;
             Vector3 realHandPosition = realPosition;
             Vector3 rotatorObjectPosition = centreExpPosition;
-
+            
             //project onto a vector pointing toward target
             //transform.localPosition = Vector3.Project(realHandPosition - rotatorObjectPosition, localTargetPosition);
 
@@ -94,14 +94,14 @@ public class ClampedHandCursor : CursorMovementType
 
 }
 
-/*public class RotatedHandCursor : CursorMovementType
+public class RotatedHandCursor : CursorMovementType
 {
     // When creating a new Rotated Cursor, a rotator object must be passed to the constructor. It is used to calculate translation
-    private GameObject rotator;
+    private float Angle;
 
-    public RotatedHandCursor(GameObject rotatorObject)
+    public RotatedHandCursor(float angle)
     {
-        rotator = rotatorObject;
+        Angle = angle;
     }
 
     public override string Type => "rotated";
@@ -109,9 +109,9 @@ public class ClampedHandCursor : CursorMovementType
     public override Vector3 NewCursorPosition(Vector3 realPosition, Vector3 centreExpPosition)
     {
         //todo implement rotated translation
+        Vector3 rotated = Quaternion.Euler(0, Angle, 0) * (realPosition - centreExpPosition);
 
-
-        return new Vector3(0, 0, 0);
+        return rotated;
     }
-}*/
+}
 

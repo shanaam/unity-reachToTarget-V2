@@ -17,7 +17,7 @@ public class HandCursorController : MonoBehaviour
     public GameObject trackerHolderObject;
     public TargetContainerController targetContainerController;
     public Session session;
-
+    public GameObject particleSystem;
 
     public float pauseLength;
     private float pausedTimeStart = 0;
@@ -51,6 +51,8 @@ public class HandCursorController : MonoBehaviour
     [SerializeField]
     private OVRInput.Controller m_controller;
     private float rotation;
+    private string experiment_mode;
+    private int check = 0;
 
     //variables used for checking pause
     List<float> distanceFromLastList = new List<float>();
@@ -58,6 +60,10 @@ public class HandCursorController : MonoBehaviour
     readonly float checkForPauseRate = 0.05f;
     private bool spawnLock = true;
     //private Vector3 oldPos; //replace this with local position-based transformations
+
+    private Vector3 pastPosition = new Vector3(0,0,0);
+    private Vector3 handPastPosition = new Vector3(0, 0, 0);
+    //private Vector3 currentPosition;
 
     // Use this for initialization
     void Start()
@@ -90,26 +96,20 @@ public class HandCursorController : MonoBehaviour
     {
         string type = trial.settings.GetString("type");
         rotation = trial.settings.GetFloat("cursor_rotation");
+        experiment_mode = trial.settings.GetString("experiment_mode");
         // set the rotation for the trial
-        if (trial.settings.GetString("experiment_mode") == "objectToBox")
-        {
-            //dont rotate yet
-            float temp = rotation;
-            rotation = 0;
-            rotateParent();
-            rotation = temp;
-        }
-        else
-        {
-            rotateParent();
-        }
+        
 
         if (type.Equals("clamped"))
         {
             movementType = new ClampedHandCursor();
             //Debug.Log("MovementType set to : Clamped");
         }
-
+        else if (type.Equals("rotated"))
+        {
+                movementType = new RotatedHandCursor(rotation);
+           
+        }
         else
         {
             movementType = new AlignedHandCursor();
@@ -133,6 +133,22 @@ public class HandCursorController : MonoBehaviour
         }
     }
 
+    private void visibleCursor()
+    {
+        Renderer rend = GetComponent<Renderer>();
+        
+        if (visible)
+        {
+            rend.enabled = true;
+            particleSystem.SetActive(true);
+        }
+        else
+        {
+            rend.enabled = false;
+            particleSystem.SetActive(false);
+        }
+    }
+
     // ALL tracking should be done in LateUpdate
     // This ensures that the real object has finished moving (in Update) before the tracking object is moved
     void LateUpdate()
@@ -140,12 +156,49 @@ public class HandCursorController : MonoBehaviour
         // get the inputs we need for displaying the cursor
         Vector3 realHandPosition = realHand.transform.position;
         Vector3 centreExpPosition = transform.parent.transform.position;
+        Vector3 movementVector = realHandPosition - handPastPosition;
+        Vector3 rotatedVector = movementVector;
+
+
+        CursorMovementType default_movement = new AlignedHandCursor();
 
         //Update position of the cursor based on mvmt type
-        transform.localPosition = movementType.NewCursorPosition(realHandPosition, centreExpPosition);
+        if (experiment_mode == "objectToBox")
+        {
+
+            
+
+            if (holdingItem)
+            {
+
+                visible = false;
+                rotatedVector = Quaternion.Euler(0, rotation, 0) * movementVector;
+                transform.position = pastPosition + rotatedVector;
+
+            }
+            else
+            {
+                
+                rotatedVector = Vector3.zero;
+                transform.localPosition = default_movement.NewCursorPosition(realHandPosition, centreExpPosition);
+                
+            }
+
+            visibleCursor();
+
+            handPastPosition = realHandPosition;
+            pastPosition = transform.position;
+        }
+        else
+        {
+            transform.localPosition = movementType.NewCursorPosition(realHandPosition, centreExpPosition);
+        }
+        
         Quaternion parentrot = realHand.transform.rotation;
         transform.rotation = parentrot;
 
+
+        //For Debugging spawning new objects
         OVRInput.Update();
         if (canSpawnTargets)
         {
@@ -163,41 +216,7 @@ public class HandCursorController : MonoBehaviour
                 spawnLock = true;
             }
         }
-        /*
-        float minDist =0.1f;
-        float actDist = (transform.localPosition - centreExpPosition).magnitude;
-        //Debug.Log("Actual Distance from center: " + actDist);
-        //Do things when this thing is in the target (and paused), or far enough away during nocusor
-        if (((!visible) && isPaused && (!isInHomeArea) && (!taskCompleted) && (actDist >= minDist)) ^ (visible && isPaused && isInTarget)) //^ is exclusive OR
-        {
-            // Above only checks if its paused (for case of noCursor), needs to also check for some minimum time or distance travelled etc.
-            //End and prepare
-            PauseTimer();
-
-            reachTime = timerEnd - timerStart; // set the public variable
-            if (reachTime < 1.5f)
-            {
-                targetContainerController.soundActive = true;
-            }
-            else
-            {
-                targetContainerController.soundActive = false;
-
-            }
-
-            experimentController.EndAndPrepare();
-
-            taskCompleted = true;
-            isInTarget = false;
-        }
-        */
-        //Do things when this this is in home (and pause)
-        //else if (isInHome && isPaused && taskCompleted)
-        //{
-        //    taskCompleted = false;
-        //    StartTimer();
-        //    experimentController.StartTrial();
-        //}
+        
     }
 
     //modifiers
@@ -216,6 +235,7 @@ public class HandCursorController : MonoBehaviour
         }
         else if (other.CompareTag("Home"))
         {
+            visible = true;
             isInHome = true;
 
             // vibrate the controller
@@ -369,6 +389,12 @@ public class HandCursorController : MonoBehaviour
         timerStart = 0;
         timerEnd = 0;
     }
+
+    public void reAlignCursor()
+    {
+        transform.position = realHand.transform.position;
+    }
+
 
 
 
