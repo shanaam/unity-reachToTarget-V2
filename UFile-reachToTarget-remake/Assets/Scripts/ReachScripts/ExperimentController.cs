@@ -72,10 +72,6 @@ public class ExperimentController : MonoBehaviour
                 instructionAcceptorScript.doneInstruction = false;
 
             }
-            else if (trial.settings.GetString("type") == "localization")
-            {
-                //todo implement localization tests
-            }
             else
             {
 
@@ -105,10 +101,6 @@ public class ExperimentController : MonoBehaviour
                 instructionAcceptor.SetActive(true);
                 instructionAcceptorScript.doneInstruction = false;
 
-            }
-            else if (trial.settings.GetString("type") == "localization")
-            {
-                //todo implement localization tests
             }
             else
             {
