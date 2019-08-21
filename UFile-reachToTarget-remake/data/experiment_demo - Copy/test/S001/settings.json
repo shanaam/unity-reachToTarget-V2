@@ -1,14 +1,15 @@
 {
+        "experiment_mode": "objectToBox",
         "gradual_step": 1,
         "per_block_type": [
-            "nocursor",
             "aligned",
+            "nocursor",
             "rotated",
             "instruction",
             "nocursor"
         ],
         "per_block_n": [
-            10,
+            6,
             2,
             6,
             1,

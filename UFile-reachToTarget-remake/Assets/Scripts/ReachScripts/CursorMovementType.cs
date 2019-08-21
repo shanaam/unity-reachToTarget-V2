@@ -7,12 +7,19 @@ using UnityEngine;
  * License: York University (c) 2019
  * Author: Peter Caruana
  * Desc: Defines the movement of an object with respect to transformations. Abstract class defines the general interface of a movement type
+ * 
+ * Interface:
+ * 
+ *      Vector3 NewCursorPosition(...), returns a new vector based on where the cursors new location will be wrt the real cursor
+ * 
  * Content:
  *      abstract class CursorMovementType
  *          ||
  *          |--- class ClampedHandCursor
- *          |
- *          --- class AlignedHandCursor
+ *          ||
+ *          |--- class AlignedHandCursor
+ *          ||
+ *          |--- class RotatedHandCursor
  */
 abstract public class CursorMovementType
 {
@@ -99,6 +106,7 @@ public class RotatedHandCursor : CursorMovementType
     // When creating a new Rotated Cursor, a rotator object must be passed to the constructor. It is used to calculate translation
     private float Angle;
 
+    //requires an angle to be passed to the constructor
     public RotatedHandCursor(float angle)
     {
         Angle = angle;

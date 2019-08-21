@@ -13,20 +13,21 @@ using UXF;
 public class HandCursorController : MonoBehaviour
 {
     //link to the actual hand position object
-    public GameObject realHand;
-    public GameObject trackerHolderObject;
-    public TargetContainerController targetContainerController;
-    public Session session;
-    public GameObject particleSystem;
+    public GameObject realHand; //Cursor associated with controller position
+    public GameObject trackerHolderObject; // child of real sphere
+    public TargetContainerController targetContainerController; //Controller class for the object which spawns and moves targets
+    public Session session; //UXF session, contains information on the current experiment
 
-    public float pauseLength;
+    public GameObject particleSystem; // Particle system for the hand, used to create a trail of movement
+
+    public float pauseLength; //length of pause required to consider hand (relatively) stationary
     private float pausedTimeStart = 0;
     private bool checkForPauseTimerActive = true;
 
     //link to experiment controller (make a static instance of this?)
     public ExperimentController experimentController;
 
-    //these are public for TESTING. Make private ... (actually I think we should keep them public ~ Peter)
+    
     public bool isInTarget = false;
     public bool isInHome = false;
     public bool isPaused = false;
@@ -35,30 +36,32 @@ public class HandCursorController : MonoBehaviour
     public bool holdingItem = false;
     public bool canSpawnTargets = false;
 
-    public GameObject cubePrefab;
+    public GameObject cubePrefab; //Cube prefab for debuging purposes
 
     public bool taskCompleted = true; //this one is also set by instructionAcceptor
 
     //public bool collisionHeld = false;
     //private float collision_start_time;
 
-    public CursorMovementType movementType;
+    public CursorMovementType movementType; //movement type of the hand cursor, can be set to aligned, rotated, clamped etc.
 
     // for the timer
     private float timerStart;
     private float timerEnd;
     private float reachTime;
+
+    //link to the occulus touch controller to read button input
     [SerializeField]
     private OVRInput.Controller m_controller;
-    private float rotation;
-    private string experiment_mode;
-    private int check = 0;
+    private float rotation; //filler variable used to store rotations
+    private string experiment_mode; //experiment mode read from session settings
+    
 
     //variables used for checking pause
     List<float> distanceFromLastList = new List<float>();
     Vector3 lastPosition;
     readonly float checkForPauseRate = 0.05f;
-    private bool spawnLock = true;
+    private bool spawnLock = true; //semaphore variable
     //private Vector3 oldPos; //replace this with local position-based transformations
 
     private Vector3 pastPosition = new Vector3(0,0,0);
@@ -396,27 +399,5 @@ public class HandCursorController : MonoBehaviour
     }
 
 
-
-
-    /*
-    private void OnTriggerStay(Collider other)
-    {
-        float delta = Time.time - collision_start_time;
-        if(delta >= 0.2f)// if the collision is held for longer than 0.2 seconds
-        {
-            if (isInTarget)
-            {
-                Debug.Log("Collision Held for " + delta + " seconds");
-                collisionHeld = true; //Then the collision was deliberate by the user and held on the location
-            }
-            else if (isInHome)
-            {
-
-            }
-                
-        }
-        
-    }
-    */
 
 }

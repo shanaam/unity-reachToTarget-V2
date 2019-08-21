@@ -9,7 +9,8 @@ using UXF;
  * File: ExperimentController.cs
  * License: York University (c) 2019
  * Author: Peter Caruana
- * Desc:    Experiment Controller is what operates the trials of the loaded block. It is responsible for applying settings of the trial to the Unity game at runtime
+ * Desc:    Experiment Controller is what operates the trials of the loaded block. It is responsible for applying settings
+ * of the trial to the Unity game at runtime
  */
 public class ExperimentController : MonoBehaviour
 {
@@ -23,119 +24,28 @@ public class ExperimentController : MonoBehaviour
     public PlaneController planeController;
     public GameObject instructionAcceptor;
     public InstructionAcceptor instructionAcceptorScript;
-    public GameObject deskAnchorA;
-    public GameObject deskAnchorB;
-    public GameObject calibrationSphere1;
-    public GameObject calibrationSphere2;
-    public GameObject desk;
+    public PositionCursorController positionCursorController;
+    
 
     //-- Internal Variables
     private float timerStart;
     private float timerEnd;
     private float reachTime;
     [SerializeField]
-    private OVRInput.Controller m_controller;
-    //variables for calibration
-    private int press = 0;
-    private bool buttonLock = true;
-    private string m_path;
-    private bool calibrated;
-
-    public void Start()
-    {
-        //Loads calibration of desk position/rotation. If file exists, calibrates. If not, calibration must be completed
-        m_path = Application.dataPath;
-        Debug.Log(m_path + " is Active dataPath");
-
-        string filename = m_path + "/Files/deskCalibration.txt";
-
-        if (File.Exists(filename))
-        {
-            Debug.Log(filename + " exists, calibrating desk");
-            string rawText = File.ReadAllText(filename);
-            //Format of '.vec' is vector x y z x y z
-            string[] vector = rawText.Split(',');
-
-            deskAnchorA.transform.position = new Vector3(float.Parse(vector[0]), float.Parse(vector[1]), float.Parse(vector[2]));
-            deskAnchorA.transform.localRotation = Quaternion.Euler(float.Parse(vector[3]), float.Parse(vector[4]), float.Parse(vector[5]));
-
-            UnrenderObject(deskAnchorA);
-            UnrenderObject(deskAnchorB);
-            UnrenderObject(calibrationSphere1);
-            UnrenderObject(calibrationSphere2);
-
-            calibrated = true;
-        }
-        else
-        {
-            calibrated = false;
-            UpdateInstruction("Run Calibration:  Press A when holding cursor on each corner of real desk. ");
-        }
-    }
-
-    public void Update()
-    {
-        //Calibration of the desk with the real environment
-
-        string filename = m_path + "/Files/deskCalibration.txt";
-
-        
-        
-        if(!calibrated)
-        {
-            Debug.Log(filename + " does not exist, creating new calibration. Please continue with desk calibration");
-            if (buttonLock && OVRInput.Get(OVRInput.RawButton.A, m_controller)) //button is pressed once, button lock must be reset (by releasing button). This is to prevent unity from instantly going through all of the cases
-            {
-                Vector3 handlocation = handCursor.transform.position;
-                if (press == 0)
-                {
-                    Debug.Log("Calibration1: " + handlocation.ToString());
-                    press++;
-                    calibrationSphere1.transform.position = handlocation;
-                }
-                else if (press == 1)
-                {
-                    Debug.Log("Calibration2: " + handlocation.ToString());
-                    press++;
-                    calibrationSphere2.transform.position = handlocation;
-                }
-                else if (press == 2)
-                {
-                    press++;
-                    calibrateDesk(filename);
-                    Debug.Log("Desk Calibration Saved");
-                    calibrated = true;
-                }
-            }
-
-            if (OVRInput.Get(OVRInput.RawButton.A, m_controller))
-            {
-                buttonLock = false;
-            }
-            else
-            {
-                buttonLock = true;
-            }
-            
-        }
-
-    }
-
+    private OVRInput.Controller m_controller; //Link to the Oculus controller to read button inputs
     
+    
+ 
 
-    public void StartTrial() //run when cursor is in home and some booleans are right
+    public void StartTrial() 
     {
-        //Debug.LogFormat("starting trial {0}.", session.NextTrial.number);
-        homeCursorController.Remove();
-
-        ////enable the tracker script (to track the reach)
-        //trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = true;
-
+        
+        homeCursorController.hideCursor(); //Hides cursor at begining of experiment.
         session.BeginNextTrial();
-
-        //Debug.LogFormat("started trial {0}.", session.CurrentTrial.number);
+        
     }
 
+    //Called 
     public void BeginTrialSteps(Trial trial)
     {
         if(trial.settings.GetString("experiment_mode") == "objectToBox")
@@ -216,7 +126,11 @@ public class ExperimentController : MonoBehaviour
                 }
             }
         }
-        
+        else if(trial.settings.GetString("experiment_mode") == "localization")
+        {
+            positionCursorController.Activate();
+            UnrenderObject(handCursor);
+        }
 
     }
     // end session or begin next trial (This should ideally be called via event system)
@@ -243,12 +157,7 @@ public class ExperimentController : MonoBehaviour
         session.CurrentTrial.End();
         }
 
-        /*
-        else
-        {
-            session.BeginNextTrial();
-        }
-        */
+
     }
 
     //-----------------------------------------------------
@@ -296,51 +205,15 @@ public class ExperimentController : MonoBehaviour
     {
         return reachTime;
     }
-
+    //Returns vector between A and B
+    //Somewhat redundant, however makes code function easier to read
     private Vector3 calculateVector(Vector3 A, Vector3 B)
     {
         return B - A;
     }
 
-    /*
-     * Aligns the desk with the calibration spheres
-     *  
-     *  v->     
-     *   ^     AB->
-     *   | th /
-     *   |---/
-     *   |  /
-     *   | /  
-     *   |/
-     *   
-     *   
-     */
-    private void calibrateDesk(string filename)
-    {
-        Vector3 v = calculateVector(calibrationSphere1.transform.position, calibrationSphere2.transform.position);
-        Vector3 AB = calculateVector(deskAnchorA.transform.position, deskAnchorB.transform.position);
-        float vAB = Vector3.Dot(v, AB);
-        float scalarProj = vAB / (AB.magnitude * v.magnitude);
-        float theta = Mathf.Acos(scalarProj);
-        float PI = 3.14159f;
-        float degrees = theta * 180 / PI;
-        deskAnchorA.transform.localRotation = Quaternion.Euler(0, degrees, 0);
-        deskAnchorA.transform.position = calibrationSphere1.transform.position;
-
-        UnrenderObject(deskAnchorA);
-        UnrenderObject(deskAnchorB);
-        UnrenderObject(calibrationSphere1);
-        UnrenderObject(calibrationSphere2);
-
-        System.IO.StreamWriter file = new System.IO.StreamWriter(filename, true);
-        
-        string line = deskAnchorA.transform.position.x.ToString() + ',' + deskAnchorA.transform.position.y.ToString() + ',' + deskAnchorA.transform.position.z.ToString() + ',' + deskAnchorA.transform.localRotation.x.ToString() + ',' + deskAnchorA.transform.localRotation.y.ToString() + ',' + deskAnchorA.transform.localRotation.z.ToString();
-        
-        Debug.Log("Data: " + line);
-        file.WriteLine(line);
-
-        file.Close();
-    }
+    
+    
 
     public void UnrenderObject(GameObject obj)
     {

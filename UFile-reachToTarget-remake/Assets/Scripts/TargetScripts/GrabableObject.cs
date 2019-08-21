@@ -4,10 +4,23 @@ using UnityEngine;
 
 public class GrabableObject : MonoBehaviour
 {
-    public GameObject handCursor;
-    public HandCursorController handCursorController;
-    public Collider collider;
-    public Rigidbody rigidbody;
+    /*
+     * GrabableObject.cs
+     * Author: Peter Caruana
+     * Vision Labs, YorkU (c) 2019
+     * 
+     * This script defines functionality for a rigidbody object to be grabed like a realistic object with the vr controller.
+     * Objects with this script attached and all of the public references set can be picked up, and even thrown realistically based on
+     * the rigidbody mass.
+     */
+
+    //References to inGame objects/components must be added before use
+    public GameObject handCursor; //reference to the cursor 
+    public HandCursorController handCursorController; //controller attached to the cursor
+    public Collider collider; //colider of object
+    public Rigidbody rigidbody; //rigidbody of the object
+    //----------------------------------------------------------------
+
     public bool isKinematic;
     public  bool objectGrabbed = false;
     public bool holdUntilZone = true;
@@ -18,7 +31,7 @@ public class GrabableObject : MonoBehaviour
     private float timeDelta = 0.01f;
     private float prevTime;
     private float currTime;
-    private Stack<Vector3> velocityHistory = new Stack<Vector3>();
+    private Stack<Vector3> velocityHistory = new Stack<Vector3>(); //History of the hand cursors velocity. Used to smooth out throwing motions
     [SerializeField]
     private OVRInput.Controller m_controller;
     // Start is called before the first frame update
@@ -44,8 +57,10 @@ public class GrabableObject : MonoBehaviour
         //if (OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0)
         //print("" + OVRInput.GetConnectedControllers());
 
-        calculateVelocity();
+        calculateVelocity(); //calculates velocity of the hand based on average of previous 6 frames (not based on game frames, but time frames set by the timeDelta)
 
+        //Allows to object to be picked up if cursor is touching the colider of the object, trigger is pressed, it isnt grabbed by something else, and the
+        //hand isnt already holding some other object.
         if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger, m_controller) && !objectGrabbed & !handCursorController.holdingItem)
         {
             if (collider.bounds.Contains(handCursor.transform.position))
@@ -53,6 +68,8 @@ public class GrabableObject : MonoBehaviour
                 pickUp();
             }
         }
+        //Drops the object if the trigger isnt being pressed and the object itself was grabbed previously. This is so all grabable objects do not
+        //react when some other object is dropped.
         else if (!OVRInput.Get(OVRInput.RawButton.RIndexTrigger, m_controller) && objectGrabbed)
         {
             if (holdUntilZone)
@@ -69,6 +86,7 @@ public class GrabableObject : MonoBehaviour
         }
     }
 
+    // Only relevent for target trials, where an object is dropped inside of a targetContainerShape. This checks that the object is indeed in the zone.
     bool isInsideDropZone()
     {
         GameObject[] targetZones = GameObject.FindGameObjectsWithTag("Box");
@@ -84,6 +102,7 @@ public class GrabableObject : MonoBehaviour
         return false;
     }
 
+    
     void pickUp()
     {
         handCursorController.holdingItem = true; //semaphore lock for grabable objects
@@ -105,15 +124,16 @@ public class GrabableObject : MonoBehaviour
         rigidbody.isKinematic = false;
         droped();
         Vector3 avgVelocity = velocityAverage();
-        //Average velocity of previous 3 velocity frames for smoothness
-        throwObject(avgVelocity * 3);
+        //Average velocity of previous 6 velocity frames for smoothness
+        throwObject(avgVelocity * 3); //Multiplied by 3. I have no good answer as to why 3, it simply seems to get the most realistic feel for the force.
     }
 
-    //Calculate hand velocity
+    //Calculate hand velocity based on the average velocities of previous frames stored in the velocity stack.
     void calculateVelocity()
     {
         currTime = Time.fixedTime;
         currPosition = handCursor.transform.position;
+        //only pushes another velocity into the velocity history if enough time has elapsed between the last measurement.
         if (currTime - prevTime >= timeDelta)
         {
 
@@ -122,12 +142,16 @@ public class GrabableObject : MonoBehaviour
             prevPosition = new Vector3(currPosition.x, currPosition.y, currPosition.z);
         }
     }
+    //Calculated the average velocity to smooth out and make throws more consistent
     Vector3 velocityAverage()
     {
+        //Averages the top 6 velocity frames in the stack history, or with a TimeDelta of 0.01f, then the average velocity over the last 0.06 seconds
+        //Why 6 frames? No idea, it just works. Too little history and it doesnt work, too many and it doesnt work. 6 works. *shrug*
         Vector3 avg = (velocityHistory.Pop() + velocityHistory.Pop() + velocityHistory.Pop() + velocityHistory.Pop() + velocityHistory.Pop() + velocityHistory.Pop()) / 6;
         velocityHistory.Clear();
         return avg;
     }
+
     void throwObject(Vector3 velocity)
     {
         Debug.Log("Object Thrown with " + velocity.ToString() + ": " + velocity.magnitude);
@@ -138,9 +162,9 @@ public class GrabableObject : MonoBehaviour
     void grabed()
     {
         objectGrabbed = true;
-        //handCursorController.rotateParent();
-        //shandCursorController.localizeParent();
+
     }
+
     void droped()
     {
         objectGrabbed = false;

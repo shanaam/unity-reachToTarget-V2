@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rotatorObjectController : MonoBehaviour
+public class CalculateLocalization : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

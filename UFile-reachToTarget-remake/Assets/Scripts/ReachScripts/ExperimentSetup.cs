@@ -20,7 +20,7 @@ public class ExperimentSetup : MonoBehaviour
         //gameObject.SetActive(false);
     }
 
-
+    //Generates experiment blocks automated based off of json arrays.
     public void GenerateBlocks(Session session)
     {
         List<int> per_block_n = session.settings.GetIntList("per_block_n");

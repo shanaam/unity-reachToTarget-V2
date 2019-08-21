@@ -209,7 +209,7 @@ SphereCollider:
   m_GameObject: {fileID: 15016132}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -355,10 +355,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 93e67e2fb1745a44d82044c66c61c27d, type: 2}
+    - target: {fileID: 2300016, guid: 06ec1f0c3cd0b29478496955dcd98543, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2300018, guid: 06ec1f0c3cd0b29478496955dcd98543, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1a55690c91ad12f46849a420ddc512a6, type: 2}
+    - target: {fileID: 2300018, guid: 06ec1f0c3cd0b29478496955dcd98543, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 06ec1f0c3cd0b29478496955dcd98543, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 06ec1f0c3cd0b29478496955dcd98543, type: 3}
@@ -1216,7 +1224,7 @@ SphereCollider:
   m_GameObject: {fileID: 201451447}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -1394,7 +1402,7 @@ SphereCollider:
   m_GameObject: {fileID: 221147219}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -6628,7 +6636,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284467659}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -10935,7 +10943,7 @@ SphereCollider:
   m_GameObject: {fileID: 1053699946}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -21620,6 +21628,7 @@ GameObject:
   - component: {fileID: 1991832941}
   - component: {fileID: 1991832942}
   - component: {fileID: 1991832943}
+  - component: {fileID: 1991832944}
   m_Layer: 0
   m_Name: ExperimentControllerObject
   m_TagString: ExpCont
@@ -21677,11 +21686,7 @@ MonoBehaviour:
   planeController: {fileID: 1153567745}
   instructionAcceptor: {fileID: 1109330587}
   instructionAcceptorScript: {fileID: 1109330588}
-  deskAnchorA: {fileID: 201451447}
-  deskAnchorB: {fileID: 221147219}
-  calibrationSphere1: {fileID: 15016132}
-  calibrationSphere2: {fileID: 1053699946}
-  desk: {fileID: 990069083}
+  positionCursorController: {fileID: 5185979971123433596}
   m_controller: 2
 --- !u!114 &1991832943
 MonoBehaviour:
@@ -21695,6 +21700,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d778ec9c292f1194a910cb94deb76b74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1991832944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991832939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b0402f55efc8941a6e28f20aa3a247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handCursor: {fileID: 6963212626941800498}
+  deskAnchorA: {fileID: 201451447}
+  deskAnchorB: {fileID: 221147219}
+  calibrationSphere1: {fileID: 15016132}
+  calibrationSphere2: {fileID: 1053699946}
+  desk: {fileID: 990069083}
+  m_controller: 2
 --- !u!1 &1995753346
 GameObject:
   m_ObjectHideFlags: 0
@@ -22715,6 +22739,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5845642343004017009, guid: dd99c589454766849903c42c5bfd01b5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd99c589454766849903c42c5bfd01b5, type: 3}
 --- !u!4 &878251767150552431 stripped
@@ -22917,6 +22946,11 @@ PrefabInstance:
     - target: {fileID: 5524990996219856922, guid: 046afc605cacda14f86b2c15866dff5d,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8803753526004679184, guid: 046afc605cacda14f86b2c15866dff5d,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -22941,6 +22975,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_controller: 2
   expCnt: {fileID: 1991832942}
+  handCursor: {fileID: 6963212626941800498}
+  isLocalization: 0
+--- !u!114 &5185979971123433601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5185979971123433595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc2ee50dec75bc4e94e974911f2e0a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6963212626941800498 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7472603731537900079, guid: dd99c589454766849903c42c5bfd01b5,

@@ -149,8 +149,9 @@
     <Compile Include="Assets\Oculus\Spatializer\Scripts\ONSPPropagationInterface.cs" />
     <Compile Include="Assets\Oculus\Spatializer\Scripts\ONSPPropagationMaterial.cs" />
     <Compile Include="Assets\Oculus\Spatializer\Scripts\ONSPVersion.cs" />
-    <Compile Include="Assets\Scripts\HandViewScripts\PositionCursorController.cs" />
-    <Compile Include="Assets\Scripts\HandViewScripts\RayPulseControler.cs" />
+    <Compile Include="Assets\Scripts\LocalizationScripts\CalculateLocalization.cs" />
+    <Compile Include="Assets\Scripts\LocalizationScripts\PositionCursorController.cs" />
+    <Compile Include="Assets\Scripts\LocalizationScripts\RayPulseControler.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\CenterExperimentController.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\CursorMovementType.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\ExperimentController.cs" />
@@ -159,13 +160,13 @@
     <Compile Include="Assets\Scripts\ReachScripts\HomeCursorController.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\InstructionAcceptor.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\PlaneController.cs" />
-    <Compile Include="Assets\Scripts\ReachScripts\rotatorObjectController.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\GrabableObject.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\PhysicsCubeController.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\PhysicsSphereController.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\ShapeContainerController.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\TargetContainerController.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\TargetController.cs" />
+    <Compile Include="Assets\Scripts\Utility Scripts\DeskCalibration.cs" />
     <Compile Include="Assets\UXF\Examples\Advanced\Scripts\CursorFollower.cs" />
     <Compile Include="Assets\UXF\Examples\Advanced\Scripts\ExperimentGenerator.cs" />
     <Compile Include="Assets\UXF\Examples\Advanced\Scripts\InstructionsController.cs" />
@@ -264,6 +265,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\texture-709723.shader" />
     <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\wall-617961.shader" />
+    <None Include="Assets\Files\deskCalibration.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\DebugUI\Fonts\Montserrat\OFL.txt" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderPBSV2.shader" />
@@ -275,7 +277,6 @@
     <None Include="Assets\Oculus\SampleFramework\Core\Locomotion\Materials\ColumnGlow.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarMaterialStateShader.cginc" />
-    <None Include="Assets\Files\deskCalibration.txt" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShader.shader" />
     <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\shading-671263.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\ToyCubeWithOutline.shader" />

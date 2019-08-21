@@ -11,11 +11,7 @@ public class HomeCursorController : MonoBehaviour
     public ExperimentController experimentController;
     public TargetContainerController targetContainerController;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
 
     private void LateUpdate()
     {
@@ -39,7 +35,7 @@ public class HomeCursorController : MonoBehaviour
         visible = true;
     }
 
-    public void Remove()
+    public void hideCursor()
     {
         Renderer rend = GetComponent<Renderer>();
         rend.enabled = false;
