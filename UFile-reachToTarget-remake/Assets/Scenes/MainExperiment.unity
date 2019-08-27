@@ -1707,7 +1707,7 @@ Transform:
 --- !u!199 &242617198
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -9978,7 +9978,6 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 258
-  m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -10005,12 +10004,13 @@ MonoBehaviour:
   m_verticalMapping: 0
   m_uvLineOffset: 0
   m_geometrySortingOrder: 0
+  m_VertexBufferAutoSizeReduction: 1
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
-    textComponent: {fileID: 0}
+    textComponent: {fileID: 928225080}
     characterCount: 15
     spriteCount: 0
     spaceCount: 2
@@ -10019,12 +10019,9 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
-  m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 928225083}
   m_subTextObjects:
@@ -16815,7 +16812,7 @@ Transform:
 --- !u!199 &1971195076
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -16882,7 +16879,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971195074}
   serializedVersion: 6
-  lengthInSec: 5
+  lengthInSec: 2
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -21686,7 +21683,7 @@ MonoBehaviour:
   planeController: {fileID: 1153567745}
   instructionAcceptor: {fileID: 1109330587}
   instructionAcceptorScript: {fileID: 1109330588}
-  positionCursorController: {fileID: 5185979971123433596}
+  positionLocCursorController: {fileID: 5185979971123433596}
   m_controller: 2
 --- !u!114 &1991832943
 MonoBehaviour:
@@ -22742,7 +22739,7 @@ PrefabInstance:
     - target: {fileID: 5845642343004017009, guid: dd99c589454766849903c42c5bfd01b5,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd99c589454766849903c42c5bfd01b5, type: 3}
@@ -22906,7 +22903,7 @@ PrefabInstance:
     - target: {fileID: 2571951532362174875, guid: 046afc605cacda14f86b2c15866dff5d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.015
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 2571951532362174875, guid: 046afc605cacda14f86b2c15866dff5d,
         type: 3}
@@ -22974,7 +22971,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_controller: 2
-  expCnt: {fileID: 1991832942}
+  experimentController: {fileID: 1991832942}
+  handCursorController: {fileID: 6963212626941800499}
   handCursor: {fileID: 6963212626941800498}
   isLocalization: 0
 --- !u!114 &5185979971123433601

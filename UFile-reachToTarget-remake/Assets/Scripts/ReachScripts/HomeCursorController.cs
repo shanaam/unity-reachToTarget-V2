@@ -35,7 +35,7 @@ public class HomeCursorController : MonoBehaviour
         visible = true;
     }
 
-    public void hideCursor()
+    public void Disappear()
     {
         Renderer rend = GetComponent<Renderer>();
         rend.enabled = false;

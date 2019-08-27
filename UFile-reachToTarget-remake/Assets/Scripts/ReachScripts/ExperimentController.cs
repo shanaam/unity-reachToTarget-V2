@@ -24,7 +24,7 @@ public class ExperimentController : MonoBehaviour
     public PlaneController planeController;
     public GameObject instructionAcceptor;
     public InstructionAcceptor instructionAcceptorScript;
-    public PositionCursorController positionCursorController;
+    public PositionLocCursorController positionLocCursorController;
     
 
     //-- Internal Variables
@@ -40,7 +40,7 @@ public class ExperimentController : MonoBehaviour
     public void StartTrial() 
     {
         
-        homeCursorController.hideCursor(); //Hides cursor at begining of experiment.
+        homeCursorController.Disappear(); //Hides homeposition at begining of trial
         session.BeginNextTrial();
         
     }
@@ -52,7 +52,8 @@ public class ExperimentController : MonoBehaviour
         {
             //pseudo randomized block shapes
             System.Random rando = new System.Random();
-            int flag = rando.Next(100);
+            int flag = rando.Next(100); // randomizing the shape -- this will change depending on the experiment
+
             if (flag % 2 == 0) //even number
             {
                 trial.settings.SetValue("object_type", "cube");
@@ -88,42 +89,60 @@ public class ExperimentController : MonoBehaviour
                 }
             }
         }
+
         else if(trial.settings.GetString("experiment_mode") == "target")
         {
 
 
             targetContainerController.IsGrabTrial = false;
 
-            if (trial.settings.GetString("type") == "instruction")
+            if (trial.settings.GetString("type") == "localization")
             {
-                // jsut wait? for a keypress?
                 trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = false;
-                instructionAcceptor.SetActive(true);
-                instructionAcceptorScript.doneInstruction = false;
 
+                UnrenderObject(handCursor);
+
+                if (GameObject.Find("RayPositionCursor") == null)
+                {
+                    positionLocCursorController.Activate();
+                }
             }
+
             else
             {
-
-                trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = true;
-
-                // do the plane thing at the start of each block 
-                if (trial.numberInBlock == 1)
+                if (GameObject.Find("RayPositionCursor") != null)
                 {
-                    planeController.SetTilt(trial);
+                    positionLocCursorController.Deactivate();
                 }
+
+
+                if (trial.settings.GetString("type") == "instruction")
+                {
+                    // jsut wait? for a keypress?
+                    trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = false;
+
+                    instructionAcceptor.SetActive(true);
+                    instructionAcceptorScript.doneInstruction = false;
+
+                }
+
                 else
                 {
-                    targetContainerController.SpawnTarget(trial);
+                    RenderObject(handCursor);
+                    trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = true;
+
+                    // do the plane thing at the start of each block 
+                    if (trial.numberInBlock == 1)
+                    {
+                        planeController.SetTilt(trial);
+                    }
+                    else
+                    {
+                        targetContainerController.SpawnTarget(trial);
+                    }
                 }
             }
         }
-        else if(trial.settings.GetString("experiment_mode") == "localization")
-        {
-            positionCursorController.Activate();
-            UnrenderObject(handCursor);
-        }
-
     }
     // end session or begin next trial (This should ideally be called via event system)
     // destroys the the current target and starts next trial
@@ -148,8 +167,6 @@ public class ExperimentController : MonoBehaviour
         {
         session.CurrentTrial.End();
         }
-
-
     }
 
     //-----------------------------------------------------
@@ -179,7 +196,7 @@ public class ExperimentController : MonoBehaviour
     {
         timerEnd = Time.fixedTime;
         //Debug.Log("Timer end : " + timerEnd);
-        Debug.LogFormat("Reach Time: {0}", timerEnd - timerStart);
+        //Debug.LogFormat("Reach Time: {0}", timerEnd - timerStart);
     }
 
     public void ClearTime()
@@ -188,18 +205,18 @@ public class ExperimentController : MonoBehaviour
         timerEnd = 0;
     }
 
-    public void calculateReachTime()
+    public void CalculateReachTime()
     {
         reachTime = timerEnd - timerStart;
     }
 
-    public float getReachTime()
+    public float GetReachTime()
     {
         return reachTime;
     }
     //Returns vector between A and B
     //Somewhat redundant, however makes code function easier to read
-    private Vector3 calculateVector(Vector3 A, Vector3 B)
+    private Vector3 CalculateVector(Vector3 A, Vector3 B)
     {
         return B - A;
     }
@@ -211,6 +228,12 @@ public class ExperimentController : MonoBehaviour
     {
         Renderer rend = obj.GetComponent<Renderer>();
         rend.enabled = false;
+    }
+
+    public void RenderObject(GameObject obj)
+    {
+        Renderer rend = obj.GetComponent<Renderer>();
+        rend.enabled = true;
     }
 
     ////Unused for now but useful

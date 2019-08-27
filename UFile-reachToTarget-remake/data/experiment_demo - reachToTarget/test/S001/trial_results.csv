@@ -1,0 +1,14 @@
+directory,experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,targetAngle,type,cursor_rotation,target_vertPos,plane_setting,home_x,home_y,home_z,trackerholderobject_movement_filename
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,1,1,1,12.79257,36.23732,60,localization,0,0,none,-0.3629169,0.9575406,0.4564546,trackerholderobject_movement_T001.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,2,1,2,39.27077,50.34548,100,localization,0,0,none,,,,trackerholderobject_movement_T002.csv
+
+
+
+
+
+
+
+
+
+
+

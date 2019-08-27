@@ -21,7 +21,7 @@ public class InstructionAcceptor : MonoBehaviour
     {
         if (Input.GetKeyDown("i"))
         {
-            Debug.Log("running end and prepare");
+            Debug.Log("instruction acceptor: running end and prepare");
 
             doneInstruction = true;
 

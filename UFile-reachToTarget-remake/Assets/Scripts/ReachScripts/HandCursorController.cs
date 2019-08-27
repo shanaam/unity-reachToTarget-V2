@@ -7,9 +7,10 @@ using UXF;
 /*
  * File:    HandCursorController.cs
  * Project: ReachToTarget-Remake
- * Author:  Peter Caruana
+ * Authors: Shanaathanan Modchalingam, Peter Caruana
  * York University 2019 (c)
  */
+
 public class HandCursorController : MonoBehaviour
 {
     //link to the actual hand position object
@@ -83,14 +84,15 @@ public class HandCursorController : MonoBehaviour
     {
         //movementType should be set based on session settings
         
-        
     }
-    public void rotateParent()
+
+    public void RotateParent()
     {
         
         transform.parent.transform.rotation = Quaternion.Euler(0, rotation, 0);
     }
-    public void localizeParent()
+
+    public void LocalizeParent()
     {
         transform.parent.transform.position = transform.position;
     }
@@ -136,7 +138,7 @@ public class HandCursorController : MonoBehaviour
         }
     }
 
-    private void visibleCursor()
+    private void VisibleCursor()
     {
         Renderer rend = GetComponent<Renderer>();
         
@@ -187,7 +189,7 @@ public class HandCursorController : MonoBehaviour
                 
             }
 
-            visibleCursor();
+            VisibleCursor();
 
             handPastPosition = realHandPosition;
             pastPosition = transform.position;
@@ -330,7 +332,7 @@ public class HandCursorController : MonoBehaviour
             if (checkForPauseTimerActive)
             {
                 pausedTimeStart = Time.fixedTime;
-                Debug.Log("Paused Timer Started at: " + pausedTimeStart);
+                //Debug.Log("Paused Timer Started at: " + pausedTimeStart);
             }
             //If paused for longer than pauseLength, isPaused is true
             float delta = Time.fixedTime - pausedTimeStart;
@@ -393,7 +395,7 @@ public class HandCursorController : MonoBehaviour
         timerEnd = 0;
     }
 
-    public void reAlignCursor()
+    public void ReAlignCursor()
     {
         transform.position = realHand.transform.position;
     }

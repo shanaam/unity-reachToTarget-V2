@@ -8,7 +8,7 @@ using UXF;
 /*
  * File: ExperimentSetup.cs
  * License: York University (c) 2019
- * Author: Peter Caruana
+ * Author: Shanaathanan Modchalingam, Peter Caruana
  * Desc:    Loads json file with experiment description and generates list of blocks upon start of experiment. 
  */
 

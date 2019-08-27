@@ -125,10 +125,16 @@ MonoBehaviour:
   trackerHolderObject: {fileID: 0}
   targetContainerController: {fileID: 0}
   session: {fileID: 0}
+  particleSystem: {fileID: 0}
+  pauseLength: 0
   experimentController: {fileID: 0}
   isInTarget: 0
   isInHome: 0
   isPaused: 0
   isInHomeArea: 0
   visible: 1
+  holdingItem: 0
+  canSpawnTargets: 0
+  cubePrefab: {fileID: 0}
   taskCompleted: 1
+  m_controller: 0

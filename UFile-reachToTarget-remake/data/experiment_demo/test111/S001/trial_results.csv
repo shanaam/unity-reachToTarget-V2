@@ -1,10 +1,30 @@
-directory,experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,targetAngle,type,cursor_rotation,target_vertPos,plane_setting,home_x,home_y,home_z,trackerholderobject_movement_filename
-experiment_demo/test111/S001,experiment_demo,test111,1,1,1,1,8.300656,8.903858,90,instruction,0,0,none,0.008413089,1.013081,0.1999378,trackerholderobject_movement_T001.csv
-experiment_demo/test111/S001,experiment_demo,test111,1,2,2,1,8.903858,25.8,80,aligned,0,0,none,0.008413089,1.013081,0.1999378,trackerholderobject_movement_T002.csv
-experiment_demo/test111/S001,experiment_demo,test111,1,3,2,2,29.40077,53.61518,100,aligned,0,0,none,,,,trackerholderobject_movement_T003.csv
-
-
-
+directory,experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,targetAngle,type,cursor_rotation,target_vertPos,plane_setting,exp_version,home_x,home_y,home_z,trackerholderobject_movement_filename
+experiment_demo/test111/S001,experiment_demo,test111,1,1,1,1,53.99289,65.05582,90,instruction,0,0,none,demo,0,1,0.3,trackerholderobject_movement_T001.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,2,2,1,72.99306,74.04732,100,aligned,0,0,none,demo,0,1,0.3,trackerholderobject_movement_T002.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,3,2,2,75.04803,75.82603,80,aligned,0,0,none,demo,0,1,0.3,trackerholderobject_movement_T003.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,4,2,3,76.55994,77.54848,80,aligned,0,0,none,demo,0,1,0.3,trackerholderobject_movement_T004.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,5,2,4,78.30409,79.27117,100,aligned,0,0,none,demo,0,1,0.3,trackerholderobject_movement_T005.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,6,2,5,80.30431,80.90421,100,aligned,0,0,none,demo,0,1,0.3,trackerholderobject_movement_T006.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,7,2,6,81.52647,82.12643,80,aligned,0,0,none,demo,0,1,0.3,trackerholderobject_movement_T007.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,8,2,7,82.7266,83.18204,100,aligned,0,0,none,demo,0,1,0.3,trackerholderobject_movement_T008.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,9,2,8,83.82642,84.27077,80,aligned,0,0,none,demo,0,1,0.3,trackerholderobject_movement_T009.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,10,3,1,84.82632,85.92667,120,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T010.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,11,3,2,86.97105,87.64876,80,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T011.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,12,3,3,88.62656,89.32656,60,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T012.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,13,3,4,90.1603,91.42665,100,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T013.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,14,3,5,92.22645,93.30441,140,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T014.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,15,3,6,94.04898,94.98232,40,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T015.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,16,3,7,96.06002,96.84901,40,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T016.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,17,3,8,97.64895,98.30421,100,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T017.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,18,3,9,98.9045,99.54876,80,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T018.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,19,3,10,101.0491,102.2266,60,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T019.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,20,3,11,103.1044,104.2267,120,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T020.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,21,3,12,105.0491,105.5821,140,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T021.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,22,3,13,106.3601,107.0044,100,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T022.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,23,3,14,107.4711,108.3487,140,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T023.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,24,3,15,109.0269,109.8821,40,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T024.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,25,3,16,110.8492,111.7605,60,rotated,45,30,tilt,demo,0,1,0.3,trackerholderobject_movement_T025.csv
+experiment_demo/test111/S001,experiment_demo,test111,1,26,4,1,112.5822,124.6889,120,instruction,0,0,none,demo,,,,trackerholderobject_movement_T026.csv
 
 
 

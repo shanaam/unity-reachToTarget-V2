@@ -9,10 +9,10 @@
         ],
         "per_block_n": [
             1,
-            2,
-            6,
+            8,
+            16,
             1,
-            2
+            6
         ],
         "per_block_rotation": [
             0,
@@ -24,7 +24,7 @@
         "per_block_target_vertPos": [
             0,
             0,
-            20,
+            30,
             0,
             0
         ],
@@ -57,5 +57,5 @@
         "t_null": [
             90
         ],
-        "exp_version": "A"
+        "exp_version": "demo"
     }

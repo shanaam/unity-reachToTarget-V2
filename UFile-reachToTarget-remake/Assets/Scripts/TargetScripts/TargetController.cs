@@ -44,9 +44,9 @@ public class TargetController : MonoBehaviour
             //End and prepare
             experimentController.PauseTimer();
 
-            experimentController.calculateReachTime();
+            experimentController.CalculateReachTime();
 
-            if (experimentController.getReachTime() < 1.5f)
+            if (experimentController.GetReachTime() < 1.5f)
             {
                 targetContainerController.soundActive = true;
             }
