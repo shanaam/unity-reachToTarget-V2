@@ -110,12 +110,6 @@ public class ExperimentController : MonoBehaviour
 
             else
             {
-                if (GameObject.Find("RayPositionCursor") != null)
-                {
-                    positionLocCursorController.Deactivate();
-                }
-
-
                 if (trial.settings.GetString("type") == "instruction")
                 {
                     // jsut wait? for a keypress?
@@ -156,6 +150,11 @@ public class ExperimentController : MonoBehaviour
         //Debug.Log("ending reach trial...");
         // destroy the target, spawn home?
         targetContainerController.DestroyTargets();
+        if (GameObject.Find("RayPositionCursor") != null)
+        {
+            positionLocCursorController.Deactivate();
+        }
+
         homeCursorController.Appear();
 
         if (session.CurrentTrial.number == session.LastTrial.number)

@@ -112,8 +112,7 @@ public class HandCursorController : MonoBehaviour
         }
         else if (type.Equals("rotated"))
         {
-                movementType = new RotatedHandCursor(rotation);
-           
+            movementType = new RotatedHandCursor(rotation);
         }
         else
         {
@@ -170,9 +169,6 @@ public class HandCursorController : MonoBehaviour
         //Update position of the cursor based on mvmt type
         if (experiment_mode == "objectToBox")
         {
-
-            
-
             if (holdingItem)
             {
 
