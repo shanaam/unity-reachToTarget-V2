@@ -89,11 +89,8 @@ public class ExperimentController : MonoBehaviour
                 }
             }
         }
-
         else if(trial.settings.GetString("experiment_mode") == "target")
         {
-
-
             targetContainerController.IsGrabTrial = false;
 
             if (trial.settings.GetString("type") == "localization")
@@ -104,7 +101,7 @@ public class ExperimentController : MonoBehaviour
 
                 if (GameObject.Find("RayPositionCursor") == null)
                 {
-                    positionLocCursorController.Activate();
+                    targetContainerController.SpawnTarget(trial);
                 }
             }
 

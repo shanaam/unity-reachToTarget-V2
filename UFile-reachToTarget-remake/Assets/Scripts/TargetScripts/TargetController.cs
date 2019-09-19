@@ -33,7 +33,7 @@ public class TargetController : MonoBehaviour
         bool isInTarget = handCursorController.isInTarget;
         
 
-        float minDist = 0.1f;
+        float minDist = 0.05f;
         float actDist = (handCursor.transform.localPosition - centreExpPosition).magnitude;
         bool distThreshold = actDist >= minDist; //Distance cursor has moved from home position
         //Debug.Log("Actual Distance from center: " + actDist);

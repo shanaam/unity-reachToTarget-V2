@@ -37,11 +37,11 @@ public class ShapeContainerController : MonoBehaviour
         {
             if (other.name.Contains("Sphere") && acceptSphere)
             {
-                acceptTarget(other); 
+                AcceptTarget(other); 
             }
             else if (other.name.Contains("Cube") && acceptCube)
             {
-                acceptTarget(other);
+                AcceptTarget(other);
             }
         }
     }
@@ -54,29 +54,26 @@ public class ShapeContainerController : MonoBehaviour
         {
             if (other.name.Contains("Sphere") && acceptSphere)
             {
-                acceptTarget(other);
+                AcceptTarget(other);
             }
             else if (other.name.Contains("Cube") && acceptCube)
             {
-                acceptTarget(other);
+                AcceptTarget(other);
             }
         }
     }
 
-    private void acceptTarget(Collider other)
+    private void AcceptTarget(Collider other)
     {
-        bool isGrabbed = other.GetComponent<GrabableObject>().objectGrabbed;
-        if (!isGrabbed)
-        {
-            explodeParticles();
-            Debug.Log("Ding! You put the target in the box!");
-            handCursorController.taskCompleted = true;
-            experimentController.EndAndPrepare(); //disabled for testing, enable for actual experiment use
-            handCursorController.ReAlignCursor();
-        }
+        ExplodeParticles();
+        //Debug.Log("Ding! You put the target in the box!");
+        handCursorController.taskCompleted = true;
+        experimentController.EndAndPrepare(); //disabled for testing, enable for actual experiment use
+        handCursorController.ReAlignCursor();
+        handCursorController.holdingItem = false;
     }
 
-    private void explodeParticles()
+    private void ExplodeParticles()
     {
         particleSystem.Play();
 

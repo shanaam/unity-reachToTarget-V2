@@ -4639,7 +4639,7 @@ ParticleSystem:
 --- !u!199 &7451368285976685081
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4710,7 +4710,6 @@ GameObject:
   - component: {fileID: 5423444340759998254}
   - component: {fileID: 5423444340759031278}
   - component: {fileID: 5423444340763123086}
-  - component: {fileID: 5423444340770373870}
   - component: {fileID: 1063715815820553666}
   - component: {fileID: 497049914540447524}
   m_Layer: 0
@@ -4728,8 +4727,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5423444340761031470}
   m_LocalRotation: {x: -0.9043732, y: -0, z: -0, w: 0.42674232}
-  m_LocalPosition: {x: -0.603, y: -0.000000056508, z: 0.717}
-  m_LocalScale: {x: 0.08234834, y: 0.08234834, z: 0.08234834}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children:
   - {fileID: 2089104728598985364}
   m_Father: {fileID: 0}
@@ -4794,25 +4793,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 653b16e9b364afc448a426d74a7b4ddf, type: 3}
---- !u!95 &5423444340770373870
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5423444340761031470}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 653b16e9b364afc448a426d74a7b4ddf, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!65 &1063715815820553666
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4824,8 +4804,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1.5, z: 0.2}
-  m_Center: {x: 0, y: 0, z: -0.6}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &497049914540447524
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,0 @@
-{
-    "gradual_step": 1,
-    "n_trials": {"practice": 10},
-    "test_to_log": "A"
-}

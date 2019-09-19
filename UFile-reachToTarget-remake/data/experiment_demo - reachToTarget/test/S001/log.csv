@@ -3,48 +3,7 @@ timestamp,log_type,message
 0,Log,D:/shanaa/repos/unity-reachToTarget-remake/UFile-reachToTarget-remake/Assets/Files/deskCalibration.txt exists calibrating desk
 0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
 0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
-3.76154,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-4.694215,Warning,Warning: Session already exists! Continuing will overwrite
-13.41987,Log,Home Position Transformed: (-0.2525548 0.968079 0.299199)
-18.81236,Log,Hand: (-0.3 1.0 0.3)
-18.81236,Log,Cursor: (-0.4 1.0 0.6)
-18.81236,Log,Difference Magnitude: 0.3415625
-18.81236,Log,Ending Localization Trial T_T bye :'(
-18.81236,Log,Audio Clip Played Pitch: 1.218619
-27.06836,Log,Hand: (-0.3 1.0 0.3)
-27.06836,Log,Cursor: (-0.4 1.1 0.6)
-27.06836,Log,Difference Magnitude: 0.2584841
-27.06836,Log,Ending Localization Trial T_T bye :'(
-27.06836,Log,Audio Clip Played Pitch: 1.329289
-30.41229,Log,Hand: (-0.3 1.0 0.3)
-30.41229,Log,Cursor: (-0.4 1.0 0.5)
-30.41229,Log,Difference Magnitude: 0.2875477
-30.41229,Log,Ending Localization Trial T_T bye :'(
-30.41229,Log,Audio Clip Played Pitch: 0.6158762
-38.80169,Log,Hand: (-0.3 1.0 0.3)
-38.80169,Log,Cursor: (0.3 1.0 0.6)
-38.80169,Log,Difference Magnitude: 0.6604657
-38.80169,Log,Ending Localization Trial T_T bye :'(
-38.80169,Log,Audio Clip Played Pitch: 1.019763
-40.79179,Log,Target has been spawned at: (0.0 0.0 0.1)
-54.60107,Log,Target has been spawned at: (0.0 0.0 0.1)
-60.12311,Log,Hand: (-0.3 1.0 0.3)
-60.12311,Log,Cursor: (-0.4 1.1 0.6)
-60.12311,Log,Difference Magnitude: 0.2680547
-60.12311,Log,Ending Localization Trial T_T bye :'(
-62.27913,Log,Hand: (-0.3 1.0 0.3)
-62.27913,Log,Cursor: (-0.7 1.2 0.6)
-62.27913,Log,Difference Magnitude: 0.5253759
-62.27913,Log,Ending Localization Trial T_T bye :'(
-63.87877,Log,Hand: (-0.3 1.0 0.3)
-63.87877,Log,Cursor: (-0.7 1.2 0.6)
-63.87877,Log,Difference Magnitude: 0.493066
-63.87877,Log,Ending Localization Trial T_T bye :'(
-66.02327,Log,Hand: (-0.3 1.0 0.2)
-66.02327,Log,Cursor: (-0.7 1.2 0.6)
-66.02327,Log,Difference Magnitude: 0.5300492
-66.02327,Log,Ending Localization Trial T_T bye :'(
-73.10553,Log,instruction acceptor: running end and prepare
-75.56783,Log,Target has been spawned at: (0.0 0.0 0.1)
-76.26775,Log,Audio Clip Played Pitch: 1.246083
-77.69014,Log,Target has been spawned at: (0.0 0.0 0.1)
+4.145586,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+5.025691,Warning,Warning: Session already exists! Continuing will overwrite
+11.00986,Log,Home Position Transformed: (-0.3895642 0.9460739 0.6763616)
+11.98004,Log,Spawning Arc

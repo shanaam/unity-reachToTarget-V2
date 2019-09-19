@@ -22,8 +22,9 @@ public class GrabableObject : MonoBehaviour
     //----------------------------------------------------------------
 
     public bool isKinematic;
-    public  bool objectGrabbed = false;
+    public bool objectGrabbed = false;
     public bool holdUntilZone = true;
+    public bool isInBox = false;
 
     private Vector3 prevPosition;
     private Vector3 currPosition;
@@ -48,6 +49,25 @@ public class GrabableObject : MonoBehaviour
         velocityHistory = new Stack<Vector3>();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Box"))
+        {
+            isInBox = true;
+
+            // vibrate the controller
+            handCursorController.ShortVibrateController();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Box"))
+        {
+            isInBox = false;
+        }
+    }
+
     // Update is called once per frame
     void LateUpdate()
     {
@@ -57,7 +77,8 @@ public class GrabableObject : MonoBehaviour
         //if (OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0)
         //print("" + OVRInput.GetConnectedControllers());
 
-        calculateVelocity(); //calculates velocity of the hand based on average of previous 6 frames (not based on game frames, but time frames set by the timeDelta)
+
+        CalculateVelocity(); //calculates velocity of the hand based on average of previous 6 frames (not based on game frames, but time frames set by the timeDelta)
 
         //Allows to object to be picked up if cursor is touching the colider of the object, trigger is pressed, it isnt grabbed by something else, and the
         //hand isnt already holding some other object.
@@ -65,71 +86,76 @@ public class GrabableObject : MonoBehaviour
         {
             if (collider.bounds.Contains(handCursor.transform.position))
             {
-                pickUp();
+                PickUp();
             }
         }
         //Drops the object if the trigger isnt being pressed and the object itself was grabbed previously. This is so all grabable objects do not
         //react when some other object is dropped.
-        else if (!OVRInput.Get(OVRInput.RawButton.RIndexTrigger, m_controller) && objectGrabbed)
+        //!OVRInput.Get(OVRInput.RawButton.RIndexTrigger, m_controller) 
+        else if (objectGrabbed)
         {
             if (holdUntilZone)
             {
-                if (isInsideDropZone())
+                if (isInBox) 
                 {
-                    drop();
+                    Drop();
                 }
             }
             else
             {
-                drop();
+                Drop();
             }
         }
     }
 
     // Only relevent for target trials, where an object is dropped inside of a targetContainerShape. This checks that the object is indeed in the zone.
-    bool isInsideDropZone()
-    {
-        GameObject[] targetZones = GameObject.FindGameObjectsWithTag("Box");
+    //bool isInsideDropZone()
+    //{
+    //    GameObject[] targetZones = GameObject.FindGameObjectsWithTag("Box");
         
-        for(int i=0; i < targetZones.Length; i++)
-        {
-            Collider tempCol = targetZones[i].GetComponent<Collider>();
-            if (tempCol.bounds.Contains(handCursor.transform.position)) {
-                return true;
-            }
-        }
+    //    for(int i=0; i < targetZones.Length; i++)
+    //    {
+    //        Collider tempCol = targetZones[i].GetComponent<Collider>();
+    //        if (tempCol.bounds.Contains(handCursor.transform.position)) {
+    //            return true;
+    //        }
+    //    }
 
-        return false;
-    }
+    //    return false;
+    //}
 
     
-    void pickUp()
+    void PickUp()
     {
         handCursorController.holdingItem = true; //semaphore lock for grabable objects
-        Debug.Log(">>  " + gameObject.name + "Trigger Is pressed");
+        //Debug.Log(">>  " + gameObject.name + "Trigger Is pressed");
         GetComponent<Rigidbody>().useGravity = false;
         GetComponent<Rigidbody>().velocity = Vector3.zero;
         GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         rigidbody.isKinematic = true;
         transform.SetParent(handCursor.transform);
         grabed();
+
+        handCursorController.offsetWhenGrabbed = handCursor.transform.localPosition.x;
     }
 
-    void drop()
+    public void Drop()
     {
         handCursorController.holdingItem = false;
-        Debug.Log(">>  " + gameObject.name + " Trigger Released");
+        //Debug.Log(">>  " + gameObject.name + " Trigger Released");
         transform.parent = null;
         GetComponent<Rigidbody>().useGravity = true;
         rigidbody.isKinematic = false;
-        droped();
         Vector3 avgVelocity = velocityAverage();
+
+        droped(); //set the objectGrabbed bool to false
+
         //Average velocity of previous 6 velocity frames for smoothness
         throwObject(avgVelocity * 3); //Multiplied by 3. I have no good answer as to why 3, it simply seems to get the most realistic feel for the force.
     }
 
     //Calculate hand velocity based on the average velocities of previous frames stored in the velocity stack.
-    void calculateVelocity()
+    void CalculateVelocity()
     {
         currTime = Time.fixedTime;
         currPosition = handCursor.transform.position;
@@ -154,7 +180,7 @@ public class GrabableObject : MonoBehaviour
 
     void throwObject(Vector3 velocity)
     {
-        Debug.Log("Object Thrown with " + velocity.ToString() + ": " + velocity.magnitude);
+        //Debug.Log("Object Thrown with " + velocity.ToString() + ": " + velocity.magnitude);
         rigidbody.AddForce(velocity, ForceMode.Impulse);
         
     }

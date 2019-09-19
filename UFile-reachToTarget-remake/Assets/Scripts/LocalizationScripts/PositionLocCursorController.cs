@@ -15,8 +15,10 @@ public class PositionLocCursorController : MonoBehaviour
     public ExperimentController experimentController;
     public HandCursorController handCursorController;
     public GameObject handCursor;
+    public GameObject expCentre;
+    public GameObject centreEye;
     public bool isLocalization;
-    private Vector3 defaultPos = new Vector3(0f, 0.015f, 0.05f);
+    private Vector3 defaultPos = new Vector3(0f, 0.05f, 0.05f);
 
 
     void Start()
@@ -24,33 +26,62 @@ public class PositionLocCursorController : MonoBehaviour
         Deactivate();
     }
 
+    private void Awake()
+    {
+        transform.localPosition = defaultPos;
+    }
+
     // Update is called once per frame
     void Update()
     {
+        //transform.localPosition = defaultPos;
+
+        //Calculate forward vector
+        Vector3 forward = centreEye.transform.position - transform.parent.position;
+        Ray ray = new Ray(transform.parent.position, forward);
+
+        //Plane for intersecting
+
+        Plane planeTOIntersect = new Plane(Vector3.down, expCentre.transform.position.y);
+
+        //Initialise the enter variable
+        float enter = 0.0f;
+
+        if (planeTOIntersect.Raycast(ray, out enter))
+        {
+            //Get the point that is clicked
+            Vector3 hitPoint = ray.GetPoint(enter);
+
+            //Move your cube GameObject to the point where you clicked
+            transform.position = hitPoint;
+        }
+
         x = transform.localPosition.x;
         y = transform.localPosition.y;
         z = transform.localPosition.z;
 
         if (isLocalization)
         {
-            if (OVRInput.Get(OVRInput.RawButton.B, m_controller))
-            {
-                MoveCursor(0.0003f);
-            }
-            else if (OVRInput.Get(OVRInput.RawButton.A, m_controller))
-            {
-                MoveCursor(-0.0003f);
-            }
-            else if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger, m_controller))
+
+            if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger, m_controller))
             {
                 CalculateLocationDelta();
-                transform.localPosition = defaultPos;
+
                 Debug.Log("Ending Localization Trial T_T bye :'(");
 
                 experimentController.EndAndPrepare();
                 handCursorController.taskCompleted = true;
                 isLocalization = false;
             }
+
+            //else if (OVRInput.Get(OVRInput.RawButton.B, m_controller))
+            //{
+            //    MoveCursor(0.0003f);
+            //}
+            //else if (OVRInput.Get(OVRInput.RawButton.A, m_controller))
+            //{
+            //    MoveCursor(-0.0003f);
+            //}
         }
     }
 

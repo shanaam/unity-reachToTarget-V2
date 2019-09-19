@@ -15,12 +15,13 @@ using UXF;
 public class TargetContainerController : MonoBehaviour
 {
     public GameObject targetPrefab;
+    public GameObject arcPrefab;
     public GameObject boxPrefab;
     public GameObject cylinderPrefab;
     public GameObject PhysicsCubePrefab;
     public GameObject PhysicsSpherePrefab;
     public bool IsGrabTrial;
-    public float targetRadius = 0.12f;
+    public float targetDistance = 12f;
     public AudioSource audioSource;
     public Session session;
     public ExperimentController experimentController;
@@ -40,40 +41,53 @@ public class TargetContainerController : MonoBehaviour
     public void SpawnTarget(Trial trial)
     {
         SetTargetAngle(trial); //set the target angle for this trial
-        
 
+        targetDistance = trial.settings.GetFloat("target_distance"); //set target distance for this trial
+        targetDistance = targetDistance / 100;
         //the distance to instantiate the target is in the z position
 
         if (IsGrabTrial)
         {
-            
-            targetRadius = 0.3f;
+
+            //targetDistance = 0.3f; 
+
             string objectType = trial.settings.GetString("object_type");
             if (objectType == "cube")
             {
-                var target = Instantiate(PhysicsCubePrefab, transform);
-                var box = Instantiate(boxPrefab, transform);
-                target.transform.localPosition = new Vector3(0, 0, 0.1f);
-                box.transform.localPosition = new Vector3(0, 0, targetRadius);
-                
-                Debug.Log("Spawned physics cube []");
+                var grabObject = Instantiate(PhysicsCubePrefab, transform);
+                var recepticle = Instantiate(boxPrefab, transform);
+
+                recepticle.transform.localPosition = new Vector3(0, -0.05f, targetDistance);
+                grabObject.transform.localPosition = new Vector3(0, 0, 0.1f);
+                //Debug.Log("Spawned physics cube []");
             }
             else if (objectType == "sphere")
             {
-                var target = Instantiate(PhysicsSpherePrefab, transform);
-                var box = Instantiate(cylinderPrefab, transform);
-                box.transform.localPosition = new Vector3(0, 0, targetRadius);
-                target.transform.localPosition = new Vector3(0, 0, 0.1f);
-                Debug.Log("Spawned physics sphere O");
+                var grabObject = Instantiate(PhysicsSpherePrefab, transform);
+                var recepticle = Instantiate(cylinderPrefab, transform);
+
+                recepticle.transform.localPosition = new Vector3(0, -0.05f, targetDistance);
+                grabObject.transform.localPosition = new Vector3(0, 0, 0.1f);
+                //Debug.Log("Spawned physics sphere O");
             }
         }
         else
         {
-            transform.localPosition = new Vector3(0, 0, 0); //sets target container to parent 0
-            var target = Instantiate(targetPrefab, transform);
-            target.transform.localPosition = new Vector3(0, 0, targetRadius);
-            particleSystem.transform.localPosition = new Vector3(0, 0, targetRadius);
-            Debug.Log("Target has been spawned at: " + target.transform.localPosition.ToString());
+            if (trial.settings.GetString("type") == "localization")
+            {
+                Debug.Log("Spawning Arc");
+                transform.localPosition = Vector3.zero;
+                var target = Instantiate(arcPrefab, transform);
+                target.GetComponent<ArcController>().GenerateArc(trial);
+            }
+            else
+            {
+                transform.localPosition = new Vector3(0, 0, 0); //sets target container to parent 0
+                var target = Instantiate(targetPrefab, transform);
+                target.transform.localPosition = new Vector3(0, 0, targetDistance);
+                particleSystem.transform.localPosition = new Vector3(0, 0, targetDistance);
+                Debug.Log("Target has been spawned at: " + target.transform.localPosition.ToString());
+            }
         }
         
 
@@ -133,7 +147,7 @@ public class TargetContainerController : MonoBehaviour
         float targetLocation = trial.settings.GetFloat("targetAngle"); // set this at trial start
         float targetVPos = trial.settings.GetFloat("target_vertPos");
         //rotate this thing 
-        transform.rotation = Quaternion.Euler(targetVPos * -1, targetLocation - 90, 0); //the Y here is WRONG! 
+        transform.rotation = Quaternion.Euler(targetVPos * -1, (targetLocation * -1) + 90, 0); //the Y here is right (fixed) 
     }
 
 

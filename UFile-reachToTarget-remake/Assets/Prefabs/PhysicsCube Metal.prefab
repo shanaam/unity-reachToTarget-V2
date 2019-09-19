@@ -17,6 +17,11 @@ PrefabInstance:
       propertyPath: holdUntilZone
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3593150889309856965, guid: 42d9c5236c685af45b118cf669367f7e,
+        type: 3}
+      propertyPath: isKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7338689792619983936, guid: 42d9c5236c685af45b118cf669367f7e,
         type: 3}
       propertyPath: m_LocalPosition.x

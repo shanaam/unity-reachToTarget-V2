@@ -149,6 +149,7 @@
     <Compile Include="Assets\Oculus\Spatializer\Scripts\ONSPPropagationInterface.cs" />
     <Compile Include="Assets\Oculus\Spatializer\Scripts\ONSPPropagationMaterial.cs" />
     <Compile Include="Assets\Oculus\Spatializer\Scripts\ONSPVersion.cs" />
+    <Compile Include="Assets\Scripts\LocalizationScripts\ArcController.cs" />
     <Compile Include="Assets\Scripts\LocalizationScripts\CalculateLocalization.cs" />
     <Compile Include="Assets\Scripts\LocalizationScripts\PositionLocCursorController.cs" />
     <Compile Include="Assets\Scripts\LocalizationScripts\RayPulseController.cs" />

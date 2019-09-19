@@ -4639,7 +4639,7 @@ ParticleSystem:
 --- !u!199 &8123426172620336090
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4710,7 +4710,6 @@ GameObject:
   - component: {fileID: 3123511620313137653}
   - component: {fileID: 3123511620312007477}
   - component: {fileID: 3123511620316312405}
-  - component: {fileID: 3123511620306955829}
   - component: {fileID: 5720045611655511519}
   - component: {fileID: 5517300683470216764}
   m_Layer: 0
@@ -4728,8 +4727,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3123511620314209781}
   m_LocalRotation: {x: -0.9043733, y: 0, z: 0, w: 0.4267424}
-  m_LocalPosition: {x: -0.146, y: 0, z: 0.527}
-  m_LocalScale: {x: 0.08870675, y: 0.08870675, z: 0.1244973}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children:
   - {fileID: 3717045443490970390}
   m_Father: {fileID: 0}
@@ -4794,25 +4793,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 30394b8be51f7fe4ea1f76fbb991401d, type: 3}
---- !u!95 &3123511620306955829
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3123511620314209781}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 30394b8be51f7fe4ea1f76fbb991401d, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!136 &5720045611655511519
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4824,9 +4804,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 0.5
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: -0.5}
+  m_Height: 1
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5517300683470216764
 MonoBehaviour:
   m_ObjectHideFlags: 0

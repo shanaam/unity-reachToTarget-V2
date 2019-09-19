@@ -51,6 +51,8 @@ public class HandCursorController : MonoBehaviour
     private float timerEnd;
     private float reachTime;
 
+    public float offsetWhenGrabbed;
+
     //link to the occulus touch controller to read button input
     [SerializeField]
     private OVRInput.Controller m_controller;
@@ -121,11 +123,11 @@ public class HandCursorController : MonoBehaviour
         }
     }
 
-    public void SetCursorVisibility(Trial trial)
+    public void SetCursorVisibility(Trial trial) //run by UXF at start of trial
     {
         Renderer rend = GetComponent<Renderer>();
-
-        if (trial.settings.GetString("type") == "nocursor")
+        string type = trial.settings.GetString("type");
+        if (type == "nocursor" || type == "localization")
         {
             rend.enabled = false;
             visible = false;
@@ -171,15 +173,44 @@ public class HandCursorController : MonoBehaviour
         {
             if (holdingItem)
             {
+                if (movementType.Type == "clamped")
+                {
+                    GameObject target = GameObject.FindGameObjectWithTag("Box");
+
+                    // if a target exists
+                    if (target != null)
+                    {
+                        Vector3 targetPosition = target.transform.position;
+                        Vector3 localTargetPosition = targetPosition - centreExpPosition;
+
+                        //transform.localPosition = realHand.transform.position - transform.parent.transform.position;
+                        Vector3 rotatorObjectPosition = centreExpPosition;
+
+                        //project onto a vector pointing toward target
+                        //transform.localPosition = Vector3.Project(realHandPosition - rotatorObjectPosition, localTargetPosition);
+
+                        //project onto a vertical plane intersecting target and home
+                        Vector3 vectorForPlane = new Vector3(targetPosition.x, targetPosition.y - 1, targetPosition.z);
+                        Vector3 normalVector = Vector3.Cross(targetPosition - rotatorObjectPosition, vectorForPlane - rotatorObjectPosition);
+
+
+
+                        transform.localPosition = Vector3.ProjectOnPlane(realHand.transform.position - rotatorObjectPosition, normalVector) + new Vector3(offsetWhenGrabbed, 0, 0);
+                    }
+
+                }
+                else
+                {
+                    rotatedVector = Quaternion.Euler(0, rotation, 0) * movementVector;
+                    transform.position = pastPosition + rotatedVector;
+                }
 
                 visible = false;
-                rotatedVector = Quaternion.Euler(0, rotation, 0) * movementVector;
-                transform.position = pastPosition + rotatedVector;
-
             }
+
             else
             {
-                
+                visible = true;
                 rotatedVector = Vector3.zero;
                 transform.localPosition = default_movement.NewCursorPosition(realHandPosition, centreExpPosition);
                 
@@ -193,6 +224,7 @@ public class HandCursorController : MonoBehaviour
         else
         {
             transform.localPosition = movementType.NewCursorPosition(realHandPosition, centreExpPosition);
+            VisibleCursor();
         }
         
         Quaternion parentrot = realHand.transform.rotation;
@@ -349,13 +381,12 @@ public class HandCursorController : MonoBehaviour
             //PausedTimeStart can now be reset.
             checkForPauseTimerActive = true;
             
-        }
-        
+        }   
     }
 
 
     // vibrate controller for 0.2 seconds
-    void ShortVibrateController()
+    public void ShortVibrateController()
     {
         // make the controller vibrate
         OVRInput.SetControllerVibration(1, 0.6f);
@@ -395,7 +426,4 @@ public class HandCursorController : MonoBehaviour
     {
         transform.position = realHand.transform.position;
     }
-
-
-
 }
