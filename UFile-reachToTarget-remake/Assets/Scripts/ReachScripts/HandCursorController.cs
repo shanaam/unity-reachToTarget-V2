@@ -51,8 +51,6 @@ public class HandCursorController : MonoBehaviour
     private float timerEnd;
     private float reachTime;
 
-    public float offsetWhenGrabbed;
-
     //link to the occulus touch controller to read button input
     [SerializeField]
     private OVRInput.Controller m_controller;
@@ -173,37 +171,16 @@ public class HandCursorController : MonoBehaviour
         {
             if (holdingItem)
             {
-                if (movementType.Type == "clamped")
-                {
-                    GameObject target = GameObject.FindGameObjectWithTag("Box");
+                //if (movementType.Type == "clamped")
+                //{
+                //    // see GrabableObject script.
 
-                    // if a target exists
-                    if (target != null)
-                    {
-                        Vector3 targetPosition = target.transform.position;
-                        Vector3 localTargetPosition = targetPosition - centreExpPosition;
-
-                        //transform.localPosition = realHand.transform.position - transform.parent.transform.position;
-                        Vector3 rotatorObjectPosition = centreExpPosition;
-
-                        //project onto a vector pointing toward target
-                        //transform.localPosition = Vector3.Project(realHandPosition - rotatorObjectPosition, localTargetPosition);
-
-                        //project onto a vertical plane intersecting target and home
-                        Vector3 vectorForPlane = new Vector3(targetPosition.x, targetPosition.y - 1, targetPosition.z);
-                        Vector3 normalVector = Vector3.Cross(targetPosition - rotatorObjectPosition, vectorForPlane - rotatorObjectPosition);
-
-
-
-                        transform.localPosition = Vector3.ProjectOnPlane(realHand.transform.position - rotatorObjectPosition, normalVector) + new Vector3(offsetWhenGrabbed, 0, 0);
-                    }
-
-                }
-                else
-                {
+                //}
+                //else
+                //{
                     rotatedVector = Quaternion.Euler(0, rotation, 0) * movementVector;
                     transform.position = pastPosition + rotatedVector;
-                }
+                //}
 
                 visible = false;
             }
@@ -425,5 +402,22 @@ public class HandCursorController : MonoBehaviour
     public void ReAlignCursor()
     {
         transform.position = realHand.transform.position;
+    }
+
+    public void ChangeHand(string hand, GameObject newTransform)
+    {
+        realHand.transform.SetParent(newTransform.transform);
+        if (hand == "r")
+        {
+            m_controller = OVRInput.Controller.RTouch;
+            realHand.transform.localPosition = new Vector3(-0.00205f, 0.0f, 0.0331f);
+
+            // vector -0.00205, 0, 0.0331
+        }
+        else
+        {
+            m_controller = OVRInput.Controller.LTouch;
+            realHand.transform.localPosition = Vector3.zero;
+        }
     }
 }

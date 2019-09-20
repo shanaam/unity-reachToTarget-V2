@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5492799079935718055}
   - component: {fileID: 2936753539588480234}
   - component: {fileID: 8209554368492314228}
-  - component: {fileID: 3796675780845638108}
+  - component: {fileID: 3060873010199490080}
   - component: {fileID: 2409716081532373959}
   m_Layer: 0
   m_Name: Physics Sphere
@@ -110,7 +110,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3796675780845638108
+--- !u!114 &3060873010199490080
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4657596809025667734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 074b6cc4a4728e2468bdc5738bd6d505, type: 3}
+  m_Script: {fileID: 11500000, guid: e4e1ec414bf5a7445a454744f5561b48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2409716081532373959

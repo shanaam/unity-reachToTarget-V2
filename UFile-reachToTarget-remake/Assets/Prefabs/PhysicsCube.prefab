@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5300573954321617576}
   - component: {fileID: 1785796483495386135}
   - component: {fileID: 5868662385658600473}
-  - component: {fileID: 1856507044629814942}
+  - component: {fileID: 7958954415229911540}
   - component: {fileID: 3593150889309856965}
   m_Layer: 0
   m_Name: PhysicsCube
@@ -110,7 +110,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1856507044629814942
+--- !u!114 &7958954415229911540
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1945354076860793275}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 053991aa21d459441af354d8105ef4d8, type: 3}
+  m_Script: {fileID: 11500000, guid: e4e1ec414bf5a7445a454744f5561b48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &3593150889309856965

@@ -15,7 +15,7 @@
             8,
             3,
             1,
-            2
+            8
         ],
         "per_block_rotation": [
             0,
@@ -27,11 +27,11 @@
         ],
         "per_block_distance": [
             10,
-            30,
-            30,
-            30,
-            30,
-            30
+            25,
+            25,
+            25,
+            25,
+            25
         ],
         "per_block_target_vertPos": [
             0,
@@ -44,7 +44,7 @@
         "per_block_targetListToUse": [
             "t_null",
             "tl2",
-            "t_null",
+            "tl2",
             "t_null",
             "t_null",
             "tl1"
@@ -57,14 +57,22 @@
             "none",
             "none"
         ],
+        "per_block_hand": [
+            "r",
+            "r",
+            "r",
+            "r",
+            "r",
+            "r"
+        ],
         "tl1": [
-            80,
-            100
+            70,
+            110
         ],
         "tl2": [
-            40,
-            45,
-            50
+            30,
+            90,
+            150
         ],
         "t_null": [
             90

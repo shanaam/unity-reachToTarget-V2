@@ -28,6 +28,9 @@ public class TargetContainerController : MonoBehaviour
     public bool soundActive = true;
     public ParticleSystem particleSystem;
 
+    // variable
+    public float grabObjSpawnDist = 0.15f;
+
     List<float> shuffledTargetList = new List<float>();
 
     // Start is called before the first frame update
@@ -58,7 +61,7 @@ public class TargetContainerController : MonoBehaviour
                 var recepticle = Instantiate(boxPrefab, transform);
 
                 recepticle.transform.localPosition = new Vector3(0, -0.05f, targetDistance);
-                grabObject.transform.localPosition = new Vector3(0, 0, 0.1f);
+                grabObject.transform.localPosition = new Vector3(0, 0, grabObjSpawnDist);
                 //Debug.Log("Spawned physics cube []");
             }
             else if (objectType == "sphere")
@@ -67,9 +70,37 @@ public class TargetContainerController : MonoBehaviour
                 var recepticle = Instantiate(cylinderPrefab, transform);
 
                 recepticle.transform.localPosition = new Vector3(0, -0.05f, targetDistance);
-                grabObject.transform.localPosition = new Vector3(0, 0, 0.1f);
+                grabObject.transform.localPosition = new Vector3(0, 0, grabObjSpawnDist);
                 //Debug.Log("Spawned physics sphere O");
             }
+            
+            /*
+            // 50/50 chance for either 15 degrees left or right of the target angle
+            System.Random rand = new System.Random();
+            float deviation = rand.Next(2) == 0 ? -25f : 25f;
+
+            // Rotate the entire transform +/- 15 degrees left or right of the target angle
+            transform.rotation = Quaternion.Euler(
+                trial.settings.GetFloat("target_vertPos") * -1f,
+                (trial.settings.GetFloat("targetAngle") * -1f) + 90f + deviation,
+                0.0f
+            );
+
+            // Instantiate the recepticle opposite of the physics object
+            var wrongRecepticle = Instantiate(objectType == "cube" ? cylinderPrefab : boxPrefab, transform);
+            wrongRecepticle.transform.localPosition = new Vector3(0, -0.05f, targetDistance);
+
+            wrongRecepticle.transform.SetParent(null);
+            
+            // Rotate the entire transform back to the original angle
+            transform.rotation = Quaternion.Euler(
+                trial.settings.GetFloat("target_vertPos") * -1f,
+                (trial.settings.GetFloat("targetAngle") * -1f) + 90f,
+                0.0f
+            );
+
+            wrongRecepticle.transform.SetParent(transform);
+            */
         }
         else
         {

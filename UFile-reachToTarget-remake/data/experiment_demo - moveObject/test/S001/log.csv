@@ -3,16 +3,53 @@ timestamp,log_type,message
 0,Log,D:/shanaa/repos/unity-reachToTarget-remake/UFile-reachToTarget-remake/Assets/Files/deskCalibration.txt exists calibrating desk
 0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
 0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
-5.065529,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-6.272987,Warning,Warning: Session already exists! Continuing will overwrite
-10.76426,Log,Home Position Transformed: (-0.3788584 0.9331495 0.6738464)
-15.39533,Log,instruction acceptor: running end and prepare
-15.39533,Log,Audio Clip Played Pitch: 0.5244987
-21.66,Log,Audio Clip Played Pitch: 0.6471806
-21.66,Log,Audio Clip Played Pitch: 1.425154
-25.1,Log,Audio Clip Played Pitch: 1.303074
-25.1,Log,Audio Clip Played Pitch: 0.7409077
-27.86,Log,Audio Clip Played Pitch: 1.493771
-27.86,Log,Audio Clip Played Pitch: 1.027658
-43.62,Log,Audio Clip Played Pitch: 1.227375
-43.62,Log,Audio Clip Played Pitch: 1.488135
+9.576797,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+10.64853,Warning,Warning: Session already exists! Continuing will overwrite
+13.60366,Log,Home Position Transformed: (-0.1055433 0.9445454 0.4726509)
+14.83321,Log,instruction acceptor: running end and prepare
+14.83321,Log,Audio Clip Played Pitch: 0.8496219
+23.3,Log,Audio Clip Played Pitch: 0.8228636
+23.3,Log,Audio Clip Played Pitch: 0.8693448
+25.7,Log,Audio Clip Played Pitch: 1.277956
+25.7,Log,Audio Clip Played Pitch: 1.005277
+27.98,Log,Audio Clip Played Pitch: 0.8329002
+27.98,Log,Audio Clip Played Pitch: 1.23332
+29.96,Log,Audio Clip Played Pitch: 1.460277
+29.96,Log,Audio Clip Played Pitch: 0.8483042
+34.8,Log,Audio Clip Played Pitch: 0.7039305
+34.8,Log,Audio Clip Played Pitch: 0.5352851
+39.86,Log,Audio Clip Played Pitch: 1.199914
+39.86,Log,Audio Clip Played Pitch: 1.341815
+45.62,Log,Audio Clip Played Pitch: 1.235688
+45.62,Log,Audio Clip Played Pitch: 1.2172
+49.4,Log,Audio Clip Played Pitch: 0.5749232
+49.4,Log,Audio Clip Played Pitch: 1.488893
+52.98,Log,Audio Clip Played Pitch: 0.9062048
+52.98,Log,Audio Clip Played Pitch: 1.043197
+57.5,Log,Audio Clip Played Pitch: 0.7428985
+57.5,Log,Audio Clip Played Pitch: 0.5812553
+61.16,Log,Audio Clip Played Pitch: 0.8007134
+61.16,Log,Audio Clip Played Pitch: 1.037461
+65.06,Log,Audio Clip Played Pitch: 1.020427
+65.06,Log,Audio Clip Played Pitch: 0.9950472
+75,Log,Audio Clip Played Pitch: 0.9941653
+75,Log,Audio Clip Played Pitch: 1.301102
+77.88,Log,Audio Clip Played Pitch: 0.7353162
+77.88,Log,Audio Clip Played Pitch: 0.8884968
+85.98965,Log,instruction acceptor: running end and prepare
+85.98965,Log,Audio Clip Played Pitch: 0.9819294
+93.84,Log,Audio Clip Played Pitch: 0.8943511
+93.84,Log,Audio Clip Played Pitch: 1.411437
+97.38,Log,Audio Clip Played Pitch: 0.9526445
+97.38,Log,Audio Clip Played Pitch: 0.5151752
+101.42,Log,Audio Clip Played Pitch: 1.220551
+101.42,Log,Audio Clip Played Pitch: 1.007219
+104.6,Log,Audio Clip Played Pitch: 0.6891713
+104.6,Log,Audio Clip Played Pitch: 1.088195
+107.1,Log,Audio Clip Played Pitch: 1.049331
+107.1,Log,Audio Clip Played Pitch: 0.8308079
+110.06,Log,Audio Clip Played Pitch: 1.323777
+110.06,Log,Audio Clip Played Pitch: 1.030758
+113.36,Log,Audio Clip Played Pitch: 1.07583
+113.36,Log,Audio Clip Played Pitch: 0.9663399
+116,Log,Audio Clip Played Pitch: 1.104932

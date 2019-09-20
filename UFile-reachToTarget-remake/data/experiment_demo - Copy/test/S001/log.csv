@@ -1,792 +1,144 @@
 timestamp,log_type,message
-0,Log,D:/shanaa/repos/unity-reachToTarget-remake/UFile-reachToTarget-remake/Assets is Active dataPath
-0,Log,D:/shanaa/repos/unity-reachToTarget-remake/UFile-reachToTarget-remake/Assets/Files/deskCalibration.txt exists calibrating desk
+0,Log,D:/shanaa/repos/unity-paperBallShoot/UFile-PaperBallShoot/Assets is Active dataPath
+0,Log,D:/shanaa/repos/unity-paperBallShoot/UFile-PaperBallShoot/Assets/Files/deskCalibration.txt exists calibrating desk
 0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+0.02,Warning,The combined number of detail object vertices in one single patch is exceeding the limit (65536). Try decreasing detail density or detail resolution per patch.
+0.02,Warning,The combined number of detail object vertices in one single patch is exceeding the limit (65536). Try decreasing detail density or detail resolution per patch.
 0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
-6.311817,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-8.078898,Warning,Warning: Session already exists! Continuing will overwrite
-15.40088,Log,Home Position Transformed: (-0.281547 0.9538778 0.3438934)
-15.42,Log,entered trigger
-15.42,Log,entered trigger
-15.87204,Log,Paused Timer Started at: 15.86
-21.3,Log,entered trigger
-21.38,Log,entered trigger
-21.62,Log,entered trigger
-21.97179,Log,Paused Timer Started at: 21.96
-25.47083,Log,Paused Timer Started at: 25.46
-25.52622,Log,Paused Timer Started at: 25.52
-26.07166,Log,Paused Timer Started at: 26.06
-27.77611,Log,Paused Timer Started at: 27.76
-27.82673,Log,Paused Timer Started at: 27.82
-27.9,Log,entered trigger
-30.64,Log,entered trigger
-31.24,Log,entered trigger
-31.56,Log,entered trigger
-31.8,Log,entered trigger
-31.88,Log,entered trigger
-32.02,Log,entered trigger
-32.1,Log,entered trigger
-32.2,Log,entered trigger
-32.32,Log,entered trigger
-32.44,Log,entered trigger
-32.56,Log,entered trigger
-32.64,Log,entered trigger
-32.74,Log,entered trigger
-32.84,Log,entered trigger
-32.94,Log,entered trigger
-33.04,Log,entered trigger
-33.16,Log,entered trigger
-33.3,Log,entered trigger
-33.4,Log,entered trigger
-33.54,Log,entered trigger
-33.64,Log,entered trigger
-34.52757,Log,Paused Timer Started at: 34.52
-37.02885,Log,Paused Timer Started at: 37.02
-49.62924,Log,Paused Timer Started at: 49.62
-51.32339,Log,Paused Timer Started at: 51.32
-51.67846,Log,Paused Timer Started at: 51.66
-58.05638,Log,instruction acceptor: running end and prepare
-58.05638,Log,Audio Clip Played Pitch: 1.015163
-60.13011,Log,Paused Timer Started at: 60.12
-60.97404,Log,Paused Timer Started at: 60.96
-65.02203,Log,Paused Timer Started at: 65.02
-65.18,Log,entered trigger
-65.18,Log,Paused Timer Started at: 65.18
-65.53298,Log,Paused Timer Started at: 65.52
-65.7331,Log,Paused Timer Started at: 65.72
-65.93999,Log,entered trigger
-66.18893,Log,Paused Timer Started at: 66.18
-66.689,Log,Spawned physics sphere O
-68.18,Log,entered trigger
-68.41053,Log,Paused Timer Started at: 68.4
-68.54409,Log,>>  Physics Sphere Metal(Clone)Trigger Is pressed
-69.63399,Log,>>  Physics Sphere Metal(Clone) Trigger Released
-69.63399,Log,Object Thrown with (-0.1 -0.6 1.0): 1.169702
-69.84,Log,Ding! You put the target in the box!
-69.84,Log,Audio Clip Played Pitch: 1.067837
-69.84,Log,Ding! You put the target in the box!
-69.84,Log,Audio Clip Played Pitch: 1.158384
-69.86745,Log,Paused Timer Started at: 69.86
-70.88,Log,entered trigger
-71.13417,Log,Paused Timer Started at: 71.12
-71.17643,Log,Paused Timer Started at: 71.16
-71.33525,Log,Paused Timer Started at: 71.32
-71.3779,Log,Paused Timer Started at: 71.36
-71.52,Log,entered trigger
-71.8672,Log,Spawned physics cube []
-72.58,Log,entered trigger
-72.78943,Log,Paused Timer Started at: 72.78
-72.85605,Log,>>  PhysicsCube Wood(Clone)Trigger Is pressed
-73.77868,Log,>>  PhysicsCube Wood(Clone) Trigger Released
-73.77868,Log,Object Thrown with (0.1 -1.1 1.0): 1.454941
-73.83435,Log,Paused Timer Started at: 73.82
-73.9,Log,Ding! You put the target in the box!
-73.9,Log,Audio Clip Played Pitch: 1.350726
-73.9,Log,Ding! You put the target in the box!
-73.9,Log,Audio Clip Played Pitch: 1.30555
-73.92436,Log,Paused Timer Started at: 73.92
-73.93636,Log,Paused Timer Started at: 73.92
-74.74,Log,entered trigger
-74.92,Log,entered trigger
-74.93411,Log,Paused Timer Started at: 74.92
-75.42311,Log,Spawned physics cube []
-76.08,Log,entered trigger
-76.2,Log,Paused Timer Started at: 76.2
-76.2226,Log,Paused Timer Started at: 76.22
-76.26705,Log,>>  PhysicsCube Wood(Clone)Trigger Is pressed
-77.26745,Log,>>  PhysicsCube Wood(Clone) Trigger Released
-77.26745,Log,Object Thrown with (0.0 -0.6 1.0): 1.205076
-77.3,Log,Paused Timer Started at: 77.3
-77.4,Log,Ding! You put the target in the box!
-77.4,Log,Audio Clip Played Pitch: 1.097485
-77.4,Log,Ding! You put the target in the box!
-77.4,Log,Audio Clip Played Pitch: 0.9697474
-78.2229,Log,Paused Timer Started at: 78.22
-78.25999,Log,entered trigger
-78.62,Log,entered trigger
-78.72313,Log,Spawned physics cube []
-79.16763,Log,Paused Timer Started at: 79.16
-79.2,Log,Paused Timer Started at: 79.2
-79.21194,Log,Paused Timer Started at: 79.2
-79.24538,Log,Paused Timer Started at: 79.24
-79.26281,Log,Paused Timer Started at: 79.25999
-79.3228,Log,Paused Timer Started at: 79.32
-79.40109,Log,Paused Timer Started at: 79.4
-79.52,Log,entered trigger
-79.69006,Log,>>  PhysicsCube Wood(Clone)Trigger Is pressed
-80.55681,Log,>>  PhysicsCube Wood(Clone) Trigger Released
-80.55681,Log,Object Thrown with (0.0 -1.2 1.1): 1.627634
-80.58981,Log,Paused Timer Started at: 80.58
-80.66,Log,Ding! You put the target in the box!
-80.66,Log,Audio Clip Played Pitch: 1.33476
-80.66,Log,Ding! You put the target in the box!
-80.66,Log,Audio Clip Played Pitch: 1.268513
-80.79103,Log,Paused Timer Started at: 80.78
-81.48,Log,entered trigger
-81.58,Log,entered trigger
-81.59557,Log,Paused Timer Started at: 81.58
-82.08926,Log,Spawned physics sphere O
-82.46879,Log,Paused Timer Started at: 82.46
-82.49059,Log,Paused Timer Started at: 82.48
-82.68463,Log,Paused Timer Started at: 82.68
-82.69102,Log,Paused Timer Started at: 82.68
-82.7,Log,entered trigger
-82.73343,Log,Paused Timer Started at: 82.72
-82.74442,Log,Paused Timer Started at: 82.74
-82.85571,Log,>>  Physics Sphere Metal(Clone)Trigger Is pressed
-83.7,Log,Paused Timer Started at: 83.7
-83.73419,Log,Paused Timer Started at: 83.72
-83.74529,Log,Paused Timer Started at: 83.74
-83.74529,Log,>>  Physics Sphere Metal(Clone) Trigger Released
-83.74529,Log,Object Thrown with (0.1 -1.0 1.1): 1.445892
-83.9,Log,Ding! You put the target in the box!
-83.9,Log,Audio Clip Played Pitch: 0.9893988
-83.9,Log,Ding! You put the target in the box!
-83.9,Log,Audio Clip Played Pitch: 1.103823
-84,Log,Paused Timer Started at: 84
-84.09064,Log,Paused Timer Started at: 84.08
-84.39419,Log,Paused Timer Started at: 84.38
-84.54,Log,entered trigger
-84.55012,Log,Paused Timer Started at: 84.54
-84.56725,Log,Paused Timer Started at: 84.56
-84.6,Log,Paused Timer Started at: 84.6
-84.64507,Log,Paused Timer Started at: 84.64
-84.66,Log,entered trigger
-85.14495,Log,Spawned physics sphere O
-85.4,Log,Paused Timer Started at: 85.4
-85.44507,Log,Paused Timer Started at: 85.43999
-85.49063,Log,Paused Timer Started at: 85.48
-85.5447,Log,Paused Timer Started at: 85.54
-85.57083,Log,Paused Timer Started at: 85.56
-85.59051,Log,Paused Timer Started at: 85.58
-85.62,Log,entered trigger
-85.64111,Log,Paused Timer Started at: 85.64
-85.7,Log,Paused Timer Started at: 85.7
-85.79457,Log,>>  Physics Sphere Metal(Clone)Trigger Is pressed
-85.9,Log,Paused Timer Started at: 85.9
-85.95149,Log,Paused Timer Started at: 85.93999
-85.99069,Log,Paused Timer Started at: 85.98
-86.26102,Log,Paused Timer Started at: 86.25999
-86.3,Log,Paused Timer Started at: 86.3
-86.32261,Log,Paused Timer Started at: 86.32
-86.34498,Log,Paused Timer Started at: 86.34
-86.4,Log,Paused Timer Started at: 86.4
-86.42265,Log,Paused Timer Started at: 86.42
-86.4451,Log,Paused Timer Started at: 86.43999
-86.5,Log,Paused Timer Started at: 86.5
-86.52357,Log,Paused Timer Started at: 86.52
-86.54493,Log,Paused Timer Started at: 86.54
-86.57275,Log,Paused Timer Started at: 86.56
-86.62264,Log,Paused Timer Started at: 86.62
-86.64487,Log,Paused Timer Started at: 86.64
-86.71199,Log,>>  Physics Sphere Metal(Clone) Trigger Released
-86.71199,Log,Object Thrown with (-0.1 -0.6 0.8): 1.008028
-86.88,Log,Ding! You put the target in the box!
-86.88,Log,Audio Clip Played Pitch: 0.6246572
-86.88,Log,Ding! You put the target in the box!
-86.88,Log,Audio Clip Played Pitch: 0.900596
-86.97861,Log,Paused Timer Started at: 86.96
-87,Log,Paused Timer Started at: 87
-87.1,Log,Paused Timer Started at: 87.1
-87.12241,Log,Paused Timer Started at: 87.12
-87.14504,Log,Paused Timer Started at: 87.14
-87.1956,Log,Paused Timer Started at: 87.18
-87.24485,Log,Paused Timer Started at: 87.24
-87.39016,Log,Paused Timer Started at: 87.38
-87.49014,Log,Paused Timer Started at: 87.48
-87.52,Log,entered trigger
-87.54512,Log,Paused Timer Started at: 87.54
-87.58,Log,entered trigger
-87.6,Log,Paused Timer Started at: 87.6
-88.10104,Log,Spawned physics cube []
-88.32,Log,entered trigger
-88.49052,Log,Paused Timer Started at: 88.48
-88.54624,Log,Paused Timer Started at: 88.54
-88.55706,Log,Paused Timer Started at: 88.54
-88.59559,Log,Paused Timer Started at: 88.58
-88.62,Log,entered trigger
-88.64497,Log,Paused Timer Started at: 88.64
-88.65591,Log,Paused Timer Started at: 88.64
-88.67878,Log,Paused Timer Started at: 88.66
-88.68917,Log,Paused Timer Started at: 88.68
-88.7,Log,Paused Timer Started at: 88.7
-88.78896,Log,>>  PhysicsCube Wood(Clone)Trigger Is pressed
-88.90616,Log,Paused Timer Started at: 88.9
-89.09227,Log,Paused Timer Started at: 89.07999
-89.1331,Log,Paused Timer Started at: 89.12
-89.14429,Log,Paused Timer Started at: 89.14
-89.15524,Log,Paused Timer Started at: 89.14
-89.2,Log,Paused Timer Started at: 89.2
-89.24435,Log,Paused Timer Started at: 89.24
-89.25566,Log,Paused Timer Started at: 89.24
-89.3,Log,Paused Timer Started at: 89.3
-89.40036,Log,Paused Timer Started at: 89.4
-89.5,Log,Paused Timer Started at: 89.5
-89.60114,Log,Paused Timer Started at: 89.6
-89.74574,Log,Paused Timer Started at: 89.74
-89.9,Log,Paused Timer Started at: 89.9
-89.9455,Log,Paused Timer Started at: 89.93999
-89.95641,Log,Paused Timer Started at: 89.93999
-89.99603,Log,Paused Timer Started at: 89.98
-90.00224,Log,Paused Timer Started at: 90
-90.15034,Log,Paused Timer Started at: 90.14
-90.2,Log,Paused Timer Started at: 90.2
-90.24957,Log,Paused Timer Started at: 90.24
-90.29076,Log,Paused Timer Started at: 90.28
-90.30666,Log,Paused Timer Started at: 90.3
-90.4009,Log,Paused Timer Started at: 90.4
-90.4232,Log,Paused Timer Started at: 90.42
-90.44554,Log,Paused Timer Started at: 90.43999
-90.48985,Log,Paused Timer Started at: 90.48
-90.5,Log,Paused Timer Started at: 90.5
-90.64541,Log,Paused Timer Started at: 90.64
-90.65671,Log,Paused Timer Started at: 90.64
-90.70093,Log,Paused Timer Started at: 90.7
-90.80103,Log,Paused Timer Started at: 90.8
-90.89056,Log,Paused Timer Started at: 90.88
-90.90159,Log,Paused Timer Started at: 90.9
-90.99072,Log,Paused Timer Started at: 90.98
-91.00111,Log,Paused Timer Started at: 91
-91.09221,Log,Paused Timer Started at: 91.07999
-91.14503,Log,Paused Timer Started at: 91.14
-91.20078,Log,Paused Timer Started at: 91.2
-91.29003,Log,Paused Timer Started at: 91.28
-91.39487,Log,Paused Timer Started at: 91.38
-91.4009,Log,Paused Timer Started at: 91.4
-91.45594,Log,Paused Timer Started at: 91.43999
-91.48948,Log,Paused Timer Started at: 91.48
-91.5,Log,Paused Timer Started at: 91.5
-91.55008,Log,Paused Timer Started at: 91.54
-91.60075,Log,Paused Timer Started at: 91.6
-91.69027,Log,Paused Timer Started at: 91.68
-91.73425,Log,Paused Timer Started at: 91.72
-91.74516,Log,Paused Timer Started at: 91.74
-91.9,Log,Paused Timer Started at: 91.9
-91.99016,Log,Paused Timer Started at: 91.98
-92.0014,Log,Paused Timer Started at: 92
-92.08022,Log,Paused Timer Started at: 92.07999
-92.09109,Log,Paused Timer Started at: 92.07999
-92.13494,Log,Paused Timer Started at: 92.12
-92.14587,Log,Paused Timer Started at: 92.14
-92.5,Log,Paused Timer Started at: 92.5
-92.52338,Log,Paused Timer Started at: 92.52
-92.52338,Log,>>  PhysicsCube Wood(Clone) Trigger Released
-92.52338,Log,Object Thrown with (-0.3 -1.2 0.5): 1.343142
-92.54546,Log,Paused Timer Started at: 92.54
-92.55666,Log,Paused Timer Started at: 92.54
-92.58231,Log,Paused Timer Started at: 92.57999
-92.6,Log,Paused Timer Started at: 92.6
-92.62467,Log,Paused Timer Started at: 92.62
-92.69009,Log,Paused Timer Started at: 92.68
-93.14569,Log,Paused Timer Started at: 93.14
-93.19117,Log,Paused Timer Started at: 93.18
-93.24605,Log,Paused Timer Started at: 93.24
-93.25999,Log,Paused Timer Started at: 93.25999
-93.29033,Log,Paused Timer Started at: 93.28
-93.40137,Log,Paused Timer Started at: 93.4
-93.48,Log,entered trigger
-93.50098,Log,Paused Timer Started at: 93.5
-93.53455,Log,>>  PhysicsCube Wood(Clone)Trigger Is pressed
-93.54552,Log,Paused Timer Started at: 93.54
-93.55703,Log,Paused Timer Started at: 93.54
-93.57416,Log,Paused Timer Started at: 93.56
-93.64526,Log,Paused Timer Started at: 93.64
-93.70092,Log,Paused Timer Started at: 93.7
-93.89014,Log,Paused Timer Started at: 93.88
-93.93439,Log,Paused Timer Started at: 93.92
-93.9454,Log,Paused Timer Started at: 93.93999
-94,Log,Paused Timer Started at: 94
-94.10115,Log,Paused Timer Started at: 94.1
-94.19485,Log,Paused Timer Started at: 94.18
-94.20127,Log,Paused Timer Started at: 94.2
-94.3,Log,Paused Timer Started at: 94.3
-94.35062,Log,Paused Timer Started at: 94.34
-94.4,Log,Paused Timer Started at: 94.4
-94.4454,Log,Paused Timer Started at: 94.43999
-94.48993,Log,Paused Timer Started at: 94.48
-94.5,Log,Paused Timer Started at: 94.5
-94.54549,Log,Paused Timer Started at: 94.54
-94.55651,Log,Paused Timer Started at: 94.54
-94.6,Log,Paused Timer Started at: 94.6
-94.69001,Log,Paused Timer Started at: 94.68
-94.70097,Log,Paused Timer Started at: 94.7
-94.79011,Log,Paused Timer Started at: 94.78
-94.80123,Log,Paused Timer Started at: 94.8
-94.95738,Log,Paused Timer Started at: 94.93999
-94.97324,Log,Paused Timer Started at: 94.96
-94.99016,Log,Paused Timer Started at: 94.98
-95.00137,Log,Paused Timer Started at: 95
-95.09003,Log,Paused Timer Started at: 95.07999
-95.10123,Log,Paused Timer Started at: 95.1
-95.17921,Log,>>  PhysicsCube Wood(Clone) Trigger Released
-95.17921,Log,Object Thrown with (0.2 -2.4 2.9): 3.744553
-95.1901,Log,Paused Timer Started at: 95.18
-95.20118,Log,Paused Timer Started at: 95.2
-95.25695,Log,Paused Timer Started at: 95.24
-95.28,Log,Ding! You put the target in the box!
-95.28,Log,Audio Clip Played Pitch: 0.8090649
-95.28,Log,Ding! You put the target in the box!
-95.28,Log,Audio Clip Played Pitch: 1.264602
-95.28504,Log,Paused Timer Started at: 95.28
-95.53461,Log,Paused Timer Started at: 95.52
-95.54529,Log,Paused Timer Started at: 95.54
-95.59577,Log,Paused Timer Started at: 95.57999
-95.64502,Log,Paused Timer Started at: 95.64
-95.6562,Log,Paused Timer Started at: 95.64
-95.7,Log,Paused Timer Started at: 95.7
-95.75081,Log,Paused Timer Started at: 95.74
-95.80053,Log,Paused Timer Started at: 95.8
-95.90588,Log,Paused Timer Started at: 95.9
-95.95641,Log,Paused Timer Started at: 95.93999
-96,Log,Paused Timer Started at: 96
-96.04569,Log,Paused Timer Started at: 96.04
-96.09064,Log,Paused Timer Started at: 96.07999
-96.37225,Log,Paused Timer Started at: 96.36
-96.40088,Log,Paused Timer Started at: 96.4
-96.48,Log,entered trigger
-96.5006,Log,Paused Timer Started at: 96.5
-96.54512,Log,Paused Timer Started at: 96.54
-96.56,Log,entered trigger
-96.58935,Log,Paused Timer Started at: 96.57999
-97.08911,Log,Spawned physics sphere O
-97.3892,Log,Paused Timer Started at: 97.38
-97.4,Log,Paused Timer Started at: 97.4
-97.4452,Log,Paused Timer Started at: 97.43999
-97.46214,Log,Paused Timer Started at: 97.46
-97.5,Log,Paused Timer Started at: 97.5
-97.54,Log,entered trigger
-97.54426,Log,Paused Timer Started at: 97.54
-97.77346,Log,>>  Physics Sphere Metal(Clone)Trigger Is pressed
-97.94501,Log,Paused Timer Started at: 97.93999
-97.99087,Log,Paused Timer Started at: 97.98
-98.04538,Log,Paused Timer Started at: 98.04
-98.09096,Log,Paused Timer Started at: 98.07999
-98.14482,Log,Paused Timer Started at: 98.14
-98.2,Log,Paused Timer Started at: 98.2
-98.21178,Log,Paused Timer Started at: 98.2
-98.24505,Log,Paused Timer Started at: 98.24
-98.3,Log,Paused Timer Started at: 98.3
-98.34506,Log,Paused Timer Started at: 98.34
-98.36755,Log,Paused Timer Started at: 98.36
-98.39459,Log,Paused Timer Started at: 98.38
-98.44531,Log,Paused Timer Started at: 98.43999
-98.49004,Log,Paused Timer Started at: 98.48
-98.50079,Log,>>  Physics Sphere Metal(Clone) Trigger Released
-98.50079,Log,Object Thrown with (-0.7 -0.6 2.0): 2.223087
-98.55122,Log,Paused Timer Started at: 98.54
-98.6,Log,Paused Timer Started at: 98.6
-98.72,Log,Ding! You put the target in the box!
-98.72,Log,Audio Clip Played Pitch: 1.294396
-98.72,Log,Ding! You put the target in the box!
-98.72,Log,Audio Clip Played Pitch: 0.5092444
-98.88441,Log,Paused Timer Started at: 98.88
-98.89192,Log,Paused Timer Started at: 98.88
-98.94498,Log,Paused Timer Started at: 98.93999
-99,Log,Paused Timer Started at: 99
-99.01694,Log,Paused Timer Started at: 99
-99.04455,Log,Paused Timer Started at: 99.04
-99.1,Log,Paused Timer Started at: 99.1
-99.11125,Log,Paused Timer Started at: 99.1
-99.14491,Log,Paused Timer Started at: 99.14
-99.2,Log,Paused Timer Started at: 99.2
-99.2111,Log,Paused Timer Started at: 99.2
-99.24443,Log,Paused Timer Started at: 99.24
-99.26661,Log,Paused Timer Started at: 99.25999
-99.3,Log,Paused Timer Started at: 99.3
-99.32,Log,entered trigger
-99.52,Log,entered trigger
-99.99852,Log,Paused Timer Started at: 99.98
-100.0319,Log,Paused Timer Started at: 100.02
-100.0866,Log,Paused Timer Started at: 100.08
-100.0987,Log,Paused Timer Started at: 100.08
-100.12,Log,Paused Timer Started at: 100.12
-100.1657,Log,Spawned physics cube []
-100.7703,Log,Paused Timer Started at: 100.76
-100.8147,Log,Paused Timer Started at: 100.8
-100.82,Log,entered trigger
-100.8371,Log,Paused Timer Started at: 100.82
-101.0097,Log,>>  PhysicsCube Wood(Clone)Trigger Is pressed
-101.1487,Log,Paused Timer Started at: 101.14
-101.1663,Log,Paused Timer Started at: 101.16
-101.2927,Log,Paused Timer Started at: 101.28
-101.3483,Log,Paused Timer Started at: 101.34
-101.3817,Log,Paused Timer Started at: 101.38
-101.3928,Log,Paused Timer Started at: 101.38
-101.4488,Log,Paused Timer Started at: 101.44
-101.476,Log,Paused Timer Started at: 101.46
-101.5152,Log,Paused Timer Started at: 101.5
-101.5372,Log,Paused Timer Started at: 101.52
-101.548,Log,Paused Timer Started at: 101.54
-101.5703,Log,Paused Timer Started at: 101.56
-101.6153,Log,Paused Timer Started at: 101.6
-101.6315,Log,Paused Timer Started at: 101.62
-101.6487,Log,Paused Timer Started at: 101.64
-101.6716,Log,Paused Timer Started at: 101.66
-101.7154,Log,Paused Timer Started at: 101.7
-101.7374,Log,Paused Timer Started at: 101.72
-101.7486,Log,Paused Timer Started at: 101.74
-101.793,Log,Paused Timer Started at: 101.78
-101.8155,Log,Paused Timer Started at: 101.8
-101.8375,Log,Paused Timer Started at: 101.82
-101.8488,Log,Paused Timer Started at: 101.84
-101.8932,Log,Paused Timer Started at: 101.88
-101.9157,Log,Paused Timer Started at: 101.9
-101.94,Log,Paused Timer Started at: 101.94
-102.427,Log,>>  PhysicsCube Wood(Clone) Trigger Released
-102.427,Log,Object Thrown with (-0.3 -0.5 -0.2): 0.5993348
-102.46,Log,Ding! You put the target in the box!
-102.46,Log,Audio Clip Played Pitch: 0.6868234
-102.46,Log,Ding! You put the target in the box!
-102.46,Log,Audio Clip Played Pitch: 0.7998274
-102.4605,Log,Paused Timer Started at: 102.46
-102.8159,Log,Paused Timer Started at: 102.8
-102.8383,Log,Paused Timer Started at: 102.82
-102.8491,Log,Paused Timer Started at: 102.84
-102.8938,Log,Paused Timer Started at: 102.88
-102.9499,Log,Paused Timer Started at: 102.94
-102.9611,Log,Paused Timer Started at: 102.96
-102.9947,Log,Paused Timer Started at: 102.98
-103.0324,Log,Paused Timer Started at: 103.02
-103.0602,Log,Paused Timer Started at: 103.06
-103.0937,Log,Paused Timer Started at: 103.08
-103.1495,Log,Paused Timer Started at: 103.14
-103.1603,Log,Paused Timer Started at: 103.16
-103.1953,Log,Paused Timer Started at: 103.18
-103.2491,Log,Paused Timer Started at: 103.24
-103.26,Log,entered trigger
-103.6,Log,entered trigger
-103.7503,Log,Spawned physics cube []
-104.227,Log,Paused Timer Started at: 104.22
-104.238,Log,Paused Timer Started at: 104.22
-104.2491,Log,Paused Timer Started at: 104.24
-104.2939,Log,Paused Timer Started at: 104.28
-104.327,Log,Paused Timer Started at: 104.32
-104.3383,Log,Paused Timer Started at: 104.32
-104.3492,Log,Paused Timer Started at: 104.34
-104.38,Log,entered trigger
-104.4495,Log,>>  PhysicsCube Wood(Clone)Trigger Is pressed
-104.538,Log,Paused Timer Started at: 104.52
-104.5492,Log,Paused Timer Started at: 104.54
-104.5603,Log,Paused Timer Started at: 104.56
-104.572,Log,Paused Timer Started at: 104.56
-104.5958,Log,Paused Timer Started at: 104.58
-104.6937,Log,Paused Timer Started at: 104.68
-104.7448,Log,Paused Timer Started at: 104.74
-104.7942,Log,Paused Timer Started at: 104.78
-104.8496,Log,Paused Timer Started at: 104.84
-104.8607,Log,Paused Timer Started at: 104.86
-104.872,Log,Paused Timer Started at: 104.86
-104.8994,Log,Paused Timer Started at: 104.88
-104.92,Log,Paused Timer Started at: 104.92
-104.9398,Log,Paused Timer Started at: 104.92
-104.951,Log,Paused Timer Started at: 104.94
-104.9837,Log,Paused Timer Started at: 104.98
-104.9947,Log,Paused Timer Started at: 104.98
-105.028,Log,Paused Timer Started at: 105.02
-105.0392,Log,Paused Timer Started at: 105.02
-105.2497,Log,Paused Timer Started at: 105.24
-105.2947,Log,Paused Timer Started at: 105.28
-105.3326,Log,Paused Timer Started at: 105.32
-105.3511,Log,Paused Timer Started at: 105.34
-105.384,Log,Paused Timer Started at: 105.38
-105.3958,Log,Paused Timer Started at: 105.38
-105.428,Log,Paused Timer Started at: 105.42
-105.4392,Log,Paused Timer Started at: 105.42
-105.4502,Log,Paused Timer Started at: 105.44
-105.4833,Log,Paused Timer Started at: 105.48
-105.4945,Log,Paused Timer Started at: 105.48
-105.5389,Log,Paused Timer Started at: 105.52
-105.55,Log,Paused Timer Started at: 105.54
-105.5944,Log,Paused Timer Started at: 105.58
-105.6278,Log,Paused Timer Started at: 105.62
-105.6389,Log,Paused Timer Started at: 105.62
-105.6505,Log,Paused Timer Started at: 105.64
-105.6834,Log,Paused Timer Started at: 105.68
-105.8407,Log,>>  PhysicsCube Wood(Clone) Trigger Released
-105.8407,Log,Object Thrown with (0.0 -0.2 -0.3): 0.3300322
-105.8836,Log,Paused Timer Started at: 105.88
-105.98,Log,Ding! You put the target in the box!
-105.98,Log,Audio Clip Played Pitch: 0.6939889
-105.98,Log,Ding! You put the target in the box!
-105.98,Log,Audio Clip Played Pitch: 0.5464104
-106.0397,Log,Paused Timer Started at: 106.02
-106.0522,Log,Paused Timer Started at: 106.04
-106.0946,Log,Paused Timer Started at: 106.08
-106.1455,Log,Paused Timer Started at: 106.14
-106.1934,Log,Paused Timer Started at: 106.18
-106.2493,Log,Paused Timer Started at: 106.24
-106.2603,Log,Paused Timer Started at: 106.26
-106.2715,Log,Paused Timer Started at: 106.26
-106.3,Log,Paused Timer Started at: 106.3
-106.3497,Log,Paused Timer Started at: 106.34
-106.3604,Log,Paused Timer Started at: 106.36
-106.3719,Log,Paused Timer Started at: 106.36
-106.3939,Log,Paused Timer Started at: 106.38
-106.4545,Log,Paused Timer Started at: 106.44
-106.4938,Log,Paused Timer Started at: 106.48
-106.5,Log,entered trigger
-106.5272,Log,Paused Timer Started at: 106.52
-106.5383,Log,Paused Timer Started at: 106.52
-106.5497,Log,Paused Timer Started at: 106.54
-106.9,Log,entered trigger
-107.0508,Log,Spawned physics sphere O
-107.395,Log,Paused Timer Started at: 107.38
-107.4052,Log,Paused Timer Started at: 107.4
-107.4308,Log,Paused Timer Started at: 107.42
-107.46,Log,Paused Timer Started at: 107.46
-107.4718,Log,Paused Timer Started at: 107.46
-107.4942,Log,Paused Timer Started at: 107.48
-107.5273,Log,Paused Timer Started at: 107.52
-107.54,Log,Paused Timer Started at: 107.54
-107.56,Log,entered trigger
-107.5718,Log,Paused Timer Started at: 107.56
-107.5829,Log,Paused Timer Started at: 107.58
-107.672,Log,>>  Physics Sphere Metal(Clone)Trigger Is pressed
-107.7394,Log,Paused Timer Started at: 107.72
-107.7504,Log,Paused Timer Started at: 107.74
-107.7949,Log,Paused Timer Started at: 107.78
-107.8056,Log,Paused Timer Started at: 107.8
-107.8434,Log,Paused Timer Started at: 107.84
-107.896,Log,Paused Timer Started at: 107.88
-107.9066,Log,Paused Timer Started at: 107.9
-107.9502,Log,Paused Timer Started at: 107.94
-107.9949,Log,Paused Timer Started at: 107.98
-108.0115,Log,Paused Timer Started at: 108
-108.0496,Log,Paused Timer Started at: 108.04
-108.06,Log,Paused Timer Started at: 108.06
-108.0728,Log,Paused Timer Started at: 108.06
-108.0939,Log,Paused Timer Started at: 108.08
-108.1274,Log,Paused Timer Started at: 108.12
-108.1384,Log,Paused Timer Started at: 108.12
-108.1499,Log,Paused Timer Started at: 108.14
-108.194,Log,Paused Timer Started at: 108.18
-108.2272,Log,Paused Timer Started at: 108.22
-108.2384,Log,Paused Timer Started at: 108.22
-108.2495,Log,Paused Timer Started at: 108.24
-108.2939,Log,Paused Timer Started at: 108.28
-108.3385,Log,Paused Timer Started at: 108.32
-108.3491,Log,Paused Timer Started at: 108.34
-108.3937,Log,Paused Timer Started at: 108.38
-108.4272,Log,Paused Timer Started at: 108.42
-108.4381,Log,Paused Timer Started at: 108.42
-108.4494,Log,Paused Timer Started at: 108.44
-108.5384,Log,Paused Timer Started at: 108.52
-108.5498,Log,Paused Timer Started at: 108.54
-108.5939,Log,Paused Timer Started at: 108.58
-108.6326,Log,Paused Timer Started at: 108.62
-108.7724,Log,>>  Physics Sphere Metal(Clone) Trigger Released
-108.7724,Log,Object Thrown with (-0.2 -0.7 0.1): 0.7664925
-108.8053,Log,Paused Timer Started at: 108.8
-108.9,Log,Ding! You put the target in the box!
-108.9,Log,Audio Clip Played Pitch: 1.093322
-108.9,Log,Ding! You put the target in the box!
-108.9,Log,Audio Clip Played Pitch: 1.127491
-109.0996,Log,Paused Timer Started at: 109.08
-109.1058,Log,Paused Timer Started at: 109.1
-109.1493,Log,Paused Timer Started at: 109.14
-109.16,Log,Paused Timer Started at: 109.16
-109.1713,Log,Paused Timer Started at: 109.16
-109.1938,Log,Paused Timer Started at: 109.18
-109.205,Log,Paused Timer Started at: 109.2
-109.2547,Log,Paused Timer Started at: 109.24
-109.2941,Log,Paused Timer Started at: 109.28
-109.305,Log,Paused Timer Started at: 109.3
-109.3505,Log,Paused Timer Started at: 109.34
-109.3937,Log,Paused Timer Started at: 109.38
-109.4269,Log,Paused Timer Started at: 109.42
-109.438,Log,Paused Timer Started at: 109.42
-109.48,Log,entered trigger
-109.7,Log,entered trigger
-109.9276,Log,Spawned physics cube []
-110.2829,Log,Paused Timer Started at: 110.28
-110.2941,Log,Paused Timer Started at: 110.28
-110.3052,Log,Paused Timer Started at: 110.3
-110.34,Log,Paused Timer Started at: 110.34
-110.3832,Log,Paused Timer Started at: 110.38
-110.4,Log,entered trigger
-110.4286,Log,Paused Timer Started at: 110.42
-110.4387,Log,Paused Timer Started at: 110.42
-110.5393,Log,Paused Timer Started at: 110.52
-110.5725,Log,>>  PhysicsCube Wood(Clone)Trigger Is pressed
-110.6279,Log,Paused Timer Started at: 110.62
-110.6393,Log,Paused Timer Started at: 110.62
-110.6576,Log,Paused Timer Started at: 110.64
-110.6842,Log,Paused Timer Started at: 110.68
-110.6952,Log,Paused Timer Started at: 110.68
-110.7063,Log,Paused Timer Started at: 110.7
-110.7392,Log,Paused Timer Started at: 110.72
-110.7506,Log,Paused Timer Started at: 110.74
-110.7835,Log,Paused Timer Started at: 110.78
-110.7952,Log,Paused Timer Started at: 110.78
-110.8137,Log,Paused Timer Started at: 110.8
-110.84,Log,Paused Timer Started at: 110.84
-110.8713,Log,Paused Timer Started at: 110.86
-110.8823,Log,Paused Timer Started at: 110.88
-110.8935,Log,Paused Timer Started at: 110.88
-110.9047,Log,Paused Timer Started at: 110.9
-110.9382,Log,Paused Timer Started at: 110.92
-110.9496,Log,Paused Timer Started at: 110.94
-110.96,Log,Paused Timer Started at: 110.96
-110.9719,Log,Paused Timer Started at: 110.96
-110.9827,Log,Paused Timer Started at: 110.98
-110.9939,Log,Paused Timer Started at: 110.98
-111.0057,Log,Paused Timer Started at: 111
-111.0271,Log,Paused Timer Started at: 111.02
-111.0383,Log,Paused Timer Started at: 111.02
-111.1498,Log,Paused Timer Started at: 111.14
-111.2271,Log,Paused Timer Started at: 111.22
-111.2384,Log,Paused Timer Started at: 111.22
-111.2494,Log,Paused Timer Started at: 111.24
-111.26,Log,Paused Timer Started at: 111.26
-111.2766,Log,Paused Timer Started at: 111.26
-111.2828,Log,Paused Timer Started at: 111.28
-111.294,Log,Paused Timer Started at: 111.28
-111.3051,Log,Paused Timer Started at: 111.3
-111.3385,Log,Paused Timer Started at: 111.32
-111.4328,Log,Paused Timer Started at: 111.42
-111.6838,Log,>>  PhysicsCube Wood(Clone) Trigger Released
-111.6838,Log,Object Thrown with (-0.2 -0.4 0.1): 0.4269231
-111.7,Log,Ding! You put the target in the box!
-111.7,Log,Audio Clip Played Pitch: 0.6026818
-111.7286,Log,Paused Timer Started at: 111.72
-112.0277,Log,Paused Timer Started at: 112.02
-112.0394,Log,Paused Timer Started at: 112.02
-112.0552,Log,Paused Timer Started at: 112.04
-112.0833,Log,Paused Timer Started at: 112.08
-112.0944,Log,Paused Timer Started at: 112.08
-112.1061,Log,Paused Timer Started at: 112.1
-112.1388,Log,Paused Timer Started at: 112.12
-112.1509,Log,Paused Timer Started at: 112.14
-112.1834,Log,Paused Timer Started at: 112.18
-112.1948,Log,Paused Timer Started at: 112.18
-112.2111,Log,Paused Timer Started at: 112.2
-112.2388,Log,Paused Timer Started at: 112.22
-112.2502,Log,Paused Timer Started at: 112.24
-112.2863,Log,Paused Timer Started at: 112.28
-112.2943,Log,Paused Timer Started at: 112.28
-112.3049,Log,Paused Timer Started at: 112.3
-112.3391,Log,Paused Timer Started at: 112.32
-112.4277,Log,Paused Timer Started at: 112.42
-112.439,Log,Paused Timer Started at: 112.42
-112.4832,Log,Paused Timer Started at: 112.48
-112.58,Log,entered trigger
-112.84,Log,entered trigger
-112.96,Log,entered trigger
-112.9837,Log,Spawned physics sphere O
-113.3387,Log,Paused Timer Started at: 113.32
-113.4287,Log,Paused Timer Started at: 113.42
-113.4397,Log,Paused Timer Started at: 113.42
-113.4835,Log,Paused Timer Started at: 113.48
-113.52,Log,entered trigger
-113.6388,Log,>>  Physics Sphere Metal(Clone)Trigger Is pressed
-113.7288,Log,Paused Timer Started at: 113.72
-113.739,Log,Paused Timer Started at: 113.72
-113.7858,Log,Paused Timer Started at: 113.78
-113.794,Log,Paused Timer Started at: 113.78
-113.8048,Log,Paused Timer Started at: 113.8
-113.8384,Log,Paused Timer Started at: 113.82
-113.8493,Log,Paused Timer Started at: 113.84
-113.86,Log,Paused Timer Started at: 113.86
-113.8716,Log,Paused Timer Started at: 113.86
-113.883,Log,Paused Timer Started at: 113.88
-113.894,Log,Paused Timer Started at: 113.88
-113.9052,Log,Paused Timer Started at: 113.9
-113.9334,Log,Paused Timer Started at: 113.92
-113.96,Log,Paused Timer Started at: 113.96
-113.9718,Log,Paused Timer Started at: 113.96
-113.9829,Log,Paused Timer Started at: 113.98
-113.9942,Log,Paused Timer Started at: 113.98
-114.0053,Log,Paused Timer Started at: 114
-114.0386,Log,Paused Timer Started at: 114.02
-114.0498,Log,Paused Timer Started at: 114.04
-114.06,Log,Paused Timer Started at: 114.06
-114.1391,Log,Paused Timer Started at: 114.12
-114.5284,Log,Paused Timer Started at: 114.52
-114.5396,Log,Paused Timer Started at: 114.52
-114.5834,Log,Paused Timer Started at: 114.58
-114.7391,Log,>>  Physics Sphere Metal(Clone) Trigger Released
-114.7391,Log,Object Thrown with (-0.2 -0.3 0.8): 0.8411108
-114.7722,Log,Paused Timer Started at: 114.76
-114.78,Log,entered trigger
-114.88,Log,Ding! You put the target in the box!
-114.88,Log,Audio Clip Played Pitch: 1.346921
-114.88,Log,Ding! You put the target in the box!
-114.88,Log,Audio Clip Played Pitch: 0.8573641
-114.92,Log,entered trigger
-114.9302,Log,Paused Timer Started at: 114.92
-114.9855,Log,Paused Timer Started at: 114.98
-115.0522,Log,Paused Timer Started at: 115.04
-115.0845,Log,Paused Timer Started at: 115.08
-115.0956,Log,Paused Timer Started at: 115.08
-115.1064,Log,Paused Timer Started at: 115.1
-115.1393,Log,Paused Timer Started at: 115.12
-115.1502,Log,Paused Timer Started at: 115.14
-115.1941,Log,Paused Timer Started at: 115.18
-115.2391,Log,Paused Timer Started at: 115.22
-115.2498,Log,Paused Timer Started at: 115.24
-115.26,Log,Paused Timer Started at: 115.26
-115.2717,Log,Paused Timer Started at: 115.26
-115.2829,Log,Paused Timer Started at: 115.28
-115.2939,Log,Paused Timer Started at: 115.28
-115.3051,Log,Paused Timer Started at: 115.3
-115.3333,Log,Paused Timer Started at: 115.32
-115.36,Log,Paused Timer Started at: 115.36
-115.3712,Log,Paused Timer Started at: 115.36
-115.3824,Log,Paused Timer Started at: 115.38
-115.3936,Log,Paused Timer Started at: 115.38
-115.4046,Log,Paused Timer Started at: 115.4
-115.4269,Log,Paused Timer Started at: 115.42
-115.4384,Log,Paused Timer Started at: 115.42
-115.44,Log,entered trigger
-115.54,Log,entered trigger
-116.24,Log,entered trigger
-116.2498,Log,Spawned physics sphere O
-116.6828,Log,Paused Timer Started at: 116.68
-116.76,Log,Paused Timer Started at: 116.76
-116.7827,Log,Paused Timer Started at: 116.78
-116.8,Log,entered trigger
-116.8385,Log,Paused Timer Started at: 116.82
-117.0824,Log,>>  Physics Sphere Metal(Clone)Trigger Is pressed
-117.2,Log,Paused Timer Started at: 117.2
-117.2382,Log,Paused Timer Started at: 117.22
-117.2489,Log,Paused Timer Started at: 117.24
-117.2827,Log,Paused Timer Started at: 117.28
-117.2937,Log,Paused Timer Started at: 117.28
-117.3389,Log,Paused Timer Started at: 117.32
-117.3555,Log,Paused Timer Started at: 117.34
-117.3829,Log,Paused Timer Started at: 117.38
-117.4052,Log,Paused Timer Started at: 117.4
-117.4384,Log,Paused Timer Started at: 117.42
-117.4496,Log,Paused Timer Started at: 117.44
-117.4826,Log,Paused Timer Started at: 117.48
-117.4942,Log,Paused Timer Started at: 117.48
-117.5384,Log,Paused Timer Started at: 117.52
-117.6382,Log,Paused Timer Started at: 117.62
-117.8391,Log,Paused Timer Started at: 117.82
-117.8495,Log,Paused Timer Started at: 117.84
-117.9383,Log,Paused Timer Started at: 117.92
-118.1724,Log,>>  Physics Sphere Metal(Clone) Trigger Released
-118.1724,Log,Object Thrown with (-0.4 -0.2 0.2): 0.5087245
-118.2058,Log,Paused Timer Started at: 118.2
-118.26,Log,Ding! You put the target in the box!
-118.26,Log,Audio Clip Played Pitch: 0.6396365
-118.26,Log,Ding! You put the target in the box!
-118.26,Log,Audio Clip Played Pitch: 1.145625
-118.5835,Log,Paused Timer Started at: 118.58
-118.6388,Log,Paused Timer Started at: 118.62
-118.6957,Log,Paused Timer Started at: 118.68
-118.7396,Log,Paused Timer Started at: 118.72
-118.7546,Log,Paused Timer Started at: 118.74
-118.7829,Log,Paused Timer Started at: 118.78
-118.7975,Log,Paused Timer Started at: 118.78
-118.839,Log,Paused Timer Started at: 118.82
-118.8493,Log,Paused Timer Started at: 118.84
-118.883,Log,Paused Timer Started at: 118.88
-118.8941,Log,Paused Timer Started at: 118.88
-118.9386,Log,Paused Timer Started at: 118.92
-118.9496,Log,Paused Timer Started at: 118.94
-119.2,Log,entered trigger
-119.48,Log,entered trigger
-120.22,Log,entered trigger
-121.0897,Log,Paused Timer Started at: 121.08
-122.5979,Log,Paused Timer Started at: 122.58
+8.165751,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+9.679637,Warning,Warning: Session already exists! Continuing will overwrite
+83.31827,Log,Random Gaussian Numbers: u1 0.2318494 u2 0.01206863 stdNorm 0.0853597101527441
+83.31827,Log,Trigger pressed >> Fireing shot!
+122.0197,Log,>> Shot Reloaded
+130.3515,Log,Random Gaussian Numbers: u1 0.336843 u2 0.1599832 stdNorm 0.820788455111803
+130.3515,Log,Trigger pressed >> Fireing shot!
+132.8512,Log,>> Shot Reloaded
+135.1621,Log,Random Gaussian Numbers: u1 0.002510309 u2 0.4821302 stdNorm 0.255511517843109
+135.1621,Log,Trigger pressed >> Fireing shot!
+137.2624,Log,>> Shot Reloaded
+139.7072,Log,Random Gaussian Numbers: u1 0.8922157 u2 0.7238818 stdNorm -0.310509880589208
+139.7072,Log,Trigger pressed >> Fireing shot!
+141.6736,Log,>> Shot Reloaded
+143.2403,Log,Random Gaussian Numbers: u1 0.8121821 u2 0.5653477 stdNorm -0.169671683078841
+143.2403,Log,Trigger pressed >> Fireing shot!
+144.9516,Log,>> Shot Reloaded
+145.996,Log,Random Gaussian Numbers: u1 0.6161878 u2 0.2166981 stdNorm 0.634371582142364
+145.996,Log,Trigger pressed >> Fireing shot!
+153.1855,Log,>> Shot Reloaded
+154.3956,Log,Random Gaussian Numbers: u1 0.8378037 u2 0.3660566 stdNorm 0.292364919609835
+154.3956,Log,Trigger pressed >> Fireing shot!
+157.0958,Log,>> Shot Reloaded
+157.6524,Log,Random Gaussian Numbers: u1 0.2406703 u2 0.05869985 stdNorm 0.400993814032233
+157.6524,Log,Trigger pressed >> Fireing shot!
+161.4624,Log,>> Shot Reloaded
+162.6305,Log,Random Gaussian Numbers: u1 0.7384194 u2 0.4115173 stdNorm 0.27085286488342
+162.6305,Log,Trigger pressed >> Fireing shot!
+163.5847,Log,>> Shot Reloaded
+164.0953,Log,Random Gaussian Numbers: u1 0.5998392 u2 0.8289777 stdNorm -0.585916189683857
+164.0953,Log,Trigger pressed >> Fireing shot!
+165.0513,Log,>> Shot Reloaded
+165.4628,Log,Random Gaussian Numbers: u1 0.4478102 u2 0.0225836 stdNorm 0.118136459747912
+165.4628,Log,Trigger pressed >> Fireing shot!
+166.4631,Log,>> Shot Reloaded
+167.0734,Log,Random Gaussian Numbers: u1 0.6164296 u2 0.5879688 stdNorm -0.340338251810806
+167.0734,Log,Trigger pressed >> Fireing shot!
+168.4414,Log,>> Shot Reloaded
+169.0616,Log,Random Gaussian Numbers: u1 0.9958831 u2 0.8128197 stdNorm -0.0552576740843795
+169.0616,Log,Trigger pressed >> Fireing shot!
+170.1732,Log,>> Shot Reloaded
+170.5178,Log,Random Gaussian Numbers: u1 0.9277934 u2 0.7281002 stdNorm -0.252730434338751
+170.5178,Log,Trigger pressed >> Fireing shot!
+173.7073,Log,>> Shot Reloaded
+174.0513,Log,Random Gaussian Numbers: u1 0.4698619 u2 0.7490145 stdNorm -0.809959482433854
+174.0513,Log,Trigger pressed >> Fireing shot!
+177.1628,Log,>> Shot Reloaded
+177.7608,Log,Random Gaussian Numbers: u1 0.7621641 u2 0.5264679 stdNorm -0.0804010805571451
+177.7608,Log,Trigger pressed >> Fireing shot!
+179.0064,Log,>> Shot Reloaded
+179.3287,Log,Random Gaussian Numbers: u1 0.8612176 u2 0.449095 stdNorm 0.113267316717298
+179.3287,Log,Trigger pressed >> Fireing shot!
+180.3629,Log,>> Shot Reloaded
+180.6519,Log,Random Gaussian Numbers: u1 0.850485 u2 0.110171 stdNorm 0.239379752134852
+180.6519,Log,Trigger pressed >> Fireing shot!
+181.6884,Log,>> Shot Reloaded
+185.2519,Log,Random Gaussian Numbers: u1 0.7514915 u2 0.3296555 stdNorm 0.437049195897075
+185.2519,Log,Trigger pressed >> Fireing shot!
+186.5293,Log,>> Shot Reloaded
+188.8182,Log,Random Gaussian Numbers: u1 0.773122 u2 0.6251017 stdNorm -0.334506860976747
+188.8182,Log,Trigger pressed >> Fireing shot!
+189.6847,Log,>> Shot Reloaded
+190.4851,Log,Random Gaussian Numbers: u1 0.5681952 u2 0.8836561 stdNorm -0.467814196900179
+190.4851,Log,Trigger pressed >> Fireing shot!
+191.4847,Log,>> Shot Reloaded
+192.3293,Log,Random Gaussian Numbers: u1 0.468565 u2 0.1213654 stdNorm 0.560533954214065
+192.3293,Log,Trigger pressed >> Fireing shot!
+193.2404,Log,>> Shot Reloaded
+193.5963,Log,Random Gaussian Numbers: u1 0.6784999 u2 0.8769846 stdNorm -0.405277207635919
+193.5963,Log,Trigger pressed >> Fireing shot!
+194.8515,Log,>> Shot Reloaded
+195.1519,Log,Random Gaussian Numbers: u1 0.7251673 u2 0.1342731 stdNorm 0.394699861543131
+195.1519,Log,Trigger pressed >> Fireing shot!
+195.8961,Log,>> Shot Reloaded
+196.1299,Log,Random Gaussian Numbers: u1 0.04558718 u2 0.5761896 stdNorm -0.754421719050072
+196.1299,Log,Trigger pressed >> Fireing shot!
+197.4071,Log,>> Shot Reloaded
+197.807,Log,Random Gaussian Numbers: u1 0.1242226 u2 0.02164292 stdNorm 0.182468296773131
+197.807,Log,Trigger pressed >> Fireing shot!
+198.9747,Log,>> Shot Reloaded
+199.585,Log,Random Gaussian Numbers: u1 0.8031204 u2 0.3786405 stdNorm 0.30143788985167
+199.585,Log,Trigger pressed >> Fireing shot!
+200.6736,Log,>> Shot Reloaded
+201.2182,Log,Random Gaussian Numbers: u1 0.3249324 u2 0.3435106 stdNorm 0.822430449136856
+201.2182,Log,Trigger pressed >> Fireing shot!
+202.43,Log,>> Shot Reloaded
+202.6423,Log,Random Gaussian Numbers: u1 0.863629 u2 0.09945142 stdNorm 0.208757836485095
+202.6423,Log,Trigger pressed >> Fireing shot!
+204.2222,Log,>> Shot Reloaded
+205.2073,Log,Random Gaussian Numbers: u1 0.2167625 u2 0.6134457 stdNorm -0.75361923283684
+205.2073,Log,Trigger pressed >> Fireing shot!
+206.1287,Log,>> Shot Reloaded
+206.6305,Log,Random Gaussian Numbers: u1 0.3246215 u2 0.6946108 stdNorm -0.929293040382014
+206.6305,Log,Trigger pressed >> Fireing shot!
+207.7943,Log,>> Shot Reloaded
+208.3396,Log,Random Gaussian Numbers: u1 0.2705979 u2 0.5610788 stdNorm -0.398953882741239
+208.3396,Log,Trigger pressed >> Fireing shot!
+209.7841,Log,>> Shot Reloaded
+210.1403,Log,Random Gaussian Numbers: u1 0.8556899 u2 0.4331327 stdNorm 0.150071221721826
+210.1403,Log,Trigger pressed >> Fireing shot!
+211.8181,Log,>> Shot Reloaded
+212.1225,Log,Random Gaussian Numbers: u1 0.09668875 u2 0.7930667 stdNorm -1.37268091401211
+212.1225,Log,Trigger pressed >> Fireing shot!
+212.9743,Log,>> Shot Reloaded
+213.0629,Log,Random Gaussian Numbers: u1 0.3455343 u2 0.2252008 stdNorm 0.949098663968108
+213.0629,Log,Trigger pressed >> Fireing shot!
+214.1407,Log,>> Shot Reloaded
+214.8186,Log,Random Gaussian Numbers: u1 0.5333416 u2 0.03176785 stdNorm 0.146511577718806
+214.8186,Log,Trigger pressed >> Fireing shot!
+215.7294,Log,>> Shot Reloaded
+216.0114,Log,Random Gaussian Numbers: u1 0.1829197 u2 0.9622867 stdNorm -0.285146693510589
+216.0114,Log,Trigger pressed >> Fireing shot!
+217.9625,Log,>> Shot Reloaded
+219.6625,Log,Random Gaussian Numbers: u1 0.7677222 u2 0.2972617 stdNorm 0.458185690310451
+219.6625,Log,Trigger pressed >> Fireing shot!
+221.7742,Log,>> Shot Reloaded
+222.2067,Log,Random Gaussian Numbers: u1 0.6127524 u2 0.8585764 stdNorm -0.506265898317402
+222.2067,Log,Trigger pressed >> Fireing shot!
+223.3341,Log,>> Shot Reloaded
+223.6668,Log,Random Gaussian Numbers: u1 0.263306 u2 0.09522796 stdNorm 0.606416555668417
+223.6668,Log,Trigger pressed >> Fireing shot!
+225.3356,Log,>> Shot Reloaded
+226.4358,Log,Random Gaussian Numbers: u1 0.3297011 u2 0.6345452 stdNorm -0.734535137098646
+226.4358,Log,Trigger pressed >> Fireing shot!
+228.7376,Log,>> Shot Reloaded
+228.9478,Log,Random Gaussian Numbers: u1 0.01243937 u2 0.7331663 stdNorm -1.94111692341153
+228.9478,Log,Trigger pressed >> Fireing shot!
+230.5369,Log,>> Shot Reloaded
+230.9035,Log,Random Gaussian Numbers: u1 0.1635273 u2 0.2340332 stdNorm 1.24781525786567
+230.9035,Log,Trigger pressed >> Fireing shot!
+231.6367,Log,>> Shot Reloaded
+231.9824,Log,Random Gaussian Numbers: u1 0.8335147 u2 0.1233498 stdNorm 0.278292707412485
+231.9824,Log,Trigger pressed >> Fireing shot!
+232.9256,Log,>> Shot Reloaded
+233.1483,Log,Random Gaussian Numbers: u1 0.284676 u2 0.04583752 stdNorm 0.296723613310093
+233.1483,Log,Trigger pressed >> Fireing shot!

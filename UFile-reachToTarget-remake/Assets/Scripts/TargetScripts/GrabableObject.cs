@@ -6,7 +6,7 @@ public class GrabableObject : MonoBehaviour
 {
     /*
      * GrabableObject.cs
-     * Author: Peter Caruana
+     * Author: Peter Caruana, Mark Voong
      * Vision Labs, YorkU (c) 2019
      * 
      * This script defines functionality for a rigidbody object to be grabed like a realistic object with the vr controller.
@@ -19,12 +19,15 @@ public class GrabableObject : MonoBehaviour
     public HandCursorController handCursorController; //controller attached to the cursor
     public Collider collider; //colider of object
     public Rigidbody rigidbody; //rigidbody of the object
+    public GameObject centerExpObj;
     //----------------------------------------------------------------
 
     public bool isKinematic;
     public bool objectGrabbed = false;
     public bool holdUntilZone = true;
     public bool isInBox = false;
+    private Vector3 objPosWhenGrabbed;
+    private Vector3 handPosWhenGrabbed;
 
     private Vector3 prevPosition;
     private Vector3 currPosition;
@@ -40,6 +43,7 @@ public class GrabableObject : MonoBehaviour
     {
         //initialize variables and data structures
         handCursor = GameObject.FindGameObjectWithTag("Cursor");
+        centerExpObj = GameObject.FindGameObjectWithTag("Home");
         handCursorController = handCursor.GetComponent<HandCursorController>();
         
         prevPosition = handCursor.transform.localPosition;
@@ -53,10 +57,14 @@ public class GrabableObject : MonoBehaviour
     {
         if (other.CompareTag("Box"))
         {
-            isInBox = true;
+            if (other.name.Contains("Sphere") && name.Contains("Sphere") ||
+                other.name.Contains("Cube") && name.Contains("Cube"))
+            {
+                isInBox = true;
 
-            // vibrate the controller
-            handCursorController.ShortVibrateController();
+                // vibrate the controller
+                handCursorController.ShortVibrateController();
+            }
         }
     }
 
@@ -79,14 +87,18 @@ public class GrabableObject : MonoBehaviour
 
 
         CalculateVelocity(); //calculates velocity of the hand based on average of previous 6 frames (not based on game frames, but time frames set by the timeDelta)
-
+        
         //Allows to object to be picked up if cursor is touching the colider of the object, trigger is pressed, it isnt grabbed by something else, and the
         //hand isnt already holding some other object.
-        if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger, m_controller) && !objectGrabbed & !handCursorController.holdingItem)
+        if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger, m_controller) && !objectGrabbed & !handCursorController.holdingItem && !isInBox)
         {
+            //Debug.Log("HAND: " + handCursor.transform.position);
+            
             if (collider.bounds.Contains(handCursor.transform.position))
             {
                 PickUp();
+                //Debug.Log("OBJECT: " + transform.position);
+
             }
         }
         //Drops the object if the trigger isnt being pressed and the object itself was grabbed previously. This is so all grabable objects do not
@@ -104,6 +116,32 @@ public class GrabableObject : MonoBehaviour
             else
             {
                 Drop();
+            }
+        }
+
+        if (handCursorController.movementType.Type == "clamped" & objectGrabbed)
+        {
+            GameObject target = GameObject.FindGameObjectWithTag("Box");
+
+            // if a target exists
+            if (target != null)
+            {
+                Vector3 targetPosition = target.transform.position;
+
+                //transform.localPosition = realHand.transform.position - transform.parent.transform.position;
+                Vector3 centerPos = centerExpObj.transform.position;
+
+                //project onto a vector pointing toward target
+                //transform.localPosition = Vector3.Project(realHandPosition - rotatorObjectPosition, localTargetPosition);
+
+                //project onto a vertical plane intersecting target and home
+                Vector3 vectorForPlane = new Vector3(targetPosition.x, targetPosition.y - 1, targetPosition.z);
+                Vector3 normalVector = Vector3.Cross(targetPosition - centerPos, vectorForPlane - centerPos);
+
+                //Vector3 translateVector = posWhenGrabbed - projWhenGrabbed;
+                Vector3 translateVector = centerPos;
+                transform.position = Vector3.ProjectOnPlane(transform.parent.position - centerPos, normalVector) + translateVector;
+                transform.position = transform.position + ((objPosWhenGrabbed - centerPos) - (Vector3.ProjectOnPlane(handPosWhenGrabbed - centerPos, normalVector)));
             }
         }
     }
@@ -133,10 +171,13 @@ public class GrabableObject : MonoBehaviour
         GetComponent<Rigidbody>().velocity = Vector3.zero;
         GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         rigidbody.isKinematic = true;
-        transform.SetParent(handCursor.transform);
-        grabed();
 
-        handCursorController.offsetWhenGrabbed = handCursor.transform.localPosition.x;
+        objPosWhenGrabbed = transform.position;
+        handPosWhenGrabbed = handCursor.transform.position;
+
+        transform.SetParent(handCursor.transform);
+
+        grabed();
     }
 
     public void Drop()

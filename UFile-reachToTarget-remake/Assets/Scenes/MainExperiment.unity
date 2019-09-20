@@ -6582,6 +6582,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 956bd2acf7aae244dac8fc20cf57858d, type: 3}
+--- !u!1 &266286464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1660603843503870, guid: ce816f2e6abb0504092c23ed9b970dfd,
+    type: 3}
+  m_PrefabInstance: {fileID: 810979834}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &284467659
 GameObject:
   m_ObjectHideFlags: 0
@@ -9431,6 +9437,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b2d47fdc2e25ac4f9721480a68bbefa, type: 3}
+--- !u!1 &859170123 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1125068011842588, guid: ce816f2e6abb0504092c23ed9b970dfd,
+    type: 3}
+  m_PrefabInstance: {fileID: 810979834}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &863079231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21685,6 +21697,8 @@ MonoBehaviour:
   instructionAcceptor: {fileID: 1109330587}
   instructionAcceptorScript: {fileID: 1109330588}
   positionLocCursorController: {fileID: 5185979971123433596}
+  LeftControllerAnchor: {fileID: 266286464}
+  RightControllerAnchor: {fileID: 859170123}
   m_controller: 2
 --- !u!114 &1991832943
 MonoBehaviour:
@@ -21782,6 +21796,7 @@ MonoBehaviour:
   experimentController: {fileID: 1991832942}
   soundActive: 1
   particleSystem: {fileID: 242617199}
+  grabObjSpawnDist: 0.1
 --- !u!135 &1995753349
 SphereCollider:
   m_ObjectHideFlags: 0

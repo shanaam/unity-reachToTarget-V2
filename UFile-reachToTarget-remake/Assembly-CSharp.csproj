@@ -163,6 +163,7 @@
     <Compile Include="Assets\Scripts\ReachScripts\PlaneController.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\GrabableObject.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\PhysicsCubeController.cs" />
+    <Compile Include="Assets\Scripts\TargetScripts\PhysicsObjectBase.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\PhysicsSphereController.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\ShapeContainerController.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\TargetContainerController.cs" />

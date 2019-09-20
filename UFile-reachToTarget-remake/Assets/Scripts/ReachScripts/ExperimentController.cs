@@ -25,6 +25,8 @@ public class ExperimentController : MonoBehaviour
     public GameObject instructionAcceptor;
     public InstructionAcceptor instructionAcceptorScript;
     public PositionLocCursorController positionLocCursorController;
+
+    public GameObject LeftControllerAnchor, RightControllerAnchor;
     
 
     //-- Internal Variables
@@ -48,6 +50,9 @@ public class ExperimentController : MonoBehaviour
     //Called 
     public void BeginTrialSteps(Trial trial)
     {
+        // Changes the hand for the specific trial
+        //handCursor.GetComponent<HandCursorController>().ChangeHand(trial.settings.GetString("hand"));
+
         if(trial.settings.GetString("experiment_mode") == "objectToBox")
         {
             //pseudo randomized block shapes
