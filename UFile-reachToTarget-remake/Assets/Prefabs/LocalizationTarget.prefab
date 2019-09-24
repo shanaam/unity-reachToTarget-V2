@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3934410794250460397}
   m_Layer: 0
   m_Name: Mesh
-  m_TagString: Target
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 3269039939611595138}
   m_Layer: 0
   m_Name: LocalizationTarget
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,6 +123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meshFilter: {fileID: 7514425134372910467}
   width: 2
-  thickness: 0.05
-  arcSpan: 15
+  thickness: 0.015
+  arcSpan: 60
   useExpand: 1

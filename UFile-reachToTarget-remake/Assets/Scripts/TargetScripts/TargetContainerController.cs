@@ -32,6 +32,10 @@ public class TargetContainerController : MonoBehaviour
     public float grabObjSpawnDist = 0.15f;
 
     List<float> shuffledTargetList = new List<float>();
+    List<int> shuffledRecepticleList = new List<int>();
+    int currentRecepticle = 0;
+    int batchSize = 0;
+    private GameObject recepticlePrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -53,29 +57,16 @@ public class TargetContainerController : MonoBehaviour
         {
 
             //targetDistance = 0.3f; 
+            var grabObject = Instantiate(
+                recepticlePrefab.name == boxPrefab.name ? PhysicsCubePrefab : PhysicsSpherePrefab, transform);
 
-            string objectType = trial.settings.GetString("object_type");
-            if (objectType == "cube")
-            {
-                var grabObject = Instantiate(PhysicsCubePrefab, transform);
-                var recepticle = Instantiate(boxPrefab, transform);
+            var recepticle = Instantiate(recepticlePrefab, transform);
 
-                recepticle.transform.localPosition = new Vector3(0, -0.05f, targetDistance);
-                grabObject.transform.localPosition = new Vector3(0, 0, grabObjSpawnDist);
-                //Debug.Log("Spawned physics cube []");
-            }
-            else if (objectType == "sphere")
-            {
-                var grabObject = Instantiate(PhysicsSpherePrefab, transform);
-                var recepticle = Instantiate(cylinderPrefab, transform);
+            recepticle.transform.localPosition = new Vector3(0f, -0.05f, targetDistance);
+            grabObject.transform.localPosition = new Vector3(0f, 0f, grabObjSpawnDist);
+            grabObject.GetComponent<GrabableObject>().m_controller = experimentController.GetController();
 
-                recepticle.transform.localPosition = new Vector3(0, -0.05f, targetDistance);
-                grabObject.transform.localPosition = new Vector3(0, 0, grabObjSpawnDist);
-                //Debug.Log("Spawned physics sphere O");
-            }
-            
-            /*
-            // 50/50 chance for either 15 degrees left or right of the target angle
+            // 50/50 chance for either 25 degrees left or right of the target angle
             System.Random rand = new System.Random();
             float deviation = rand.Next(2) == 0 ? -25f : 25f;
 
@@ -87,7 +78,8 @@ public class TargetContainerController : MonoBehaviour
             );
 
             // Instantiate the recepticle opposite of the physics object
-            var wrongRecepticle = Instantiate(objectType == "cube" ? cylinderPrefab : boxPrefab, transform);
+            var wrongRecepticle = Instantiate(
+                recepticlePrefab.name == boxPrefab.name ? cylinderPrefab : boxPrefab, transform);
             wrongRecepticle.transform.localPosition = new Vector3(0, -0.05f, targetDistance);
 
             wrongRecepticle.transform.SetParent(null);
@@ -100,7 +92,6 @@ public class TargetContainerController : MonoBehaviour
             );
 
             wrongRecepticle.transform.SetParent(transform);
-            */
         }
         else
         {
@@ -185,7 +176,6 @@ public class TargetContainerController : MonoBehaviour
     // run at start of every trial
     public void DetermineTrialTargetAngle(Trial trial)
     {
-
         //Pseudorandom target location
         if (shuffledTargetList.Count < 1)
         {
@@ -198,6 +188,39 @@ public class TargetContainerController : MonoBehaviour
             shuffledTargetList = targetList; //might be redundant but fine
 
             shuffledTargetList.Shuffle();
+        }
+
+        // Pseudorandom recepticle location
+        if (shuffledRecepticleList.Count < 1)
+        {
+            int trials = trial.session.CurrentBlock.trials.Count;
+            int targets = session.settings.GetFloatList(trial.settings.GetString("targetListToUse")).Count;
+            batchSize = targets - 1;
+
+            if (trials % targets != 0)
+            {
+                Debug.LogError("WARNING! NUMBER OF TARGETS DOES NOT EQUALLY DIVIDE INTO NUMBER OF TRIALS");
+            }
+
+            // Number of recepticles per list of targets
+            int recepticles = trials / targets;
+            for (int i = 0; i < recepticles; i++)
+            {
+                // 1 is box, 0 is sphere
+                shuffledRecepticleList.Add(i % 2 == 0 ? 1 : 0);
+            }
+
+            currentRecepticle = batchSize;
+            shuffledRecepticleList.Shuffle();
+        }
+
+        recepticlePrefab = shuffledRecepticleList[0] == 0 ? cylinderPrefab : boxPrefab;
+
+        if (currentRecepticle > 0) { currentRecepticle--; }
+        else
+        {
+            shuffledRecepticleList.RemoveAt(0);
+            currentRecepticle = batchSize;
         }
 
         float targetAngle = shuffledTargetList[0];

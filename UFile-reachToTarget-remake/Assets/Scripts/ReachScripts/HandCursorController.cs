@@ -67,6 +67,9 @@ public class HandCursorController : MonoBehaviour
 
     private Vector3 pastPosition = new Vector3(0,0,0);
     private Vector3 handPastPosition = new Vector3(0, 0, 0);
+
+    private Vector3 handPosOffset = new Vector3(0, 0, 0);
+    public string handForNextTrial;
     //private Vector3 currentPosition;
 
     // Use this for initialization
@@ -76,7 +79,9 @@ public class HandCursorController : MonoBehaviour
         // gameObject.SetActive(false);
 
         movementType = new AlignedHandCursor();
-        
+
+        //determine the offset (from the controller) for the hand cursor
+        handPosOffset = realHand.transform.localPosition;
     }
 
 
@@ -239,19 +244,14 @@ public class HandCursorController : MonoBehaviour
         if (other.CompareTag("Target"))
         {
             isInTarget = true;
-
-            // vibrate the controller
             ShortVibrateController();
         }
         else if (other.CompareTag("Home"))
         {
-            visible = true;
+            //visible = true;
             isInHome = true;
-
-            // vibrate the controller
             ShortVibrateController();
         }
-
         else if (other.CompareTag("HomeArea"))
         {
             isInHomeArea = true;
@@ -264,9 +264,7 @@ public class HandCursorController : MonoBehaviour
             {
                 CancelInvoke("CheckForPause");
             }
-
         }
-
     }
 
     
@@ -366,7 +364,7 @@ public class HandCursorController : MonoBehaviour
     public void ShortVibrateController()
     {
         // make the controller vibrate
-        OVRInput.SetControllerVibration(1, 0.6f);
+        OVRInput.SetControllerVibration(1, 0.6f, m_controller);
 
         // stop the vibration after x seconds
         Invoke("StopVibrating", 0.2f);
@@ -375,7 +373,7 @@ public class HandCursorController : MonoBehaviour
 
     void StopVibrating()
     {
-        OVRInput.SetControllerVibration(0, 0);
+        OVRInput.SetControllerVibration(0, 0, m_controller);
     }
     //-- Moved to Experiment Controller
     //Start timer when home Disapears, End when target disapears
@@ -404,20 +402,17 @@ public class HandCursorController : MonoBehaviour
         transform.position = realHand.transform.position;
     }
 
-    public void ChangeHand(string hand, GameObject newTransform)
+    public void ChangeHand(GameObject newTransform)
     {
-        realHand.transform.SetParent(newTransform.transform);
-        if (hand == "r")
-        {
-            m_controller = OVRInput.Controller.RTouch;
-            realHand.transform.localPosition = new Vector3(-0.00205f, 0.0f, 0.0331f);
+        Vector3 handPosOffsetToUse;
 
-            // vector -0.00205, 0, 0.0331
-        }
-        else
-        {
-            m_controller = OVRInput.Controller.LTouch;
-            realHand.transform.localPosition = Vector3.zero;
-        }
+        // vector -0.00205, 0, 0.0331 is the coordinate of the front of the controller
+        realHand.transform.SetParent(newTransform.transform);
+        m_controller = experimentController.GetController();
+
+        handPosOffsetToUse = handForNextTrial == "r" ?
+            handPosOffset : Vector3.Scale(handPosOffset, new Vector3(-1, 1, 1));
+
+        realHand.transform.localPosition = handPosOffsetToUse;
     }
 }

@@ -36,8 +36,8 @@ public class GrabableObject : MonoBehaviour
     private float prevTime;
     private float currTime;
     private Stack<Vector3> velocityHistory = new Stack<Vector3>(); //History of the hand cursors velocity. Used to smooth out throwing motions
-    [SerializeField]
-    private OVRInput.Controller m_controller;
+
+    public OVRInput.Controller m_controller;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,8 +57,8 @@ public class GrabableObject : MonoBehaviour
     {
         if (other.CompareTag("Box"))
         {
-            if (other.name.Contains("Sphere") && name.Contains("Sphere") ||
-                other.name.Contains("Cube") && name.Contains("Cube"))
+            if (other.name.Contains("CubeContainer") && name.Contains("Sphere") ||
+                other.name.Contains("CylinderContainer") && name.Contains("Cube"))
             {
                 isInBox = true;
 
@@ -90,16 +90,9 @@ public class GrabableObject : MonoBehaviour
         
         //Allows to object to be picked up if cursor is touching the colider of the object, trigger is pressed, it isnt grabbed by something else, and the
         //hand isnt already holding some other object.
-        if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger, m_controller) && !objectGrabbed & !handCursorController.holdingItem && !isInBox)
-        {
-            //Debug.Log("HAND: " + handCursor.transform.position);
-            
-            if (collider.bounds.Contains(handCursor.transform.position))
-            {
-                PickUp();
-                //Debug.Log("OBJECT: " + transform.position);
-
-            }
+        if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, m_controller) && !objectGrabbed & !handCursorController.holdingItem && !isInBox && !handCursorController.isInHomeArea)
+        {    
+            if (collider.bounds.Contains(handCursor.transform.position)) { PickUp(); }
         }
         //Drops the object if the trigger isnt being pressed and the object itself was grabbed previously. This is so all grabable objects do not
         //react when some other object is dropped.
@@ -108,10 +101,7 @@ public class GrabableObject : MonoBehaviour
         {
             if (holdUntilZone)
             {
-                if (isInBox) 
-                {
-                    Drop();
-                }
+                if (isInBox) { Drop(); }
             }
             else
             {

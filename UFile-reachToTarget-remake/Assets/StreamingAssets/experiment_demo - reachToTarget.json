@@ -1,11 +1,11 @@
 {
     "experiment_mode": "target"
     "gradual_step": 1,
-    "per_block_type": ["localization", "rotated", "clamped", "instruction", "nocursor"],
+    "per_block_type": ["aligned", "rotated", "localization", "instruction", "nocursor"],
     "per_block_n": [4,10,4,1,2],
     "per_block_rotation": [0,45,0,0,0],
-    "per_block_distance": [10, 30, 10, 10, 10],
-    "per_block_target_vertPos": [0, 45, 0, 0, 0],
+    "per_block_distance": [10, 10, 10, 10, 10],
+    "per_block_target_vertPos": [0, 0, 0, 0, 0],
     "per_block_targetListToUse": ["tl2", "tl1", "tl2", "t_null", "tl1"],
     "per_block_plane": ["none", "none", "none", "none", "none"],
     "per_block_hand": ["r", "r", "r", "r", "r", "r"],

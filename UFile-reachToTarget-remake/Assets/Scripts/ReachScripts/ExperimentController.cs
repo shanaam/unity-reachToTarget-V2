@@ -36,8 +36,7 @@ public class ExperimentController : MonoBehaviour
     [SerializeField]
     private OVRInput.Controller m_controller; //Link to the Oculus controller to read button inputs
     
-    
- 
+    public OVRInput.Controller GetController() { return m_controller; }
 
     public void StartTrial() 
     {
@@ -50,23 +49,20 @@ public class ExperimentController : MonoBehaviour
     //Called 
     public void BeginTrialSteps(Trial trial)
     {
-        // Changes the hand for the specific trial
-        //handCursor.GetComponent<HandCursorController>().ChangeHand(trial.settings.GetString("hand"));
-
         if(trial.settings.GetString("experiment_mode") == "objectToBox")
         {
-            //pseudo randomized block shapes
-            System.Random rando = new System.Random();
-            int flag = rando.Next(100); // randomizing the shape -- this will change depending on the experiment
+            ////pseudo randomized block shapes
+            //System.Random rando = new System.Random();
+            //int flag = rando.Next(100); // randomizing the shape -- this will change depending on the experiment
 
-            if (flag % 2 == 0) //even number
-            {
-                trial.settings.SetValue("object_type", "cube");
-            }
-            else
-            {
-                trial.settings.SetValue("object_type", "sphere");
-            }
+            //if (flag % 2 == 0) //even number
+            //{
+            //    trial.settings.SetValue("object_type", "cube");
+            //}
+            //else
+            //{
+            //    trial.settings.SetValue("object_type", "sphere");
+            //}
 
             targetContainerController.IsGrabTrial = true;
 
@@ -157,16 +153,45 @@ public class ExperimentController : MonoBehaviour
             positionLocCursorController.Deactivate();
         }
 
+        try
+        {
+            m_controller = session.NextTrial.settings.GetString("hand") == "r" ? 
+                OVRInput.Controller.RTouch : OVRInput.Controller.LTouch;
+
+            handCursor.GetComponent<HandCursorController>().handForNextTrial = session.NextTrial.settings.GetString("hand") == "r" ?
+                "r" : "l";
+        }
+        catch (NoSuchTrialException)
+        {
+            try
+            {
+                m_controller = session.GetBlock(session.currentBlockNum + 1).firstTrial.settings.GetString("hand") == "r" ? 
+                    OVRInput.Controller.RTouch : OVRInput.Controller.LTouch;
+
+                handCursor.GetComponent<HandCursorController>().handForNextTrial = session.GetBlock(session.currentBlockNum + 1).firstTrial.settings.GetString("hand") == "r" ?
+                    "r" : "l";
+
+                Debug.Log("Reached end of block");
+            }
+            catch (System.ArgumentOutOfRangeException)
+            {
+                Debug.Log("Reached end of experiment.");
+            }
+        }
+
+        handCursor.GetComponent<HandCursorController>().ChangeHand(
+            m_controller == OVRInput.Controller.RTouch ? RightControllerAnchor : LeftControllerAnchor
+        );
+
         homeCursorController.Appear();
 
         if (session.CurrentTrial.number == session.LastTrial.number)
         {
             session.End();
         }
-
         else
         {
-        session.CurrentTrial.End();
+            session.CurrentTrial.End();
         }
     }
 

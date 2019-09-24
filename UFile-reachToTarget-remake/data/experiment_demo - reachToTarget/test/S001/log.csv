@@ -3,11 +3,12 @@ timestamp,log_type,message
 0,Log,D:/shanaa/repos/unity-reachToTarget-remake/UFile-reachToTarget-remake/Assets/Files/deskCalibration.txt exists calibrating desk
 0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
 0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
-10.19201,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-11.27564,Warning,Warning: Session already exists! Continuing will overwrite
-38.41242,Log,Home Position Transformed: (-0.1945454 0.9597945 0.520241)
-39.42579,Log,Spawning Arc
-54.40472,Log,Hand: (-0.2 1.0 0.6)
-54.40472,Log,Cursor: (-0.3 1.0 0.6)
-54.40472,Log,Difference Magnitude: 0.0603643
-54.40472,Log,Ending Localization Trial T_T bye :'(
+7.898219,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+8.914382,Warning,Warning: Session already exists! Continuing will overwrite
+21.03155,Log,Home Position Transformed: (-0.3186241 0.9353145 0.6878105)
+21.99126,Log,Target has been spawned at: (0.0 0.0 0.1)
+27.13471,Log,Target has been spawned at: (0.0 0.0 0.1)
+29.80179,Log,Target has been spawned at: (0.0 0.0 0.1)
+30.92311,Log,Audio Clip Played Pitch: 0.8798045
+32.14574,Log,Target has been spawned at: (0.0 0.0 0.1)
+33.26779,Log,Audio Clip Played Pitch: 0.5653646

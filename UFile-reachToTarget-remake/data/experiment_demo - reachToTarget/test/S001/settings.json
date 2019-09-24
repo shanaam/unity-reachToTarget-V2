@@ -2,9 +2,9 @@
         "experiment_mode": "target",
         "gradual_step": 1,
         "per_block_type": [
+            "aligned",
+            "aligned",
             "localization",
-            "rotated",
-            "clamped",
             "instruction",
             "nocursor"
         ],
@@ -24,14 +24,14 @@
         ],
         "per_block_distance": [
             10,
-            30,
+            10,
             10,
             10,
             10
         ],
         "per_block_target_vertPos": [
             0,
-            45,
+            0,
             0,
             0,
             0
@@ -52,7 +52,7 @@
         ],
         "per_block_hand": [
             "r",
-            "r",
+            "l",
             "r",
             "r",
             "r",
