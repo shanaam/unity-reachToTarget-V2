@@ -3,33 +3,38 @@
         "gradual_step": 1,
         "per_block_type": [
             "aligned",
-            "aligned",
+            "rotated",
             "localization",
             "instruction",
-            "nocursor"
+            "nocursor",
+            "rotated"
         ],
         "per_block_n": [
             4,
-            10,
             4,
+            12,
             1,
-            2
+            2,
+            4
         ],
         "per_block_rotation": [
             0,
             45,
             0,
             0,
-            0
+            0,
+            45
         ],
         "per_block_distance": [
             10,
             10,
             10,
             10,
-            10
+            10,
+            20
         ],
         "per_block_target_vertPos": [
+            0,
             0,
             0,
             0,
@@ -41,9 +46,11 @@
             "tl1",
             "tl2",
             "t_null",
-            "tl1"
+            "tl1",
+            "tl2"
         ],
         "per_block_plane": [
+            "none",
             "none",
             "none",
             "none",
@@ -52,7 +59,8 @@
         ],
         "per_block_hand": [
             "r",
-            "l",
+            "r",
+            "r",
             "r",
             "r",
             "r",

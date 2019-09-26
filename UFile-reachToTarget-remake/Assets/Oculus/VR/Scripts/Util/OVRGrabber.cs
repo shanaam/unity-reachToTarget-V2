@@ -130,25 +130,25 @@ public class OVRGrabber : MonoBehaviour
     // your hands or held objects, you may wish to switch to parenting.
     void OnUpdatedAnchors()
     {
-        Vector3 handPos = OVRInput.GetLocalControllerPosition(m_controller);
-        Quaternion handRot = OVRInput.GetLocalControllerRotation(m_controller);
-        Vector3 destPos = m_parentTransform.TransformPoint(m_anchorOffsetPosition + handPos);
-        Quaternion destRot = m_parentTransform.rotation * handRot * m_anchorOffsetRotation;
-        GetComponent<Rigidbody>().MovePosition(destPos);
-        GetComponent<Rigidbody>().MoveRotation(destRot);
+  //      Vector3 handPos = OVRInput.GetLocalControllerPosition(m_controller);
+  //      Quaternion handRot = OVRInput.GetLocalControllerRotation(m_controller);
+  //      Vector3 destPos = m_parentTransform.TransformPoint(m_anchorOffsetPosition + handPos);
+  //      Quaternion destRot = m_parentTransform.rotation * handRot * m_anchorOffsetRotation;
+  //      GetComponent<Rigidbody>().MovePosition(destPos);
+  //      GetComponent<Rigidbody>().MoveRotation(destRot);
 
-        if (!m_parentHeldObject)
-        {
-            MoveGrabbedObject(destPos, destRot);
-        }
-        m_lastPos = transform.position;
-        m_lastRot = transform.rotation;
+  //      if (!m_parentHeldObject)
+  //      {
+  //          MoveGrabbedObject(destPos, destRot);
+  //      }
+  //      m_lastPos = transform.position;
+  //      m_lastRot = transform.rotation;
 
-		float prevFlex = m_prevFlex;
-		// Update values from inputs
-		m_prevFlex = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, m_controller);
+		//float prevFlex = m_prevFlex;
+		//// Update values from inputs
+		//m_prevFlex = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, m_controller);
 
-		CheckForGrabOrRelease(prevFlex);
+		//CheckForGrabOrRelease(prevFlex);
     }
 
     void OnDestroy()

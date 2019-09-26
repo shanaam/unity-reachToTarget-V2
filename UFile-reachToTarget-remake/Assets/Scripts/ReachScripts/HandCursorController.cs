@@ -187,12 +187,12 @@ public class HandCursorController : MonoBehaviour
                     transform.position = pastPosition + rotatedVector;
                 //}
 
-                visible = false;
+                //visible = false;
             }
 
             else
             {
-                visible = true;
+                //visible = true;
                 rotatedVector = Vector3.zero;
                 transform.localPosition = default_movement.NewCursorPosition(realHandPosition, centreExpPosition);
                 

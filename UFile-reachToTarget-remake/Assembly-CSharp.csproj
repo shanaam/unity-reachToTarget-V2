@@ -149,6 +149,8 @@
     <Compile Include="Assets\Oculus\Spatializer\Scripts\ONSPPropagationInterface.cs" />
     <Compile Include="Assets\Oculus\Spatializer\Scripts\ONSPPropagationMaterial.cs" />
     <Compile Include="Assets\Oculus\Spatializer\Scripts\ONSPVersion.cs" />
+    <Compile Include="Assets\Scripts\EnvironmentScripts\PlaneController.cs" />
+    <Compile Include="Assets\Scripts\EnvironmentScripts\PlatformController.cs" />
     <Compile Include="Assets\Scripts\LocalizationScripts\ArcController.cs" />
     <Compile Include="Assets\Scripts\LocalizationScripts\CalculateLocalization.cs" />
     <Compile Include="Assets\Scripts\LocalizationScripts\PositionLocCursorController.cs" />
@@ -160,7 +162,6 @@
     <Compile Include="Assets\Scripts\ReachScripts\HandCursorController.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\HomeCursorController.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\InstructionAcceptor.cs" />
-    <Compile Include="Assets\Scripts\ReachScripts\PlaneController.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\GrabableObject.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\PhysicsCubeController.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\PhysicsObjectBase.cs" />
@@ -169,6 +170,7 @@
     <Compile Include="Assets\Scripts\TargetScripts\TargetContainerController.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\TargetController.cs" />
     <Compile Include="Assets\Scripts\Utility Scripts\DeskCalibration.cs" />
+    <Compile Include="Assets\Scripts\Utility Scripts\HandRenderController.cs" />
     <Compile Include="Assets\UXF\Examples\Advanced\Scripts\CursorFollower.cs" />
     <Compile Include="Assets\UXF\Examples\Advanced\Scripts\ExperimentGenerator.cs" />
     <Compile Include="Assets\UXF\Examples\Advanced\Scripts\InstructionsController.cs" />

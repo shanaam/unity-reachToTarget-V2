@@ -47,7 +47,16 @@ public class ExperimentSetup : MonoBehaviour
             session.blocks[i].settings.SetValue("plane_setting", per_block_plane[i]);
             session.blocks[i].settings.SetValue("hand", per_block_hand[i]);
             
-            
+        }
+
+        //things to do at the very start of the experiment
+        if (session.settings.GetString("experiment_mode") != "objectToBox")
+        {
+            if (GameObject.Find("Platform") != null)
+            {
+                GameObject platform = GameObject.FindGameObjectWithTag("Platform");
+                Destroy(platform);
+            }
         }
 
     }

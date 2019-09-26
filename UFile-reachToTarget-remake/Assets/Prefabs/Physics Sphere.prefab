@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4657596809025667734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.10148394, y: 0.90745, z: 0.15882617}
+  m_LocalPosition: {x: -0.10148394, y: 0.9, z: 0.15882617}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 0}
@@ -92,7 +92,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.45
+  m_Radius: 0.75
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8209554368492314228
 Rigidbody:
@@ -138,6 +138,7 @@ MonoBehaviour:
   handCursorController: {fileID: 0}
   collider: {fileID: 2936753539588480234}
   rigidbody: {fileID: 8209554368492314228}
+  centerExpObj: {fileID: 0}
   isKinematic: 1
   objectGrabbed: 0
   holdUntilZone: 1

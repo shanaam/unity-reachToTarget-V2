@@ -12,6 +12,7 @@ TagManager:
   - ExperimentObject
   - ExpCont
   - Box
+  - Platform
   layers:
   - Default
   - TransparentFX

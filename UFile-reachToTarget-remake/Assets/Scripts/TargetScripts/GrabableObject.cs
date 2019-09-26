@@ -90,7 +90,7 @@ public class GrabableObject : MonoBehaviour
         
         //Allows to object to be picked up if cursor is touching the colider of the object, trigger is pressed, it isnt grabbed by something else, and the
         //hand isnt already holding some other object.
-        if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, m_controller) && !objectGrabbed & !handCursorController.holdingItem && !isInBox && !handCursorController.isInHomeArea)
+        if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, m_controller) && !objectGrabbed & !handCursorController.holdingItem && !isInBox && !handCursorController.isInHomeArea && handCursorController.isPaused)
         {    
             if (collider.bounds.Contains(handCursor.transform.position)) { PickUp(); }
         }
@@ -101,7 +101,8 @@ public class GrabableObject : MonoBehaviour
         {
             if (holdUntilZone)
             {
-                if (isInBox) { Drop(); }
+                //right now, do nothing
+                //if (isInBox) { Drop(); } 
             }
             else
             {

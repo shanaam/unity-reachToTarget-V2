@@ -62,8 +62,8 @@ public class TargetContainerController : MonoBehaviour
 
             var recepticle = Instantiate(recepticlePrefab, transform);
 
-            recepticle.transform.localPosition = new Vector3(0f, -0.05f, targetDistance);
-            grabObject.transform.localPosition = new Vector3(0f, 0f, grabObjSpawnDist);
+            recepticle.transform.localPosition = new Vector3(0f, 0f, targetDistance);
+            grabObject.transform.localPosition = new Vector3(0f, 0.1f, grabObjSpawnDist);
             grabObject.GetComponent<GrabableObject>().m_controller = experimentController.GetController();
 
             // 50/50 chance for either 25 degrees left or right of the target angle
@@ -80,7 +80,7 @@ public class TargetContainerController : MonoBehaviour
             // Instantiate the recepticle opposite of the physics object
             var wrongRecepticle = Instantiate(
                 recepticlePrefab.name == boxPrefab.name ? cylinderPrefab : boxPrefab, transform);
-            wrongRecepticle.transform.localPosition = new Vector3(0, -0.05f, targetDistance);
+            wrongRecepticle.transform.localPosition = new Vector3(0f, 0f, targetDistance);
 
             wrongRecepticle.transform.SetParent(null);
             
