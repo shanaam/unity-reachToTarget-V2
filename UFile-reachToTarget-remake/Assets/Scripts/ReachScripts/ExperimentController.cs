@@ -27,6 +27,18 @@ public class ExperimentController : MonoBehaviour
     public PositionLocCursorController positionLocCursorController;
 
     public GameObject LeftControllerAnchor, RightControllerAnchor;
+    public GameObject LeftHandRenderer, RightHandRenderer;
+
+
+    // things to log
+    public float pickUpTime;
+    public string objShape;
+    public float objSpawnX;
+    public float objSpawnZ;
+    public float recepticleX;
+    public float recepticleY;
+    public float recepticleZ;
+    public float distractorLoc;
     
 
     //-- Internal Variables
@@ -89,6 +101,9 @@ public class ExperimentController : MonoBehaviour
                     targetContainerController.SpawnTarget(trial);
                 }
             }
+
+            GameObject grabableObject = GameObject.FindGameObjectWithTag("ExperimentObject");
+
         }
         else if(trial.settings.GetString("experiment_mode") == "target")
         {
@@ -105,7 +120,6 @@ public class ExperimentController : MonoBehaviour
                     targetContainerController.SpawnTarget(trial);
                 }
             }
-
             else
             {
                 if (trial.settings.GetString("type") == "instruction")
@@ -117,7 +131,6 @@ public class ExperimentController : MonoBehaviour
                     instructionAcceptorScript.doneInstruction = false;
 
                 }
-
                 else
                 {
                     RenderObject(handCursor);
@@ -145,6 +158,15 @@ public class ExperimentController : MonoBehaviour
         session.CurrentTrial.result["home_y"] = homeCursor.transform.position.y;
         session.CurrentTrial.result["home_z"] = homeCursor.transform.position.z;
 
+        session.CurrentTrial.result["pick_up_time"] = pickUpTime;
+        session.CurrentTrial.result["obj_shape"] = objShape;
+        session.CurrentTrial.result["distractor_loc"] = distractorLoc;
+        session.CurrentTrial.result["obj_spawn_x"] = objSpawnX;
+        session.CurrentTrial.result["obj_spawn_z"] = objSpawnZ;
+        session.CurrentTrial.result["recepticle_x"] = recepticleX;
+        session.CurrentTrial.result["recepticle_y"] = recepticleY;
+        session.CurrentTrial.result["recepticle_z"] = recepticleZ;
+
         //Debug.Log("ending reach trial...");
         // destroy the target, spawn home?
         targetContainerController.DestroyTargets();
@@ -153,35 +175,49 @@ public class ExperimentController : MonoBehaviour
             positionLocCursorController.Deactivate();
         }
 
+        // Reassign the hand controlling the cursor as well as the virtual 3D hand model
+        HandCursorController cursorCntrler = handCursor.GetComponent<HandCursorController>();
+        SkinnedMeshRenderer rightHandRender = RightHandRenderer.GetComponent<SkinnedMeshRenderer>();
+        SkinnedMeshRenderer leftHandRender = LeftHandRenderer.GetComponent<SkinnedMeshRenderer>();
+
+        bool rightHanded = false;
         try
         {
-            m_controller = session.NextTrial.settings.GetString("hand") == "r" ? 
-                OVRInput.Controller.RTouch : OVRInput.Controller.LTouch;
-
-            handCursor.GetComponent<HandCursorController>().handForNextTrial = session.NextTrial.settings.GetString("hand") == "r" ?
-                "r" : "l";
+            rightHanded = session.NextTrial.settings.GetString("hand") == "r";
         }
         catch (NoSuchTrialException)
         {
+            // If we are at the end of a block, this will grab the first trial of the next block
             try
             {
-                m_controller = session.GetBlock(session.currentBlockNum + 1).firstTrial.settings.GetString("hand") == "r" ? 
-                    OVRInput.Controller.RTouch : OVRInput.Controller.LTouch;
-
-                handCursor.GetComponent<HandCursorController>().handForNextTrial = session.GetBlock(session.currentBlockNum + 1).firstTrial.settings.GetString("hand") == "r" ?
-                    "r" : "l";
-
-                Debug.Log("Reached end of block");
+                rightHanded = session.GetBlock(session.currentBlockNum + 1).firstTrial.settings.GetString("hand") == "r";
+                Debug.Log("Reached end of block. Starting next block.");
             }
             catch (System.ArgumentOutOfRangeException)
             {
-                Debug.Log("Reached end of experiment.");
+                Debug.Log("Reached end of experiment");
             }
         }
+        Debug.Log("Reassigning hand for next trial. Righthanded: " + rightHanded);
 
-        handCursor.GetComponent<HandCursorController>().ChangeHand(
-            m_controller == OVRInput.Controller.RTouch ? RightControllerAnchor : LeftControllerAnchor
-        );
+        // Assign the Oculus controller
+        m_controller = rightHanded ?
+            OVRInput.Controller.RTouch : OVRInput.Controller.LTouch;
+
+        // Assign the virtual hand model
+        //if (!cursorCntrler.holdingItem && !cursorCntrler.taskCompleted)
+        //{
+        //    rightHandRender.enabled = rightHanded;
+        //    leftHandRender.enabled = !rightHanded;
+        //}
+        //else { rightHandRender.enabled = leftHandRender.enabled = false; }
+
+        // Assign the cursor
+        cursorCntrler.HandForNextTrial = rightHanded ? "r" : "l";
+        cursorCntrler.ChangeHand(rightHanded ? RightControllerAnchor : LeftControllerAnchor);
+
+        // Vibrate the controller to let the participant know which hand to use
+        cursorCntrler.ShortVibrateController(1.0f, 0.5f);
 
         homeCursorController.Appear();
 

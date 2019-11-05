@@ -13,6 +13,7 @@ TagManager:
   - ExpCont
   - Box
   - Platform
+  - CursObjTracker
   layers:
   - Default
   - TransparentFX

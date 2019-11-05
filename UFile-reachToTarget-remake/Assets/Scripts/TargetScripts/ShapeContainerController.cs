@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UXF;
 
 public class ShapeContainerController : MonoBehaviour
 {
@@ -17,11 +18,17 @@ public class ShapeContainerController : MonoBehaviour
     public bool acceptSphere;
     public bool acceptCube;
     public ParticleSystem particleSystem;
+
+    private GameObject cursObjTracker;
+
     // Start is called before the first frame update
     void Start()
     {
         handCursorController = GameObject.FindGameObjectWithTag("Cursor").GetComponent<HandCursorController>();
         experimentController = handCursorController.experimentController;
+
+        // find the tracker object
+        cursObjTracker = GameObject.FindGameObjectWithTag("CursObjTracker");
     }
     // Update is called once per frame
     void Update()
@@ -37,10 +44,12 @@ public class ShapeContainerController : MonoBehaviour
         {
             if (other.name.Contains("Sphere") && acceptSphere)
             {
+                experimentController.objShape = "sphere";
                 AcceptTarget(other); 
             }
             else if (other.name.Contains("Cube") && acceptCube)
             {
+                experimentController.objShape = "cube";
                 AcceptTarget(other);
             }
         }
@@ -54,10 +63,12 @@ public class ShapeContainerController : MonoBehaviour
         {
             if (other.name.Contains("Sphere") && acceptSphere)
             {
+                experimentController.objShape = "sphere";
                 AcceptTarget(other);
             }
             else if (other.name.Contains("Cube") && acceptCube)
             {
+                experimentController.objShape = "cube";
                 AcceptTarget(other);
             }
         }
@@ -68,9 +79,14 @@ public class ShapeContainerController : MonoBehaviour
         ExplodeParticles();
         //Debug.Log("Ding! You put the target in the box!");
         handCursorController.taskCompleted = true;
-        experimentController.EndAndPrepare(); //disabled for testing, enable for actual experiment use
         handCursorController.ReAlignCursor();
         handCursorController.holdingItem = false;
+
+        // stop recording
+        cursObjTracker.GetComponent<CursorObjTrackerController>().tracking = false;
+        cursObjTracker.GetComponent<PositionRotationTracker>().StopRecording();
+
+        experimentController.EndAndPrepare(); //disabled for testing, enable for actual experiment use
     }
 
     private void ExplodeParticles()

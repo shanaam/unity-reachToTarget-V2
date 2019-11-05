@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1945354076860793275}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.0085053, y: 0.9, z: -0.5486342}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -92,7 +92,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &5868662385658600473
 Rigidbody:
@@ -138,7 +138,8 @@ MonoBehaviour:
   handCursorController: {fileID: 0}
   collider: {fileID: 1785796483495386135}
   rigidbody: {fileID: 5868662385658600473}
-  centerExpObj: {fileID: 0}
+  home: {fileID: 0}
+  experimentController: {fileID: 0}
   isKinematic: 0
   objectGrabbed: 0
   holdUntilZone: 0

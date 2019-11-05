@@ -2,23 +2,23 @@
         "experiment_mode": "target",
         "gradual_step": 1,
         "per_block_type": [
-            "aligned",
             "rotated",
-            "localization",
-            "instruction",
+            "rotated",
+            "aligned",
+            "aligned",
             "nocursor",
             "rotated"
         ],
         "per_block_n": [
             4,
             4,
-            12,
-            1,
+            4,
+            2,
             2,
             4
         ],
         "per_block_rotation": [
-            0,
+            45,
             45,
             0,
             0,
@@ -45,7 +45,7 @@
             "tl2",
             "tl1",
             "tl2",
-            "t_null",
+            "tl1",
             "tl1",
             "tl2"
         ],
@@ -65,6 +65,14 @@
             "r",
             "r",
             "r"
+        ],
+        "per_block_obj_type": [
+            "sphere",
+            "sphere",
+            "cube",
+            "cube",
+            "random",
+            "random"
         ],
         "tl1": [
             80,

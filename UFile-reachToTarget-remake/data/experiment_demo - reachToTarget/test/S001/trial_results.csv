@@ -1,28 +1,21 @@
-directory,experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,targetAngle,type,cursor_rotation,target_vertPos,plane_setting,home_x,home_y,home_z,trackerholderobject_movement_filename
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+directory,experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,targetAngle,type,cursor_rotation,target_vertPos,plane_setting,experiment_mode,target_distance,hand,home_x,home_y,home_z,pick_up_time,obj_shape,distractor_loc,obj_spawn_x,obj_spawn_z,recepticle_x,recepticle_y,recepticle_z,trackerholderobject_movement_filename,cursorobjecttracker_movement_filename
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,1,1,1,8.841625,26.72372,60,rotated,45,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T001.csv,cursorobjecttracker_movement_T001.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,2,1,2,29.53308,72.44511,80,rotated,45,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T002.csv,cursorobjecttracker_movement_T002.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,3,1,3,75.43409,89.66751,120,rotated,45,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T003.csv,cursorobjecttracker_movement_T003.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,4,1,4,93.30102,96.04559,100,rotated,45,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T004.csv,cursorobjecttracker_movement_T004.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,5,2,1,97.20078,99.42311,80,rotated,45,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T005.csv,cursorobjecttracker_movement_T005.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,6,2,2,100.6009,102.7898,100,rotated,45,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T006.csv,cursorobjecttracker_movement_T006.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,7,2,3,103.9565,105.7015,100,rotated,45,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T007.csv,cursorobjecttracker_movement_T007.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,8,2,4,106.7791,108.6447,80,rotated,45,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T008.csv,cursorobjecttracker_movement_T008.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,9,3,1,109.7014,114.0454,60,aligned,0,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T009.csv,cursorobjecttracker_movement_T009.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,10,3,2,115.2017,116.9454,100,aligned,0,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T010.csv,cursorobjecttracker_movement_T010.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,11,3,3,118.0347,120.0677,120,aligned,0,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T011.csv,cursorobjecttracker_movement_T011.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,12,3,4,121.0342,122.8011,80,aligned,0,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T012.csv,cursorobjecttracker_movement_T012.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,13,4,1,123.8012,125.4678,100,aligned,0,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T013.csv,cursorobjecttracker_movement_T013.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,14,4,2,126.5014,128.2012,80,aligned,0,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T014.csv,cursorobjecttracker_movement_T014.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,15,5,1,129.2567,133.2802,80,nocursor,0,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T015.csv,cursorobjecttracker_movement_T015.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,16,5,2,135.4015,137.5018,100,nocursor,0,0,none,target,10,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T016.csv,cursorobjecttracker_movement_T016.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,17,6,1,138.6219,142.8899,120,rotated,45,0,none,target,20,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T017.csv,cursorobjecttracker_movement_T017.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,18,6,2,144.4355,147.3243,60,rotated,45,0,none,target,20,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T018.csv,cursorobjecttracker_movement_T018.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,19,6,3,148.6013,150.8464,100,rotated,45,0,none,target,20,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T019.csv,cursorobjecttracker_movement_T019.csv
+experiment_demo - reachToTarget/test/S001,experiment_demo - reachToTarget,test,1,20,6,4,152.2144,154.2903,80,rotated,45,0,none,target,20,r,-0.0650271,0.794292,0.0977957,0,,0,0,0,0,0,0,trackerholderobject_movement_T020.csv,cursorobjecttracker_movement_T020.csv

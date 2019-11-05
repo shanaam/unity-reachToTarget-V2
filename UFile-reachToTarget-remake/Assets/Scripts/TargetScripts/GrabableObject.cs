@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UXF;
 
 public class GrabableObject : MonoBehaviour
 {
@@ -19,7 +20,8 @@ public class GrabableObject : MonoBehaviour
     public HandCursorController handCursorController; //controller attached to the cursor
     public Collider collider; //colider of object
     public Rigidbody rigidbody; //rigidbody of the object
-    public GameObject centerExpObj;
+    public GameObject home;
+    public ExperimentController experimentController;
     //----------------------------------------------------------------
 
     public bool isKinematic;
@@ -37,13 +39,15 @@ public class GrabableObject : MonoBehaviour
     private float currTime;
     private Stack<Vector3> velocityHistory = new Stack<Vector3>(); //History of the hand cursors velocity. Used to smooth out throwing motions
 
+    private GameObject cursObjTracker;
     public OVRInput.Controller m_controller;
     // Start is called before the first frame update
     void Start()
     {
         //initialize variables and data structures
         handCursor = GameObject.FindGameObjectWithTag("Cursor");
-        centerExpObj = GameObject.FindGameObjectWithTag("Home");
+        home = GameObject.FindGameObjectWithTag("Home");
+        experimentController = GameObject.FindGameObjectWithTag("ExpCont").GetComponent<ExperimentController>();
         handCursorController = handCursor.GetComponent<HandCursorController>();
         
         prevPosition = handCursor.transform.localPosition;
@@ -51,6 +55,9 @@ public class GrabableObject : MonoBehaviour
         prevTime = 0;
         handVelocity = Vector3.zero;
         velocityHistory = new Stack<Vector3>();
+
+        // find the tracker object
+        cursObjTracker = GameObject.FindGameObjectWithTag("CursObjTracker");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -120,7 +127,7 @@ public class GrabableObject : MonoBehaviour
                 Vector3 targetPosition = target.transform.position;
 
                 //transform.localPosition = realHand.transform.position - transform.parent.transform.position;
-                Vector3 centerPos = centerExpObj.transform.position;
+                Vector3 centerPos = home.transform.position + (home.transform.forward * 0.1f);
 
                 //project onto a vector pointing toward target
                 //transform.localPosition = Vector3.Project(realHandPosition - rotatorObjectPosition, localTargetPosition);
@@ -133,6 +140,8 @@ public class GrabableObject : MonoBehaviour
                 Vector3 translateVector = centerPos;
                 transform.position = Vector3.ProjectOnPlane(transform.parent.position - centerPos, normalVector) + translateVector;
                 transform.position = transform.position + ((objPosWhenGrabbed - centerPos) - (Vector3.ProjectOnPlane(handPosWhenGrabbed - centerPos, normalVector)));
+
+                
             }
         }
     }
@@ -168,7 +177,15 @@ public class GrabableObject : MonoBehaviour
 
         transform.SetParent(handCursor.transform);
 
+        experimentController.pickUpTime = Time.time;
+
         grabed();
+
+        //start tracking object
+
+
+        cursObjTracker.GetComponent<CursorObjTrackerController>().tracking = true;
+        cursObjTracker.GetComponent<PositionRotationTracker>().StartRecording();
     }
 
     public void Drop()
@@ -184,6 +201,7 @@ public class GrabableObject : MonoBehaviour
 
         //Average velocity of previous 6 velocity frames for smoothness
         throwObject(avgVelocity * 3); //Multiplied by 3. I have no good answer as to why 3, it simply seems to get the most realistic feel for the force.
+
     }
 
     //Calculate hand velocity based on the average velocities of previous frames stored in the velocity stack.

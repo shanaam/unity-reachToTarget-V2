@@ -131,7 +131,12 @@ public class DeskCalibration : MonoBehaviour
 
         System.IO.StreamWriter file = new System.IO.StreamWriter(filename, true);
 
-        string line = deskAnchorA.transform.position.x.ToString() + ',' + deskAnchorA.transform.position.y.ToString() + ',' + deskAnchorA.transform.position.z.ToString() + ',' + deskAnchorA.transform.localRotation.x.ToString() + ',' + deskAnchorA.transform.localRotation.y.ToString() + ',' + deskAnchorA.transform.localRotation.z.ToString();
+        string line = deskAnchorA.transform.position.x.ToString() + ',' + 
+            deskAnchorA.transform.position.y.ToString() + ',' + 
+            deskAnchorA.transform.position.z.ToString() + ',' + 
+            deskAnchorA.transform.rotation.eulerAngles.x.ToString() + ',' + 
+            deskAnchorA.transform.rotation.eulerAngles.y.ToString() + ',' + 
+            deskAnchorA.transform.rotation.eulerAngles.z.ToString();
 
         Debug.Log("Data: " + line);
         file.WriteLine(line);

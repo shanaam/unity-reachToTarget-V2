@@ -15,6 +15,7 @@ using UXF;
 public class TargetContainerController : MonoBehaviour
 {
     public GameObject targetPrefab;
+    public GameObject secondaryHomePrefab;
     public GameObject arcPrefab;
     public GameObject boxPrefab;
     public GameObject cylinderPrefab;
@@ -35,7 +36,7 @@ public class TargetContainerController : MonoBehaviour
     List<int> shuffledRecepticleList = new List<int>();
     int currentRecepticle = 0;
     int batchSize = 0;
-    private GameObject recepticlePrefab;
+    private GameObject receptaclePrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -47,51 +48,72 @@ public class TargetContainerController : MonoBehaviour
 
     public void SpawnTarget(Trial trial)
     {
-        SetTargetAngle(trial); //set the target angle for this trial
+        float targetAngle = trial.settings.GetFloat("targetAngle");
+        float vertPos = trial.settings.GetFloat("target_vertPos");
+
+        SetTargetAngle(targetAngle, vertPos); //set the target angle for this trial
 
         targetDistance = trial.settings.GetFloat("target_distance"); //set target distance for this trial
-        targetDistance = targetDistance / 100;
+        targetDistance = targetDistance / 100.0f;
         //the distance to instantiate the target is in the z position
 
         if (IsGrabTrial)
         {
+            // Reset the angle to 90 degrees (forward)
+            SetTargetAngle(90f, vertPos);
 
+            // Offset the entire target container
+            transform.localPosition = new Vector3(0.0f, 0.0f, grabObjSpawnDist);
             //targetDistance = 0.3f; 
+
             var grabObject = Instantiate(
-                recepticlePrefab.name == boxPrefab.name ? PhysicsCubePrefab : PhysicsSpherePrefab, transform);
+                receptaclePrefab.name == boxPrefab.name ? PhysicsCubePrefab : PhysicsSpherePrefab, transform);
 
-            var recepticle = Instantiate(recepticlePrefab, transform);
+            Vector3 receptacleLocation = new Vector3(0f, 0f, targetDistance - grabObjSpawnDist);
 
-            recepticle.transform.localPosition = new Vector3(0f, 0f, targetDistance);
-            grabObject.transform.localPosition = new Vector3(0f, 0.1f, grabObjSpawnDist);
+            grabObject.transform.localPosition = new Vector3(0f, 0.1f, 0.0f);
             grabObject.GetComponent<GrabableObject>().m_controller = experimentController.GetController();
+            grabObject.transform.SetParent(null);
+
 
             // 50/50 chance for either 25 degrees left or right of the target angle
             System.Random rand = new System.Random();
-            float deviation = rand.Next(2) == 0 ? -25f : 25f;
-
-            // Rotate the entire transform +/- 15 degrees left or right of the target angle
-            transform.rotation = Quaternion.Euler(
-                trial.settings.GetFloat("target_vertPos") * -1f,
-                (trial.settings.GetFloat("targetAngle") * -1f) + 90f + deviation,
-                0.0f
-            );
-
-            // Instantiate the recepticle opposite of the physics object
-            var wrongRecepticle = Instantiate(
-                recepticlePrefab.name == boxPrefab.name ? cylinderPrefab : boxPrefab, transform);
-            wrongRecepticle.transform.localPosition = new Vector3(0f, 0f, targetDistance);
-
-            wrongRecepticle.transform.SetParent(null);
             
-            // Rotate the entire transform back to the original angle
-            transform.rotation = Quaternion.Euler(
-                trial.settings.GetFloat("target_vertPos") * -1f,
-                (trial.settings.GetFloat("targetAngle") * -1f) + 90f,
-                0.0f
-            );
+            float deviation = (rand.Next(2) == 0 ? -45f : 45f) / 2.0f;
+            experimentController.distractorLoc = -deviation;
 
-            wrongRecepticle.transform.SetParent(transform);
+            // Set up receptacle
+            SetTargetAngle(targetAngle + deviation, vertPos);
+            var receptacle = Instantiate(receptaclePrefab, transform);
+            receptacle.transform.localPosition = receptacleLocation;
+            receptacle.transform.SetParent(null);
+
+            
+            // Set up incorrect receptacle
+            SetTargetAngle(targetAngle - deviation, vertPos);
+            var wrongReceptacle = Instantiate(
+                receptaclePrefab.name == boxPrefab.name ? cylinderPrefab : boxPrefab, transform);
+            wrongReceptacle.transform.localPosition = receptacleLocation;
+            wrongReceptacle.transform.SetParent(null);
+
+
+            // Reset the position of the target container back to its original position
+            SetTargetAngle(targetAngle, vertPos);
+
+            transform.localPosition = Vector3.zero;
+
+            grabObject.transform.SetParent(transform);
+            wrongReceptacle.transform.SetParent(transform);
+            receptacle.transform.SetParent(transform);
+
+            //log some things
+            experimentController.objSpawnX = grabObject.transform.position.x;
+            experimentController.objSpawnZ = grabObject.transform.position.z;
+
+            // log receptacle too
+            experimentController.recepticleX = receptacle.transform.position.x;
+            experimentController.recepticleY = receptacle.transform.position.y;
+            experimentController.recepticleZ = receptacle.transform.position.z;
         }
         else
         {
@@ -104,16 +126,35 @@ public class TargetContainerController : MonoBehaviour
             }
             else
             {
-                transform.localPosition = new Vector3(0, 0, 0); //sets target container to parent 0
+                // Set target angle to forwards
+                SetTargetAngle(90f, vertPos);
+                transform.localPosition = new Vector3(0, 0, 0.04f); //sets target container to parent 0
+
+                // Spawn the second home
+                var secondHome = Instantiate(secondaryHomePrefab, transform);
+                secondHome.transform.SetParent(null);
+
+                // Set up the real target
+                SetTargetAngle(targetAngle, vertPos);
                 var target = Instantiate(targetPrefab, transform);
                 target.transform.localPosition = new Vector3(0, 0, targetDistance);
-                particleSystem.transform.localPosition = new Vector3(0, 0, targetDistance);
+                target.transform.SetParent(null);
+
+                // Assign reference of the real target to the second home
+                secondHome.GetComponent<TargetController>().IsSecondaryHome = true;
+                secondHome.GetComponent<TargetController>().RealTarget = target;
+
+                // Reset all positions and re-parent everything
+                transform.localPosition = Vector3.zero;
+                secondHome.transform.SetParent(transform);
+                target.transform.SetParent(transform);
+                particleSystem.transform.localPosition = target.transform.localPosition;
+
+                target.SetActive(false);
+
                 Debug.Log("Target has been spawned at: " + target.transform.localPosition.ToString());
             }
         }
-        
-
-        
     }
 
 
@@ -122,7 +163,7 @@ public class TargetContainerController : MonoBehaviour
         audioSource.Play();
         float pitch = Random.Range(0.5f, 1.5f);
         audioSource.pitch = pitch;
-        Debug.Log("Audio Clip Played, Pitch: " + pitch);
+        //Debug.Log("Audio Clip Played, Pitch: " + pitch);
     }
 
     private void explodeParticles()
@@ -164,18 +205,19 @@ public class TargetContainerController : MonoBehaviour
     }
 
 
-    void SetTargetAngle(Trial trial)
+    /// <summary>
+    /// Rotates the entire container to the specified angle
+    /// </summary>
+    void SetTargetAngle(float angle, float vertical)
     {
-        float targetLocation = trial.settings.GetFloat("targetAngle"); // set this at trial start
-        float targetVPos = trial.settings.GetFloat("target_vertPos");
-        //rotate this thing 
-        transform.rotation = Quaternion.Euler(targetVPos * -1, (targetLocation * -1) + 90, 0); //the Y here is right (fixed) 
+        transform.rotation = Quaternion.Euler(vertical * -1, (angle * -1) + 90, 0); //the Y here is right (fixed) 
     }
 
 
     // run at start of every trial
     public void DetermineTrialTargetAngle(Trial trial)
     {
+        Debug.Log("run");
         //Pseudorandom target location
         if (shuffledTargetList.Count < 1)
         {
@@ -190,7 +232,7 @@ public class TargetContainerController : MonoBehaviour
             shuffledTargetList.Shuffle();
         }
 
-        // Pseudorandom recepticle location
+        // Pseudorandom receptacle location
         if (shuffledRecepticleList.Count < 1)
         {
             int trials = trial.session.CurrentBlock.trials.Count;
@@ -202,25 +244,42 @@ public class TargetContainerController : MonoBehaviour
                 Debug.LogError("WARNING! NUMBER OF TARGETS DOES NOT EQUALLY DIVIDE INTO NUMBER OF TRIALS");
             }
 
-            // Number of recepticles per list of targets
-            int recepticles = trials / targets;
-            for (int i = 0; i < recepticles; i++)
+            // Number of receptacles per list of targets
+            int receptacles = trials / targets;
+            for (int i = 0; i < receptacles; i++)
             {
                 // 1 is box, 0 is sphere
-                shuffledRecepticleList.Add(i % 2 == 0 ? 1 : 0);
+                // Can be randomized or set to have all spheres or cubes per block
+                switch (trial.settings.GetString("obj_type"))
+                {
+                    case "sphere":
+                        shuffledRecepticleList.Add(0);
+                        break;
+                    case "cube":
+                        shuffledRecepticleList.Add(1);
+                        break;
+                    case "random":
+                    default:
+                        shuffledRecepticleList.Add(i % 2 == 0 ? 1 : 0);
+                        break;
+                }
             }
 
             currentRecepticle = batchSize;
             shuffledRecepticleList.Shuffle();
         }
 
-        recepticlePrefab = shuffledRecepticleList[0] == 0 ? cylinderPrefab : boxPrefab;
-
-        if (currentRecepticle > 0) { currentRecepticle--; }
-        else
+        if (trial.settings.GetString("experiment_mode") == "objectToBox")
         {
-            shuffledRecepticleList.RemoveAt(0);
-            currentRecepticle = batchSize;
+            Debug.Log("RUNNN");
+            receptaclePrefab = shuffledRecepticleList[0] == 0 ? cylinderPrefab : boxPrefab;
+
+            if (currentRecepticle > 0) { currentRecepticle--; }
+            else
+            {
+                shuffledRecepticleList.RemoveAt(0);
+                currentRecepticle = batchSize;
+            }
         }
 
         float targetAngle = shuffledTargetList[0];

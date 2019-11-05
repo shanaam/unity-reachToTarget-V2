@@ -1,114 +1,35 @@
 timestamp,log_type,message
-0,Log,D:/shanaa/repos/unity-reachToTarget-remake/UFile-reachToTarget-remake/Assets is Active dataPath
-0,Log,D:/shanaa/repos/unity-reachToTarget-remake/UFile-reachToTarget-remake/Assets/Files/deskCalibration.txt exists calibrating desk
+0,Log,C:/Users/experimenter/Desktop/UFile-reachToTarget-remake/Assets is Active dataPath
+0,Log,C:/Users/experimenter/Desktop/UFile-reachToTarget-remake/Assets/Files/deskCalibration.txt exists calibrating desk
 0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
 0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
-6.80613,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-7.785501,Warning,Warning: Session already exists! Continuing will overwrite
-12.78795,Log,Home Position Transformed: (0.006271522 0.9194839 0.5021151)
-23.46486,Log,Home Position Transformed: (0.0368465 0.9180269 0.5079731)
-24.53147,Log,instruction acceptor: running end and prepare
-24.53147,Log,Audio Clip Played Pitch: 1.187057
-42.56,Log,Audio Clip Played Pitch: 0.5124869
-42.56,Log,Audio Clip Played Pitch: 1.415301
-238.6764,Log,Home Position Transformed: (-0.09262956 0.9328005 0.3851797)
-240.7427,Log,Home Position Transformed: (-0.1065607 0.9235957 0.3539723)
-246.7,Log,Audio Clip Played Pitch: 0.5789311
-246.7,Log,Audio Clip Played Pitch: 0.5852534
-248.6432,Log,Home Position Transformed: (-0.1125383 0.9279488 0.3752137)
-251.72,Log,Audio Clip Played Pitch: 0.5262897
-251.72,Log,Audio Clip Played Pitch: 0.7380806
-253.51,Log,Home Position Transformed: (-0.1198535 0.9302139 0.3937813)
-260.32,Log,Audio Clip Played Pitch: 0.7686397
-260.32,Log,Audio Clip Played Pitch: 1.209999
-261.6755,Log,Home Position Transformed: (-0.110156 0.9339983 0.3846832)
-264.44,Log,Audio Clip Played Pitch: 0.5075465
-264.44,Log,Audio Clip Played Pitch: 0.7668002
-266.1871,Log,Home Position Transformed: (-0.1209126 0.9328527 0.4061213)
-268.6,Log,Audio Clip Played Pitch: 1.282322
-268.6,Log,Audio Clip Played Pitch: 0.995242
-270.7868,Log,Home Position Transformed: (-0.1133849 0.9311205 0.3870858)
-274.04,Log,Audio Clip Played Pitch: 1.374691
-274.04,Log,Audio Clip Played Pitch: 1.396854
-275.2869,Log,Home Position Transformed: (-0.1341489 0.9403737 0.3808306)
-277.78,Log,Audio Clip Played Pitch: 1.047673
-277.78,Log,Audio Clip Played Pitch: 1.022001
-279.4429,Log,Home Position Transformed: (-0.1188121 0.9492011 0.380393)
-281.96,Log,Audio Clip Played Pitch: 1.437241
-281.96,Log,Audio Clip Played Pitch: 1.39665
-283.8203,Log,Home Position Transformed: (-0.1109049 0.9488765 0.3938753)
-286.54,Log,Audio Clip Played Pitch: 0.7301749
-286.54,Log,Audio Clip Played Pitch: 0.7317514
-287.9761,Log,Home Position Transformed: (-0.1107703 0.9571565 0.3977499)
-290.7,Log,Audio Clip Played Pitch: 1.121334
-290.7,Log,Audio Clip Played Pitch: 0.8887218
-291.9652,Log,Home Position Transformed: (-0.1300395 0.9421276 0.3898223)
-294.4,Log,Audio Clip Played Pitch: 0.972113
-294.4,Log,Audio Clip Played Pitch: 0.627556
-295.7536,Log,Home Position Transformed: (-0.100267 0.9552891 0.3995869)
-298.34,Log,Audio Clip Played Pitch: 0.5718538
-298.34,Log,Audio Clip Played Pitch: 0.5765663
-299.676,Log,Home Position Transformed: (-0.1122411 0.953657 0.375383)
-302.22,Log,Audio Clip Played Pitch: 0.9368819
-302.22,Log,Audio Clip Played Pitch: 1.083888
-303.4425,Log,Home Position Transformed: (-0.1163462 0.9608361 0.4059904)
-306.42,Log,Audio Clip Played Pitch: 0.5515118
-306.42,Log,Audio Clip Played Pitch: 0.52231
-307.3874,Log,Home Position Transformed: (-0.1031034 0.9611975 0.4020972)
-310.24,Log,Audio Clip Played Pitch: 0.5010161
-310.24,Log,Audio Clip Played Pitch: 1.227523
-311.7538,Log,Home Position Transformed: (-0.1157501 0.9592648 0.407505)
-314.56,Log,Audio Clip Played Pitch: 0.7903234
-314.56,Log,Audio Clip Played Pitch: 1.424562
-316.7317,Log,Home Position Transformed: (-0.1369558 0.9617715 0.4073182)
-319.22,Log,Audio Clip Played Pitch: 0.5821174
-319.22,Log,Audio Clip Played Pitch: 1.022596
-320.0879,Log,Home Position Transformed: (-0.1253963 0.9687943 0.4010976)
-322.0879,Log,Home Position Transformed: (-0.1276174 0.9540428 0.404748)
-325.1,Log,Audio Clip Played Pitch: 1.029064
-325.1,Log,Audio Clip Played Pitch: 0.5771836
-326.6986,Log,Home Position Transformed: (-0.1594008 0.9411165 0.391816)
-329.62,Log,Audio Clip Played Pitch: 1.448957
-329.62,Log,Audio Clip Played Pitch: 1.203109
-330.2767,Log,Home Position Transformed: (-0.2702333 1.004864 0.4263799)
-331.6766,Log,Home Position Transformed: (-0.1751625 0.9556214 0.4232369)
-335.32,Log,Audio Clip Played Pitch: 1.48228
-335.32,Log,Audio Clip Played Pitch: 1.425389
-336.6658,Log,Home Position Transformed: (-0.1318823 0.934669 0.3954374)
-339.16,Log,Audio Clip Played Pitch: 1.184283
-339.16,Log,Audio Clip Played Pitch: 1.155979
-341.2108,Log,Home Position Transformed: (-0.1201001 0.9547374 0.4050868)
-343.9,Log,Audio Clip Played Pitch: 1.166356
-343.9,Log,Audio Clip Played Pitch: 1.115816
-345.2544,Log,Home Position Transformed: (-0.1192631 0.9442505 0.390508)
-347.68,Log,Audio Clip Played Pitch: 0.9183437
-347.68,Log,Audio Clip Played Pitch: 1.016372
-349.1765,Log,Home Position Transformed: (-0.09081014 0.9365719 0.3915502)
-351.78,Log,Audio Clip Played Pitch: 1.058992
-351.78,Log,Audio Clip Played Pitch: 0.8780442
-353.2542,Log,Home Position Transformed: (-0.07300733 0.9371132 0.3694492)
-355.86,Log,Audio Clip Played Pitch: 0.5385443
-355.86,Log,Audio Clip Played Pitch: 1.057311
-357.2765,Log,Home Position Transformed: (-0.09922097 0.9259245 0.3551364)
-360.38,Log,Audio Clip Played Pitch: 0.6229329
-360.38,Log,Audio Clip Played Pitch: 1.194775
-361.843,Log,Home Position Transformed: (-0.01422385 0.8461493 0.2605428)
-364.8217,Log,Home Position Transformed: (-0.05336804 0.9499653 0.4498491)
-367.1102,Log,Home Position Transformed: (-0.05000852 0.9378971 0.4482188)
-368.5993,Log,instruction acceptor: running end and prepare
-368.5993,Log,Audio Clip Played Pitch: 0.7057227
-371.34,Log,Audio Clip Played Pitch: 0.650616
-371.34,Log,Audio Clip Played Pitch: 0.9940795
-375.48,Log,Audio Clip Played Pitch: 0.6753856
-375.48,Log,Audio Clip Played Pitch: 0.608875
-377.9546,Log,Home Position Transformed: (-0.06766742 0.9463941 0.417017)
-381.28,Log,Audio Clip Played Pitch: 0.7939039
-381.28,Log,Audio Clip Played Pitch: 1.179858
-381.8987,Log,Home Position Transformed: (-0.05940635 0.9383038 0.4402134)
-385.7658,Log,Home Position Transformed: (-0.06416588 0.936009 0.4095323)
-387.88,Log,Audio Clip Played Pitch: 0.9038976
-387.88,Log,Audio Clip Played Pitch: 1.233016
-388.633,Log,Home Position Transformed: (-0.06201534 0.9175766 0.3545315)
-391.9326,Log,Home Position Transformed: (-0.06581432 0.925256 0.3669347)
-394.48,Log,Audio Clip Played Pitch: 1.137743
-394.48,Log,Audio Clip Played Pitch: 1.003687
+3.387669,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+4.021102,Warning,Warning: Session already exists! Continuing will overwrite
+5.427165,Log,Home Position Transformed: (-0.08964345 0.9141315 0.1453973)
+5.820624,Log,run
+5.820624,Log,RUNNN
+6.323068,Log,Home Position Transformed: (-0.08987384 0.8864 0.190297)
+7.502158,Log,Home Position Transformed: (-0.07036259 0.8092747 0.09472373)
+7.979646,Log,Home Position Transformed: (-0.07034805 0.8087471 0.09540692)
+10.66,Log,Reassigning hand for next trial. Righthanded: True
+10.66,Log,Reassigning hand for next trial. Righthanded: True
+11.69966,Log,run
+11.69966,Log,RUNNN
+13.14,Log,Reassigning hand for next trial. Righthanded: True
+13.14,Log,Reassigning hand for next trial. Righthanded: True
+14.42179,Log,run
+14.42179,Log,RUNNN
+16.86,Log,Reassigning hand for next trial. Righthanded: True
+16.86,Log,Reassigning hand for next trial. Righthanded: True
+17.9771,Log,run
+17.9771,Log,RUNNN
+19.74,Log,Reassigning hand for next trial. Righthanded: True
+19.74,Log,Reassigning hand for next trial. Righthanded: True
+20.92183,Log,run
+20.92183,Log,RUNNN
+22.74,Log,Reassigning hand for next trial. Righthanded: True
+22.74,Log,Reassigning hand for next trial. Righthanded: True
+24.11034,Log,run
+24.11034,Log,RUNNN
+25.96,Log,Reassigning hand for next trial. Righthanded: False
+25.96,Log,Reassigning hand for next trial. Righthanded: False

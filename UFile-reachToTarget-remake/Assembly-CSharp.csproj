@@ -157,11 +157,13 @@
     <Compile Include="Assets\Scripts\LocalizationScripts\RayPulseController.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\CenterExperimentController.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\CursorMovementType.cs" />
+    <Compile Include="Assets\Scripts\ReachScripts\CursorObjTrackerController.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\ExperimentController.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\ExperimentSetup.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\HandCursorController.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\HomeCursorController.cs" />
     <Compile Include="Assets\Scripts\ReachScripts\InstructionAcceptor.cs" />
+    <Compile Include="Assets\Scripts\ReachScripts\InstructionController.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\GrabableObject.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\PhysicsCubeController.cs" />
     <Compile Include="Assets\Scripts\TargetScripts\PhysicsObjectBase.cs" />
@@ -253,6 +255,7 @@
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderPBS.shader" />
     <None Include="Assets\HighQualityBricks&amp;Walls\README.txt" />
+    <None Include="Assets\Files\deskCalibration.txt" />
     <None Include="Assets\Oculus\SampleFramework\license.txt" />
     <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarSurfaceShaderPBSV2.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -269,7 +272,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\texture-709723.shader" />
     <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\wall-617961.shader" />
-    <None Include="Assets\Files\deskCalibration.txt" />
+    <None Include="Assets\Files\deskCalibrationBack.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\DebugUI\Fonts\Montserrat\OFL.txt" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderPBSV2.shader" />

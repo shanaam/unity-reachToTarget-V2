@@ -69,7 +69,7 @@ public class HandCursorController : MonoBehaviour
     private Vector3 handPastPosition = new Vector3(0, 0, 0);
 
     private Vector3 handPosOffset = new Vector3(0, 0, 0);
-    public string handForNextTrial;
+    public string HandForNextTrial;
     //private Vector3 currentPosition;
 
     // Use this for initialization
@@ -183,13 +183,12 @@ public class HandCursorController : MonoBehaviour
                 //}
                 //else
                 //{
-                    rotatedVector = Quaternion.Euler(0, rotation, 0) * movementVector;
+                    rotatedVector = Quaternion.Euler(0, rotation * -1, 0) * movementVector;
                     transform.position = pastPosition + rotatedVector;
                 //}
 
                 //visible = false;
             }
-
             else
             {
                 //visible = true;
@@ -205,7 +204,27 @@ public class HandCursorController : MonoBehaviour
         }
         else
         {
-            transform.localPosition = movementType.NewCursorPosition(realHandPosition, centreExpPosition);
+            GameObject targ = GameObject.FindGameObjectWithTag("Target");
+            if (targ != null)
+            {
+                // If we are in the first stage (IsSecondaryHome == true) use aligned
+                // Else use trial specific movement type where the secondary home
+                if (targ.GetComponent<TargetController>().IsSecondaryHome)
+                {
+                    transform.localPosition = default_movement.NewCursorPosition(realHandPosition, centreExpPosition);
+                }
+                else
+                {
+                    transform.localPosition = movementType.NewCursorPosition(realHandPosition,
+                        centreExpPosition + new Vector3(0.0f, 0.0f, 0.04f)) + new Vector3(0.0f, 0.0f, 0.04f); 
+                    //- (transform.parent.transform.forward * 0.06f));
+                }
+            }
+            else
+            {
+                transform.localPosition = movementType.NewCursorPosition(realHandPosition, centreExpPosition);
+            }
+
             VisibleCursor();
         }
         
@@ -232,6 +251,12 @@ public class HandCursorController : MonoBehaviour
             }
         }
         
+
+        if (isInHomeArea && taskCompleted ||
+            (!isInHomeArea && !taskCompleted))
+        {
+            CheckForPause();
+        }
     }
 
     //modifiers
@@ -256,6 +281,7 @@ public class HandCursorController : MonoBehaviour
         {
             isInHomeArea = true;
 
+            /*
             if (taskCompleted)
             {
                 InvokeRepeating("CheckForPause", 0, checkForPauseRate);
@@ -264,6 +290,7 @@ public class HandCursorController : MonoBehaviour
             {
                 CancelInvoke("CheckForPause");
             }
+            */
         }
     }
 
@@ -284,6 +311,7 @@ public class HandCursorController : MonoBehaviour
         {
             isInHomeArea = false;
 
+            /*
             if (!taskCompleted)
             {
                 InvokeRepeating("CheckForPause", 0, checkForPauseRate);
@@ -292,7 +320,7 @@ public class HandCursorController : MonoBehaviour
             {
                 CancelInvoke("CheckForPause");
             }
-
+            */
         }
         
     }
@@ -335,39 +363,34 @@ public class HandCursorController : MonoBehaviour
             if (checkForPauseTimerActive)
             {
                 pausedTimeStart = Time.fixedTime;
-                //Debug.Log("Paused Timer Started at: " + pausedTimeStart);
             }
+            
             //If paused for longer than pauseLength, isPaused is true
             float delta = Time.fixedTime - pausedTimeStart;
-            //Debug.Log("Delta time: " + delta);
+
             if (delta >= pauseLength)
             {
-                //Debug.Log("Delta time greater than " + pauseLength);
                 isPaused = true;
             }
             //Blocks pausedTimeStart from being reset
-            checkForPauseTimerActive = false ;
-            
-            
+            checkForPauseTimerActive = false;
         }
         else
         {
             isPaused = false;
             //PausedTimeStart can now be reset.
             checkForPauseTimerActive = true;
-            
         }   
     }
 
-
     // vibrate controller for 0.2 seconds
-    public void ShortVibrateController()
+    public void ShortVibrateController(float amplitude = 0.6f, float duration = 0.2f)
     {
         // make the controller vibrate
-        OVRInput.SetControllerVibration(1, 0.6f, m_controller);
+        OVRInput.SetControllerVibration(1, amplitude, m_controller);
 
         // stop the vibration after x seconds
-        Invoke("StopVibrating", 0.2f);
+        Invoke("StopVibrating", duration);
     }
 
 
@@ -375,6 +398,7 @@ public class HandCursorController : MonoBehaviour
     {
         OVRInput.SetControllerVibration(0, 0, m_controller);
     }
+
     //-- Moved to Experiment Controller
     //Start timer when home Disapears, End when target disapears
     private void StartTimer()
@@ -410,7 +434,7 @@ public class HandCursorController : MonoBehaviour
         realHand.transform.SetParent(newTransform.transform);
         m_controller = experimentController.GetController();
 
-        handPosOffsetToUse = handForNextTrial == "r" ?
+        handPosOffsetToUse = HandForNextTrial == "r" ?
             handPosOffset : Vector3.Scale(handPosOffset, new Vector3(-1, 1, 1));
 
         realHand.transform.localPosition = handPosOffsetToUse;

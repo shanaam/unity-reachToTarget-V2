@@ -117,7 +117,7 @@ public class RotatedHandCursor : CursorMovementType
     public override Vector3 NewCursorPosition(Vector3 realPosition, Vector3 centreExpPosition)
     {
         //todo implement rotated translation
-        Vector3 rotated = Quaternion.Euler(0, Angle, 0) * (realPosition - centreExpPosition);
+        Vector3 rotated = Quaternion.Euler(0, -Angle, 0) * (realPosition - centreExpPosition);
 
         return rotated;
     }

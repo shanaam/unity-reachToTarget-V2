@@ -3,5 +3,67 @@ timestamp,log_type,message
 0,Log,D:/shanaa/repos/unity-reachToTarget-remake/UFile-reachToTarget-remake/Assets/Files/deskCalibration.txt exists calibrating desk
 0,Log,Loaded: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
 0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
-3.252904,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
-4.085543,Warning,Warning: Session already exists! Continuing will overwrite
+5.101024,Log,Updating: D:\shanaa\repos\unity-reachToTarget-remake\UFile-reachToTarget-remake\data\demo_participant_list.csv
+6.188242,Warning,Warning: Session already exists! Continuing will overwrite
+8.447737,Log,Home Position Transformed: (-0.0650271 0.794292 0.0977957)
+8.841625,Log,run
+8.841625,Log,Target has been spawned at: (0.0 0.0 0.1)
+26.72372,Log,Reassigning hand for next trial. Righthanded: True
+29.53308,Log,run
+29.53308,Log,Target has been spawned at: (0.0 0.0 0.1)
+72.44511,Log,Reassigning hand for next trial. Righthanded: True
+75.43409,Log,run
+75.43409,Log,Target has been spawned at: (0.0 0.0 0.1)
+89.66751,Log,Reassigning hand for next trial. Righthanded: True
+93.30102,Log,run
+93.30102,Log,Target has been spawned at: (0.0 0.0 0.1)
+96.04559,Log,Reassigning hand for next trial. Righthanded: True
+97.20078,Log,run
+97.20078,Log,Target has been spawned at: (0.0 0.0 0.1)
+99.42311,Log,Reassigning hand for next trial. Righthanded: True
+100.6009,Log,run
+100.6009,Log,Target has been spawned at: (0.0 0.0 0.1)
+102.7898,Log,Reassigning hand for next trial. Righthanded: True
+103.9565,Log,run
+103.9565,Log,Target has been spawned at: (0.0 0.0 0.1)
+105.7015,Log,Reassigning hand for next trial. Righthanded: True
+106.7791,Log,run
+106.7791,Log,Target has been spawned at: (0.0 0.0 0.1)
+108.6447,Log,Reassigning hand for next trial. Righthanded: True
+109.7014,Log,run
+109.7014,Log,Target has been spawned at: (0.0 0.0 0.1)
+114.0454,Log,Reassigning hand for next trial. Righthanded: True
+115.2017,Log,run
+115.2017,Log,Target has been spawned at: (0.0 0.0 0.1)
+116.9454,Log,Reassigning hand for next trial. Righthanded: True
+118.0347,Log,run
+118.0347,Log,Target has been spawned at: (0.0 0.0 0.1)
+120.0677,Log,Reassigning hand for next trial. Righthanded: True
+121.0342,Log,run
+121.0342,Log,Target has been spawned at: (0.0 0.0 0.1)
+122.8011,Log,Reassigning hand for next trial. Righthanded: True
+123.8012,Log,run
+123.8012,Log,Target has been spawned at: (0.0 0.0 0.1)
+125.4678,Log,Reassigning hand for next trial. Righthanded: True
+126.5014,Log,run
+126.5014,Log,Target has been spawned at: (0.0 0.0 0.1)
+128.2012,Log,Reassigning hand for next trial. Righthanded: True
+129.2567,Log,run
+129.2567,Log,Target has been spawned at: (0.0 0.0 0.1)
+133.2802,Log,Reassigning hand for next trial. Righthanded: True
+135.4015,Log,run
+135.4015,Log,Target has been spawned at: (0.0 0.0 0.1)
+137.5018,Log,Reassigning hand for next trial. Righthanded: True
+138.6219,Log,run
+138.6219,Log,Target has been spawned at: (0.0 0.0 0.2)
+142.8899,Log,Reassigning hand for next trial. Righthanded: True
+144.4355,Log,run
+144.4355,Log,Target has been spawned at: (0.0 0.0 0.2)
+147.3243,Log,Reassigning hand for next trial. Righthanded: True
+148.6013,Log,run
+148.6013,Log,Target has been spawned at: (0.0 0.0 0.2)
+150.8464,Log,Reassigning hand for next trial. Righthanded: True
+152.2144,Log,run
+152.2144,Log,Target has been spawned at: (0.0 0.0 0.2)
+154.2903,Log,Reached end of experiment
+154.2903,Log,Reassigning hand for next trial. Righthanded: False

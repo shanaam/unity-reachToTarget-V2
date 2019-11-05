@@ -31,6 +31,7 @@ public class ExperimentSetup : MonoBehaviour
         List<float> per_block_target_vertPos = session.settings.GetFloatList("per_block_target_vertPos");
         List<string> per_block_plane = session.settings.GetStringList("per_block_plane");
         List<string> per_block_hand = session.settings.GetStringList("per_block_hand");
+        List<string> per_block_obj_type = session.settings.GetStringList("per_block_obj_type");
         string experiment_mode = session.settings.GetString("experiment_mode");
 
 
@@ -46,6 +47,7 @@ public class ExperimentSetup : MonoBehaviour
             session.blocks[i].settings.SetValue("target_vertPos", per_block_target_vertPos[i]);
             session.blocks[i].settings.SetValue("plane_setting", per_block_plane[i]);
             session.blocks[i].settings.SetValue("hand", per_block_hand[i]);
+            session.blocks[i].settings.SetValue("obj_type", per_block_obj_type[i]);
             
         }
 
