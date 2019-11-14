@@ -217,7 +217,11 @@ public class ExperimentController : MonoBehaviour
         cursorCntrler.ChangeHand(rightHanded ? RightControllerAnchor : LeftControllerAnchor);
 
         // Vibrate the controller to let the participant know which hand to use
-        cursorCntrler.ShortVibrateController(1.0f, 0.5f);
+
+        if (session.CurrentTrial.settings.GetString("experiment_mode") != "target")
+        {
+            cursorCntrler.ShortVibrateController(1.0f, 0.5f);
+        }
 
         homeCursorController.Appear();
 
@@ -237,10 +241,12 @@ public class ExperimentController : MonoBehaviour
     {
         Instruction.text = instruction;
     }
+
     private void HideInstruction()
     {
         Instruction.gameObject.SetActive(false);
     }
+
     private void ShowInstruction()
     {
         Instruction.gameObject.SetActive(true);
@@ -282,9 +288,6 @@ public class ExperimentController : MonoBehaviour
     {
         return B - A;
     }
-
-    
-    
 
     public void UnrenderObject(GameObject obj)
     {

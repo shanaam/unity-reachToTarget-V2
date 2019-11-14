@@ -117,43 +117,48 @@ public class TargetContainerController : MonoBehaviour
         }
         else
         {
+            // Set target angle to forwards
+            SetTargetAngle(90f, vertPos);
+            transform.localPosition = new Vector3(0, 0, 0.04f); //sets target container to parent 0
+
+            // Spawn the second home
+            var secondHome = Instantiate(secondaryHomePrefab, transform);
+            secondHome.transform.SetParent(null);
+
+            // Set up the real target
+            SetTargetAngle(targetAngle, vertPos);
+
+            // Set up the real target
+            var target = Instantiate(
+                trial.settings.GetString("type") == "localization" ? arcPrefab : targetPrefab, 
+                transform
+            );
+
             if (trial.settings.GetString("type") == "localization")
             {
-                Debug.Log("Spawning Arc");
-                transform.localPosition = Vector3.zero;
-                var target = Instantiate(arcPrefab, transform);
                 target.GetComponent<ArcController>().GenerateArc(trial);
+                target.GetComponent<ArcController>().SecondaryHomePos = secondHome.transform.position;
             }
             else
             {
-                // Set target angle to forwards
-                SetTargetAngle(90f, vertPos);
-                transform.localPosition = new Vector3(0, 0, 0.04f); //sets target container to parent 0
-
-                // Spawn the second home
-                var secondHome = Instantiate(secondaryHomePrefab, transform);
-                secondHome.transform.SetParent(null);
-
-                // Set up the real target
-                SetTargetAngle(targetAngle, vertPos);
-                var target = Instantiate(targetPrefab, transform);
                 target.transform.localPosition = new Vector3(0, 0, targetDistance);
-                target.transform.SetParent(null);
-
-                // Assign reference of the real target to the second home
-                secondHome.GetComponent<TargetController>().IsSecondaryHome = true;
-                secondHome.GetComponent<TargetController>().RealTarget = target;
-
-                // Reset all positions and re-parent everything
-                transform.localPosition = Vector3.zero;
-                secondHome.transform.SetParent(transform);
-                target.transform.SetParent(transform);
-                particleSystem.transform.localPosition = target.transform.localPosition;
-
-                target.SetActive(false);
-
-                Debug.Log("Target has been spawned at: " + target.transform.localPosition.ToString());
+                target.GetComponent<TargetController>().SecondaryHomePos = secondHome.transform.position;
+                
             }
+
+            target.transform.SetParent(null);
+
+            // Assign reference of the real target to the second home
+            secondHome.GetComponent<TargetController>().IsSecondaryHome = true;
+            secondHome.GetComponent<TargetController>().RealTarget = target;
+
+            // Reset all positions and re-parent everything
+            transform.localPosition = Vector3.zero;
+            secondHome.transform.SetParent(transform);
+            target.transform.SetParent(transform);
+            particleSystem.transform.localPosition = target.transform.localPosition;
+
+            target.SetActive(false);
         }
     }
 
@@ -217,7 +222,6 @@ public class TargetContainerController : MonoBehaviour
     // run at start of every trial
     public void DetermineTrialTargetAngle(Trial trial)
     {
-        Debug.Log("run");
         //Pseudorandom target location
         if (shuffledTargetList.Count < 1)
         {
@@ -232,46 +236,45 @@ public class TargetContainerController : MonoBehaviour
             shuffledTargetList.Shuffle();
         }
 
-        // Pseudorandom receptacle location
-        if (shuffledRecepticleList.Count < 1)
-        {
-            int trials = trial.session.CurrentBlock.trials.Count;
-            int targets = session.settings.GetFloatList(trial.settings.GetString("targetListToUse")).Count;
-            batchSize = targets - 1;
-
-            if (trials % targets != 0)
-            {
-                Debug.LogError("WARNING! NUMBER OF TARGETS DOES NOT EQUALLY DIVIDE INTO NUMBER OF TRIALS");
-            }
-
-            // Number of receptacles per list of targets
-            int receptacles = trials / targets;
-            for (int i = 0; i < receptacles; i++)
-            {
-                // 1 is box, 0 is sphere
-                // Can be randomized or set to have all spheres or cubes per block
-                switch (trial.settings.GetString("obj_type"))
-                {
-                    case "sphere":
-                        shuffledRecepticleList.Add(0);
-                        break;
-                    case "cube":
-                        shuffledRecepticleList.Add(1);
-                        break;
-                    case "random":
-                    default:
-                        shuffledRecepticleList.Add(i % 2 == 0 ? 1 : 0);
-                        break;
-                }
-            }
-
-            currentRecepticle = batchSize;
-            shuffledRecepticleList.Shuffle();
-        }
-
         if (trial.settings.GetString("experiment_mode") == "objectToBox")
         {
-            Debug.Log("RUNNN");
+            // Pseudorandom receptacle location
+            if (shuffledRecepticleList.Count < 1)
+            {
+                int trials = trial.session.CurrentBlock.trials.Count;
+                int targets = session.settings.GetFloatList(trial.settings.GetString("targetListToUse")).Count;
+                batchSize = targets - 1;
+
+                if (trials % targets != 0)
+                {
+                    Debug.LogError("WARNING! NUMBER OF TARGETS DOES NOT EQUALLY DIVIDE INTO NUMBER OF TRIALS");
+                }
+
+                // Number of receptacles per list of targets
+                int receptacles = trials / targets;
+                for (int i = 0; i < receptacles; i++)
+                {
+                    // 1 is box, 0 is sphere
+                    // Can be randomized or set to have all spheres or cubes per block
+                    switch (trial.settings.GetString("obj_type"))
+                    {
+                        case "sphere":
+                            shuffledRecepticleList.Add(0);
+                            break;
+                        case "cube":
+                            shuffledRecepticleList.Add(1);
+                            break;
+                        case "random":
+                        default:
+                            shuffledRecepticleList.Add(i % 2 == 0 ? 1 : 0);
+                            break;
+                    }
+                }
+
+                currentRecepticle = batchSize;
+                shuffledRecepticleList.Shuffle();
+            }
+
             receptaclePrefab = shuffledRecepticleList[0] == 0 ? cylinderPrefab : boxPrefab;
 
             if (currentRecepticle > 0) { currentRecepticle--; }

@@ -12,11 +12,16 @@ using UXF;
 
 public class ArcController : MonoBehaviour
 {
-    // Hand cursor controller
+    // Start is called before the first frame update
     private GameObject handCursor;
     private ExperimentController experimentController;
     private HandCursorController handCursorController;
     private TargetContainerController targetContainerController;
+
+    // True when this object is used as a starting point for reach tasks
+    public bool IsSecondaryHome = false;
+    public GameObject RealTarget = null;
+    public Vector3 SecondaryHomePos;
 
     public MeshFilter meshFilter;
 
@@ -41,6 +46,8 @@ public class ArcController : MonoBehaviour
 
     private float targetDistance;
 
+    private const float MIN_DIST = 0.05f;
+
     private void Awake()
     {
         targetDistance = 0.1f;
@@ -49,6 +56,12 @@ public class ArcController : MonoBehaviour
         prevSpan = arcSpan;
         prevThickness = thickness;
         GenerateArc();
+
+        // get the inputs we need for displaying the cursor
+        handCursor = GameObject.FindGameObjectWithTag("Cursor");
+        handCursorController = handCursor.GetComponent<HandCursorController>();
+        experimentController = handCursorController.experimentController;
+        targetContainerController = experimentController.targetContainerController;
     }
 
     /// <summary>
@@ -245,47 +258,51 @@ public class ArcController : MonoBehaviour
 
     private void LateUpdate()
     {
-        // get the inputs we need for displaying the cursor
-        handCursor = GameObject.FindGameObjectWithTag("Cursor");
-        handCursorController = handCursor.GetComponent<HandCursorController>();
-        experimentController = handCursorController.experimentController;
-        targetContainerController = GameObject.FindGameObjectWithTag("TargetContainer").GetComponent<TargetContainerController>();
-
-        Vector3 centreExpPosition = GameObject.FindGameObjectWithTag("Home").transform.parent.transform.position;
+        Vector3 centreExpPosition = experimentController.homeCursorController.transform.position;
 
         bool visible = handCursorController.visible;
         bool isPaused = handCursorController.isPaused;
         bool isInHomeArea = handCursorController.isInHomeArea;
         bool taskCompleted = handCursorController.taskCompleted;
+        bool isInTarget = handCursorController.isInTarget;
 
-        float minDist = 0.05f;
-        float actDist = (handCursor.transform.localPosition - centreExpPosition).magnitude;
-        bool distThreshold = actDist >= minDist; //Distance cursor has moved from home position
+        float actDist = (
+            handCursor.transform.position -
+            (!IsSecondaryHome ? SecondaryHomePos : centreExpPosition)
+        ).magnitude;
+
+        bool distThreshold = actDist >= MIN_DIST; //Distance cursor has moved from home position
+                                                  //Debug.Log("Actual Distance from center: " + actDist);
 
         //Do things when this thing is in the target (and paused), or far enough away during nocusor
-        if (isPaused && !isInHomeArea && distThreshold && !visible && !taskCompleted) //^ is exclusive OR
+        if (isPaused && !isInHomeArea)
         {
-            if (useExpand)
+            // When IsSecondaryHome is false, target acts as a regular reach target.
+            // If true, the participant must touch this "target" to spawn the real one.
+            if (!IsSecondaryHome && distThreshold && !taskCompleted)
             {
-                expand = true;
+                if (useExpand)
+                {
+                    expand = true;
+                }
+                else
+                {
+                    GetComponentInChildren<MeshRenderer>().enabled = false;
+                }
+
+                // Above only checks if its paused (for case of noCursor), needs to also check for some minimum time or distance travelled etc.
+                experimentController.PauseTimer();
+
+                experimentController.CalculateReachTime();
+
+                targetContainerController.soundActive =
+                    experimentController.GetReachTime() < 1.5f;
+
+                targetContainerController.experimentController.positionLocCursorController.Activate();
+
+                handCursorController.taskCompleted = true;
+                handCursorController.isInTarget = false;
             }
-            else
-            {
-                GetComponentInChildren<MeshRenderer>().enabled = false;
-            }
-
-            // Above only checks if its paused (for case of noCursor), needs to also check for some minimum time or distance travelled etc.
-            experimentController.PauseTimer();
-
-            experimentController.CalculateReachTime();
-
-            targetContainerController.soundActive =
-                experimentController.GetReachTime() < 1.5f;
-
-            targetContainerController.experimentController.positionLocCursorController.Activate();
-
-            handCursorController.taskCompleted = true;
-            handCursorController.isInTarget = false;
         }
     }
 }

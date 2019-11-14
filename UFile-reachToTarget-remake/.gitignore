@@ -12,6 +12,8 @@ https://github.com/github/gitignore/blob/master/Unity.gitignore
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
+/data/
+
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
 

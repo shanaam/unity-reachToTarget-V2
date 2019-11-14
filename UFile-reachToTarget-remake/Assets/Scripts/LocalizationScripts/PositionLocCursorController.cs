@@ -54,6 +54,8 @@ public class PositionLocCursorController : MonoBehaviour
 
             //Move your cube GameObject to the point where you clicked
             transform.position = hitPoint;
+
+            experimentController.targetContainerController.particleSystem.transform.position = transform.position;
         }
 
         x = transform.localPosition.x;

@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TargetController : MonoBehaviour
 {
-    // Start is called before the first frame update
     private GameObject handCursor;
     private ExperimentController experimentController;
     private HandCursorController handCursorController;
@@ -13,17 +10,23 @@ public class TargetController : MonoBehaviour
     // True when this object is used as a starting point for reach tasks
     public bool IsSecondaryHome = false;
     public GameObject RealTarget = null;
+    public Vector3 SecondaryHomePos;
 
-    // Update is called once per frame
-    void LateUpdate()
+    private const float MIN_DIST = 0.05f;
+
+    void Awake()
     {
         // get the inputs we need for displaying the cursor
         handCursor = GameObject.FindGameObjectWithTag("Cursor");
         handCursorController = handCursor.GetComponent<HandCursorController>();
         experimentController = handCursorController.experimentController;
-        targetContainerController = GameObject.FindGameObjectWithTag("TargetContainer").GetComponent<TargetContainerController>();
+        targetContainerController = experimentController.targetContainerController;   
+    }
 
-        Vector3 centreExpPosition = GameObject.FindGameObjectWithTag("Home").transform.parent.transform.position;
+    // Update is called once per frame
+    void LateUpdate()
+    {
+        Vector3 centreExpPosition = experimentController.homeCursorController.transform.position;
 
         bool visible = handCursorController.visible;
         bool isPaused = handCursorController.isPaused;
@@ -31,18 +34,20 @@ public class TargetController : MonoBehaviour
         bool taskCompleted = handCursorController.taskCompleted;
         bool isInTarget = handCursorController.isInTarget;
 
+        float actDist = (
+            handCursor.transform.position -
+            (!IsSecondaryHome ? SecondaryHomePos : centreExpPosition)
+        ).magnitude;
 
-        float minDist = 0.05f;
-        float actDist = (handCursor.transform.localPosition - centreExpPosition).magnitude;
-        bool distThreshold = actDist >= minDist; //Distance cursor has moved from home position
-                                                 //Debug.Log("Actual Distance from center: " + actDist);
+        bool distThreshold = actDist >= MIN_DIST; //Distance cursor has moved from home position
+                                                  //Debug.Log("Actual Distance from center: " + actDist);
 
         //Do things when this thing is in the target (and paused), or far enough away during nocusor
-        if (isPaused && !isInHomeArea && ((!taskCompleted && distThreshold && !visible) ^ isInTarget)) //^ is exclusive OR
+        if (isPaused && !isInHomeArea)
         {
             // When IsSecondaryHome is false, target acts as a regular reach target.
             // If true, the participant must touch this "target" to spawn the real one.
-            if (!IsSecondaryHome)
+            if (!IsSecondaryHome && ((!taskCompleted && distThreshold && !visible) ^ isInTarget))
             {
                 // Above only checks if its paused (for case of noCursor), needs to also check for some minimum time or distance travelled etc.
                 //End and prepare
@@ -65,12 +70,21 @@ public class TargetController : MonoBehaviour
                 handCursorController.taskCompleted = true;
                 handCursorController.isInTarget = false;
             }
-            else
+            else if (isInTarget)
             {
                 if (RealTarget != null)
                 {
                     // Fix hand cursor
                     handCursorController.isInTarget = false;
+
+                    // Hide cursor if the type is nocursor
+                    if (experimentController.session.CurrentTrial.settings.GetString("type") == "nocursor" ||
+                        experimentController.session.CurrentTrial.settings.GetString("type") == "localization")
+                    {
+                        handCursorController.SetCursorVisibility(false);
+                    }
+
+                    handCursorController.ResetPause();
 
                     // Set the correct movement type for this trial
                     //handCursorController.SetMovementType(experimentController.session.CurrentTrial);
@@ -81,6 +95,17 @@ public class TargetController : MonoBehaviour
                 }
                 else { Debug.LogWarning("This isn't supposed to happen"); }
             }
+        }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (handCursor != null)
+        {
+            // Draws a blue line from this transform to the target
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(!IsSecondaryHome ? SecondaryHomePos : 
+                experimentController.homeCursorController.transform.position, handCursor.transform.position);
         }
     }
 }

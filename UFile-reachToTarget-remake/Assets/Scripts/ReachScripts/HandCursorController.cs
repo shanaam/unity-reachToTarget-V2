@@ -129,17 +129,14 @@ public class HandCursorController : MonoBehaviour
     public void SetCursorVisibility(Trial trial) //run by UXF at start of trial
     {
         Renderer rend = GetComponent<Renderer>();
-        string type = trial.settings.GetString("type");
-        if (type == "nocursor" || type == "localization")
-        {
-            rend.enabled = false;
-            visible = false;
-        }
-        else
-        {
-            rend.enabled = true;
-            visible = true;
-        }
+        rend.enabled = visible = true;
+    }
+
+    // Manually override the cursor visibility
+    public void SetCursorVisibility(bool visible)
+    {
+        Renderer rend = GetComponent<Renderer>();
+        rend.enabled = this.visible = visible;
     }
 
     private void VisibleCursor()
@@ -209,7 +206,9 @@ public class HandCursorController : MonoBehaviour
             {
                 // If we are in the first stage (IsSecondaryHome == true) use aligned
                 // Else use trial specific movement type where the secondary home
-                if (targ.GetComponent<TargetController>().IsSecondaryHome)
+                // targCtrler will be null if the experiment type is localization
+                TargetController targCtrler = targ.GetComponent<TargetController>();
+                if (targCtrler != null && targCtrler.IsSecondaryHome)
                 {
                     transform.localPosition = default_movement.NewCursorPosition(realHandPosition, centreExpPosition);
                 }
@@ -328,7 +327,6 @@ public class HandCursorController : MonoBehaviour
 
     public void CheckForPause()
     {
-
         //calculate the distance from last position
         float distance = Vector3.Distance(lastPosition, transform.position);
 
@@ -381,6 +379,13 @@ public class HandCursorController : MonoBehaviour
             //PausedTimeStart can now be reset.
             checkForPauseTimerActive = true;
         }   
+    }
+
+    // Resets "isPaused" to false and clears the history of the cursor movement
+    public void ResetPause()
+    {
+        isPaused = false;
+        distanceFromLastList.Clear();
     }
 
     // vibrate controller for 0.2 seconds
