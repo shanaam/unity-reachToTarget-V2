@@ -1,0 +1,17 @@
+{
+    "experiment_mode": "objectToBox",
+    "gradual_step": 1,
+    "per_block_type": ["instruction", "aligned", "aligned", "aligned", "instruction", "aligned", "clamped", "aligned", "clamped", "aligned", "clamped", "aligned", "clamped", "instruction", "aligned", "rotated", "clamped", "rotated", "clamped", "instruction", "rotated", "clamped", "rotated", "clamped", "rotated", "clamped", "rotated", "clamped", "rotated", "clamped", "rotated", "clamped"],
+    "per_block_n": [1, 15, 15, 15, 1, 15, 6, 15, 6, 15, 6, 15, 6, 1, 6, 180, 6, 12, 6, 1, 24, 6, 12, 6, 12, 6, 12, 6, 12, 6, 12, 6],
+    "per_block_rotation": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -30, 0, -30, 0, 0, -30, 0, -30, 0, -30, 0, -30, 0, -30, 0, -30, 0],
+    "per_block_distance": [25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25,25, 25, 25, 25, 25, 25, 25, 25,25, 25, 25, 25, 25, 25, 25, 25],
+    "per_block_target_vertPos": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "per_block_targetListToUse": ["t_null", "tl1", "tl1", "tl1", "t_null", "tl1", "tl1", "tl1", "tl1", "tl1", "tl1", "tl1", "tl1", "t_null", "tl1", "tl1", "tl1", "tl1", "tl1", "t_null", "tl1", "tl1", "tl1", "tl1", "tl1", "tl1", "tl1", "tl1", "tl1", "tl1", "tl1", "tl1"],
+    "per_block_plane": ["none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", "none"],
+    "per_block_hand": ["r", "r", "l", "r", "r", "r", "r", "r", "r", "l", "l", "l", "l", "r", "r", "r", "r", "r", "l","r", "r", "r","r", "l", "r", "r", "r", "l", "r", "r", "r", "l"],
+    "per_block_obj_type": ["cube", "cube", "cube", "cube", "cube", "cube", "cube", "sphere", "sphere", "cube", "cube", "spere", "sphere", "cube", "cube", "cube", "cube", "cube", "cube", "cube", "cube", "sphere","cube", "sphere", "cube", "cube", "cube", "cube", "cube", "sphere", "cube", "sphere"],
+    "tl1": [45, 90, 135], 
+    "tl2": [45, 90, 135],
+    "t_null": [90],
+    "exp_version": "R1"
+}
