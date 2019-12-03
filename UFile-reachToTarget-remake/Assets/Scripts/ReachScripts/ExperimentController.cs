@@ -222,6 +222,10 @@ public class ExperimentController : MonoBehaviour
         {
             cursorCntrler.ShortVibrateController(1.0f, 0.5f);
         }
+        else
+        {
+            cursorCntrler.visible = false;
+        }
 
         homeCursorController.Appear();
 
