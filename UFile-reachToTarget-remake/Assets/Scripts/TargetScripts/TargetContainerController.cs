@@ -119,7 +119,7 @@ public class TargetContainerController : MonoBehaviour
         {
             // Set target angle to forwards
             SetTargetAngle(90f, vertPos);
-            transform.localPosition = new Vector3(0, 0, 0.04f); //sets target container to parent 0
+            transform.localPosition = new Vector3(0, 0, 0.02f); //sets target container to parent 0
 
             // Spawn the second home
             var secondHome = Instantiate(secondaryHomePrefab, transform);

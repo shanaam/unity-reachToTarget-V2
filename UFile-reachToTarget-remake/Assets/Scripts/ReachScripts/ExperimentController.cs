@@ -31,7 +31,7 @@ public class ExperimentController : MonoBehaviour
 
 
     // things to log
-    public float pickUpTime;
+    public float stepTime;
     public string objShape;
     public float objSpawnX;
     public float objSpawnZ;
@@ -158,7 +158,7 @@ public class ExperimentController : MonoBehaviour
         session.CurrentTrial.result["home_y"] = homeCursor.transform.position.y;
         session.CurrentTrial.result["home_z"] = homeCursor.transform.position.z;
 
-        session.CurrentTrial.result["pick_up_time"] = pickUpTime;
+        session.CurrentTrial.result["step_time"] = stepTime;
         session.CurrentTrial.result["obj_shape"] = objShape;
         session.CurrentTrial.result["distractor_loc"] = distractorLoc;
         session.CurrentTrial.result["obj_spawn_x"] = objSpawnX;
@@ -227,8 +227,10 @@ public class ExperimentController : MonoBehaviour
             cursorCntrler.visible = false;
         }
 
+        // Make home cursor appear (at dock for next trial)
         homeCursorController.Appear();
 
+        // end the current trial in UXF
         if (session.CurrentTrial.number == session.LastTrial.number)
         {
             session.End();

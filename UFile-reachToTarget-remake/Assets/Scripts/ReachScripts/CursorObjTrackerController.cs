@@ -8,6 +8,7 @@ public class CursorObjTrackerController : MonoBehaviour
 
     public bool tracking = false;
     GameObject trackedObject;
+    public Session session;
 
     private void Start()
     {
@@ -18,7 +19,14 @@ public class CursorObjTrackerController : MonoBehaviour
     {
         if (tracking)
         {
-            trackedObject = GameObject.FindGameObjectWithTag("ExperimentObject");
+            if (session.CurrentTrial.settings.GetString("experiment_mode") != "target")
+            {
+                trackedObject = GameObject.FindGameObjectWithTag("ExperimentObject");
+            }
+            else
+            {
+                trackedObject = GameObject.FindGameObjectWithTag("Cursor");
+            }
 
             transform.position = trackedObject.transform.position;
             transform.rotation = trackedObject.transform.rotation;

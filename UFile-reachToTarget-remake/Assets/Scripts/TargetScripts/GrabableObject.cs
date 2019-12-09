@@ -177,13 +177,11 @@ public class GrabableObject : MonoBehaviour
 
         transform.SetParent(handCursor.transform);
 
-        experimentController.pickUpTime = Time.time;
+        experimentController.stepTime = Time.time;
 
         grabed();
 
         //start tracking object
-
-
         cursObjTracker.GetComponent<CursorObjTrackerController>().tracking = true;
         cursObjTracker.GetComponent<PositionRotationTracker>().StartRecording();
     }

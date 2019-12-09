@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
+using UXF;
 
 public class TargetController : MonoBehaviour
 {
     private GameObject handCursor;
+    private GameObject cursObjTracker;
     private ExperimentController experimentController;
     private HandCursorController handCursorController;
     private TargetContainerController targetContainerController;
@@ -18,6 +20,7 @@ public class TargetController : MonoBehaviour
     {
         // get the inputs we need for displaying the cursor
         handCursor = GameObject.FindGameObjectWithTag("Cursor");
+        cursObjTracker = GameObject.FindGameObjectWithTag("CursObjTracker");
         handCursorController = handCursor.GetComponent<HandCursorController>();
         experimentController = handCursorController.experimentController;
         targetContainerController = experimentController.targetContainerController;   
@@ -55,7 +58,7 @@ public class TargetController : MonoBehaviour
 
                 experimentController.CalculateReachTime();
 
-                if (experimentController.GetReachTime() < 1.5f)
+                if (experimentController.GetReachTime() < 1f)
                 {
                     targetContainerController.soundActive = true;
                 }
@@ -64,6 +67,10 @@ public class TargetController : MonoBehaviour
                     targetContainerController.soundActive = false;
 
                 }
+
+                //
+                cursObjTracker.GetComponent<CursorObjTrackerController>().tracking = false;
+                cursObjTracker.GetComponent<PositionRotationTracker>().StopRecording();
 
                 experimentController.EndAndPrepare();
 
@@ -89,9 +96,17 @@ public class TargetController : MonoBehaviour
                     // Set the correct movement type for this trial
                     //handCursorController.SetMovementType(experimentController.session.CurrentTrial);
 
+                    // set step time
+                    experimentController.stepTime = Time.time;
+
+                    cursObjTracker.GetComponent<CursorObjTrackerController>().tracking = true;
+                    cursObjTracker.GetComponent<PositionRotationTracker>().StartRecording();
+
                     // Re-enable the real target and disable this one
                     RealTarget.SetActive(true);
                     Destroy(gameObject);
+
+
                 }
                 else { Debug.LogWarning("This isn't supposed to happen"); }
             }

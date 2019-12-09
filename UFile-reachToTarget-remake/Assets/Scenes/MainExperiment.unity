@@ -9995,7 +9995,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895573893}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0147, y: -0.0009, z: -0.0074}
+  m_LocalPosition: {x: -0.0107, y: -0.0177, z: -0.0019}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 1179540396}
@@ -10800,6 +10800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tracking: 0
+  session: {fileID: 1056512983}
 --- !u!1001 &980903417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12954,7 +12955,7 @@ PrefabInstance:
     - target: {fileID: 114916036141644208, guid: 0a3b6392f04558844bd340e68ced1ff9,
         type: 3}
       propertyPath: customHeaders.Array.data[3]
-      value: pick_up_time
+      value: step_time
       objectReference: {fileID: 0}
     - target: {fileID: 114916036141644208, guid: 0a3b6392f04558844bd340e68ced1ff9,
         type: 3}
@@ -22313,7 +22314,7 @@ MonoBehaviour:
   RightControllerAnchor: {fileID: 859170123}
   LeftHandRenderer: {fileID: 1294657585}
   RightHandRenderer: {fileID: 688661054}
-  pickUpTime: 0
+  stepTime: 0
   objShape: 
   objSpawnX: 0
   objSpawnZ: 0
