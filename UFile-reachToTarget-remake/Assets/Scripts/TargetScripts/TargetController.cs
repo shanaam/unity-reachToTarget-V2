@@ -50,7 +50,7 @@ public class TargetController : MonoBehaviour
         {
             // When IsSecondaryHome is false, target acts as a regular reach target.
             // If true, the participant must touch this "target" to spawn the real one.
-            if (!IsSecondaryHome && ((!taskCompleted && distThreshold && !visible) ^ isInTarget))
+            if (!IsSecondaryHome && ((!taskCompleted && distThreshold && !visible) || isInTarget))
             {
                 // Above only checks if its paused (for case of noCursor), needs to also check for some minimum time or distance travelled etc.
                 //End and prepare
@@ -71,6 +71,11 @@ public class TargetController : MonoBehaviour
                 //
                 cursObjTracker.GetComponent<CursorObjTrackerController>().tracking = false;
                 cursObjTracker.GetComponent<PositionRotationTracker>().StopRecording();
+
+                // log target position
+                experimentController.targetX = transform.position.x;
+                experimentController.targetY = transform.position.y;
+                experimentController.targetZ = transform.position.z;
 
                 experimentController.EndAndPrepare();
 
@@ -101,6 +106,9 @@ public class TargetController : MonoBehaviour
 
                     cursObjTracker.GetComponent<CursorObjTrackerController>().tracking = true;
                     cursObjTracker.GetComponent<PositionRotationTracker>().StartRecording();
+
+                    // Start timer for dings
+                    experimentController.StartTimer();
 
                     // Re-enable the real target and disable this one
                     RealTarget.SetActive(true);

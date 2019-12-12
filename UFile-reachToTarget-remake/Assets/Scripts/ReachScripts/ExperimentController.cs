@@ -39,6 +39,13 @@ public class ExperimentController : MonoBehaviour
     public float recepticleY;
     public float recepticleZ;
     public float distractorLoc;
+    public float targetX;
+    public float targetY;
+    public float targetZ;
+
+    public float locX;
+    public float locY;
+    public float locZ;
     
 
     //-- Internal Variables
@@ -166,6 +173,14 @@ public class ExperimentController : MonoBehaviour
         session.CurrentTrial.result["recepticle_x"] = recepticleX;
         session.CurrentTrial.result["recepticle_y"] = recepticleY;
         session.CurrentTrial.result["recepticle_z"] = recepticleZ;
+
+        session.CurrentTrial.result["target_x"] = targetX;
+        session.CurrentTrial.result["target_y"] = targetY;
+        session.CurrentTrial.result["target_z"] = targetZ;
+
+        session.CurrentTrial.result["loc_x"] = locX;
+        session.CurrentTrial.result["loc_y"] = locY;
+        session.CurrentTrial.result["loc_z"] = locZ;
 
         //Debug.Log("ending reach trial...");
         // destroy the target, spawn home?

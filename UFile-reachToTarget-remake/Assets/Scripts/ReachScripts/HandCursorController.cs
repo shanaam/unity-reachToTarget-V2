@@ -215,7 +215,8 @@ public class HandCursorController : MonoBehaviour
                 else
                 {
                     transform.localPosition = movementType.NewCursorPosition(realHandPosition,
-                        centreExpPosition + new Vector3(0.0f, 0.0f, 0.04f)) + new Vector3(0.0f, 0.0f, 0.04f); 
+                        centreExpPosition + new Vector3(0.0f, 0.0f, targetContainerController.secondHomeDist)) + 
+                        new Vector3(0.0f, 0.0f, targetContainerController.secondHomeDist); 
                     //- (transform.parent.transform.forward * 0.06f));
                 }
             }

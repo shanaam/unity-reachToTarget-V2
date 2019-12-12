@@ -31,6 +31,7 @@ public class TargetContainerController : MonoBehaviour
 
     // variable
     public float grabObjSpawnDist = 0.15f;
+    public float secondHomeDist = 0.02f;
 
     List<float> shuffledTargetList = new List<float>();
     List<int> shuffledRecepticleList = new List<int>();
@@ -119,7 +120,7 @@ public class TargetContainerController : MonoBehaviour
         {
             // Set target angle to forwards
             SetTargetAngle(90f, vertPos);
-            transform.localPosition = new Vector3(0, 0, 0.02f); //sets target container to parent 0
+            transform.localPosition = new Vector3(0, 0, secondHomeDist); //sets target container to parent 0
 
             // Spawn the second home
             var secondHome = Instantiate(secondaryHomePrefab, transform);

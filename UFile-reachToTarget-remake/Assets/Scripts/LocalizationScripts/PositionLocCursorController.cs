@@ -14,6 +14,7 @@ public class PositionLocCursorController : MonoBehaviour
 
     public ExperimentController experimentController;
     public HandCursorController handCursorController;
+    public TargetContainerController targetContainerController;
     public GameObject handCursor;
     public GameObject expCentre;
     public GameObject centreEye;
@@ -37,7 +38,7 @@ public class PositionLocCursorController : MonoBehaviour
         //transform.localPosition = defaultPos;
 
         //Calculate forward vector
-        Vector3 forward = centreEye.transform.position - transform.parent.position;
+        Vector3 forward = (centreEye.transform.position - new Vector3(0, 0.3f, 0)) - transform.parent.position;
         Ray ray = new Ray(transform.parent.position, forward);
 
         //Plane for intersecting
@@ -49,10 +50,10 @@ public class PositionLocCursorController : MonoBehaviour
 
         if (planeTOIntersect.Raycast(ray, out enter))
         {
-            //Get the point that is clicked
+            //Get the point 
             Vector3 hitPoint = ray.GetPoint(enter);
 
-            //Move your cube GameObject to the point where you clicked
+            //move game object to the point 
             transform.position = hitPoint;
 
             experimentController.targetContainerController.particleSystem.transform.position = transform.position;
@@ -67,9 +68,11 @@ public class PositionLocCursorController : MonoBehaviour
 
             if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger, m_controller))
             {
-                CalculateLocationDelta();
+                LogLocalization();
 
-                Debug.Log("Ending Localization Trial T_T bye :'(");
+                //Debug.Log("Ending Localization Trial T_T bye :'(");
+
+                targetContainerController.PlayDestroyNoise();
 
                 experimentController.EndAndPrepare();
                 handCursorController.taskCompleted = true;
@@ -92,14 +95,23 @@ public class PositionLocCursorController : MonoBehaviour
         transform.localPosition = new Vector3(x, y + pos, z);
     }
 
-    void CalculateLocationDelta()
+    void LogLocalization()
     {
         Vector3 hand = handCursor.transform.position;
         Vector3 cursor = transform.position;
-        Vector3 delta = hand - cursor;
-        Debug.Log("Hand: " + hand.ToString());
-        Debug.Log("Cursor: " + cursor.ToString());
-        Debug.Log("Difference Magnitude: " + delta.magnitude);
+
+        experimentController.targetX = hand.x;
+        experimentController.targetY = hand.y;
+        experimentController.targetZ = hand.z;
+
+        experimentController.locX = cursor.x;
+        experimentController.locY = cursor.y;
+        experimentController.locZ = cursor.z;
+
+        //Vector3 delta = hand - cursor;
+        //Debug.Log("Hand: " + hand.ToString());
+        //Debug.Log("Cursor: " + cursor.ToString());
+        //Debug.Log("Difference Magnitude: " + delta.magnitude);
     }
 
     public void Activate()
