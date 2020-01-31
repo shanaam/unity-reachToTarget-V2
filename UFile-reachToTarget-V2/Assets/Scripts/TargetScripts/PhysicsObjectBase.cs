@@ -16,7 +16,7 @@ public class PhysicsObjectBase : MonoBehaviour
         {
             var ctrler = GameObject.FindGameObjectWithTag("TargetContainer");
             transform.SetParent(ctrler.transform);
-            transform.localPosition = new Vector3(0.0f, 0.0f, 0.1f);
+            transform.localPosition = new Vector3(0.0f, 0.0f, 0.10f);
             transform.localRotation = Quaternion.Euler(Vector3.zero);
             transform.SetParent(null);
 

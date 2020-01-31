@@ -30,14 +30,14 @@ public class TargetContainerController : MonoBehaviour
     public ParticleSystem particleSystem;
 
     // variable
-    public float grabObjSpawnDist = 0.15f;
+    public float grabObjSpawnDist = 0.05f;
     public float secondHomeDist = 0.02f;
 
     List<float> shuffledTargetList = new List<float>();
     List<int> shuffledRecepticleList = new List<int>();
     int currentRecepticle = 0;
     int batchSize = 0;
-    private GameObject receptaclePrefab;
+    public GameObject receptaclePrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -70,28 +70,42 @@ public class TargetContainerController : MonoBehaviour
             var grabObject = Instantiate(
                 receptaclePrefab.name == boxPrefab.name ? PhysicsCubePrefab : PhysicsSpherePrefab, transform);
 
-            Vector3 receptacleLocation = new Vector3(0f, 0f, targetDistance - grabObjSpawnDist);
-
-            grabObject.transform.localPosition = new Vector3(0f, 0.1f, 0.0f);
+            grabObject.transform.localPosition = new Vector3(0f, 0.05f, 0.0f); //drops from here
             grabObject.GetComponent<GrabableObject>().m_controller = experimentController.GetController();
             grabObject.transform.SetParent(null);
 
 
+            Vector3 receptacleLocation = new Vector3(0f, 0f, targetDistance - grabObjSpawnDist);
+
             // 50/50 chance for either 25 degrees left or right of the target angle
             System.Random rand = new System.Random();
+
+            float deviation = 180f; 
+
+            switch (targetAngle)
+            {
+                case 45f:
+                    deviation = (rand.Next(2) == 0 ? 90f : 135f);
+                    break;
+                case 90f:
+                    deviation = (rand.Next(2) == 0 ? 45f : 135f);
+                    break;
+                case 135f:
+                    deviation = (rand.Next(2) == 0 ? 45f : 90f);
+                    break;
+            }
             
-            float deviation = (rand.Next(2) == 0 ? -45f : 45f) / 2.0f;
-            experimentController.distractorLoc = -deviation;
+            experimentController.distractorLoc = -deviation; //is this necessary?
 
             // Set up receptacle
-            SetTargetAngle(targetAngle + deviation, vertPos);
+            SetTargetAngle(targetAngle, vertPos);
             var receptacle = Instantiate(receptaclePrefab, transform);
             receptacle.transform.localPosition = receptacleLocation;
             receptacle.transform.SetParent(null);
 
             
             // Set up incorrect receptacle
-            SetTargetAngle(targetAngle - deviation, vertPos);
+            SetTargetAngle(deviation, vertPos);
             var wrongReceptacle = Instantiate(
                 receptaclePrefab.name == boxPrefab.name ? cylinderPrefab : boxPrefab, transform);
             wrongReceptacle.transform.localPosition = receptacleLocation;

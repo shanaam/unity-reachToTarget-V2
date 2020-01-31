@@ -1,11 +1,13 @@
 ﻿using TMPro;
 using UnityEngine;
+using UXF;
 
 public class InstructionController : MonoBehaviour
 {
     TextMeshPro text;
     public GameObject hand;
     HandCursorController cntrler;
+    public Session session;
 
     private void Start()
     {
@@ -16,14 +18,18 @@ public class InstructionController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cntrler.HandForNextTrial == string.Empty)
-        {
-            text.text = "Reach to Target";
-        }
-        else
-        {
-            text.text = cntrler.HandForNextTrial == "r" ? "Right Hand" : "Left Hand";
-        }
-        
+
+        text.text = "Reach to Target";
+
+
+        //if (cntrler.HandForNextTrial == string.Empty)
+        //{
+        //    text.text = "Reach to Target";
+        //}
+        //else
+        //{
+        //    text.text = cntrler.HandForNextTrial == "r" ? "Right Hand" : "Left Hand";
+        //}
+
     }
 }

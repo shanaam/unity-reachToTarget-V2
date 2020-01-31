@@ -108,7 +108,18 @@ public class HandCursorController : MonoBehaviour
         rotation = trial.settings.GetFloat("cursor_rotation");
         experiment_mode = trial.settings.GetString("experiment_mode");
         // set the rotation for the trial
-        
+
+        // dual rotations
+        if (trial.settings.GetString("experiment_mode") == "objectToBox") {
+            if (targetContainerController.receptaclePrefab.name == targetContainerController.boxPrefab.name) {
+                rotation = rotation * -1;
+                }
+            else{
+                rotation = rotation * 1;
+            }
+        }
+
+        session.CurrentTrial.result["dual_rotation"] = rotation; 
 
         if (type.Equals("clamped"))
         {
